@@ -54,6 +54,8 @@ npx wrangler login        # alleen als wrangler nog niet ingelogd is
 npm run deploy
 ```
 
+`npm run deploy` bouwt, zet online en controleert daarna de live site (`npm run check:live`): draait de live site echt de nieuwe versie, werken de doneerknoppen en opent PayPal de juiste pagina. De eerste keer vraagt dat eenmalig: `npx playwright install chromium`.
+
 Onderaan staat het adres: `https://buildcalc.vanali.workers.dev`. Daarna eenmalig:
 
 ```

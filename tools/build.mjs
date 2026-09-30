@@ -15,6 +15,7 @@
 // same keys as English, same array lengths, same {placeholders} and same HTML tags.
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const SRC = path.join(ROOT, 'src');
@@ -157,6 +158,17 @@ fs.mkdirSync(OUT, { recursive: true });
 fs.cpSync(path.join(SRC, 'assets'), path.join(OUT, 'assets'), { recursive: true });
 if (fs.existsSync(path.join(SRC, 'static'))) fs.cpSync(path.join(SRC, 'static'), OUT, { recursive: true });
 
+// Cache busting: every HTML page references the assets with ?v=<content hash>, so a
+// browser never combines a new page with an old cached calc.js or style.css.
+const ASSET_VERSION = crypto.createHash('sha1')
+  .update(fs.readFileSync(path.join(SRC, 'assets/calc.js')))
+  .update(fs.readFileSync(path.join(SRC, 'assets/style.css')))
+  .digest('hex').slice(0, 10);
+fs.writeFileSync(path.join(OUT, 'version.json'), JSON.stringify({ version: ASSET_VERSION }) + '\n');
+const versionAssets = (html) => html
+  .replaceAll('"/assets/calc.js"', `"/assets/calc.js?v=${ASSET_VERSION}"`)
+  .replaceAll('"/assets/style.css"', `"/assets/style.css?v=${ASSET_VERSION}"`);
+
 let count = 0;
 const missingTpl = [];
 for (const page of PAGES) {
@@ -170,7 +182,7 @@ for (const page of PAGES) {
     if (html.includes("{{")) { console.error(`BUILD FAILED: unrendered braces in ${lang}/${page.id}`); process.exit(1); }
     const dest = path.join(OUT, langRoot(lang).slice(1), page.slug.endsWith('.html') ? page.slug : page.slug + 'index.html');
     fs.mkdirSync(path.dirname(dest), { recursive: true });
-    fs.writeFileSync(dest, html);
+    fs.writeFileSync(dest, versionAssets(html));
     count++;
   }
 }
@@ -186,4 +198,4 @@ sm += '</urlset>\n';
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), sm);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 
-console.log(`Built ${count} pages in ${BUILT_LANGS.length} languages -> public/` + (missingTpl.length ? `  (templates not yet present: ${missingTpl.join(', ')})` : ''));
+console.log(`Built ${count} pages in ${BUILT_LANGS.length} languages -> public/ (assets v=${ASSET_VERSION})` + (missingTpl.length ? `  (templates not yet present: ${missingTpl.join(', ')})` : ''));

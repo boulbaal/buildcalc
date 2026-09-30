@@ -7,8 +7,9 @@
     "check": "node tools/build.mjs --check",
     "dev": "npm run build && wrangler dev",
     "test": "npm run build && playwright test",
-    "deploy": "npm run build && wrangler deploy",
-    "indexnow": "node tools/indexnow.mjs"
+    "deploy": "npm run build && wrangler deploy && npm run check:live",
+    "indexnow": "node tools/indexnow.mjs",
+    "check:live": "playwright test -c playwright.live.config.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.50",

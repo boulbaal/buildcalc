@@ -123,3 +123,31 @@ test('language switcher navigates to the same page in another language', async (
   await expect(page).toHaveURL(new RegExp(`/${other}/stair-calculator/$`));
   await expect(page.locator('html')).toHaveAttribute('lang', other);
 });
+
+// ---------- donations ----------
+// Clicking an amount must open PayPal with that amount pre-filled. PayPal itself is
+// stubbed here (no network in tests); the live check (npm run check:live) hits the real site.
+for (const [lang, cur, sym] of [['en', 'USD', '$'], ['nl', 'EUR', '€'], ['ar', 'EUR', '€']]) {
+  test(`donate (${lang}): 5 amounts, click opens PayPal with amount`, async ({ page, context }) => {
+    await context.route('https://www.paypal.com/**', (r) => r.fulfill({ status: 200, body: 'paypal stub' }));
+    await page.goto(root(lang) + 'paint-calculator/');
+    const amounts = page.locator('#donate a.amount');
+    await expect(amounts).toHaveCount(5);
+    await expect(amounts.first()).toBeVisible();
+    await expect(amounts.nth(2)).toContainText(sym);
+    const [popup] = await Promise.all([page.waitForEvent('popup'), amounts.nth(2).click()]);
+    await popup.waitForURL(`https://www.paypal.com/paypalme/ABoulbahaiem/5${cur}`);
+    const [popup2] = await Promise.all([page.waitForEvent('popup'), page.locator('#donate [data-donate-free]').click()]);
+    await popup2.waitForURL('https://www.paypal.com/paypalme/ABoulbahaiem');
+  });
+}
+
+test('assets are versioned so browsers never mix new pages with old cached scripts', async ({ page, request }) => {
+  const { version } = await (await request.get('/version.json')).json();
+  expect(version).toMatch(/^[0-9a-f]{10}$/);
+  for (const u of ['/', '/paint-calculator/', '/nl/stair-calculator/']) {
+    await page.goto(u);
+    await expect(page.locator('script[src^="/assets/calc.js"]')).toHaveAttribute('src', `/assets/calc.js?v=${version}`);
+    await expect(page.locator('link[rel=stylesheet]')).toHaveAttribute('href', `/assets/style.css?v=${version}`);
+  }
+});
