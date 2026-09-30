@@ -6,7 +6,7 @@
 /* ===== Donation config (same PayPal.me as Whenly). Empty = donation block hidden. =====
    Amount buttons link to paypal.com/paypalme/<name>/<amount><CUR>, so PayPal opens
    with the amount already filled in. Currency per language: data-currency on <html>. */
-const PAYPAL_ME = "ABoullbahaiem";
+const PAYPAL_ME = "ABoulbahaiem";
 
 const LOCALE = document.documentElement.dataset.locale || "en-US";
 

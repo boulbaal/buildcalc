@@ -17,7 +17,7 @@ Verwachting, eerlijk: Reddit en Hacker News geven pieken van een paar dagen. Het
 1. **Online en getest.** `npm test` groen, `npm run deploy` gedaan, site open op je eigen telefoon.
 2. **Google Search Console** (jouw Google-account): property `https://buildcalc.vanali.workers.dev` toevoegen. Verifiëren met een HTML-bestand: geef mij het bestand, ik zet het in `src/static/`. Daarna sitemap indienen: `https://buildcalc.vanali.workers.dev/sitemap.xml` (138 pagina's: 6 per taal, 23 talen).
 3. **Bing Webmaster Tools**: kan de Search Console-property importeren. Daarnaast `npm run indexnow` na elke deploy met nieuwe pagina's.
-4. **PayPal-link controleren**: open `https://paypal.me/ABoullbahaiem` en kijk of je eigen naam verschijnt (dubbele L, zie opmerking in het gesprek).
+4. **PayPal-link**: `https://paypal.me/ABoulbahaiem` (gecorrigeerd op 30 september 2026, oude link met dubbele L is verwijderd).
 
 ---
 
