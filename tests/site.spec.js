@@ -51,6 +51,9 @@ for (const lang of BUILT) {
         const canonical = await page.locator('link[rel=canonical]').getAttribute('href');
         expect(canonical).toBe('https://buildcalc.vanali.workers.dev' + root(lang) + p.slug);
         await expect(page.locator('link[rel=alternate][hreflang]')).toHaveCount(BUILT.length + 1);
+        // share preview image (Reddit, WhatsApp, X, ...)
+        await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://buildcalc.vanali.workers.dev/og.png');
+        await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute('content', 'summary_large_image');
 
         if (p.id !== 'home') {
           const units = LANGS[lang].units;

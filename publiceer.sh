@@ -21,7 +21,7 @@ if gh repo view "$OWNER/$REPO" >/dev/null 2>&1; then
     cd "$WORK"
   git add -A
   if git diff --cached --quiet; then echo "Geen wijzigingen, niets te pushen."; else
-    git -c user.name="Ali Boulbahaiem" -c user.email="aboulbahaiem@gmail.com" commit -q -m "${1:-Update BuildCalc}"
+    git -c user.name="boulbaal" -c user.email="boulbaal@users.noreply.github.com" commit -q -m "${1:-Update BuildCalc}"
     git push -q origin main
   fi
 else
@@ -29,7 +29,7 @@ else
     cd "$WORK"
   git init -q -b main
   git add -A
-  git -c user.name="Ali Boulbahaiem" -c user.email="aboulbahaiem@gmail.com" commit -q -m "BuildCalc v1: five construction calculators"
+  git -c user.name="boulbaal" -c user.email="boulbaal@users.noreply.github.com" commit -q -m "BuildCalc v1: five construction calculators"
   gh repo create "$OWNER/$REPO" --public \
     --description "Five free construction calculators. No ads, no tracking, works offline." \
     --homepage "https://buildcalc.vanali.workers.dev" --source . --push
