@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23b45309%22/><text x=%2250%22 y=%2270%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22bold%22>B</text></svg>">
+<title>Paint Calculator - How Much Paint Do I Need?</title>
+<meta name="description" content="Free paint calculator. Enter room size, doors, windows and coats to get gallons or liters of paint needed. Instant, no ads, works offline.">
+<link rel="canonical" href="https://boulbaal.github.io/buildcalc/paint-calculator/">
+<meta property="og:title" content="Paint Calculator - How Much Paint Do I Need?">
+<meta property="og:description" content="Enter room size, doors, windows and coats to get gallons or liters of paint. Instant, free, no ads.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Paint Calculator","url":"https://boulbaal.github.io/buildcalc/paint-calculator/","description":"Calculate how many gallons or liters of paint a room needs from its length, width, wall height, doors, windows and number of coats.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How much does a gallon of paint cover?","acceptedAnswer":{"@type":"Answer","text":"Most interior paints cover 250 to 400 square feet per gallon on a smooth, primed wall. This calculator defaults to 350. Rough, porous or previously unpainted surfaces absorb more paint, so use the low end of the range for textured drywall, bare wood or masonry."}},
+{"@type":"Question","name":"Do I need primer before painting?","acceptedAnswer":{"@type":"Answer","text":"Use primer on bare drywall, bare wood, stained or glossy surfaces, and when covering a dark color with a lighter one. On previously painted walls in good condition and a similar color, a quality paint-and-primer product is usually enough. Primer is cheaper than an extra coat of paint."}},
+{"@type":"Question","name":"Is one coat of paint enough, or do I need two?","acceptedAnswer":{"@type":"Answer","text":"Plan on two coats for an even, durable finish. One coat can work when repainting with the same color and sheen on a well-prepared wall. Big color changes, reds and yellows, or painting over patches often need two coats plus a tinted primer underneath."}},
+{"@type":"Question","name":"How much paint do I need for a 12x12 room?","acceptedAnswer":{"@type":"Answer","text":"A 12 by 12 foot room with 8 foot walls has about 384 square feet of wall. After subtracting a door and a window you paint roughly 348 square feet per coat, so two coats need about 696 square feet of coverage, which is 2 gallons at 350 square feet per gallon."}},
+{"@type":"Question","name":"Is ceiling paint different from wall paint?","acceptedAnswer":{"@type":"Answer","text":"Ceiling paint is formulated thicker so it splatters and drips less, and it is almost always flat so light does not highlight roller marks. You can use flat wall paint on a ceiling, but a dedicated ceiling paint is easier to apply overhead and hides imperfections better."}}
+]}
+</script>
+</head>
+<body data-units="imperial">
+<div class="wrap">
+
+<header class="site">
+  <nav aria-label="Breadcrumb">
+    <a class="brand" href="../">Build<span>Calc</span></a>
+    <a class="crumb" href="../">Home</a>
+    <span class="crumb" aria-current="page">Paint Calculator</span>
+  </nav>
+</header>
+
+<main>
+<h1>Paint Calculator</h1>
+<p class="lede">Work out how many gallons or liters of paint your room needs, with doors, windows and coats accounted for. Free, instant, no ads.</p>
+
+<div class="calc">
+  <div class="units" role="group" aria-label="Units">
+    <button type="button" data-units="imperial" aria-pressed="true">ft / gallons</button>
+    <button type="button" data-units="metric" aria-pressed="false">m / liters</button>
+  </div>
+  <div class="grid">
+    <div class="field">
+      <label for="length">Room length <span data-if-units="imperial">(ft)</span><span data-if-units="metric" hidden>(m)</span></label>
+      <input id="length" type="number" inputmode="decimal" min="0" step="any" value="12" aria-describedby="length-error">
+      <span class="error" id="length-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="width">Room width <span data-if-units="imperial">(ft)</span><span data-if-units="metric" hidden>(m)</span></label>
+      <input id="width" type="number" inputmode="decimal" min="0" step="any" value="10" aria-describedby="width-error">
+      <span class="error" id="width-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="height">Wall height <span data-if-units="imperial">(ft)</span><span data-if-units="metric" hidden>(m)</span></label>
+      <input id="height" type="number" inputmode="decimal" min="0" step="any" value="8" aria-describedby="height-error">
+      <span class="error" id="height-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="doors">Doors</label>
+      <input id="doors" type="number" inputmode="numeric" min="0" step="1" value="1" aria-describedby="doors-error doors-hint">
+      <span class="hint" id="doors-hint">Not painted. Each subtracts a standard door area.</span>
+      <span class="error" id="doors-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="windows">Windows</label>
+      <input id="windows" type="number" inputmode="numeric" min="0" step="1" value="1" aria-describedby="windows-error">
+      <span class="error" id="windows-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="coats">Coats</label>
+      <input id="coats" type="number" inputmode="numeric" min="1" step="1" value="2" aria-describedby="coats-error coats-hint">
+      <span class="hint" id="coats-hint">Two coats is the usual plan.</span>
+      <span class="error" id="coats-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="coverage">Coverage <span data-if-units="imperial">(sq ft per gallon)</span><span data-if-units="metric" hidden>(m&sup2; per liter)</span></label>
+      <input id="coverage" type="number" inputmode="decimal" min="0" step="any" value="350" aria-describedby="coverage-error coverage-hint">
+      <span class="hint" id="coverage-hint"><span data-if-units="imperial">typical 250-400</span><span data-if-units="metric" hidden>typical 8-12</span></span>
+      <span class="error" id="coverage-error" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="checkline">
+    <input id="ceiling" type="checkbox">
+    <label for="ceiling">Include ceiling</label>
+  </div>
+</div>
+
+<div class="result" aria-live="polite" id="result">
+  <div class="big" id="r-main">&nbsp;</div>
+  <ul class="path" id="r-path"></ul>
+</div>
+
+<div class="donate" id="donate" hidden>
+  <p>Free, no ads, built by one person. If this saved you a second trip to the paint store, you can buy me a coffee.</p>
+  <div class="btns">
+    <a class="btn" data-donate="kofi" href="#" rel="noopener">Support on Ko-fi</a>
+    <a class="btn alt" data-donate="paypal" href="#" rel="noopener">Donate via PayPal</a>
+  </div>
+</div>
+
+<h2>How it works</h2>
+<p>The calculator measures the wall surface around the room, subtracts a standard area for each door and window, optionally adds the ceiling, multiplies by the number of coats, and divides by your paint's coverage. The result is always rounded up to whole cans, because you cannot buy 1.8 gallons:</p>
+<div class="formula">wall area = 2 &times; (length + width) &times; height<br>paintable = wall area &minus; doors &times; 21 &minus; windows &times; 15 (+ ceiling)<br>gallons = paintable &times; coats &divide; coverage, rounded up</div>
+<p>In metric mode a door counts as 1.95 m&sup2;, a window as 1.4 m&sup2;, and coverage is per liter.</p>
+
+<h2>Worked example</h2>
+<p>Say your room is 12 &times; 10 ft with 8 ft walls, one door and one window, and you plan two coats at 350 sq ft per gallon. The wall area is 2 &times; (12 + 10) &times; 8 = <strong>352 sq ft</strong>. Subtract the door (21 sq ft) and the window (15 sq ft) to get <strong>316 sq ft per coat</strong>. Two coats means 632 sq ft of coverage, and 632 &divide; 350 = 1.81, which rounds up to <strong>2 gallons</strong>. Tick "Include ceiling" and the 120 sq ft ceiling brings it to 436 sq ft per coat, 872 sq ft total, so you need <strong>3 gallons</strong>.</p>
+
+<h2>Paint needed by room size</h2>
+<p>Walls with 8 ft ceilings, one door, one window, two coats, 350 sq ft per gallon:</p>
+<table>
+  <thead><tr><th scope="col">Room</th><th scope="col">Walls only</th><th scope="col">Walls + ceiling</th></tr></thead>
+  <tbody id="size-table"></tbody>
+</table>
+
+<h2>FAQ</h2>
+<details class="faq"><summary>How much does a gallon of paint cover?</summary><p>Most interior paints cover 250 to 400 square feet per gallon on a smooth, primed wall. This calculator defaults to 350. Rough, porous or previously unpainted surfaces absorb more paint, so use the low end of the range for textured drywall, bare wood or masonry.</p></details>
+<details class="faq"><summary>Do I need primer before painting?</summary><p>Use primer on bare drywall, bare wood, stained or glossy surfaces, and when covering a dark color with a lighter one. On previously painted walls in good condition and a similar color, a quality paint-and-primer product is usually enough. Primer is cheaper than an extra coat of paint.</p></details>
+<details class="faq"><summary>Is one coat of paint enough, or do I need two?</summary><p>Plan on two coats for an even, durable finish. One coat can work when repainting with the same color and sheen on a well-prepared wall. Big color changes, reds and yellows, or painting over patches often need two coats plus a tinted primer underneath.</p></details>
+<details class="faq"><summary>How much paint do I need for a 12x12 room?</summary><p>A 12 by 12 foot room with 8 foot walls has about 384 square feet of wall. After subtracting a door and a window you paint roughly 348 square feet per coat, so two coats need about 696 square feet of coverage, which is 2 gallons at 350 square feet per gallon.</p></details>
+<details class="faq"><summary>Is ceiling paint different from wall paint?</summary><p>Ceiling paint is formulated thicker so it splatters and drips less, and it is almost always flat so light does not highlight roller marks. You can use flat wall paint on a ceiling, but a dedicated ceiling paint is easier to apply overhead and hides imperfections better.</p></details>
+
+<h2>More free calculators</h2>
+<p>Planning the rest of the job? Try the <a href="../roof-pitch-calculator/">roof pitch calculator</a>, the <a href="../concrete-calculator/">concrete slab calculator</a>, the <a href="../tile-calculator/">tile calculator</a> or the <a href="../stair-calculator/">stair calculator</a>.</p>
+
+<p class="disclaimer">Results are estimates for planning purposes and not a substitute for professional advice. Always check local building codes and manufacturer instructions.</p>
+</main>
+
+<footer class="site">
+  <p class="made" id="made-by">Built by Ali, an engineer who got tired of ad-covered calculators.</p>
+  <p><a href="../">BuildCalc</a> &middot; free &middot; no ads &middot; no tracking &middot; works offline</p>
+</footer>
+</div>
+
+<script src="../assets/calc.js"></script>
+<script>
+"use strict";
+const DEFAULT_COVERAGE = { imperial: 350, metric: 10 };
+const DOOR = { imperial: 21, metric: 1.95 };
+const WINDOW_A = { imperial: 15, metric: 1.4 };
+
+function compute() {
+  const u = currentUnits();
+  const areaUnit = u === "imperial" ? "sq ft" : "m&sup2;";
+  const canUnit = u === "imperial" ? "gallon" : "liter";
+  const L = readNum(document.getElementById("length"));
+  const W = readNum(document.getElementById("width"));
+  const H = readNum(document.getElementById("height"));
+  const doors = readNum(document.getElementById("doors"), { allowZero: true });
+  const windows = readNum(document.getElementById("windows"), { allowZero: true });
+  const coats = readNum(document.getElementById("coats"));
+  const coverage = readNum(document.getElementById("coverage"));
+  const withCeiling = document.getElementById("ceiling").checked;
+
+  const main = document.getElementById("r-main");
+  const path = document.getElementById("r-path");
+  if (![L, W, H, doors, windows, coats, coverage].every(isFinite) ||
+      !Number.isInteger(doors) || !Number.isInteger(windows) || !Number.isInteger(coats) || coats < 1) {
+    main.innerHTML = "&nbsp;"; path.innerHTML = ""; return;
+  }
+
+  const wall = 2 * (L + W) * H;
+  const deduct = doors * DOOR[u] + windows * WINDOW_A[u];
+  const ceilingArea = withCeiling ? L * W : 0;
+  const perCoat = Math.max(0, wall - deduct) + ceilingArea;
+  const total = perCoat * coats;
+  const cans = Math.ceil(total / coverage);
+  if (!isFinite(cans)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+
+  main.innerHTML = fmt(cans, 0) + " " + canUnit + (cans === 1 ? "" : "s") +
+    " <small>for " + fmt(coats, 0) + (coats === 1 ? " coat" : " coats") + "</small>";
+  path.innerHTML =
+    "<li>Wall area: 2 &times; (" + fmt(L) + " + " + fmt(W) + ") &times; " + fmt(H) + " = <strong>" + fmt(wall) + " " + areaUnit + "</strong></li>" +
+    "<li>Minus " + fmt(doors, 0) + " door(s) and " + fmt(windows, 0) + " window(s): &minus;" + fmt(deduct) + " " + areaUnit +
+      (withCeiling ? ", plus ceiling " + fmt(ceilingArea) + " " + areaUnit : "") +
+      " = <strong>" + fmt(perCoat) + " " + areaUnit + " per coat</strong></li>" +
+    "<li>" + fmt(perCoat) + " &times; " + fmt(coats, 0) + " coats = " + fmt(total) + " " + areaUnit +
+      " &divide; " + fmt(coverage) + " = " + fmt(total / coverage, 2) + ", rounded up to <strong>" + fmt(cans, 0) + " " + canUnit + (cans === 1 ? "" : "s") + "</strong></li>";
+  showDonate();
+}
+
+/* Static reference table: 8 ft walls, 1 door, 1 window, 2 coats, 350 coverage */
+(function () {
+  const tb = document.getElementById("size-table");
+  let rows = "";
+  [[10, 10], [12, 12], [15, 15]].forEach(([l, w]) => {
+    const per = 2 * (l + w) * 8 - 21 - 15;
+    const walls = Math.ceil(per * 2 / 350);
+    const both = Math.ceil((per + l * w) * 2 / 350);
+    rows += "<tr><td>" + l + " &times; " + w + " ft</td><td>" + walls + " gal</td><td>" + both + " gal</td></tr>";
+  });
+  tb.innerHTML = rows;
+})();
+
+initUnits(function (u) {
+  document.getElementById("coverage").value = DEFAULT_COVERAGE[u];
+  applyUnitVisibility();
+  compute();
+});
+applyUnitVisibility();
+bindInputs(compute);
+compute();
+</script>
+</body>
+</html>

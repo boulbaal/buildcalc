@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23b45309%22/><text x=%2250%22 y=%2270%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22bold%22>B</text></svg>">
+<title>Stair Calculator - Rise, Run &amp; Stringer Layout</title>
+<meta name="description" content="Free stair calculator. Enter total rise to get the number of risers, exact riser height, treads and total run, with IRC code checks. Instant, no ads.">
+<link rel="canonical" href="https://boulbaal.github.io/buildcalc/stair-calculator/">
+<meta property="og:title" content="Stair Calculator - Rise, Run &amp; Stringer Layout">
+<meta property="og:description" content="Enter total rise to get risers, riser height, treads and total run, with IRC code checks. Instant, free, no ads.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Stair Calculator","url":"https://boulbaal.github.io/buildcalc/stair-calculator/","description":"Calculate the number of risers, exact riser height, treads and total run for a staircase from the total rise, with IRC code and comfort checks.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is the maximum riser height by code?","acceptedAnswer":{"@type":"Answer","text":"The US IRC allows a maximum riser height of 7.75 inches (about 19.7 cm) for residential stairs. Risers within one flight must not vary by more than 3/8 inch. Commercial codes and many local codes are stricter, so always verify with your local building department."}},
+{"@type":"Question","name":"What is the ideal riser height for stairs?","acceptedAnswer":{"@type":"Answer","text":"Most people find risers of 7 to 7.5 inches (18 to 19 cm) the most comfortable to climb. Shallower risers around 6 inches suit outdoor steps and older users. Anything above the 7.75 inch IRC maximum feels steep and is not allowed on new residential stairs."}},
+{"@type":"Question","name":"What is the 2R+T rule for stairs?","acceptedAnswer":{"@type":"Answer","text":"The 2R+T comfort rule says twice the riser height plus the tread depth should land between 24 and 25 inches (61 to 63.5 cm). It approximates a natural walking stride. Stairs inside that range feel comfortable; stairs outside it feel too steep or too shallow."}},
+{"@type":"Question","name":"How do I calculate the number of steps in a staircase?","acceptedAnswer":{"@type":"Answer","text":"Measure the total rise from finished floor to finished floor, then divide by the maximum riser height of 7.75 inches and round up. That gives the riser count; dividing the total rise by it gives the exact riser height. The number of treads is one less than the number of risers."}},
+{"@type":"Question","name":"What is the minimum tread depth by code?","acceptedAnswer":{"@type":"Answer","text":"The US IRC requires a minimum tread depth of 10 inches (about 25.4 cm), measured nose to nose. Deeper treads of 10.5 to 11 inches are more comfortable and common. Treads within a flight must not vary by more than 3/8 inch. Check local amendments before building."}}
+]}
+</script>
+</head>
+<body data-units="imperial">
+<div class="wrap">
+
+<header class="site">
+  <nav aria-label="Breadcrumb">
+    <a class="brand" href="../">Build<span>Calc</span></a>
+    <a class="crumb" href="../">Home</a>
+    <span class="crumb" aria-current="page">Stair Calculator</span>
+  </nav>
+</header>
+
+<main>
+<h1>Stair Calculator</h1>
+<p class="lede">Enter the total rise and get the number of risers, exact riser height, treads and total run, with IRC code and comfort checks. Free, instant, no ads.</p>
+
+<div class="calc">
+  <div class="units" role="group" aria-label="Units">
+    <button type="button" data-units="imperial" aria-pressed="true">Inches</button>
+    <button type="button" data-units="metric" aria-pressed="false">Centimeters</button>
+  </div>
+  <div class="grid">
+    <div class="field">
+      <label for="rise">Total rise <span data-if-units="imperial">(in)</span><span data-if-units="metric" hidden>(cm)</span></label>
+      <input id="rise" type="number" inputmode="decimal" min="0" step="any" value="100" aria-describedby="rise-error rise-hint">
+      <span class="hint" id="rise-hint">Finished floor to finished floor, measured vertically.</span>
+      <span class="error" id="rise-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="desired">Target riser height <span data-if-units="imperial">(in)</span><span data-if-units="metric" hidden>(cm)</span></label>
+      <input id="desired" type="number" inputmode="decimal" min="0" step="any" value="7.5" aria-describedby="desired-error desired-hint">
+      <span class="hint" id="desired-hint">What you would like each step to be. Shown for comparison.</span>
+      <span class="error" id="desired-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="tread">Tread depth <span data-if-units="imperial">(in)</span><span data-if-units="metric" hidden>(cm)</span></label>
+      <input id="tread" type="number" inputmode="decimal" min="0" step="any" value="10.5" aria-describedby="tread-error tread-hint">
+      <span class="hint" id="tread-hint">Horizontal depth of each step, nose to nose.</span>
+      <span class="error" id="tread-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="space">Available run <span data-if-units="imperial">(in)</span><span data-if-units="metric" hidden>(cm)</span></label>
+      <input id="space" type="number" inputmode="decimal" min="0" step="any" value="" aria-describedby="space-error space-hint">
+      <span class="hint" id="space-hint">Optional. Horizontal space you have for the staircase.</span>
+      <span class="error" id="space-error" aria-live="polite"></span>
+    </div>
+  </div>
+</div>
+
+<div class="result" aria-live="polite" id="result">
+  <div class="big" id="r-main">&nbsp;</div>
+  <ul class="path" id="r-path"></ul>
+</div>
+
+<div class="donate" id="donate" hidden>
+  <p>Free, no ads, built by one person. If this saved you a botched stringer, you can buy me a coffee.</p>
+  <div class="btns">
+    <a class="btn" data-donate="kofi" href="#" rel="noopener">Support on Ko-fi</a>
+    <a class="btn alt" data-donate="paypal" href="#" rel="noopener">Donate via PayPal</a>
+  </div>
+</div>
+
+<h2>How it works</h2>
+<p>The calculator divides the total rise by the code maximum riser height of 7.75 in (19.7 cm) and rounds up to get the number of risers. Dividing the total rise by that count gives the exact riser height to lay out on the stringer:</p>
+<div class="formula">risers = ceil(total rise / 7.75)<br>riser height = total rise / risers<br>treads = risers - 1<br>total run = treads &times; tread depth<br>comfort = 2 &times; riser height + tread depth &nbsp;(aim for 24-25 in / 61-63.5 cm)</div>
+<p>Your target riser height is shown next to the actual one so you can see how close the layout comes. <strong>Code limits here follow the US IRC (max riser 7.75 in, min tread 10 in); local codes can differ, always verify before you cut.</strong></p>
+
+<h2>Worked example</h2>
+<p>Say the total rise from floor to floor is 100 inches. Then 100 / 7.75 = 12.9, rounded up to <strong>13 risers</strong>. Each riser is 100 / 13 = <strong>7.69 in</strong>, and there are 13 - 1 = <strong>12 treads</strong>. With a 10.5 in tread depth the total run is 12 &times; 10.5 = <strong>126 in</strong>. The comfort value is 2 &times; 7.69 + 10.5 = 25.88 in, slightly above the ideal 24-25 in range, so a deeper tread or an extra riser could feel better underfoot.</p>
+
+<h2>Risers by total rise</h2>
+<table>
+  <thead><tr><th scope="col">Total rise (in)</th><th scope="col">Risers</th><th scope="col">Riser height (in)</th><th scope="col">Treads</th></tr></thead>
+  <tbody id="rise-table"></tbody>
+</table>
+
+<h2>FAQ</h2>
+<details class="faq"><summary>What is the maximum riser height by code?</summary><p>The US IRC allows a maximum riser height of 7.75 inches (about 19.7 cm) for residential stairs. Risers within one flight must not vary by more than 3/8 inch. Commercial codes and many local codes are stricter, so always verify with your local building department.</p></details>
+<details class="faq"><summary>What is the ideal riser height for stairs?</summary><p>Most people find risers of 7 to 7.5 inches (18 to 19 cm) the most comfortable to climb. Shallower risers around 6 inches suit outdoor steps and older users. Anything above the 7.75 inch IRC maximum feels steep and is not allowed on new residential stairs.</p></details>
+<details class="faq"><summary>What is the 2R+T rule for stairs?</summary><p>The 2R+T comfort rule says twice the riser height plus the tread depth should land between 24 and 25 inches (61 to 63.5 cm). It approximates a natural walking stride. Stairs inside that range feel comfortable; stairs outside it feel too steep or too shallow.</p></details>
+<details class="faq"><summary>How do I calculate the number of steps in a staircase?</summary><p>Measure the total rise from finished floor to finished floor, then divide by the maximum riser height of 7.75 inches and round up. That gives the riser count; dividing the total rise by it gives the exact riser height. The number of treads is one less than the number of risers.</p></details>
+<details class="faq"><summary>What is the minimum tread depth by code?</summary><p>The US IRC requires a minimum tread depth of 10 inches (about 25.4 cm), measured nose to nose. Deeper treads of 10.5 to 11 inches are more comfortable and common. Treads within a flight must not vary by more than 3/8 inch. Check local amendments before building.</p></details>
+
+<h2>More free calculators</h2>
+<p>Planning the rest of the job? Try the <a href="../concrete-calculator/">concrete slab calculator</a>, the <a href="../paint-calculator/">paint calculator</a>, the <a href="../tile-calculator/">tile calculator</a> or the <a href="../roof-pitch-calculator/">roof pitch calculator</a>.</p>
+
+<p class="disclaimer">Results are estimates for planning purposes and not a substitute for professional advice. Always check local building codes and manufacturer instructions.</p>
+</main>
+
+<footer class="site">
+  <p class="made" id="made-by">Built by Ali, an engineer who got tired of ad-covered calculators.</p>
+  <p><a href="../">BuildCalc</a> &middot; free &middot; no ads &middot; no tracking &middot; works offline</p>
+</footer>
+</div>
+
+<script src="../assets/calc.js"></script>
+<script>
+"use strict";
+/* Unit constants: [imperial, metric] */
+const MAX_RISER = { imperial: 7.75, metric: 19.7 };
+const MIN_TREAD = { imperial: 10, metric: 25.4 };
+const COMFORT_LO = { imperial: 24, metric: 61 };
+const COMFORT_HI = { imperial: 25, metric: 63.5 };
+const DEFAULTS = { imperial: { desired: 7.5, tread: 10.5 }, metric: { desired: 19, tread: 27 } };
+
+function unitLabel() { return currentUnits() === "imperial" ? "in" : "cm"; }
+
+function stairCalc(rise, maxRiser) {
+  const risers = Math.ceil(rise / maxRiser);
+  return { risers: risers, riser: rise / risers, treads: risers - 1 };
+}
+
+function compute() {
+  const u = currentUnits();
+  const rise = readNum(document.getElementById("rise"));
+  const desired = readNum(document.getElementById("desired"));
+  const tread = readNum(document.getElementById("tread"));
+  const space = readNum(document.getElementById("space"), { allowZero: true, required: false });
+
+  const main = document.getElementById("r-main");
+  const path = document.getElementById("r-path");
+  if (!isFinite(rise) || !isFinite(tread)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+
+  const un = unitLabel();
+  const s = stairCalc(rise, MAX_RISER[u]);
+  const totalRun = s.treads * tread;
+  const comfort = 2 * s.riser + tread;
+  const comfortOk = comfort >= COMFORT_LO[u] && comfort <= COMFORT_HI[u];
+  const ircOk = s.riser <= MAX_RISER[u] + 1e-9 && tread >= MIN_TREAD[u] - 1e-9;
+
+  main.innerHTML = s.risers + " risers of " + fmt(s.riser, 2) + " " + un + ", " + s.treads + " treads";
+  let html = "<li>Total run: <strong>" + fmt(totalRun, 2) + " " + un + "</strong> (" + s.treads + " treads &times; " + fmt(tread, 2) + " " + un + ")</li>";
+  if (isFinite(desired)) {
+    html += "<li>Your target riser: " + fmt(desired, 2) + " " + un + ", actual: " + fmt(s.riser, 2) + " " + un + "</li>";
+  }
+  html += "<li>Comfort (2R+T): " + fmt(comfort, 2) + " " + un + " <span class=\"badge " + (comfortOk ? "ok\">In the " : "warn\">Outside the ") + fmt(COMFORT_LO[u], 1) + "-" + fmt(COMFORT_HI[u], 1) + " " + un + " range</span></li>";
+  if (u === "imperial") {
+    html += "<li><span class=\"badge " + (ircOk ? "ok\">Meets IRC limits (riser &le; 7.75 in, tread &ge; 10 in)" : "err\">Outside IRC limits: max riser 7.75 in, min tread 10 in") + "</span></li>";
+  } else {
+    html += "<li><span class=\"badge " + (ircOk ? "ok" : "err") + "\">" + (ircOk ? "Within" : "Outside") + " IRC limits (max riser 19.7 cm, min tread 25.4 cm)</span> IRC is a US code; check your local rules.</li>";
+  }
+  if (isFinite(space) && totalRun > space) {
+    html += "<li><span class=\"badge err\">Does not fit: needs " + fmt(totalRun, 2) + " " + un + " of run, you have " + fmt(space, 2) + " " + un + "</span></li>";
+  }
+  path.innerHTML = html;
+  showDonate();
+}
+
+/* Static reference table: total rise 24-120 in, steps of 12, at the 7.75 in max rule */
+(function () {
+  const tb = document.getElementById("rise-table");
+  let rows = "";
+  for (let r = 24; r <= 120; r += 12) {
+    const s = stairCalc(r, 7.75);
+    rows += "<tr><td>" + r + "</td><td>" + s.risers + "</td><td>" + fmt(s.riser, 2) + "</td><td>" + s.treads + "</td></tr>";
+  }
+  tb.innerHTML = rows;
+})();
+
+initUnits(function (u) {
+  applyUnitVisibility();
+  const d = DEFAULTS[u];
+  document.getElementById("desired").value = d.desired;
+  document.getElementById("tread").value = d.tread;
+  compute();
+});
+applyUnitVisibility();
+bindInputs(compute);
+compute();
+</script>
+</body>
+</html>
