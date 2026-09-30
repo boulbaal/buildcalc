@@ -1,0 +1,85 @@
+{
+  "meta_title": "Calcul carrelage - Combien de carreaux acheter ?",
+  "meta_desc": "Calcul de carrelage gratuit. Saisissez la surface, le format des carreaux et le joint pour obtenir le nombre de carreaux et de cartons, pertes incluses.",
+  "og_desc": "Obtenez le nombre de carreaux et de cartons pour votre sol ou votre mur, pertes incluses. Gratuit, sans pub.",
+  "h1": "Calcul carrelage : combien de carreaux ?",
+  "lede": "Calculez combien de carreaux et de cartons il vous faut pour un sol ou un mur, joints et pertes inclus. Gratuit, immédiat, sans pub.",
+  "mode_label": "Surface",
+  "mode_dims": "Longueur x largeur",
+  "mode_area": "Je connais la surface",
+  "length": "Longueur",
+  "width": "Largeur",
+  "area": "Surface",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Format du carreau (pouces)",
+  "tile_size_metric": "Format du carreau (cm)",
+  "opt_subway": "3 x 6 métro",
+  "opt_custom": "Sur mesure",
+  "tile_w": "Largeur du carreau",
+  "tile_h": "Hauteur du carreau",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Largeur de joint",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 pour aucun joint. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 pour aucun joint. 3 mm est courant pour le carrelage de sol.",
+  "pattern": "Type de pose",
+  "pattern_straight": "Droite (10% de perte)",
+  "pattern_diag": "Diagonale / chevrons (15% de perte)",
+  "perbox": "Carreaux par carton (facultatif)",
+  "perbox_hint": "Indiqué sur le carton. Laissez vide pour ignorer.",
+  "how_text": "Le calculateur divise votre surface par l'emprise d'un carreau plus son joint, ajoute une marge pour les coupes et la casse, et arrondit au carreau entier supérieur :",
+  "formula": "surface effective du carreau = (largeur du carreau + joint) &times; (hauteur du carreau + joint)<br>carreaux = ceil( surface / surface effective du carreau &times; (1 + perte) )<br>cartons = ceil( carreaux / carreaux par carton )",
+  "how_text2": "La perte est de 10% pour une pose droite et de 15% pour une pose en diagonale ou en chevrons, où davantage de chutes sont inutilisables. Un joint plus large signifie que chaque carreau couvre une emprise un peu plus grande, donc le nombre de carreaux baisse légèrement.",
+  "example_imperial": "Supposons que vous carreliez un sol de 10 ft sur 12 ft, soit <strong>120 sq ft</strong> (17 280 sq in), avec des carreaux de 12 x 12 pouces en pose droite et un joint de 1/8 pouce (0,125 in). Chaque carreau avec son joint couvre 12,125 × 12,125 = 147,02 sq in, donc la couverture nette est 17 280 / 147,02 = 117,54 carreaux. Ajoutez 10% de perte : 117,54 × 1,1 = 129,29, arrondi à <strong>130 carreaux</strong>. Avec 8 carreaux par carton, cela fait ceil(130 / 8) = <strong>17 cartons</strong>. Le même sol posé en diagonale avec 15% de perte demande 136 carreaux.",
+  "example_metric": "Supposons que vous carreliez un sol de 4 m sur 3 m, soit <strong>12 m²</strong> (120 000 cm²), avec des carreaux de 30 x 30 cm en pose droite et un joint de 3 mm (0,3 cm). Chaque carreau avec son joint couvre 30,3 × 30,3 = 918,09 cm², donc la couverture nette est 120 000 / 918,09 = 130,71 carreaux. Ajoutez 10% de perte : 130,71 × 1,1 = 143,78, arrondi à <strong>144 carreaux</strong>. Avec 11 carreaux par carton, cela fait ceil(144 / 11) = <strong>14 cartons</strong>. Le même sol posé en diagonale avec 15% de perte demande 151 carreaux.",
+  "table_title_imperial": "Carreaux pour 100 sq ft",
+  "table_title_metric": "Carreaux pour 10 m²",
+  "table_note": "Formats courants, pose droite avec 10% de perte et sans joint :",
+  "col_size": "Format",
+  "col_area": "Surface du carreau",
+  "col_count_imperial": "Carreaux pour 100 sq ft",
+  "col_count_metric": "Carreaux pour 10 m²",
+  "more_text": "Vous préparez la suite du chantier ? Essayez les autres calculateurs gratuits :",
+  "js": {
+    "main": "{tiles} carreaux",
+    "main_boxes": "{tiles} carreaux <small>= {boxes} cartons de {perbox}</small>",
+    "area_line_imperial": "Surface à carreler : <strong>{area} sq ft</strong>",
+    "area_line_metric": "Surface à carreler : <strong>{area} m²</strong>",
+    "eff_line_imperial": "Surface effective du carreau : ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Surface effective du carreau : ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Marge de perte : <strong>{pct}%</strong> (pose droite)",
+    "waste_diag": "Marge de perte : <strong>{pct}%</strong> (diagonale / chevrons)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "3 x 6 in métro",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Combien de carrelage en plus faut-il acheter ?",
+      "Achetez 10 à 15% de plus que la surface nette. Les coupes le long des murs, la casse et les réparations futures entament cette réserve. Comptez 10% pour une pose droite simple dans une pièce rectangulaire, et 15% pour une pose en diagonale ou en chevrons, de petits carreaux ou des pièces avec beaucoup d'angles."
+    ],
+    [
+      "Qu'est-ce que la perte de carrelage ?",
+      "La perte, ce sont les carreaux que vous achetez mais sur lesquels vous ne marcherez pas : les chutes le long des murs et autour des équipements, les carreaux qui cassent à la coupe ou pendant le transport, et ceux gardés en réserve pour des réparations. C'est normal, pas une erreur. Ce calculateur ajoute le pourcentage de perte avant d'arrondir au carreau entier."
+    ],
+    [
+      "Combien de carreaux de 12x12 pouces (30x30 cm) pour 100 sq ft ?",
+      "Un carreau de 12x12 pouces (30x30 cm) couvre 1 pied carré, donc 100 pieds carrés (9,3 m²) demandent 100 carreaux en couverture nette. Ajoutez 10% de perte pour une pose droite et il vaut mieux en acheter 110. Avec un joint, chaque carreau couvre un peu plus, donc le nombre peut légèrement baisser."
+    ],
+    [
+      "La pose en diagonale demande-t-elle plus de carrelage ?",
+      "Oui. Poser les carreaux à 45 degrés signifie que chaque rangée se termine par une coupe en biais contre le mur, et beaucoup de ces chutes ne sont pas réutilisables. Prévoyez environ 15% de perte pour une pose en diagonale ou en chevrons au lieu des 10% habituels pour une pose droite."
+    ],
+    [
+      "Faut-il compter les joints dans le calcul du carrelage ?",
+      "Oui, et ils jouent en votre faveur. Chaque carreau avec son joint, souvent de 3 mm (1/8 pouce), couvre une surface un peu plus grande que le carreau seul, donc un joint plus large réduit légèrement le nombre de carreaux nécessaires. L'effet est faible avec de grands carreaux mais sensible avec de petits carreaux métro."
+    ]
+  ]
+}

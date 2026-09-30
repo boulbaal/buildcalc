@@ -1,0 +1,64 @@
+{
+  "meta_title": "Calcul escalier - Hauteur de marche, giron, reculement",
+  "meta_desc": "Calcul d'escalier gratuit. Saisissez la hauteur totale et obtenez le nombre de marches, leur hauteur, le giron et le reculement, avec contrôle de confort.",
+  "og_desc": "Nombre de marches, hauteur de marche, giron et reculement à partir de la hauteur totale. Immédiat, gratuit, sans pub.",
+  "h1": "Calcul escalier",
+  "lede": "Saisissez la hauteur totale et obtenez le nombre de contremarches, la hauteur exacte de marche, le nombre de marches et le reculement total, avec contrôle des normes et du confort. Gratuit, immédiat, sans pub.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Hauteur totale",
+  "rise_hint": "De sol fini à sol fini, mesurée à la verticale.",
+  "desired": "Hauteur de marche souhaitée",
+  "desired_hint": "La hauteur que vous aimeriez pour chaque marche. Affichée pour comparaison.",
+  "tread": "Giron",
+  "tread_hint": "Profondeur horizontale de chaque marche, de nez à nez.",
+  "space": "Reculement disponible",
+  "space_hint": "Facultatif. Espace horizontal dont vous disposez pour l'escalier.",
+  "how_text": "Le calculateur divise la hauteur totale par la hauteur de marche maximale de 7,75 in (19,7 cm) et arrondit au supérieur pour obtenir le nombre de contremarches. En divisant la hauteur totale par ce nombre, on obtient la hauteur exacte de marche à reporter sur le limon. Pour le confort, deux fois la hauteur de marche plus le giron doit se situer entre 24 et 25 in (61 à 63,5 cm).",
+  "formula": "contremarches = ceil(hauteur totale / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>hauteur de marche = hauteur totale / contremarches<br>marches = contremarches - 1<br>reculement total = marches &times; giron<br>confort = 2 &times; hauteur de marche + giron",
+  "how_note": "Votre hauteur de marche souhaitée s'affiche à côté de la hauteur réelle, pour voir à quel point le tracé s'en approche. <strong>Les limites affichées ici suivent l'IRC, le code de construction américain (contremarche max. 7,75 in ou 19,7 cm, giron min. 10 in ou 25,4 cm). Les règles locales peuvent être différentes, vérifiez toujours avant de couper.</strong>",
+  "example_imperial": "Supposons que la hauteur totale de sol à sol soit de 100 pouces. Alors 100 / 7,75 = 12,9, arrondi à <strong>13 contremarches</strong>. Chaque contremarche mesure 100 / 13 = <strong>7,69 in</strong>, et il y a 13 - 1 = <strong>12 marches</strong>. Avec un giron de 10,5 in, le reculement total est de 12 × 10,5 = <strong>126 in</strong>. La valeur de confort est 2 × 7,69 + 10,5 = 25,88 in, un peu au-dessus de la plage idéale de 24 à 25 in. Une contremarche de plus (14 contremarches de 7,14 in) donnerait 24,79 in, dans la plage.",
+  "example_metric": "Supposons que la hauteur totale de sol à sol soit de 270 cm. Alors 270 / 19,7 = 13,7, arrondi à <strong>14 contremarches</strong>. Chaque contremarche mesure 270 / 14 = <strong>19,29 cm</strong>, et il y a 14 - 1 = <strong>13 marches</strong>. Avec un giron de 27 cm, le reculement total est de 13 × 27 = <strong>351 cm</strong>. La valeur de confort est 2 × 19,2857 + 27 = 65,57 cm, au-dessus de la plage idéale de 61 à 63,5 cm. Une contremarche de plus (15 contremarches de 18 cm) donnerait 63 cm, dans la plage.",
+  "table_title": "Contremarches selon la hauteur totale",
+  "col_rise": "Hauteur totale",
+  "col_risers": "Contremarches",
+  "col_riser": "Hauteur de marche",
+  "col_treads": "Marches",
+  "more_text": "Vous préparez la suite du chantier ? Essayez les autres calculateurs gratuits :",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} contremarches de {riser} {u}, {treads} marches",
+    "run_line": "Reculement total : <strong>{run} {u}</strong> ({treads} marches × {tread} {u})",
+    "target_line": "Hauteur souhaitée : {desired} {u}, réelle : {riser} {u}",
+    "comfort_line": "Confort (2H+G) : {comfort} {u} {badge}",
+    "comfort_in": "Dans la plage de {lo} à {hi} {u}",
+    "comfort_out": "Hors de la plage de {lo} à {hi} {u}",
+    "irc_ok": "Conforme aux limites de l'IRC américain (hauteur ≤ {max} {u}, giron ≥ {min} {u})",
+    "irc_bad": "Hors des limites de l'IRC américain : hauteur max. {max} {u}, giron min. {min} {u}",
+    "irc_note": "L'IRC est un code américain ; vérifiez les règles locales.",
+    "no_fit": "Ne rentre pas : il faut {run} {u} de reculement, vous avez {space} {u}"
+  },
+  "faq": [
+    [
+      "Quelle est la hauteur de marche maximale selon les normes ?",
+      "L'IRC, le code de construction américain, autorise une hauteur de marche maximale de 7,75 pouces (19,7 cm) pour les escaliers de maison. Dans une même volée, les hauteurs ne doivent pas varier de plus de 3/8 pouce (environ 1 cm). Les codes pour les bâtiments commerciaux et beaucoup de règles locales sont plus stricts, vérifiez donc toujours auprès de votre service d'urbanisme."
+    ],
+    [
+      "Quelle est la hauteur de marche idéale ?",
+      "La plupart des gens trouvent les marches de 18 à 19 cm (7 à 7,5 pouces) les plus confortables à monter. Des marches plus basses, autour de 15 cm (6 pouces), conviennent aux escaliers extérieurs et aux personnes âgées. Tout ce qui dépasse le maximum de l'IRC américain, 19,7 cm (7,75 pouces), paraît raide et n'y est pas autorisé."
+    ],
+    [
+      "Qu'est-ce que la règle 2H+G pour les escaliers ?",
+      "La règle de confort 2H+G (2R+T en anglais, proche de la loi de Blondel) dit que deux fois la hauteur de marche plus le giron doit se situer entre 61 et 63,5 cm (24 à 25 pouces). Cela correspond à une foulée naturelle. Les escaliers dans cette plage sont confortables, ceux en dehors paraissent trop raides ou trop plats."
+    ],
+    [
+      "Comment calculer le nombre de marches d'un escalier ?",
+      "Mesurez la hauteur totale de sol fini à sol fini, divisez-la par la hauteur de marche maximale de 19,7 cm (7,75 pouces) et arrondissez au supérieur. Vous obtenez le nombre de contremarches. En divisant la hauteur totale par ce nombre, vous obtenez la hauteur exacte de marche. Le nombre de marches est inférieur d'une unité au nombre de contremarches."
+    ],
+    [
+      "Quel est le giron minimal selon les normes ?",
+      "L'IRC américain exige un giron d'au moins 25,4 cm (10 pouces), mesuré de nez à nez. Des girons plus profonds de 27 à 28 cm (10,5 à 11 pouces) sont plus confortables et courants. Dans une même volée, les girons ne doivent pas varier de plus de 3/8 pouce (environ 1 cm). Vérifiez les règles locales avant de construire."
+    ]
+  ]
+}

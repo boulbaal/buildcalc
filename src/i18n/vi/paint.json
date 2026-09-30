@@ -1,0 +1,76 @@
+{
+  "meta_title": "Tính lượng sơn - Cần bao nhiêu lít sơn?",
+  "meta_desc": "Công cụ tính lượng sơn miễn phí. Nhập kích thước phòng, số cửa đi, cửa sổ và số lớp sơn để biết cần bao nhiêu lít hoặc gallon sơn. Không quảng cáo.",
+  "og_desc": "Nhập kích thước phòng, cửa đi, cửa sổ và số lớp để biết cần bao nhiêu lít hoặc gallon sơn. Miễn phí, không quảng cáo.",
+  "h1": "Tính lượng sơn",
+  "lede": "Tính xem phòng của bạn cần bao nhiêu lít hoặc gallon sơn, đã tính cửa đi, cửa sổ và số lớp sơn. Miễn phí, tức thì, không quảng cáo.",
+  "length": "Chiều dài phòng",
+  "width": "Chiều rộng phòng",
+  "height": "Chiều cao tường",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Cửa đi",
+  "doors_hint": "Không sơn. Mỗi cửa trừ đi diện tích một cửa tiêu chuẩn.",
+  "windows": "Cửa sổ",
+  "coats": "Số lớp sơn",
+  "coats_hint": "Thông thường sơn hai lớp.",
+  "coverage": "Định mức phủ",
+  "sfx_cov_imperial": "(sq ft mỗi gallon)",
+  "sfx_cov_metric": "(m² mỗi lít)",
+  "coverage_hint_imperial": "thường 250-400",
+  "coverage_hint_metric": "thường 8-12",
+  "ceiling": "Tính cả trần",
+  "how_text": "Công cụ tính diện tích tường xung quanh phòng, trừ đi diện tích tiêu chuẩn cho mỗi cửa đi và cửa sổ, cộng thêm trần nếu chọn, nhân với số lớp sơn, rồi chia cho định mức phủ của loại sơn. Kết quả luôn được làm tròn lên thành số lon nguyên, vì bạn không thể mua 1,8 gallon:",
+  "formula": "diện tích tường = 2 &times; (chiều dài + chiều rộng) &times; chiều cao<br>diện tích sơn = diện tích tường &minus; cửa đi &times; diện tích cửa đi &minus; cửa sổ &times; diện tích cửa sổ (+ trần)<br>số thùng = diện tích sơn &times; số lớp sơn &divide; định mức phủ, làm tròn lên",
+  "metric_note": "Ở chế độ mét, một cửa đi tính 1,95 m², một cửa sổ 1,4 m², và định mức phủ tính theo lít. Ở chế độ Anh-Mỹ, một cửa đi tính 21 sq ft và một cửa sổ 15 sq ft.",
+  "example_imperial": "Giả sử phòng của bạn 12 × 10 ft, tường cao 8 ft, một cửa đi và một cửa sổ, và bạn định sơn hai lớp với định mức 350 sq ft mỗi gallon. Diện tích tường là 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Trừ cửa đi (21 sq ft) và cửa sổ (15 sq ft) còn <strong>316 sq ft mỗi lớp</strong>. Hai lớp là 632 sq ft, và 632 ÷ 350 = 1,81, làm tròn lên thành <strong>2 gallon</strong>. Đánh dấu \"Tính cả trần\" thì trần 120 sq ft nâng lên 436 sq ft mỗi lớp, tổng 872 sq ft, nên bạn cần <strong>3 gallon</strong>.",
+  "example_metric": "Giả sử phòng của bạn 4 × 3 m, tường cao 2,5 m, một cửa đi và một cửa sổ, và bạn định sơn hai lớp với định mức 10 m² mỗi lít. Diện tích tường là 2 × (4 + 3) × 2,5 = <strong>35 m²</strong>. Trừ cửa đi (1,95 m²) và cửa sổ (1,4 m²) còn <strong>31,65 m² mỗi lớp</strong>. Hai lớp là 63,3 m², và 63,3 ÷ 10 = 6,33, làm tròn lên thành <strong>7 lít</strong>. Đánh dấu \"Tính cả trần\" thì trần 12 m² nâng lên 43,65 m² mỗi lớp, tổng 87,3 m², nên bạn cần <strong>9 lít</strong>.",
+  "table_title": "Lượng sơn theo kích thước phòng",
+  "table_note_imperial": "Tường cao 8 ft, một cửa đi, một cửa sổ, hai lớp, 350 sq ft mỗi gallon:",
+  "table_note_metric": "Tường cao 2,5 m, một cửa đi, một cửa sổ, hai lớp, 10 m² mỗi lít:",
+  "col_room": "Phòng",
+  "col_walls": "Chỉ tường",
+  "col_both": "Tường + trần",
+  "more_text": "Đang tính các phần khác của công trình? Thử các công cụ miễn phí khác:",
+  "js": {
+    "main": "{cansText} <small>cho {coatsText}</small>",
+    "cans_imperial_one": "{cans} gallon",
+    "cans_imperial": "{cans} gallon",
+    "cans_metric_one": "{cans} lít",
+    "cans_metric": "{cans} lít",
+    "coats_one": "{coats} lớp",
+    "coats_other": "{coats} lớp",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Diện tích tường: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Trừ {doors} cửa đi và {windows} cửa sổ: −{deduct} {a} = <strong>{per} {a} mỗi lớp</strong>",
+    "deduct_ceiling_line": "Trừ {doors} cửa đi và {windows} cửa sổ: −{deduct} {a}, cộng trần {ceil} {a} = <strong>{per} {a} mỗi lớp</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, làm tròn lên thành <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "Một gallon sơn được bao nhiêu diện tích?",
+      "Phần lớn sơn nội thất phủ được 250 đến 400 feet vuông mỗi gallon (khoảng 6 đến 10 m² mỗi lít) trên tường phẳng đã sơn lót. Công cụ này mặc định 350 sq ft mỗi gallon hoặc 10 m² mỗi lít. Bề mặt nhám, xốp hoặc chưa sơn hút nhiều sơn hơn, nên hãy dùng mức thấp của khoảng này."
+    ],
+    [
+      "Có cần sơn lót trước khi sơn không?",
+      "Dùng sơn lót trên thạch cao mới, gỗ mộc, bề mặt bị ố hoặc bóng, và khi sơn màu sáng phủ lên màu tối. Trên tường đã sơn còn tốt và màu tương tự, một loại sơn chất lượng có sẵn lót thường là đủ. Sơn lót rẻ hơn một lớp sơn phủ thêm."
+    ],
+    [
+      "Sơn một lớp có đủ không, hay cần hai lớp?",
+      "Hãy tính hai lớp để màu đều và bền. Một lớp có thể đủ khi sơn lại cùng màu và cùng độ bóng trên tường đã chuẩn bị kỹ. Đổi màu nhiều, màu đỏ và vàng, hoặc sơn lên chỗ vá thường cần hai lớp cộng thêm sơn lót pha màu bên dưới."
+    ],
+    [
+      "Phòng 12x12 cần bao nhiêu sơn?",
+      "Một phòng 12 x 12 feet với tường cao 8 feet có 384 sq ft tường. Trừ một cửa đi và một cửa sổ còn 348 sq ft mỗi lớp, nên hai lớp cần 2 gallon với định mức 350 sq ft mỗi gallon. Một phòng tương tự 4 x 4 m với tường cao 2,5 m cần 8 lít với định mức 10 m² mỗi lít."
+    ],
+    [
+      "Sơn trần có khác sơn tường không?",
+      "Sơn trần được pha đặc hơn để ít bắn và ít nhỏ giọt, và hầu như luôn là loại mờ để ánh sáng không làm lộ vệt con lăn. Bạn có thể dùng sơn tường mờ cho trần, nhưng sơn trần chuyên dụng dễ thi công trên đầu hơn và che khuyết điểm tốt hơn."
+    ]
+  ]
+}

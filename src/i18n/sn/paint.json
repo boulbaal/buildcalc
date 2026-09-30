@@ -1,0 +1,76 @@
+{
+  "meta_title": "Kuverenga Pendi - Ndinoda Pendi Yakawanda Sei?",
+  "meta_desc": "Chiverengi chependi chemahara. Isa hukuru hwemba, madhoo, mawindo nemacoat uwane galoni kana malita ependi aunoda. Pakarepo, hapana kushambadza.",
+  "og_desc": "Isa hukuru hwemba, madhoo, mawindo nemacoat uwane galoni kana malita ependi. Mahara, hapana kushambadza.",
+  "h1": "Kuverenga pendi",
+  "lede": "Verenga kuti imba yako inoda magaloni kana malita mangani ependi, madhoo, mawindo nemacoat zvichiverengerwa. Mahara, pakarepo, hapana kushambadza.",
+  "length": "Kureba kwemba",
+  "width": "Upamhi hwemba",
+  "height": "Kureba kwemadziro",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Madhoo",
+  "doors_hint": "Haapendwi. Rimwe nerimwe rinobvisa nzvimbo yedhoo yakajairika.",
+  "windows": "Mawindo",
+  "coats": "Macoat",
+  "coats_hint": "Macoat maviri ndiwo anowanzoitwa.",
+  "coverage": "Nzvimbo inovharwa",
+  "sfx_cov_imperial": "(sq ft pagaloni)",
+  "sfx_cov_metric": "(m² palita)",
+  "coverage_hint_imperial": "kazhinji 250-400",
+  "coverage_hint_metric": "kazhinji 8-12",
+  "ceiling": "Batanidza siringi",
+  "how_text": "Chiverengi chinoyera nzvimbo yemadziro yakatenderedza imba, chobvisa nzvimbo yakajairika yedhoo nehwindo rimwe nerimwe, chowedzera siringi kana uchida, chowanza nenhamba yemacoat, chobva chagovanisa nenzvimbo inovharwa nependi yako. Mhinduro inogara ichikwidzwa kusvika pamagaba akazara, nekuti haugoni kutenga magaloni 1.8:",
+  "formula": "nzvimbo yemadziro = 2 &times; (kureba + upamhi) &times; kureba kwemadziro<br>nzvimbo yekupenda = nzvimbo yemadziro &minus; madhoo &times; nzvimbo yedhoo &minus; mawindo &times; nzvimbo yewindo (+ siringi)<br>magaba = nzvimbo yekupenda &times; macoat &divide; nzvimbo inovharwa, kukwidziridzwa kumusoro",
+  "metric_note": "Mumetric, dhoo rinoverengwa se1.95 m², hwindo se1.4 m², uye nzvimbo inovharwa ndeyelita rimwe. Muimperial, dhoo rinoverengwa se21 sq ft uye hwindo se15 sq ft.",
+  "example_imperial": "Ngatiti imba yako i12 × 10 ft ine madziro e8 ft, dhoo rimwe nehwindo rimwe, uye uchironga macoat maviri pa350 sq ft pagaloni. Nzvimbo yemadziro i2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Bvisa dhoo (21 sq ft) nehwindo (15 sq ft) uwane <strong>316 sq ft pacoat</strong>. Macoat maviri anoreva 632 sq ft, uye 632 ÷ 350 = 1.81, zvinokwidzwa kusvika <strong>magaloni 2</strong>. Sarudza \"Batanidza siringi\" uye siringi ye120 sq ft inozviisa pa436 sq ft pacoat, 872 sq ft zvese, saka unoda <strong>magaloni 3</strong>.",
+  "example_metric": "Ngatiti imba yako i4 × 3 m ine madziro e2.5 m, dhoo rimwe nehwindo rimwe, uye uchironga macoat maviri pa10 m² palita. Nzvimbo yemadziro i2 × (4 + 3) × 2.5 = <strong>35 m²</strong>. Bvisa dhoo (1.95 m²) nehwindo (1.4 m²) uwane <strong>31.65 m² pacoat</strong>. Macoat maviri anoreva 63.3 m², uye 63.3 ÷ 10 = 6.33, zvinokwidzwa kusvika <strong>malita 7</strong>. Sarudza \"Batanidza siringi\" uye siringi ye12 m² inozviisa pa43.65 m² pacoat, 87.3 m² zvese, saka unoda <strong>malita 9</strong>.",
+  "table_title": "Pendi inodiwa zvichienderana nehukuru hwemba",
+  "table_note_imperial": "Madziro ane siringi dze8 ft, dhoo rimwe, hwindo rimwe, macoat maviri, 350 sq ft pagaloni:",
+  "table_note_metric": "Madziro akareba 2.5 m, dhoo rimwe, hwindo rimwe, macoat maviri, 10 m² palita:",
+  "col_room": "Imba",
+  "col_walls": "Madziro chete",
+  "col_both": "Madziro + siringi",
+  "more_text": "Uri kuronga rimwe basa? Edza zvimwe zviverengi zvemahara:",
+  "js": {
+    "main": "{cansText} <small>ye{coatsText}</small>",
+    "cans_imperial_one": "galoni {cans}",
+    "cans_imperial": "magaloni {cans}",
+    "cans_metric_one": "lita {cans}",
+    "cans_metric": "malita {cans}",
+    "coats_one": "coat {coats}",
+    "coats_other": "macoat {coats}",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Nzvimbo yemadziro: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Bvisa madhoo {doors} nemawindo {windows}: −{deduct} {a} = <strong>{per} {a} pacoat</strong>",
+    "deduct_ceiling_line": "Bvisa madhoo {doors} nemawindo {windows}: −{deduct} {a}, wedzera siringi {ceil} {a} = <strong>{per} {a} pacoat</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, zvakakwidzwa kusvika <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "Galoni yependi inovhara nzvimbo yakakura sei?",
+      "Mapendi mazhinji emukati anovhara 250 kusvika 400 square feet pagaloni (anenge 6 kusvika 10 m² palita) pamadziro akatsetseka ane primer. Chiverengi ichi chinotanga ne350 sq ft pagaloni kana 10 m² palita. Nzvimbo dzakaomarara, dzinonwa kana dzisina chinhu dzinonwa pendi yakawanda, saka shandisa nhamba yakaderera."
+    ],
+    [
+      "Ndinoda primer ndisati ndapenda here?",
+      "Shandisa primer padrywall isina chinhu, huni isina chinhu, nzvimbo dzine mavara kana dzinopenya, uye kana uchivhara ruvara rwakasviba neruvara rwakajeka. Pamadziro akambopendwa ari mumamiriro akanaka uye ane ruvara rwakafanana, pendi yakanaka ine primer mukati inowanzokwana. Primer inodhura zvishoma pane coat yependi yakawedzerwa."
+    ],
+    [
+      "Coat imwe yependi inokwana here, kana ndinoda maviri?",
+      "Ronga macoat maviri kuti uwane kupenda kwakaenzana uye kunogara. Coat imwe inogona kushanda kana uchipenda zvakare neruvara rumwe chete nekupenya kumwe chete pamadziro akagadzirirwa zvakanaka. Shanduko huru dzeruvara, tsvuku neyero, kana kupenda pamusoro pezvigamba zvinowanzoda macoat maviri pamwe neprimer ine ruvara pasi."
+    ],
+    [
+      "Ndinoda pendi yakawanda sei yemba ye12x12?",
+      "Imba ye12 ne12 feet ine madziro e8 feet ine 384 sq ft yemadziro. Bvisa dhoo nehwindo, zvinova 348 sq ft pacoat, saka macoat maviri anoda magaloni 2 pa350 sq ft pagaloni. Imba yakafanana ye4 ne4 m ine madziro e2.5 m inoda malita 8 pa10 m² palita."
+    ],
+    [
+      "Pendi yesiringi yakasiyana nependi yemadziro here?",
+      "Pendi yesiringi inogadzirwa yakakora kuti isasvetuke uye isadonha zvakanyanya, uye inenge nguva dzose isingapenyi kuti chiedza chisaratidze mavara eroller. Unogona kushandisa pendi yemadziro isingapenyi pasiringi, asi pendi yesiringi chaiyo iri nyore kuisa pamusoro pemusoro uye inovanza zvikanganiso zviri nani."
+    ]
+  ]
+}

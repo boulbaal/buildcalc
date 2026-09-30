@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Calculadoras de construção grátis",
+  "meta_desc": "Calculadoras grátis para obras e bricolage: inclinação de telhado, betão, tinta, azulejos e escadas. Resultados imediatos, sem anúncios, funciona offline.",
+  "og_desc": "Calculadoras de inclinação de telhado, betão, tinta, azulejos e escadas. Grátis, imediatas, sem anúncios.",
+  "h1": "Calculadoras de construção grátis",
+  "lede": "Cinco calculadoras rápidas para trabalhos reais. Sem anúncios, sem rastreio, sem registo. Cada resultado mostra as contas por trás, e tudo continua a funcionar offline depois de carregado.",
+  "card_roof": "Altura e projeção em graus, percentagem e X:12, mais o fator de inclinação para a área do telhado.",
+  "card_concrete": "Volume e número exato de sacos, com margem de desperdício.",
+  "card_paint": "Quanta tinta precisa para a divisão, descontando portas e janelas, por número de demãos.",
+  "card_tile": "Azulejos e caixas a partir da área e do tamanho da peça, com junta e desperdício de cortes.",
+  "card_stair": "Espelhos e cobertores a partir da altura total, verificados com os limites regulamentares e a regra de conforto.",
+  "why_title": "Porque existe este site",
+  "why_text": "A maioria dos sites de calculadoras esconde uma fórmula simples debaixo de anúncios, pop-ups e pedidos de subscrição da newsletter. Estas cinco ferramentas fazem o contrário: a calculadora está no topo, a fórmula aparece por baixo do resultado e a página carrega numa fração de segundo. Se uma ferramenta lhe poupar uma ida escusada à loja, há um botão de donativo a seguir ao resultado. É todo o modelo de negócio."
+}

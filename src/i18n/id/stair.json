@@ -1,0 +1,64 @@
+{
+  "meta_title": "Kalkulator Tangga - Hitung Anak Tangga dan Optrede",
+  "meta_desc": "Hitung tangga gratis. Masukkan tinggi total untuk jumlah anak tangga, tinggi optrede, antrede dan panjang tangga, dengan cek peraturan dan kenyamanan. Tanpa iklan.",
+  "og_desc": "Hitung jumlah anak tangga, tinggi optrede, antrede dan panjang total dari tinggi lantai. Instan, gratis, tanpa iklan.",
+  "h1": "Kalkulator Tangga",
+  "lede": "Masukkan tinggi total dan dapatkan jumlah anak tangga, tinggi optrede yang tepat, jumlah antrede dan panjang total, dengan cek peraturan dan kenyamanan. Gratis, instan, tanpa iklan.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Tinggi total",
+  "rise_hint": "Dari lantai jadi ke lantai jadi, diukur vertikal.",
+  "desired": "Target tinggi optrede",
+  "desired_hint": "Tinggi setiap anak tangga yang Anda inginkan. Ditampilkan sebagai perbandingan.",
+  "tread": "Lebar antrede",
+  "tread_hint": "Kedalaman horizontal setiap anak tangga, dari ujung ke ujung.",
+  "space": "Ruang tersedia",
+  "space_hint": "Opsional. Panjang horizontal yang tersedia untuk tangga.",
+  "how_text": "Kalkulator membagi tinggi total dengan tinggi optrede maksimum 7,75 in (19,7 cm) dan membulatkan ke atas untuk mendapatkan jumlah optrede. Membagi tinggi total dengan jumlah itu memberi tinggi optrede yang tepat untuk ditandai di ibu tangga. Untuk kenyamanan, dua kali tinggi optrede ditambah lebar antrede sebaiknya berada di antara 24 dan 25 in (61 sampai 63,5 cm).",
+  "formula": "optrede = ceil(tinggi total / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>tinggi optrede = tinggi total / optrede<br>antrede = optrede - 1<br>panjang total = antrede &times; lebar antrede<br>kenyamanan = 2 &times; tinggi optrede + lebar antrede",
+  "how_note": "Target tinggi optrede Anda ditampilkan di samping tinggi sebenarnya agar Anda tahu seberapa dekat hasilnya. <strong>Batas peraturan di sini mengikuti peraturan bangunan AS (IRC): optrede maksimum 7,75 in atau 19,7 cm, antrede minimum 10 in atau 25,4 cm. Peraturan setempat bisa berbeda, jadi selalu periksa sebelum memotong.</strong>",
+  "example_imperial": "Misalkan tinggi total dari lantai ke lantai adalah 100 inci. Maka 100 / 7,75 = 12,9, dibulatkan ke atas menjadi <strong>13 optrede</strong>. Setiap optrede 100 / 13 = <strong>7,69 in</strong>, dan ada 13 - 1 = <strong>12 antrede</strong>. Dengan lebar antrede 10,5 in, panjang total 12 × 10,5 = <strong>126 in</strong>. Nilai kenyamanan 2 × 7,69 + 10,5 = 25,88 in, sedikit di atas rentang ideal 24 sampai 25 in. Satu optrede tambahan (14 optrede setinggi 7,14 in) akan membuatnya 24,79 in, di dalam rentang.",
+  "example_metric": "Misalkan tinggi total dari lantai ke lantai adalah 270 cm. Maka 270 / 19,7 = 13,7, dibulatkan ke atas menjadi <strong>14 optrede</strong>. Setiap optrede 270 / 14 = <strong>19,29 cm</strong>, dan ada 14 - 1 = <strong>13 antrede</strong>. Dengan lebar antrede 27 cm, panjang total 13 × 27 = <strong>351 cm</strong>. Nilai kenyamanan 2 × 19,2857 + 27 = 65,57 cm, di atas rentang ideal 61 sampai 63,5 cm. Satu optrede tambahan (15 optrede setinggi 18 cm) akan membuatnya 63 cm, di dalam rentang.",
+  "table_title": "Jumlah optrede menurut tinggi total",
+  "col_rise": "Tinggi total",
+  "col_risers": "Optrede",
+  "col_riser": "Tinggi optrede",
+  "col_treads": "Antrede",
+  "more_text": "Merencanakan bagian lain pekerjaan? Coba kalkulator gratis lainnya:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} optrede setinggi {riser} {u}, {treads} antrede",
+    "run_line": "Panjang total: <strong>{run} {u}</strong> ({treads} antrede × {tread} {u})",
+    "target_line": "Target optrede Anda: {desired} {u}, sebenarnya: {riser} {u}",
+    "comfort_line": "Kenyamanan (2R+T): {comfort} {u} {badge}",
+    "comfort_in": "Dalam rentang {lo} sampai {hi} {u}",
+    "comfort_out": "Di luar rentang {lo} sampai {hi} {u}",
+    "irc_ok": "Memenuhi batas IRC AS (optrede ≤ {max} {u}, antrede ≥ {min} {u})",
+    "irc_bad": "Di luar batas IRC AS: optrede maks. {max} {u}, antrede min. {min} {u}",
+    "irc_note": "IRC adalah peraturan bangunan AS; periksa aturan setempat Anda.",
+    "no_fit": "Tidak muat: butuh panjang {run} {u}, tersedia {space} {u}"
+  },
+  "faq": [
+    [
+      "Berapa tinggi optrede maksimum menurut peraturan?",
+      "Peraturan bangunan AS (IRC) mengizinkan tinggi optrede maksimum 7,75 inci (19,7 cm) untuk tangga rumah tinggal. Optrede dalam satu jalur tangga tidak boleh berbeda lebih dari 3/8 inci (sekitar 1 cm). Peraturan untuk bangunan komersial dan banyak peraturan setempat lebih ketat, jadi selalu periksa ke dinas bangunan setempat."
+    ],
+    [
+      "Berapa tinggi optrede tangga yang ideal?",
+      "Kebanyakan orang merasa optrede 7 sampai 7,5 inci (18 sampai 19 cm) paling nyaman dinaiki. Optrede yang lebih rendah, sekitar 6 inci (15 cm), cocok untuk tangga luar dan orang lanjut usia. Apa pun di atas batas maksimum IRC AS 7,75 inci (19,7 cm) terasa curam dan tidak diizinkan di sana."
+    ],
+    [
+      "Apa itu aturan 2R+T untuk tangga?",
+      "Aturan kenyamanan 2R+T menyatakan bahwa dua kali tinggi optrede ditambah lebar antrede sebaiknya berada di antara 24 dan 25 inci (61 sampai 63,5 cm). Ini mendekati panjang langkah alami. Tangga dalam rentang itu terasa nyaman, sedangkan tangga di luarnya terasa terlalu curam atau terlalu landai."
+    ],
+    [
+      "Bagaimana cara menghitung jumlah anak tangga?",
+      "Ukur tinggi total dari lantai jadi ke lantai jadi, lalu bagi dengan tinggi optrede maksimum 7,75 inci (19,7 cm) dan bulatkan ke atas. Itu memberi jumlah optrede. Membagi tinggi total dengan jumlah itu memberi tinggi optrede yang tepat. Jumlah antrede satu lebih sedikit dari jumlah optrede."
+    ],
+    [
+      "Berapa lebar antrede minimum menurut peraturan?",
+      "IRC AS mensyaratkan lebar antrede minimum 10 inci (25,4 cm), diukur dari ujung ke ujung. Antrede yang lebih lebar, 10,5 sampai 11 inci (27 sampai 28 cm), lebih nyaman dan umum dipakai. Antrede dalam satu jalur tangga tidak boleh berbeda lebih dari 3/8 inci (sekitar 1 cm). Periksa aturan setempat sebelum membangun."
+    ]
+  ]
+}

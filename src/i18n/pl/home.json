@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Darmowe kalkulatory budowlane",
+  "meta_desc": "Darmowe kalkulatory budowlane i dla majsterkowiczów: kąt dachu, beton, farba, płytki i schody. Wynik od razu, bez reklam, bez śledzenia, działa offline.",
+  "og_desc": "Kalkulatory kąta dachu, betonu, farby, płytek i schodów. Za darmo, od razu, bez reklam.",
+  "h1": "Darmowe kalkulatory budowlane",
+  "lede": "Pięć szybkich kalkulatorów do prawdziwej roboty. Bez reklam, bez śledzenia, bez rejestracji. Każdy wynik pokazuje obliczenia, a po załadowaniu wszystko działa także offline.",
+  "card_roof": "Wysokość i rzut poziomy na stopnie, procenty i X:12, plus współczynnik nachylenia do powierzchni dachu.",
+  "card_concrete": "Objętość i dokładna liczba worków, z zapasem na straty.",
+  "card_paint": "Ile farby na pokój, po odjęciu drzwi i okien, w zależności od liczby warstw.",
+  "card_tile": "Płytki i opakowania z powierzchni i wymiaru płytki, z fugą i zapasem na docinki.",
+  "card_stair": "Stopnie z całkowitej wysokości, sprawdzone z limitami przepisów i regułą wygody.",
+  "why_title": "Po co ta strona",
+  "why_text": "Większość stron z kalkulatorami chowa prosty wzór pod reklamami, wyskakującymi okienkami i zapisami do newslettera. Te pięć narzędzi robi odwrotnie: kalkulator jest na górze, wzór jest wypisany pod wynikiem, a strona ładuje się w ułamku sekundy. Jeśli narzędzie oszczędzi ci niepotrzebnego wyjazdu do marketu, pod wynikiem jest przycisk darowizny. To cały model biznesowy."
+}

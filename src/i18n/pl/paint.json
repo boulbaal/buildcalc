@@ -1,0 +1,76 @@
+{
+  "meta_title": "Kalkulator farby - ile farby na pokój?",
+  "meta_desc": "Darmowy kalkulator farby. Wpisz wymiary pokoju, drzwi, okna i liczbę warstw, a dowiesz się, ile litrów farby potrzebujesz. Od razu, bez reklam, offline.",
+  "og_desc": "Wpisz wymiary pokoju, drzwi, okna i warstwy, a poznasz ilość farby w litrach lub galonach. Za darmo, bez reklam.",
+  "h1": "Kalkulator farby",
+  "lede": "Oblicz, ile litrów lub galonów farby potrzeba na twój pokój, z uwzględnieniem drzwi, okien i liczby warstw. Za darmo, od razu, bez reklam.",
+  "length": "Długość pokoju",
+  "width": "Szerokość pokoju",
+  "height": "Wysokość ścian",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Drzwi",
+  "doors_hint": "Nie są malowane. Każde odejmują powierzchnię standardowych drzwi.",
+  "windows": "Okna",
+  "coats": "Warstwy",
+  "coats_hint": "Zwykle maluje się dwie warstwy.",
+  "coverage": "Wydajność",
+  "sfx_cov_imperial": "(sq ft na galon)",
+  "sfx_cov_metric": "(m² na litr)",
+  "coverage_hint_imperial": "zwykle 250-400",
+  "coverage_hint_metric": "zwykle 8-12",
+  "ceiling": "Uwzględnij sufit",
+  "how_text": "Kalkulator liczy powierzchnię ścian dookoła pokoju, odejmuje standardową powierzchnię każdych drzwi i okna, opcjonalnie dodaje sufit, mnoży przez liczbę warstw i dzieli przez wydajność farby. Wynik jest zawsze zaokrąglany w górę do pełnych jednostek, bo nie kupisz 1,8 galona:",
+  "formula": "powierzchnia ścian = 2 &times; (długość + szerokość) &times; wysokość<br>do malowania = powierzchnia ścian &minus; drzwi &times; pow. drzwi &minus; okna &times; pow. okna (+ sufit)<br>puszki = do malowania &times; warstwy &divide; wydajność, w górę",
+  "metric_note": "W trybie metrycznym drzwi liczą się jako 1,95 m², okno jako 1,4 m², a wydajność podaje się na litr. W trybie imperialnym drzwi liczą się jako 21 sq ft, a okno jako 15 sq ft.",
+  "example_imperial": "Załóżmy, że pokój ma 12 × 10 ft, ściany wysokie na 8 ft, jedne drzwi i jedno okno, a planujesz dwie warstwy przy wydajności 350 sq ft na galon. Powierzchnia ścian to 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Odejmij drzwi (21 sq ft) i okno (15 sq ft), zostaje <strong>316 sq ft na warstwę</strong>. Dwie warstwy to 632 sq ft, a 632 ÷ 350 = 1,81, w górę do <strong>2 galonów</strong>. Po zaznaczeniu \"Uwzględnij sufit\" sufit 120 sq ft podnosi to do 436 sq ft na warstwę, łącznie 872 sq ft, więc potrzebujesz <strong>3 galony</strong>.",
+  "example_metric": "Załóżmy, że pokój ma 4 × 3 m, ściany wysokie na 2,5 m, jedne drzwi i jedno okno, a planujesz dwie warstwy przy wydajności 10 m² na litr. Powierzchnia ścian to 2 × (4 + 3) × 2,5 = <strong>35 m²</strong>. Odejmij drzwi (1,95 m²) i okno (1,4 m²), zostaje <strong>31,65 m² na warstwę</strong>. Dwie warstwy to 63,3 m², a 63,3 ÷ 10 = 6,33, w górę do <strong>7 litrów</strong>. Po zaznaczeniu \"Uwzględnij sufit\" sufit 12 m² podnosi to do 43,65 m² na warstwę, łącznie 87,3 m², więc potrzebujesz <strong>9 litrów</strong>.",
+  "table_title": "Ile farby na pokój według wymiarów",
+  "table_note_imperial": "Ściany o wysokości 8 ft, jedne drzwi, jedno okno, dwie warstwy, 350 sq ft na galon:",
+  "table_note_metric": "Ściany o wysokości 2,5 m, jedne drzwi, jedno okno, dwie warstwy, 10 m² na litr:",
+  "col_room": "Pokój",
+  "col_walls": "Same ściany",
+  "col_both": "Ściany + sufit",
+  "more_text": "Planujesz resztę roboty? Wypróbuj pozostałe darmowe kalkulatory:",
+  "js": {
+    "main": "{cansText} <small>(liczba warstw: {coatsText})</small>",
+    "cans_imperial_one": "{cans} galon",
+    "cans_imperial": "{cans} gal",
+    "cans_metric_one": "{cans} litr",
+    "cans_metric": "{cans} l",
+    "coats_one": "{coats}",
+    "coats_other": "{coats}",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Powierzchnia ścian: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Minus drzwi ({doors}) i okna ({windows}): −{deduct} {a} = <strong>{per} {a} na warstwę</strong>",
+    "deduct_ceiling_line": "Minus drzwi ({doors}) i okna ({windows}): −{deduct} {a}, plus sufit {ceil} {a} = <strong>{per} {a} na warstwę</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, w górę do <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} l"
+  },
+  "faq": [
+    [
+      "Na ile metrów wystarczy litr farby?",
+      "Większość farb do wnętrz wystarcza na około 6 do 10 m² z litra (250 do 400 stóp kwadratowych z galona) na gładkiej, zagruntowanej ścianie. Ten kalkulator domyślnie przyjmuje 10 m² na litr lub 350 sq ft na galon. Powierzchnie chropowate, chłonne lub surowe wchłaniają więcej farby, więc przyjmij dolną wartość z zakresu."
+    ],
+    [
+      "Czy przed malowaniem trzeba gruntować?",
+      "Gruntuj nowe płyty g-k, surowe drewno, powierzchnie z plamami lub błyszczące, a także wtedy, gdy kryjesz ciemny kolor jaśniejszym. Na wcześniej malowanych ścianach w dobrym stanie i w podobnym kolorze zwykle wystarczy dobra farba z gruntem w składzie. Grunt jest tańszy niż dodatkowa warstwa farby."
+    ],
+    [
+      "Wystarczy jedna warstwa farby, czy trzeba dwóch?",
+      "Zaplanuj dwie warstwy, żeby uzyskać równe i trwałe wykończenie. Jedna warstwa może wystarczyć przy odświeżaniu tym samym kolorem i połyskiem na dobrze przygotowanej ścianie. Duże zmiany koloru, czerwienie i żółcie albo malowanie po łatach często wymagają dwóch warstw i barwionego podkładu pod spodem."
+    ],
+    [
+      "Ile farby na pokój 4x4?",
+      "Pokój 4 na 4 m ze ścianami wysokimi na 2,5 m potrzebuje 8 litrów przy wydajności 10 m² na litr. W jednostkach imperialnych pokój 12 na 12 stóp ze ścianami 8 stóp ma 384 sq ft ścian. Po odjęciu drzwi i okna zostaje 348 sq ft na warstwę, więc dwie warstwy wymagają 2 galonów przy 350 sq ft na galon."
+    ],
+    [
+      "Czy farba do sufitów różni się od farby do ścian?",
+      "Farba sufitowa jest gęstsza, więc mniej pryska i kapie, i prawie zawsze jest matowa, żeby światło nie uwydatniało śladów wałka. Na sufit możesz użyć matowej farby ściennej, ale farbę sufitową łatwiej nakłada się nad głową i lepiej kryje niedoskonałości."
+    ]
+  ]
+}

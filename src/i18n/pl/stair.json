@@ -1,0 +1,64 @@
+{
+  "meta_title": "Kalkulator schodów - wysokość i głębokość stopni",
+  "meta_desc": "Darmowy kalkulator schodów. Wpisz wysokość całkowitą i poznaj liczbę stopni, dokładną wysokość stopnia, głębokość i długość biegu, ze sprawdzeniem wygody.",
+  "og_desc": "Liczba i wysokość stopni, stopnice i długość biegu z wysokości całkowitej. Od razu, za darmo, bez reklam.",
+  "h1": "Kalkulator schodów",
+  "lede": "Wpisz wysokość całkowitą i poznaj liczbę stopni, ich dokładną wysokość, liczbę stopnic i długość biegu, ze sprawdzeniem przepisów i wygody. Za darmo, od razu, bez reklam.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Wysokość całkowita",
+  "rise_hint": "Od podłogi wykończonej do podłogi wykończonej, mierzona w pionie.",
+  "desired": "Docelowa wysokość stopnia",
+  "desired_hint": "Jaką wysokość stopnia chcesz uzyskać. Pokazana do porównania.",
+  "tread": "Głębokość stopnia",
+  "tread_hint": "Głębokość każdego stopnia w poziomie, od noska do noska.",
+  "space": "Dostępna długość",
+  "space_hint": "Opcjonalnie. Ile miejsca w poziomie masz na schody.",
+  "how_text": "Kalkulator dzieli wysokość całkowitą przez maksymalną wysokość stopnia 19,7 cm (7,75 in) i zaokrągla w górę, co daje liczbę stopni (podstopnic). Wysokość całkowita podzielona przez tę liczbę daje dokładną wysokość stopnia do wytrasowania na policzku. Dla wygody dwie wysokości stopnia plus jego głębokość powinny wynosić od 61 do 63,5 cm (24 do 25 in).",
+  "formula": "stopnie = ceil(wysokość całkowita / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>wysokość stopnia = wysokość całkowita / stopnie<br>stopnice = stopnie - 1<br>długość biegu = stopnice &times; głębokość stopnia<br>wygoda = 2 &times; wysokość stopnia + głębokość stopnia",
+  "how_note": "Docelowa wysokość stopnia jest pokazana obok rzeczywistej, żeby było widać, jak blisko wychodzi układ. <strong>Limity przyjęte tutaj pochodzą z amerykańskich przepisów budowlanych IRC (maks. wysokość stopnia 19,7 cm lub 7,75 in, min. głębokość 25,4 cm lub 10 in). Lokalne przepisy mogą się różnić, więc zawsze je sprawdź, zanim zaczniesz ciąć.</strong>",
+  "example_imperial": "Załóżmy, że wysokość całkowita od podłogi do podłogi to 100 cali. Wtedy 100 / 7,75 = 12,9, w górę do <strong>13 stopni</strong>. Każdy stopień ma 100 / 13 = <strong>7,69 in</strong>, a stopnic jest 13 - 1 = <strong>12</strong>. Przy głębokości stopnia 10,5 in długość biegu to 12 × 10,5 = <strong>126 in</strong>. Wskaźnik wygody to 2 × 7,69 + 10,5 = 25,88 in, nieco powyżej idealnego zakresu 24 do 25 in. Jeden stopień więcej (14 stopni po 7,14 in) dałby 24,79 in, czyli w zakresie.",
+  "example_metric": "Załóżmy, że wysokość całkowita od podłogi do podłogi to 270 cm. Wtedy 270 / 19,7 = 13,7, w górę do <strong>14 stopni</strong>. Każdy stopień ma 270 / 14 = <strong>19,29 cm</strong>, a stopnic jest 14 - 1 = <strong>13</strong>. Przy głębokości stopnia 27 cm długość biegu to 13 × 27 = <strong>351 cm</strong>. Wskaźnik wygody to 2 × 19,2857 + 27 = 65,57 cm, powyżej idealnego zakresu 61 do 63,5 cm. Jeden stopień więcej (15 stopni po 18 cm) dałby 63 cm, czyli w zakresie.",
+  "table_title": "Liczba stopni według wysokości całkowitej",
+  "col_rise": "Wysokość całkowita",
+  "col_risers": "Stopnie",
+  "col_riser": "Wysokość stopnia",
+  "col_treads": "Stopnice",
+  "more_text": "Planujesz resztę roboty? Wypróbuj pozostałe darmowe kalkulatory:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "Stopnie: {risers} × {riser} {u}, stopnice: {treads}",
+    "run_line": "Długość biegu: <strong>{run} {u}</strong> (stopnice: {treads} × {tread} {u})",
+    "target_line": "Docelowa wysokość stopnia: {desired} {u}, rzeczywista: {riser} {u}",
+    "comfort_line": "Wygoda (2h+s): {comfort} {u} {badge}",
+    "comfort_in": "W zakresie od {lo} do {hi} {u}",
+    "comfort_out": "Poza zakresem od {lo} do {hi} {u}",
+    "irc_ok": "Spełnia limity amerykańskiego IRC (stopień ≤ {max} {u}, głębokość ≥ {min} {u})",
+    "irc_bad": "Poza limitami amerykańskiego IRC: maks. stopień {max} {u}, min. głębokość {min} {u}",
+    "irc_note": "IRC to przepisy USA; sprawdź przepisy lokalne.",
+    "no_fit": "Nie zmieści się: potrzeba {run} {u} długości, a masz {space} {u}"
+  },
+  "faq": [
+    [
+      "Jaka jest maksymalna wysokość stopnia według przepisów?",
+      "Amerykański kodeks IRC dopuszcza maksymalną wysokość stopnia 19,7 cm (7,75 cala) w schodach mieszkalnych. Stopnie w jednym biegu nie mogą różnić się o więcej niż około 1 cm (3/8 cala). Przepisy dla budynków użytkowych i wiele przepisów lokalnych jest bardziej rygorystycznych, więc zawsze sprawdź je w lokalnym urzędzie."
+    ],
+    [
+      "Jaka jest idealna wysokość stopnia schodów?",
+      "Większości osób najwygodniej wchodzi się po stopniach o wysokości 18 do 19 cm (7 do 7,5 cala). Niższe stopnie, około 15 cm (6 cali), pasują do schodów zewnętrznych i osób starszych. Wszystko powyżej maksimum amerykańskiego IRC, czyli 19,7 cm (7,75 cala), wydaje się strome i tam nie jest dozwolone."
+    ],
+    [
+      "Czym jest zasada 2h+s dla schodów?",
+      "Zasada wygody 2h+s mówi, że dwie wysokości stopnia plus jego głębokość powinny wynosić od 61 do 63,5 cm (24 do 25 cali). Odpowiada to mniej więcej naturalnej długości kroku. Schody w tym zakresie są wygodne, a poza nim wydają się zbyt strome albo zbyt płaskie."
+    ],
+    [
+      "Jak obliczyć liczbę stopni schodów?",
+      "Zmierz wysokość całkowitą od podłogi wykończonej do podłogi wykończonej, podziel ją przez maksymalną wysokość stopnia 19,7 cm (7,75 cala) i zaokrąglij w górę. To daje liczbę stopni. Wysokość całkowita podzielona przez tę liczbę daje dokładną wysokość stopnia. Stopnic jest o jedną mniej niż stopni."
+    ],
+    [
+      "Jaka jest minimalna głębokość stopnia według przepisów?",
+      "Amerykański kodeks IRC wymaga minimalnej głębokości stopnia 25,4 cm (10 cali), mierzonej od noska do noska. Głębsze stopnie, od 27 do 28 cm (10,5 do 11 cali), są wygodniejsze i spotykane częściej. Stopnie w jednym biegu nie mogą różnić się głębokością o więcej niż około 1 cm (3/8 cala). Przed budową sprawdź lokalne przepisy."
+    ]
+  ]
+}

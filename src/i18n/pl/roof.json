@@ -1,0 +1,56 @@
+{
+  "meta_title": "Kalkulator kąta nachylenia dachu - za darmo",
+  "meta_desc": "Darmowy kalkulator kąta nachylenia dachu. Przelicz wysokość i rzut poziomy na stopnie, procenty i X:12 oraz współczynnik powierzchni dachu. Bez reklam.",
+  "og_desc": "Przelicz wysokość i rzut poziomy na stopnie, procenty i spadek X:12. Od razu, za darmo, bez reklam.",
+  "h1": "Kalkulator kąta nachylenia dachu",
+  "lede": "Przelicz wysokość i rzut poziomy na stopnie, procenty i spadek X:12 oraz poznaj współczynnik nachylenia do powierzchni dachu. Za darmo, od razu, bez reklam.",
+  "mode_label": "Znam",
+  "mode_riserun": "Wysokość i rzut poziomy",
+  "mode_angle": "Kąt w stopniach",
+  "mode_percent": "Spadek w procentach",
+  "rise": "Wysokość",
+  "rise_hint": "Wysokość w pionie. Użyj tej samej jednostki co dla rzutu poziomego.",
+  "run": "Rzut poziomy",
+  "run_hint": "Odległość w poziomie. Rzut równy 12 od razu daje spadek X:12.",
+  "angle": "Kąt (stopnie)",
+  "percent": "Spadek (%)",
+  "how_text": "Nachylenie dachu to stosunek wysokości w pionie do rzutu poziomego. Ten kalkulator przelicza między trzema popularnymi sposobami jego zapisu, a do tego podaje współczynnik nachylenia, którym szacuje się powierzchnię dachu:",
+  "formula": "kąt = atan(wysokość / rzut poziomy)<br>spadek = wysokość / rzut poziomy &times; 100<br>nachylenie = (wysokość / rzut poziomy &times; 12) : 12<br>współczynnik = &radic;(1 + (wysokość / rzut poziomy)&sup2;)",
+  "example_imperial": "Załóżmy, że dach wznosi się o 6 cali na każde 12 cali rzutu poziomego. Wtedy wysokość / rzut = 0,5, więc kąt wynosi atan(0,5) = <strong>26,57°</strong>, spadek <strong>50%</strong>, a nachylenie zapisuje się jako <strong>6:12</strong>. Współczynnik to √(1 + 0,25) = <strong>1,118</strong>: dom o powierzchni zabudowy 1000 sq ft pod takim dachem ma około 1118 sq ft rzeczywistej powierzchni dachu.",
+  "example_metric": "Załóżmy, że dach wznosi się o 50 cm na każde 100 cm w poziomie. Wtedy wysokość / rzut = 0,5, więc kąt wynosi atan(0,5) = <strong>26,57°</strong>, spadek <strong>50%</strong>, a w zapisie amerykańskim nachylenie to <strong>6:12</strong>. Współczynnik to √(1 + 0,25) = <strong>1,118</strong>: dom o powierzchni zabudowy 100 m² pod takim dachem ma około 111,8 m² rzeczywistej powierzchni dachu.",
+  "table_title": "Popularne kąty nachylenia dachu",
+  "col_pitch": "Nachylenie",
+  "col_angle": "Kąt",
+  "col_slope": "Spadek",
+  "col_mult": "Współczynnik",
+  "more_text": "Planujesz resztę roboty? Wypróbuj pozostałe darmowe kalkulatory:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = spadek {pct}%</small>",
+    "main_metric": "{deg}° <small>= spadek {pct}% = {pitch}:12</small>",
+    "mult_line": "Współczynnik nachylenia: <strong>{mult}</strong> (powierzchnia w rzucie × {mult} = rzeczywista powierzchnia dachu)",
+    "angle_line": "kąt = atan({ratio}) = {deg}°",
+    "pct_line": "spadek = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Ile stopni ma dach o nachyleniu 6/12?",
+      "Nachylenie 6/12 oznacza, że dach wznosi się o 6 jednostek na każde 12 jednostek w poziomie. To 26,57 stopnia, czyli spadek 50%. To jedno z najczęstszych nachyleń dachów domów."
+    ],
+    [
+      "Do czego służy współczynnik nachylenia?",
+      "Przelicza powierzchnię dachu w rzucie na rzeczywistą powierzchnię połaci. Pomnóż powierzchnię w rzucie przez współczynnik, żeby oszacować ilość pokrycia lub membrany. Dla nachylenia 6/12 (26,57 stopnia) współczynnik wynosi 1,118."
+    ],
+    [
+      "Jaki jest minimalny kąt dachu pod gont bitumiczny?",
+      "Większość producentów gontu bitumicznego wymaga nachylenia co najmniej 2/12 (około 9,5 stopnia), a poniżej 4/12 (około 18,4 stopnia) zaleca dodatkową warstwę podkładową. Bardziej płaskie dachy wymagają membrany. Zawsze sprawdź instrukcję producenta."
+    ],
+    [
+      "Jak zmierzyć kąt dachu od strony strychu?",
+      "Przyłóż poziomicę poziomo do krokwi i zaznacz na niej stałą odległość, na przykład 12 cali albo 100 cm. Potem zmierz pionowo od tego znaku do spodu krokwi. Wpisz obie liczby tutaj jako rzut poziomy i wysokość."
+    ],
+    [
+      "Czy bardziej stromy dach jest lepszy?",
+      "Strome dachy szybciej odprowadzają wodę i śnieg i często dłużej wytrzymują, ale ich budowa kosztuje więcej, a praca na nich jest bardziej niebezpieczna. Większość dachów domów ma od około 18 do 37 stopni (od 4/12 do 9/12)."
+    ]
+  ]
+}

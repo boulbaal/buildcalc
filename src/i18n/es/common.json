@@ -1,0 +1,26 @@
+{
+  "home": "Inicio",
+  "language": "Idioma",
+  "units_label": "Unidades",
+  "tagline": "gratis · sin anuncios · sin rastreo · funciona sin conexión",
+  "made_by": "Hecho por un desarrollador independiente harto de las webs de calculadoras llenas de anuncios. ¿Has encontrado un error? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Avísame en GitHub</a>.",
+  "donate_text": "Gratis, sin anuncios y hecho por una sola persona. Si te ha ahorrado un viaje a la tienda, puedes invitarme a un café.",
+  "donate_paypal": "Donar con PayPal",
+  "donate_kofi": "Apoyar en Ko-fi",
+  "how_it_works": "Cómo funciona",
+  "worked_example": "Ejemplo práctico",
+  "faq_title": "Preguntas frecuentes",
+  "more_title": "Más calculadoras gratis",
+  "disclaimer": "Los resultados son estimaciones para planificar y no sustituyen el consejo de un profesional. Consulta siempre la normativa local de construcción y las instrucciones del fabricante.",
+  "name_roof": "Calculadora de pendiente de tejado",
+  "name_concrete": "Calculadora de hormigón",
+  "name_paint": "Calculadora de pintura",
+  "name_tile": "Calculadora de azulejos",
+  "name_stair": "Calculadora de escaleras",
+  "js": {
+    "err_empty": "Introduce un valor.",
+    "err_nan": "Introduce un número válido.",
+    "err_negative": "Debe ser positivo.",
+    "err_zero": "Debe ser mayor que cero."
+  }
+}

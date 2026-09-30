@@ -1,0 +1,56 @@
+{
+  "meta_title": "Kuverenga Kutsvedza Kwedenga - Mahara",
+  "meta_desc": "Chiverengi chemahara chekutsvedza kwedenga (roof pitch). Shandura kukwira nekureba kuva madhigirii, pesenti ne X:12, uye wana yekuwanza yenzvimbo yedenga.",
+  "og_desc": "Shandura kukwira nekureba kuva madhigirii, pesenti ne X:12. Pakarepo, mahara, hapana kushambadza.",
+  "h1": "Kuverenga kutsvedza kwedenga",
+  "lede": "Shandura kukwira nekureba kwakatwasuka kuva madhigirii, pesenti ne X:12, uye wana yekuwanza yekutsvedza yenzvimbo yedenga rako. Mahara, pakarepo, hapana kushambadza.",
+  "mode_label": "Ndinoziva",
+  "mode_riserun": "Kukwira nekureba",
+  "mode_angle": "Kona mumadhigirii",
+  "mode_percent": "Kutsvedza mupesenti",
+  "rise": "Kukwira",
+  "rise_hint": "Kureba kwakamira. Shandisa chiyero chimwe chete nekureba kwakatwasuka.",
+  "run": "Kureba kwakatwasuka",
+  "run_hint": "Chinhambwe chakatwasuka. Kureba kwe12 kunopa X:12 zvakananga.",
+  "angle": "Kona (madhigirii)",
+  "percent": "Kutsvedza (%)",
+  "how_text": "Kutsvedza kwedenga ndiko kuenzanisa pakati pekukwira kwakamira nekureba kwakatwasuka. Chiverengi ichi chinoshandura pakati penzira nhatu dzinowanzoshandiswa kuzvinyora, pamwe neyekuwanza inoshandiswa kufungidzira nzvimbo yedenga:",
+  "formula": "kona = atan(kukwira / kureba kwakatwasuka)<br>pazana = kukwira / kureba kwakatwasuka &times; 100<br>kutsvedza = (kukwira / kureba kwakatwasuka &times; 12) : 12<br>yekuwanza = &radic;(1 + (kukwira / kureba kwakatwasuka)&sup2;)",
+  "example_imperial": "Ngatiti denga rako rinokwira mainchi 6 pamainchi 12 ega ega ekureba kwakatwasuka. Saka kukwira / kureba = 0.5, saka kona iri atan(0.5) = <strong>26.57°</strong>, kutsvedza kuri <strong>50%</strong>, uye kunonyorwa se<strong>6:12</strong>. Yekuwanza iri √(1 + 0.25) = <strong>1.118</strong>: imba ine nzvimbo yepasi ye1,000 sq ft pasi pedenga iroro ine nzvimbo yedenga chaiyo inenge 1,118 sq ft.",
+  "example_metric": "Ngatiti denga rako rinokwira 50 cm pa100 cm ega ega echinhambwe chakatwasuka. Saka kukwira / kureba = 0.5, saka kona iri atan(0.5) = <strong>26.57°</strong>, kutsvedza kuri <strong>50%</strong>, uye muchinyorwa cheAmerica kunoti <strong>6:12</strong>. Yekuwanza iri √(1 + 0.25) = <strong>1.118</strong>: imba ine nzvimbo yepasi ye100 m² pasi pedenga iroro ine nzvimbo yedenga chaiyo inenge 111.8 m².",
+  "table_title": "Kutsvedza kwedenga kunowanzoitwa",
+  "col_pitch": "Kutsvedza",
+  "col_angle": "Kona",
+  "col_slope": "Pesenti",
+  "col_mult": "Yekuwanza",
+  "more_text": "Uri kuronga rimwe basa? Edza zvimwe zviverengi zvemahara:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = {pct}% kutsvedza</small>",
+    "main_metric": "{deg}° <small>= {pct}% kutsvedza = {pitch}:12</small>",
+    "mult_line": "Yekuwanza yekutsvedza: <strong>{mult}</strong> (nzvimbo yepasi × {mult} = nzvimbo yedenga chaiyo)",
+    "angle_line": "kona = atan({ratio}) = {deg}°",
+    "pct_line": "pesenti = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Denga re6/12 rine madhigirii mangani?",
+      "Kutsvedza kwe6/12 kunoreva kuti denga rinokwira zvikamu 6 pazvikamu 12 zvega zvega zvekureba kwakatwasuka. Izvi zvakaenzana nemadhigirii 26.57, kana kutsvedza kwe50%. Ndiko kumwe kwekutsvedza kunonyanya kuwanikwa padzimba."
+    ],
+    [
+      "Yekuwanza yekutsvedza inoshandiswa kuitei?",
+      "Inoshandura nzvimbo yepasi yedenga kuva nzvimbo chaiyo yakatsvedza. Wanza nzvimbo yepasi neyekuwanza kuti ufungidzire zvinhu zvedenga kana underlayment. Pakutsvedza kwe6/12 (madhigirii 26.57) yekuwanza iri 1.118."
+    ],
+    [
+      "Kutsvedza kushoma kweshingles ndekupi?",
+      "Vagadziri vazhinji veshingles dzeasphalt vanoda kutsvedza kwe2/12 zvishoma (anenge madhigirii 9.5), uye pasi pe4/12 (anenge madhigirii 18.4) vanoda underlayment yakawedzerwa. Matenga akati sandara anoda membrane pachinzvimbo. Gara uchiverenga mirairo yemugadziri."
+    ],
+    [
+      "Ndinoyera sei kutsvedza kwedenga ndiri mukati mechiturikiro?",
+      "Bata level yakatwasuka pamatanda edenga (rafter) uye maka chinhambwe chakatarwa pairi, semuenzaniso mainchi 12 kana 100 cm. Wobva wayera wakananga kumusoro kubva pamaka iyoyo kusvika pasi perafter. Isa nhamba mbiri idzi pano sekureba nekukwira."
+    ],
+    [
+      "Denga rakatsvedza zvakanyanya rakanaka here?",
+      "Matenga akatsvedza zvakanyanya anoburutsa mvura nechando nekukurumidza uye anowanzogara kwenguva refu, asi anodhura kuvaka uye ane njodzi kushanda pamusoro pawo. Matenga mazhinji edzimba ari pakati pemadhigirii anenge 18 ne37 (4/12 kusvika 9/12)."
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Kalkulator Bangunan Gratis",
+  "meta_desc": "Kalkulator bangunan gratis: kemiringan atap, cor beton, cat, keramik dan tangga. Hasil instan, tanpa iklan, tanpa pelacakan, bisa offline.",
+  "og_desc": "Kalkulator kemiringan atap, beton, cat, keramik dan tangga. Gratis, instan, tanpa iklan.",
+  "h1": "Kalkulator bangunan gratis",
+  "lede": "Lima kalkulator cepat untuk pekerjaan nyata. Tanpa iklan, tanpa pelacakan, tanpa daftar akun. Setiap hasil menampilkan rumus di baliknya, dan semuanya tetap berjalan offline setelah dimuat.",
+  "card_roof": "Tinggi dan panjang horizontal ke derajat, persen dan X:12, plus faktor kemiringan untuk luas atap.",
+  "card_concrete": "Volume dan jumlah sak semen yang tepat, dengan cadangan material.",
+  "card_paint": "Berapa banyak cat untuk ruangan Anda, dikurangi pintu dan jendela, sesuai jumlah lapisan.",
+  "card_tile": "Jumlah keramik dan dus dari luas dan ukuran keramik, dengan celah nat dan sisa potongan.",
+  "card_stair": "Jumlah dan tinggi anak tangga dari tinggi total, dicek terhadap batas peraturan dan aturan kenyamanan.",
+  "why_title": "Kenapa situs ini ada",
+  "why_text": "Kebanyakan situs kalkulator menyembunyikan rumus sederhana di balik iklan, popup dan ajakan berlangganan newsletter. Lima alat ini melakukan sebaliknya: kalkulator ada di paling atas, rumusnya ditampilkan di bawah hasil, dan halaman terbuka dalam sekejap. Kalau sebuah alat menghemat perjalanan sia-sia ke toko bangunan, ada tombol donasi setelah hasil Anda. Hanya itu model bisnisnya."
+}

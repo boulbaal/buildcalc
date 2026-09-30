@@ -1,0 +1,26 @@
+{
+  "home": "Trang chủ",
+  "language": "Ngôn ngữ",
+  "units_label": "Đơn vị",
+  "tagline": "miễn phí · không quảng cáo · không theo dõi · dùng được offline",
+  "made_by": "Được làm bởi một lập trình viên độc lập đã chán các trang tính toán đầy quảng cáo. Thấy lỗi? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Báo lỗi trên GitHub</a>.",
+  "donate_text": "Miễn phí, không quảng cáo, do một người làm. Nếu công cụ này giúp bạn khỏi phải chạy ra cửa hàng vật liệu thêm một chuyến, bạn có thể mời tôi một ly cà phê.",
+  "donate_paypal": "Ủng hộ qua PayPal",
+  "donate_kofi": "Ủng hộ trên Ko-fi",
+  "how_it_works": "Cách tính",
+  "worked_example": "Ví dụ tính toán",
+  "faq_title": "Câu hỏi thường gặp",
+  "more_title": "Công cụ tính miễn phí khác",
+  "disclaimer": "Kết quả là số liệu ước tính để lập kế hoạch, không thay thế cho tư vấn chuyên môn. Luôn kiểm tra quy chuẩn xây dựng địa phương và hướng dẫn của nhà sản xuất.",
+  "name_roof": "Tính độ dốc mái",
+  "name_concrete": "Tính khối lượng bê tông",
+  "name_paint": "Tính lượng sơn",
+  "name_tile": "Tính số lượng gạch",
+  "name_stair": "Tính bậc cầu thang",
+  "js": {
+    "err_empty": "Hãy nhập một giá trị.",
+    "err_nan": "Hãy nhập một số hợp lệ.",
+    "err_negative": "Phải là số dương.",
+    "err_zero": "Phải lớn hơn 0."
+  }
+}

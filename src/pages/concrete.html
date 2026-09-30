@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_desc}}">
+<link rel="canonical" href="{{@canonical}}">
+{{@hreflang}}
+<meta property="og:title" content="{{meta_title}}">
+<meta property="og:description" content="{{og_desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{@canonical}}">
+<link rel="stylesheet" href="/assets/style.css">
+{{@appld}}
+{{@faqld}}
+</head>
+<body data-units="{{@units}}">
+<div class="wrap">
+
+<header class="site">
+  <nav aria-label="{{home}}">
+    <div class="left">
+      <a class="brand" href="{{@url_home}}">Build<span>Calc</span></a>
+      <a class="crumb" href="{{@url_home}}">{{home}}</a>
+      <span class="crumb" aria-current="page">{{h1}}</span>
+    </div>
+    {{@langselect}}
+  </nav>
+</header>
+
+<main>
+<h1>{{h1}}</h1>
+<p class="lede">{{lede}}</p>
+
+<div class="calc">
+  <div class="units" role="group" aria-label="{{units_label}}">
+    <button type="button" data-units="imperial">ft / in</button>
+    <button type="button" data-units="metric">m / cm</button>
+  </div>
+  <div class="grid">
+    <div class="field">
+      <label for="length">{{length}} <span data-if-units="imperial">{{sfx_ft}}</span><span data-if-units="metric">{{sfx_m}}</span></label>
+      <input id="length" type="number" inputmode="decimal" min="0" step="any" value="{{#u:10|3}}" data-imperial="10" data-metric="3" aria-describedby="length-error">
+      <span class="error" id="length-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="width">{{width}} <span data-if-units="imperial">{{sfx_ft}}</span><span data-if-units="metric">{{sfx_m}}</span></label>
+      <input id="width" type="number" inputmode="decimal" min="0" step="any" value="{{#u:10|3}}" data-imperial="10" data-metric="3" aria-describedby="width-error">
+      <span class="error" id="width-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="thickness">{{thickness}} <span data-if-units="imperial">{{sfx_in}}</span><span data-if-units="metric">{{sfx_cm}}</span></label>
+      <input id="thickness" type="number" inputmode="decimal" min="0" step="any" value="{{#u:4|10}}" data-imperial="4" data-metric="10" aria-describedby="thickness-error thickness-hint">
+      <span class="hint" id="thickness-hint"><span data-if-units="imperial">{{thickness_hint_imperial}}</span><span data-if-units="metric">{{thickness_hint_metric}}</span></span>
+      <span class="error" id="thickness-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="bag">{{bag_label}}</label>
+      <select id="bag" aria-describedby="bag-hint"></select>
+      <span class="hint" id="bag-hint">{{bag_hint}}</span>
+    </div>
+    <div class="field">
+      <label for="waste">{{waste_label}}</label>
+      <input id="waste" type="number" inputmode="decimal" min="0" step="any" value="10" aria-describedby="waste-error waste-hint">
+      <span class="hint" id="waste-hint">{{waste_hint}}</span>
+      <span class="error" id="waste-error" aria-live="polite"></span>
+    </div>
+  </div>
+</div>
+
+<div class="result" aria-live="polite" id="result">
+  <div class="big" id="r-main">&nbsp;</div>
+  <ul class="path" id="r-path"></ul>
+</div>
+
+<div class="donate" id="donate" hidden>
+  <p>{{donate_text}}</p>
+  <div class="btns">
+    <a class="btn" data-donate="paypal" href="#" rel="noopener">{{donate_paypal}}</a>
+    <a class="btn alt" data-donate="kofi" href="#" rel="noopener">{{donate_kofi}}</a>
+  </div>
+</div>
+
+<h2>{{how_it_works}}</h2>
+<p>{{how_text}}</p>
+<div class="formula">{{formula}}</div>
+<p>{{yields_text}}</p>
+
+<h2>{{worked_example}}</h2>
+<p>{{example@u}}</p>
+
+<h2>{{table_title}}</h2>
+<table>
+  <thead><tr><th scope="col">{{col_bag}}</th><th scope="col">{{col_yield}}</th><th scope="col">{{col_per}}</th></tr></thead>
+  <tbody id="bag-table"></tbody>
+</table>
+
+<h2>{{faq_title}}</h2>
+{{@faq}}
+
+<h2>{{more_title}}</h2>
+<p>{{more_text}}</p>
+<ul>
+  <li><a href="{{@url_roof}}">{{name_roof}}</a></li>
+  <li><a href="{{@url_paint}}">{{name_paint}}</a></li>
+  <li><a href="{{@url_tile}}">{{name_tile}}</a></li>
+  <li><a href="{{@url_stair}}">{{name_stair}}</a></li>
+</ul>
+
+<p class="disclaimer">{{disclaimer}}</p>
+</main>
+
+<footer class="site">
+  <p class="made">{{made_by}}</p>
+  <p><a href="{{@url_home}}">BuildCalc</a> &middot; {{tagline}}</p>
+</footer>
+</div>
+
+{{@T}}
+<script src="/assets/calc.js"></script>
+<script>
+"use strict";
+/* Bag yields: cubic feet (imperial) or cubic meters (metric). */
+const BAGS = {
+  imperial: [
+    { value: "80", unit: "bag_lb", yield: 0.60 },
+    { value: "60", unit: "bag_lb", yield: 0.45 },
+    { value: "40", unit: "bag_lb", yield: 0.30 }
+  ],
+  metric: [
+    { value: "25", unit: "bag_kg", yield: 0.0123 }
+  ]
+};
+const bagLabel = (b) => t(b.unit, { n: fmt(Number(b.value), 0) });
+
+const bagSel = document.getElementById("bag");
+function fillBags() {
+  const list = BAGS[currentUnits()];
+  bagSel.innerHTML = list.map((b, i) =>
+    '<option value="' + b.value + '"' + (i === 0 ? " selected" : "") + ">" + bagLabel(b) + "</option>").join("");
+}
+
+function compute() {
+  const u = currentUnits();
+  const L = readNum(document.getElementById("length"));
+  const W = readNum(document.getElementById("width"));
+  const T = readNum(document.getElementById("thickness"));
+  const waste = readNum(document.getElementById("waste"), { allowZero: true });
+  const main = document.getElementById("r-main");
+  const path = document.getElementById("r-path");
+  if (![L, W, T, waste].every(isFinite)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+
+  const bag = BAGS[u].find((b) => b.value === bagSel.value) || BAGS[u][0];
+  let volume, yards = NaN;
+  if (u === "imperial") {
+    volume = L * W * (T / 12);                       /* cubic feet */
+    yards = volume / 27;
+  } else {
+    volume = L * W * (T / 100);                      /* cubic meters */
+  }
+  const withWaste = volume * (1 + waste / 100);
+  const bags = Math.ceil(withWaste / bag.yield);
+  if (!isFinite(bags) || !isFinite(volume)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+
+  const v = {
+    l: fmt(L), w: fmt(W), t: fmt(T),
+    vol: fmt(volume), yd: fmt(yards),
+    waste: fmt(waste), factor: fmt(1 + waste / 100), total: fmt(withWaste),
+    yield: fmt(bag.yield, 4), bags: fmt(bags, 0), bag: bagLabel(bag)
+  };
+  main.innerHTML = t(u === "imperial" ? "main_imperial" : "main_metric", v);
+  path.innerHTML =
+    "<li class=\"ltr\">" + t(u === "imperial" ? "vol_imperial" : "vol_metric", v) + "</li>" +
+    "<li>" + t(u === "imperial" ? "waste_imperial" : "waste_metric", v) + "</li>" +
+    "<li class=\"ltr\">" + t("bags_line", v) + "</li>";
+  showDonate();
+}
+
+/* Reference table: yield per bag and bags per volume. */
+(function () {
+  let rows = "";
+  BAGS.imperial.slice().reverse().forEach((b) => {
+    rows += "<tr><td>" + bagLabel(b) + "</td><td>" + t("tbl_cuft", { v: fmt(b.yield, 2) }) + "</td><td>" + t("tbl_per_yd", { n: fmt(27 / b.yield, 0) }) + "</td></tr>";
+  });
+  BAGS.metric.forEach((b) => {
+    rows += "<tr><td>" + bagLabel(b) + "</td><td>" + t("tbl_m3", { v: fmt(b.yield, 4) }) + "</td><td>" + t("tbl_per_kg", { m3: fmt(1 / b.yield, 0), yd: fmt(0.764555 / b.yield, 0) }) + "</td></tr>";
+  });
+  document.getElementById("bag-table").innerHTML = rows;
+})();
+
+fillBags();
+initUnits(() => { fillBags(); compute(); });
+bindInputs(compute);
+compute();
+</script>
+</body>
+</html>

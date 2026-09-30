@@ -1,0 +1,67 @@
+{
+  "meta_title": "Hesabkirina Betonê - Çewal û Qebare, Belaş",
+  "meta_desc": "Hesabkera betonê ya belaş. Qebareyê bi cu yd an m³ û hejmara çewalên 40, 60, 80 lb an 25 kg bistîne, bi rêjeya windabûnê. Bê reklam.",
+  "og_desc": "Qebareya betonê û hejmara rastîn a çewalan ji bo bingeha xwe bistîne. Belaş, bê reklam.",
+  "h1": "Hesabkirina betonê",
+  "lede": "Mezinahiya bingeha xwe binivîse û qebareya betonê û hejmara rastîn a çewalên ku lazim in bistîne, bi rêjeya windabûnê. Belaş, bilez, bê reklam.",
+  "length": "Dirêjahî",
+  "width": "Firehî",
+  "thickness": "Stûrahî",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in ji bo hewş û rêçikan asayî ye.",
+  "thickness_hint_metric": "10 cm ji bo hewş û rêçikan asayî ye.",
+  "bag_label": "Mezinahiya çewalê",
+  "bag_hint": "Betona amade, tenê av lê zêde bike.",
+  "waste_label": "Rêjeya windabûnê (%)",
+  "waste_hint": "10% rijandin û binîgeheke nehevseng digire nav xwe.",
+  "how_text": "Bingeh qutiyeke hêsan e: dirêjahî carî firehî carî stûrahî qebareyê dide. Hesabker stûrahiyê dike heman yekîneya aliyan, rêjeya windabûnê lê zêde dike, paşê li berhema çewalekê parve dike û ber bi çewalên tam ve bilind dike:",
+  "formula": "qebare (cu ft) = dirêjahî (ft) &times; firehî (ft) &times; stûrahî (in) / 12<br>yardên kûbîk = qebare / 27<br>qebare (m&sup3;) = dirêjahî (m) &times; firehî (m) &times; stûrahî (cm) / 100<br>çewal = ceil(qebare &times; (1 + windabûn / 100) / berhema çewalê)",
+  "yields_text": "Berhema çewalan: çewalek 80 lb nêzîkî 0,60 cu ft, çewalek 60 lb 0,45 cu ft, çewalek 40 lb 0,30 cu ft, û çewalek 25 kg nêzîkî 0,0123 m³ çêdike.",
+  "example_imperial": "Bifikire ku tu hewşeke 10 × 10 ft, bi stûrahiya 4 înç dirijînî. Qebare 10 × 10 × 4/12 = <strong>33,33 cu ft</strong> e, ku dike 33,33 / 27 = <strong>1,23 cu yd</strong>. Bi çewalên 80 lb ên her yek 0,60 cu ft, ev dike 33,33 / 0,60 = 55,6, bilindkirî dibe <strong>56 çewal</strong>. Rêjeya windabûnê ya standard 10% lê zêde bike (33,33 × 1,1 = 36,67 cu ft) û divê tu <strong>62 çewalan</strong> bikirî. Çewalên mayî ji çûyîneke duyem a dikanê hêsantir in, ji ber vê yekê bilind bike.",
+  "example_metric": "Bifikire ku tu hewşeke 3 × 3 m, bi stûrahiya 10 cm dirijînî. Qebare 3 × 3 × 10/100 = <strong>0,9 m³</strong> e. Bi çewalên 25 kg ên her yek nêzîkî 0,0123 m³, ev dike 0,9 / 0,0123 = 73,2, bilindkirî dibe <strong>74 çewal</strong>. Rêjeya windabûnê ya standard 10% lê zêde bike (0,9 × 1,1 = 0,99 m³) û divê tu 0,99 / 0,0123 = 80,5, bilindkirî <strong>81 çewalan</strong> bikirî. Çewalên mayî ji çûyîneke duyem a dikanê hêsantir in, ji ber vê yekê bilind bike.",
+  "table_title": "Mezinahî û berhema çewalan",
+  "col_bag": "Mezinahiya çewalê",
+  "col_yield": "Berhem",
+  "col_per": "Çewal li gorî qebareyê",
+  "more_text": "Mayî ya karê plan dikî? Hesabkerên din ên belaş biceribîne:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} çewalên {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} çewalên {bag}</small>",
+    "vol_imperial": "qebare = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "qebare = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Bi {waste}% windabûn: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Bi {waste}% windabûn: {vol} × {factor} = {total} m³",
+    "bags_line": "çewal = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} ji bo her cu yd",
+    "tbl_per_kg": "nêzîkî {m3} ji bo her m³, {yd} ji bo her cu yd"
+  },
+  "faq": [
+    [
+      "Di yardeke kûp de çend çewal beton hene?",
+      "Çewalek 80 lb nêzîkî 0,60 lingên kûp dide, û yardeke kûp 27 lingên kûp e, ji ber vê yekê ji bo her yardeke kûp 45 çewalên 80 lb lazim in. Ji bo çewalên 60 lb 60 e, û ji bo çewalên 40 lb 90 e. Bi çewalên 25 kg ji bo her metreya kûp nêzîkî 81 çewal lazim in (1,31 yardên kûp)."
+    ],
+    [
+      "Bingeheke betonê divê çiqas stûr be?",
+      "4 înç (10 cm) stûrahiya asayî ye ji bo hewş, rêçik û bingehên kulûban. Rêyên erebeyan ên ku otomobîlan hildigirin bi gelemperî 5 heta 6 înç (12 heta 15 cm) dixwazin, û bingehên ji bo wesayîtên giran an atolyeyan pir caran digihîjin 6 înç (15 cm) an zêdetir. Berî rijandinê rêzikên avahîsaziyê yên herêmî kontrol bike."
+    ],
+    [
+      "Di bingehê de hesin an tora têlan lazim e?",
+      "Bingehên biçûk wek rêçikan pir caran tenê bi derzên kontrolê baş dibin, lê tora têlan an hesin alîkarî dike ku qelîştok girtî bimînin di hewş, rêyên erebeyan û erdê garajan de. Hêzkirinê di nîvê stûrahiya bingehê de deyne, nêzîkî 2 înç (5 cm) bilind di bingeheke 4 înç (10 cm) de, ne li ser erdê."
+    ],
+    [
+      "Kengê divê li şûna çewalan kamyoneke betona amade bixwazim?",
+      "Nêzîkî 1 yardeke kûp (0,76 metreyên kûp) xala guherînê ya asayî ye. Ev jixwe 45 çewalên 80 lb an nêzîkî 62 çewalên 25 kg e ku divê bi dest bên kişandin û tevlîhevkirin. Ji wê zêdetir, kamyoneke betona amade zûtir, yeksantir û pir caran erzantir e, her çend barên biçûk dikarin bihatir bin."
+    ],
+    [
+      "Beton çiqas dem dibe heta ku hişk bibe?",
+      "Beton di çend saetan de digire lê hêdî hêdî hişk dibe. Bi gelemperî piştî 24 heta 48 saetan tu dikarî li ser bimeşî û piştî nêzîkî 7 rojan bi erebeyê li ser biajo. Di 28 rojan de digihîje piraniya hêza xwe ya plankirî. Hefteya pêşîn wê şil bihêle da ku bi hêz hişk bibe û zû zû hişk nebe."
+    ]
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "meta_title": "Hesabkirina Meyla Banî - Belaş, Bê Reklam",
+  "meta_desc": "Hesabkera meyla banî ya belaş. Bilindahî û dirêjahiya asoyî bike pile, ji sedî û meyla X:12, û zêdekerê meylê ji bo rûbera banî bistîne. Bilez, bê reklam.",
+  "og_desc": "Bilindahî û dirêjahiya asoyî bike pile, ji sedî û meyla X:12. Bilez, belaş, bê reklam.",
+  "h1": "Hesabkirina meyla banî",
+  "lede": "Bilindahî û dirêjahiya asoyî bike pile, ji sedî û meyla X:12, û zêdekerê meylê ji bo rûbera banê xwe bistîne. Belaş, bilez, bê reklam.",
+  "mode_label": "Ez dizanim",
+  "mode_riserun": "Bilindahî û dirêjahiya asoyî",
+  "mode_angle": "Goşe bi pileyan",
+  "mode_percent": "Meyl ji sedî",
+  "rise": "Bilindahî",
+  "rise_hint": "Bilindahiya stûnî. Heman yekîneya dirêjahiya asoyî bi kar bîne.",
+  "run": "Dirêjahiya asoyî",
+  "run_hint": "Dûrahiya asoyî. Bi dirêjahiya 12 re meyla X:12 rasterast derdikeve.",
+  "angle": "Goşe (pile)",
+  "percent": "Meyl (%)",
+  "how_text": "Meyla banî rêjeya navbera bilindahiya stûnî û dirêjahiya asoyî ye. Ev hesabker di navbera sê awayên nivîsandinê yên herî berbelav de diguherîne, û zêdekerê meylê jî dide ku ji bo texmînkirina rûbera banî tê bikaranîn:",
+  "formula": "goşe = atan(bilindahî / dirêjahiya asoyî)<br>ji sedî = bilindahî / dirêjahiya asoyî &times; 100<br>meyl = (bilindahî / dirêjahiya asoyî &times; 12) : 12<br>zêdeker = &radic;(1 + (bilindahî / dirêjahiya asoyî)&sup2;)",
+  "example_imperial": "Bifikire ku banê te ji bo her 12 înç dirêjahiya asoyî 6 înç bilind dibe. Wê demê bilindahî / dirêjahî = 0,5, ji ber vê yekê goşe atan(0,5) = <strong>26,57°</strong> e, meyl <strong>50%</strong> e, û meyl wekî <strong>6:12</strong> tê nivîsîn. Zêdeker √(1 + 0,25) = <strong>1,118</strong> e: xaniyek bi şopa erdê ya 1.000 sq ft di bin wî banî de nêzîkî 1.118 sq ft rûbera banê rastîn heye.",
+  "example_metric": "Bifikire ku banê te ji bo her 100 cm dûrahiya asoyî 50 cm bilind dibe. Wê demê bilindahî / dirêjahî = 0,5, ji ber vê yekê goşe atan(0,5) = <strong>26,57°</strong> e, meyl <strong>50%</strong> e, û bi nîşandana Amerîkî meyl <strong>6:12</strong> e. Zêdeker √(1 + 0,25) = <strong>1,118</strong> e: xaniyek bi şopa erdê ya 100 m² di bin wî banî de nêzîkî 111,8 m² rûbera banê rastîn heye.",
+  "table_title": "Meylên banî yên berbelav",
+  "col_pitch": "Meyl",
+  "col_angle": "Goşe",
+  "col_slope": "Ji sedî",
+  "col_mult": "Zêdeker",
+  "more_text": "Mayî ya karê plan dikî? Hesabkerên din ên belaş biceribîne:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = {pct}% meyl</small>",
+    "main_metric": "{deg}° <small>= {pct}% meyl = {pitch}:12</small>",
+    "mult_line": "Zêdekerê meylê: <strong>{mult}</strong> (şopa erdê × {mult} = rûbera banê rastîn)",
+    "angle_line": "goşe = atan({ratio}) = {deg}°",
+    "pct_line": "ji sedî = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Meyla banî ya 6/12 çend pile ye?",
+      "Meyla 6/12 tê wateya ku ban ji bo her 12 yekîneyên dirêjahiya asoyî 6 yekîne bilind dibe. Ev dike 26,57 pile, an meyla 50%. Ev yek ji meylên herî berbelav ên xaniyan e."
+    ],
+    [
+      "Zêdekerê meylê ji bo çi ye?",
+      "Ew rûbera şopa erdê ya banî dike rûbera rastîn a xwar. Şopa erdê bi zêdeker re zêde bike da ku maddeya banî an qata bin texmîn bikî. Ji bo meyla 6/12 (26,57 pile) zêdeker 1,118 e."
+    ],
+    [
+      "Ji bo kiremîtên asfaltê meyla herî kêm çi ye?",
+      "Piraniya hilberînerên kiremîtên asfaltê herî kêm meyla 2/12 (nêzîkî 9,5 pile) dixwazin, û di bin 4/12 (nêzîkî 18,4 pile) de qateke bin a zêde dixwazin. Banên hêniktir li şûna wê membranekê dixwazin. Her tim rêwerzên hilberîner kontrol bike."
+    ],
+    [
+      "Ez çawa ji hundirê çardaxê meyla banî dipîvim?",
+      "Terazûyekê bi asoyî li ser qirşekî bigire û li ser wê dûrahiyeke diyar nîşan bike, wek 12 înç an 100 cm. Paşê ji wê nîşanê rasterast ber bi jor ve heta binê qirşê bipîve. Her du hejmaran li vir wekî dirêjahiya asoyî û bilindahî binivîse."
+    ],
+    [
+      "Meyla banî ya tûjtir baştir e?",
+      "Banên tûjtir av û berfê zûtir diavêjin û pir caran dirêjtir dimînin, lê avakirina wan bihatir e û xebata li ser wan xetertir e. Piraniya banên xaniyan di navbera nêzîkî 18 û 37 pileyan de ne (4/12 heta 9/12)."
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Free Construction Calculators",
+  "meta_desc": "Free construction and DIY calculators: roof pitch, concrete slab, paint, tile and stairs. Instant results, no ads, no tracking, works offline.",
+  "og_desc": "Roof pitch, concrete, paint, tile and stair calculators. Free, instant, no ads.",
+  "h1": "Free construction calculators",
+  "lede": "Five fast calculators for real jobs. No ads, no tracking, no sign-up. Every result shows the math behind it, and everything keeps working offline once loaded.",
+  "card_roof": "Rise and run to degrees, percent and X:12, plus the pitch multiplier for roof area.",
+  "card_concrete": "Volume and the exact number of bags, with a waste margin.",
+  "card_paint": "How much paint for your room, minus doors and windows, per number of coats.",
+  "card_tile": "Tiles and boxes from area and tile size, with grout gap and cutting waste.",
+  "card_stair": "Risers and treads from total height, checked against code limits and the comfort rule.",
+  "why_title": "Why this site exists",
+  "why_text": "Most calculator sites bury a simple formula under ads, popups and newsletter walls. These five tools do the opposite: the calculator is at the top, the formula is printed under the result, and the page loads in a fraction of a second. If a tool saves you a wasted trip to the store, there is a donation button after your result. That is the whole business model."
+}

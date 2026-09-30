@@ -1,0 +1,26 @@
+{
+  "home": "Ana sayfa",
+  "language": "Dil",
+  "units_label": "Birimler",
+  "tagline": "ücretsiz · reklamsız · takip yok · çevrimdışı çalışır",
+  "made_by": "Reklamla dolu hesaplama sitelerinden bıkmış bağımsız bir geliştirici tarafından yapıldı. Bir hata mı buldunuz? <a href=\"https://github.com/boulbaal/buildcalc/issues\">GitHub'da bildirin</a>.",
+  "donate_text": "Ücretsiz, reklamsız, tek bir kişi tarafından yapıldı. Bu size yapı marketine fazladan bir yolculuk kazandırdıysa, bana bir kahve ısmarlayabilirsiniz.",
+  "donate_paypal": "PayPal ile bağış yap",
+  "donate_kofi": "Ko-fi'de destek ol",
+  "how_it_works": "Nasıl çalışır",
+  "worked_example": "Örnek hesaplama",
+  "faq_title": "Sık sorulan sorular",
+  "more_title": "Diğer ücretsiz hesaplayıcılar",
+  "disclaimer": "Sonuçlar planlama amaçlı tahminlerdir ve uzman görüşünün yerini tutmaz. Her zaman yerel yapı yönetmeliklerini ve üretici talimatlarını kontrol edin.",
+  "name_roof": "Çatı Eğimi Hesaplama",
+  "name_concrete": "Beton Döşeme Hesaplama",
+  "name_paint": "Boya Hesaplama",
+  "name_tile": "Fayans Hesaplama",
+  "name_stair": "Merdiven Hesaplama",
+  "js": {
+    "err_empty": "Bir değer girin.",
+    "err_nan": "Geçerli bir sayı girin.",
+    "err_negative": "Pozitif olmalı.",
+    "err_zero": "Sıfırdan büyük olmalı."
+  }
+}

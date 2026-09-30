@@ -1,0 +1,67 @@
+{
+  "meta_title": "Concrete Slab Calculator - Bags and Volume, Free",
+  "meta_desc": "Free concrete slab calculator. Get the volume in cubic yards or cubic meters and the number of 40, 60, 80 lb or 25 kg bags, with waste margin. No ads.",
+  "og_desc": "Get the concrete volume and the exact number of bags for your slab. Free, no ads.",
+  "h1": "Concrete Slab Calculator",
+  "lede": "Enter your slab size and get the concrete volume plus the exact number of bags you need, with a waste margin. Free, instant, no ads.",
+  "length": "Length",
+  "width": "Width",
+  "thickness": "Thickness",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in is typical for patios and walkways.",
+  "thickness_hint_metric": "10 cm is typical for patios and walkways.",
+  "bag_label": "Bag size",
+  "bag_hint": "Premixed concrete, just add water.",
+  "waste_label": "Waste margin (%)",
+  "waste_hint": "10% covers spillage and an uneven subbase.",
+  "how_text": "A slab is a simple box: length times width times thickness gives the volume. The calculator converts the thickness to the same unit as the sides, adds your waste margin, then divides by the yield of one bag and rounds up to whole bags:",
+  "formula": "volume (cu ft) = length (ft) &times; width (ft) &times; thickness (in) / 12<br>cubic yards = volume / 27<br>volume (m&sup3;) = length (m) &times; width (m) &times; thickness (cm) / 100<br>bags = ceil(volume &times; (1 + waste / 100) / bag yield)",
+  "yields_text": "Bag yields: an 80 lb bag makes about 0.60 cu ft, a 60 lb bag 0.45 cu ft, a 40 lb bag 0.30 cu ft, and a 25 kg bag about 0.0123 m³.",
+  "example_imperial": "Say you pour a 10 × 10 ft patio, 4 inches thick. The volume is 10 × 10 × 4/12 = <strong>33.33 cu ft</strong>, which is 33.33 / 27 = <strong>1.23 cu yd</strong>. With 80 lb bags at 0.60 cu ft each, that is 33.33 / 0.60 = 55.6, rounded up to <strong>56 bags</strong>. Add the standard 10% waste margin (33.33 × 1.1 = 36.67 cu ft) and you should buy <strong>62 bags</strong>. Leftover bags are easier than a second store run, so round up.",
+  "example_metric": "Say you pour a 3 × 3 m patio, 10 cm thick. The volume is 3 × 3 × 10/100 = <strong>0.9 m³</strong>. With 25 kg bags at about 0.0123 m³ each, that is 0.9 / 0.0123 = 73.2, rounded up to <strong>74 bags</strong>. Add the standard 10% waste margin (0.9 × 1.1 = 0.99 m³) and you should buy 0.99 / 0.0123 = 80.5, rounded up to <strong>81 bags</strong>. Leftover bags are easier than a second store run, so round up.",
+  "table_title": "Bag sizes and yields",
+  "col_bag": "Bag size",
+  "col_yield": "Yield",
+  "col_per": "Bags per volume",
+  "more_text": "Planning the rest of the job? Try the other free calculators:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} bags of {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} bags of {bag}</small>",
+    "vol_imperial": "volume = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "volume = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "With {waste}% waste: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "With {waste}% waste: {vol} × {factor} = {total} m³",
+    "bags_line": "bags = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} per cu yd",
+    "tbl_per_kg": "about {m3} per m³, {yd} per cu yd"
+  },
+  "faq": [
+    [
+      "How many bags of concrete are in a cubic yard?",
+      "An 80 lb bag yields about 0.60 cubic feet, and a cubic yard is 27 cubic feet, so you need 45 bags of 80 lb mix per cubic yard. For 60 lb bags it is 60, and for 40 lb bags it is 90. With 25 kg bags you need about 81 per cubic meter (1.31 cubic yards)."
+    ],
+    [
+      "How thick should a concrete slab be?",
+      "4 inches (10 cm) is the typical thickness for patios, walkways and shed slabs. Driveways that carry cars usually need 5 to 6 inches (12 to 15 cm), and slabs for heavy vehicles or workshops often go to 6 inches (15 cm) or more. Check your local building code before you pour."
+    ],
+    [
+      "Do I need rebar or wire mesh in a slab?",
+      "Small slabs like walkways often do fine with just control joints, but wire mesh or rebar helps hold cracks tight in patios, driveways and garage floors. Place reinforcement in the middle of the slab thickness, about 2 inches (5 cm) up in a 4 inch (10 cm) slab, not on the ground."
+    ],
+    [
+      "When should I order a ready-mix truck instead of bags?",
+      "Around 1 cubic yard (0.76 cubic meters) is the usual tipping point. That is already 45 bags of 80 lb mix or about 62 bags of 25 kg mix to haul and mix by hand. Above that, a ready-mix truck is faster, more consistent and often cheaper, though small loads may cost extra."
+    ],
+    [
+      "How long does concrete take to cure?",
+      "Concrete sets in hours but cures slowly. You can usually walk on it after 24 to 48 hours and drive on it after about 7 days. It reaches most of its design strength at 28 days. Keep it damp for the first week so it cures strong instead of drying out too fast."
+    ]
+  ]
+}

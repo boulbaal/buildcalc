@@ -1,0 +1,26 @@
+{
+  "home": "Home",
+  "language": "Language",
+  "units_label": "Units",
+  "tagline": "free · no ads · no tracking · works offline",
+  "made_by": "Made by one independent developer who got tired of calculator sites full of ads. Found a mistake? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Report it on GitHub</a>.",
+  "donate_text": "Free, no ads, built by one person. If this saved you a trip to the store, you can buy me a coffee.",
+  "donate_paypal": "Donate via PayPal",
+  "donate_kofi": "Support on Ko-fi",
+  "how_it_works": "How it works",
+  "worked_example": "Worked example",
+  "faq_title": "FAQ",
+  "more_title": "More free calculators",
+  "disclaimer": "Results are estimates for planning purposes and not a substitute for professional advice. Always check local building codes and manufacturer instructions.",
+  "name_roof": "Roof Pitch Calculator",
+  "name_concrete": "Concrete Slab Calculator",
+  "name_paint": "Paint Calculator",
+  "name_tile": "Tile Calculator",
+  "name_stair": "Stair Calculator",
+  "js": {
+    "err_empty": "Enter a value.",
+    "err_nan": "Enter a valid number.",
+    "err_negative": "Must be positive.",
+    "err_zero": "Must be greater than zero."
+  }
+}

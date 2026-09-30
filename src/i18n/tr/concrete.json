@@ -1,0 +1,67 @@
+{
+  "meta_title": "Beton Hesaplama - Döşeme Hacmi ve Torba Sayısı",
+  "meta_desc": "Ücretsiz beton döşeme hesaplama. Metreküp veya cu yd cinsinden hacmi ve fire payıyla 25 kg ya da 40, 60, 80 lb torba sayısını bulun. Reklamsız.",
+  "og_desc": "Döşemeniz için beton hacmini ve tam torba sayısını bulun. Ücretsiz, reklamsız.",
+  "h1": "Beton Döşeme Hesaplama",
+  "lede": "Döşeme ölçülerinizi girin, beton hacmini ve fire payıyla birlikte gereken tam torba sayısını alın. Ücretsiz, anında, reklamsız.",
+  "length": "Uzunluk",
+  "width": "Genişlik",
+  "thickness": "Kalınlık",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "Teras ve yürüyüş yolları için genelde 4 in yeterlidir.",
+  "thickness_hint_metric": "Teras ve yürüyüş yolları için genelde 10 cm yeterlidir.",
+  "bag_label": "Torba ağırlığı",
+  "bag_hint": "Hazır kuru beton karışımı, sadece su ekleyin.",
+  "waste_label": "Fire payı (%)",
+  "waste_hint": "%10, dökülme ve düzgün olmayan zemini karşılar.",
+  "how_text": "Döşeme basit bir kutudur: uzunluk çarpı genişlik çarpı kalınlık hacmi verir. Hesaplayıcı kalınlığı kenarlarla aynı birime çevirir, fire payınızı ekler, bir torbanın verimine böler ve tam torbaya yukarı yuvarlar:",
+  "formula": "hacim (cu ft) = uzunluk (ft) &times; genişlik (ft) &times; kalınlık (in) / 12<br>kübik yarda = hacim / 27<br>hacim (m&sup3;) = uzunluk (m) &times; genişlik (m) &times; kalınlık (cm) / 100<br>torba = ceil(hacim &times; (1 + fire / 100) / torba verimi)",
+  "yields_text": "Torba verimleri: 80 lb torba yaklaşık 0,60 cu ft, 60 lb torba 0,45 cu ft, 40 lb torba 0,30 cu ft ve 25 kg torba yaklaşık 0,0123 m³ beton verir.",
+  "example_imperial": "10 × 10 ft ölçüsünde, 4 inç kalınlığında bir teras döktüğünüzü varsayalım. Hacim 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, yani 33,33 / 27 = <strong>1,23 cu yd</strong> olur. Her biri 0,60 cu ft veren 80 lb torbalarla bu 33,33 / 0,60 = 55,6 eder, yukarı yuvarlanınca <strong>56 torba</strong>. Standart %10 fire payını ekleyin (33,33 × 1,1 = 36,67 cu ft), almanız gereken <strong>62 torba</strong>. Artan torba, markete ikinci kez gitmekten iyidir, o yüzden yukarı yuvarlayın.",
+  "example_metric": "3 × 3 m ölçüsünde, 10 cm kalınlığında bir teras döktüğünüzü varsayalım. Hacim 3 × 3 × 10/100 = <strong>0,9 m³</strong> olur. Her biri yaklaşık 0,0123 m³ veren 25 kg torbalarla bu 0,9 / 0,0123 = 73,2 eder, yukarı yuvarlanınca <strong>74 torba</strong>. Standart %10 fire payını ekleyin (0,9 × 1,1 = 0,99 m³), almanız gereken 0,99 / 0,0123 = 80,5, yukarı yuvarlanınca <strong>81 torba</strong>. Artan torba, markete ikinci kez gitmekten iyidir, o yüzden yukarı yuvarlayın.",
+  "table_title": "Torba ağırlıkları ve verimleri",
+  "col_bag": "Torba ağırlığı",
+  "col_yield": "Verim",
+  "col_per": "Hacim başına torba",
+  "more_text": "İşin geri kalanını mı planlıyorsunuz? Diğer ücretsiz hesaplayıcıları deneyin:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} torba ({bag})</small>",
+    "main_metric": "{vol} m³ <small>= {bags} torba ({bag})</small>",
+    "vol_imperial": "hacim = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "hacim = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "%{waste} fire ile: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "%{waste} fire ile: {vol} × {factor} = {total} m³",
+    "bags_line": "torba = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "cu yd başına {n}",
+    "tbl_per_kg": "m³ başına yaklaşık {m3}, cu yd başına {yd}"
+  },
+  "faq": [
+    [
+      "1 metreküp betona kaç torba gerekir?",
+      "25 kg'lık torbalarla metreküp başına yaklaşık 81 torba gerekir (1,31 cu yd). ABD ölçülerinde 80 lb torba yaklaşık 0,60 fit küp beton verir ve bir yarda küp 27 fit küptür, bu yüzden yarda küp başına 45 torba 80 lb karışım gerekir. 60 lb torbalarda bu sayı 60, 40 lb torbalarda 90'dır."
+    ],
+    [
+      "Beton döşeme ne kalınlıkta olmalı?",
+      "Teras, yürüyüş yolu ve depo zemini için tipik kalınlık 4 inçtir (10 cm). Araba geçen garaj yolları genellikle 5 ile 6 inç (12 ile 15 cm) ister, ağır araçlar veya atölyeler için döşemeler çoğu zaman 6 inç (15 cm) veya daha kalın yapılır. Dökmeden önce yerel yapı yönetmeliğini kontrol edin."
+    ],
+    [
+      "Döşemede demir veya hasır çelik gerekir mi?",
+      "Yürüyüş yolu gibi küçük döşemeler çoğu zaman sadece derzlerle yetinir, ama hasır çelik veya inşaat demiri teras, garaj yolu ve garaj zeminlerinde çatlakları sıkı tutmaya yardımcı olur. Donatıyı zemine değil, döşeme kalınlığının ortasına yerleştirin; 4 inçlik (10 cm) döşemede yaklaşık 2 inç (5 cm) yukarıda."
+    ],
+    [
+      "Torba yerine ne zaman beton mikseri sipariş etmeliyim?",
+      "Genel eşik yaklaşık 1 yarda küptür (0,76 metreküp). Bu zaten taşınıp elle karıştırılacak 45 torba 80 lb veya yaklaşık 62 torba 25 kg karışım demektir. Bunun üstünde hazır beton mikseri daha hızlı, daha tutarlı ve çoğu zaman daha ucuzdur, ancak küçük siparişlerde ek ücret alınabilir."
+    ],
+    [
+      "Betonun kuruması ne kadar sürer?",
+      "Beton birkaç saatte priz alır ama yavaş kür olur. Genellikle 24 ile 48 saat sonra üzerinde yürünebilir, yaklaşık 7 gün sonra araç geçebilir. Tasarım dayanımının büyük kısmına 28 günde ulaşır. İlk hafta nemli tutun ki çok hızlı kurumadan sağlam kür olsun."
+    ]
+  ]
+}

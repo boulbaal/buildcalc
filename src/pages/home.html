@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_desc}}">
+<link rel="canonical" href="{{@canonical}}">
+{{@hreflang}}
+<meta property="og:title" content="{{meta_title}}">
+<meta property="og:description" content="{{og_desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{@canonical}}">
+<link rel="stylesheet" href="/assets/style.css">
+{{@appld}}
+</head>
+<body data-units="{{@units}}">
+<div class="wrap">
+
+<header class="site">
+  <nav aria-label="{{home}}">
+    <div class="left"><a class="brand" href="{{@url_home}}">Build<span>Calc</span></a></div>
+    {{@langselect}}
+  </nav>
+</header>
+
+<main>
+<h1>{{h1}}</h1>
+<p class="lede">{{lede}}</p>
+
+<div class="cards">
+  <a class="card" href="{{@url_roof}}"><strong>{{name_roof}}</strong><span>{{card_roof}}</span></a>
+  <a class="card" href="{{@url_concrete}}"><strong>{{name_concrete}}</strong><span>{{card_concrete}}</span></a>
+  <a class="card" href="{{@url_paint}}"><strong>{{name_paint}}</strong><span>{{card_paint}}</span></a>
+  <a class="card" href="{{@url_tile}}"><strong>{{name_tile}}</strong><span>{{card_tile}}</span></a>
+  <a class="card" href="{{@url_stair}}"><strong>{{name_stair}}</strong><span>{{card_stair}}</span></a>
+</div>
+
+<h2>{{why_title}}</h2>
+<p>{{why_text}}</p>
+
+<p class="disclaimer">{{disclaimer}}</p>
+</main>
+
+<footer class="site">
+  <p class="made">{{made_by}}</p>
+  <p>BuildCalc &middot; {{tagline}}</p>
+</footer>
+</div>
+{{@T}}
+<script src="/assets/calc.js"></script>
+</body>
+</html>

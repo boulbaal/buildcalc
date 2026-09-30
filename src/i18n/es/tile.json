@@ -1,0 +1,85 @@
+{
+  "meta_title": "Calculadora de azulejos - ¿Cuántos azulejos necesito?",
+  "meta_desc": "Calculadora de azulejos gratis. Introduce la superficie, el tamaño de pieza y la junta, y obtén piezas y cajas con desperdicio incluido. Sin anuncios.",
+  "og_desc": "Calcula piezas y cajas de azulejo para tu suelo o pared, con desperdicio incluido. Gratis, sin anuncios.",
+  "h1": "Calculadora de azulejos y baldosas",
+  "lede": "Calcula cuántos azulejos y cajas necesitas para un suelo o una pared, con junta y desperdicio incluidos. Gratis, al instante, sin anuncios.",
+  "mode_label": "Superficie",
+  "mode_dims": "Largo x ancho",
+  "mode_area": "Conozco la superficie",
+  "length": "Largo",
+  "width": "Ancho",
+  "area": "Superficie",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Tamaño de pieza (pulgadas)",
+  "tile_size_metric": "Tamaño de pieza (cm)",
+  "opt_subway": "Metro 3 x 6",
+  "opt_custom": "Personalizado",
+  "tile_w": "Ancho de pieza",
+  "tile_h": "Alto de pieza",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Junta",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 si no hay junta. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 si no hay junta. 3 mm es habitual en suelos.",
+  "pattern": "Tipo de colocación",
+  "pattern_straight": "Recta (10% de desperdicio)",
+  "pattern_diag": "Diagonal / espiga (15% de desperdicio)",
+  "perbox": "Piezas por caja (opcional)",
+  "perbox_hint": "Viene impreso en la caja. Déjalo vacío para omitirlo.",
+  "how_text": "La calculadora divide tu superficie entre lo que ocupa una pieza más su junta, añade un margen de desperdicio por cortes y roturas, y redondea hacia arriba a piezas enteras:",
+  "formula": "superficie efectiva por pieza = (ancho de pieza + junta) &times; (alto de pieza + junta)<br>piezas = ceil( superficie / superficie efectiva por pieza &times; (1 + desperdicio) )<br>cajas = ceil( piezas / piezas por caja )",
+  "how_text2": "El desperdicio es del 10% para una colocación recta y del 15% para diagonal o espiga, donde más recortes acaban siendo inservibles. Una junta más ancha hace que cada pieza ocupe algo más de superficie, así que el número de piezas baja un poco.",
+  "example_imperial": "Supongamos que alicatas un suelo de 10 ft por 12 ft, es decir <strong>120 sq ft</strong> (17.280 sq in), con piezas de 12 x 12 pulgadas en colocación recta y una junta de 1/8 de pulgada (0,125 in). Cada pieza con su junta ocupa 12,125 × 12,125 = 147,02 sq in, así que sin desperdicio salen 17.280 / 147,02 = 117,54 piezas. Añade un 10%: 117,54 × 1,1 = 129,29, que se redondea a <strong>130 piezas</strong>. Si vienen 8 por caja, son ceil(130 / 8) = <strong>17 cajas</strong>. El mismo suelo en diagonal con un 15% de desperdicio necesita 136 piezas.",
+  "example_metric": "Supongamos que embaldosas un suelo de 4 m por 3 m, es decir <strong>12 m²</strong> (120.000 cm²), con piezas de 30 x 30 cm en colocación recta y una junta de 3 mm (0,3 cm). Cada pieza con su junta ocupa 30,3 × 30,3 = 918,09 cm², así que sin desperdicio salen 120.000 / 918,09 = 130,71 piezas. Añade un 10%: 130,71 × 1,1 = 143,78, que se redondea a <strong>144 piezas</strong>. Si vienen 11 por caja, son ceil(144 / 11) = <strong>14 cajas</strong>. El mismo suelo en diagonal con un 15% de desperdicio necesita 151 piezas.",
+  "table_title_imperial": "Piezas por 100 sq ft",
+  "table_title_metric": "Piezas por 10 m²",
+  "table_note": "Tamaños de pieza habituales, colocación recta con un 10% de desperdicio y sin junta:",
+  "col_size": "Tamaño de pieza",
+  "col_area": "Superficie de pieza",
+  "col_count_imperial": "Piezas por 100 sq ft",
+  "col_count_metric": "Piezas por 10 m²",
+  "more_text": "¿Planificando el resto de la obra? Prueba las otras calculadoras gratis:",
+  "js": {
+    "main": "{tiles} piezas",
+    "main_boxes": "{tiles} piezas <small>= {boxes} cajas de {perbox}</small>",
+    "area_line_imperial": "Superficie a cubrir: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Superficie a cubrir: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Superficie efectiva por pieza: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Superficie efectiva por pieza: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Margen de desperdicio: <strong>{pct}%</strong> (colocación recta)",
+    "waste_diag": "Margen de desperdicio: <strong>{pct}%</strong> (diagonal / espiga)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "Metro 3 x 6 in",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "¿Cuánto azulejo de más debo comprar?",
+      "Compra entre un 10 y un 15% más de la superficie neta. Los cortes junto a las paredes, las roturas y las reparaciones futuras se comen ese extra. Usa un 10% para una colocación recta sencilla en una habitación rectangular, y un 15% para colocaciones en diagonal o espiga, piezas pequeñas o habitaciones con muchas esquinas."
+    ],
+    [
+      "¿Qué es el desperdicio de azulejo?",
+      "El desperdicio son las piezas que compras pero que no acaban colocadas: recortes junto a las paredes y alrededor de sanitarios, piezas que se rompen al cortar o en el transporte, y piezas de reserva para reparaciones. Es normal, no un error. Esta calculadora añade el porcentaje de desperdicio antes de redondear a piezas enteras."
+    ],
+    [
+      "¿Cuántas baldosas de 30x30 necesito para 9,3 m² (100 sq ft)?",
+      "Una pieza de 30x30 cm (12x12 pulgadas) cubre 1 pie cuadrado, así que 100 pies cuadrados (9,3 m²) necesitan 100 piezas sin desperdicio. Añade un 10% para una colocación recta y deberías comprar 110 piezas. Con junta, cada pieza ocupa algo más, así que el número puede bajar un poco."
+    ],
+    [
+      "¿La colocación en diagonal necesita más azulejo?",
+      "Sí. Colocar las piezas a 45 grados hace que cada fila termine en un corte en ángulo junto a la pared, y muchos de esos recortes no se pueden aprovechar. Cuenta con un 15% de desperdicio para diagonal o espiga en lugar del 10% habitual de una colocación recta."
+    ],
+    [
+      "¿Hay que contar las juntas al calcular el azulejo?",
+      "Sí, y juegan a tu favor. Cada pieza con su junta, a menudo de 3 mm (1/8 de pulgada), ocupa algo más que la pieza sola, así que una junta más ancha reduce ligeramente el número de piezas. El efecto es pequeño con piezas grandes pero se nota con azulejo metro pequeño."
+    ]
+  ]
+}

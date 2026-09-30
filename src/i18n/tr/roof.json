@@ -1,0 +1,56 @@
+{
+  "meta_title": "Çatı Eğimi Hesaplama - Ücretsiz, Reklamsız",
+  "meta_desc": "Ücretsiz çatı eğimi hesaplama. Yükseklik ve yatay mesafeyi derece, yüzde ve X:12 eğime çevirin, çatı alanı için eğim katsayısını alın. Reklamsız, çevrimdışı.",
+  "og_desc": "Yükseklik ve yatay mesafeyi derece, yüzde ve X:12 eğime çevirin. Anında, ücretsiz, reklamsız.",
+  "h1": "Çatı Eğimi Hesaplama",
+  "lede": "Yükseklik ve yatay mesafeyi derece, yüzde ve X:12 eğime çevirin, çatı alanınız için eğim katsayısını alın. Ücretsiz, anında, reklamsız.",
+  "mode_label": "Bildiğim değer",
+  "mode_riserun": "Yükseklik ve yatay mesafe",
+  "mode_angle": "Derece cinsinden açı",
+  "mode_percent": "Yüzde cinsinden eğim",
+  "rise": "Yükseklik",
+  "rise_hint": "Dikey yükseklik. Yatay mesafeyle aynı birimi kullanın.",
+  "run": "Yatay mesafe",
+  "run_hint": "Yatay uzunluk. 12 girerseniz X:12 eğimi doğrudan çıkar.",
+  "angle": "Açı (derece)",
+  "percent": "Eğim (%)",
+  "how_text": "Çatı eğimi, dikey yükseklik ile yatay mesafe arasındaki orandır. Bu hesaplayıcı, eğimi yazmanın üç yaygın yolu arasında dönüşüm yapar ve çatı alanını tahmin etmek için kullanılan eğim katsayısını da verir:",
+  "formula": "açı = atan(yükseklik / yatay mesafe)<br>yüzde = yükseklik / yatay mesafe &times; 100<br>eğim = (yükseklik / yatay mesafe &times; 12) : 12<br>katsayı = &radic;(1 + (yükseklik / yatay mesafe)&sup2;)",
+  "example_imperial": "Çatınızın her 12 inç yatay mesafede 6 inç yükseldiğini varsayalım. O zaman yükseklik / yatay mesafe = 0,5 olur, yani açı atan(0,5) = <strong>26,57°</strong>, eğim <strong>%50</strong> ve X:12 gösterimiyle <strong>6:12</strong> olur. Katsayı √(1 + 0,25) = <strong>1,118</strong>: bu çatının altında 1.000 sq ft taban alanı olan bir evin gerçek çatı yüzeyi yaklaşık 1.118 sq ft olur.",
+  "example_metric": "Çatınızın her 100 cm yatay mesafede 50 cm yükseldiğini varsayalım. O zaman yükseklik / yatay mesafe = 0,5 olur, yani açı atan(0,5) = <strong>26,57°</strong>, eğim <strong>%50</strong> ve Amerikan gösterimiyle <strong>6:12</strong> olur. Katsayı √(1 + 0,25) = <strong>1,118</strong>: bu çatının altında 100 m² taban alanı olan bir evin gerçek çatı yüzeyi yaklaşık 111,8 m² olur.",
+  "table_title": "Yaygın çatı eğimleri",
+  "col_pitch": "Eğim X:12",
+  "col_angle": "Açı",
+  "col_slope": "Eğim",
+  "col_mult": "Katsayı",
+  "more_text": "İşin geri kalanını mı planlıyorsunuz? Diğer ücretsiz hesaplayıcıları deneyin:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = %{pct} eğim</small>",
+    "main_metric": "{deg}° <small>= %{pct} eğim = {pitch}:12</small>",
+    "mult_line": "Eğim katsayısı: <strong>{mult}</strong> (düz taban alanı × {mult} = gerçek çatı alanı)",
+    "angle_line": "açı = atan({ratio}) = {deg}°",
+    "pct_line": "yüzde = {ratio} × 100 = %{pct}"
+  },
+  "faq": [
+    [
+      "6/12 çatı eğimi kaç derecedir?",
+      "6/12 eğim, çatının her 12 birim yatay mesafede 6 birim yükseldiği anlamına gelir. Bu 26,57 dereceye ya da %50 eğime eşittir. Evlerde en yaygın eğimlerden biridir."
+    ],
+    [
+      "Eğim katsayısı ne işe yarar?",
+      "Çatının düz taban alanını gerçek eğimli yüzey alanına çevirir. Çatı kaplama malzemesini veya su yalıtım altlığını tahmin etmek için taban alanını katsayıyla çarpın. 6/12 eğim (26,57 derece) için katsayı 1,118'dir."
+    ],
+    [
+      "Shingle için minimum çatı eğimi nedir?",
+      "Çoğu asfalt shingle üreticisi en az 2/12 eğim (yaklaşık 9,5 derece) ister, 4/12'nin (yaklaşık 18,4 derece) altında ise ek altlık gerektirir. Daha düz çatılarda bunun yerine membran gerekir. Her zaman üretici talimatlarını kontrol edin."
+    ],
+    [
+      "Çatı eğimini çatı arasından nasıl ölçerim?",
+      "Bir su terazisini bir mertek boyunca yatay tutun ve üzerinde sabit bir mesafe işaretleyin, örneğin 12 inç veya 100 cm. Sonra bu işaretten dikey olarak merteğin alt yüzüne kadar ölçün. İki sayıyı buraya yatay mesafe ve yükseklik olarak girin."
+    ],
+    [
+      "Daha dik çatı eğimi daha mı iyidir?",
+      "Dik çatılar suyu ve karı daha hızlı atar ve genellikle daha uzun ömürlüdür, ama yapımı daha pahalıdır ve üzerinde çalışmak daha tehlikelidir. Çoğu ev çatısı yaklaşık 18 ile 37 derece (4/12 ile 9/12) arasındadır."
+    ]
+  ]
+}

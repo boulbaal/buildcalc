@@ -1,0 +1,67 @@
+{
+  "meta_title": "Calcul béton dalle - Volume en m³ et nombre de sacs",
+  "meta_desc": "Calcul de béton pour dalle gratuit. Obtenez le volume en m³ ou cu yd et le nombre de sacs de 25 kg ou de 40, 60, 80 lb, avec marge de perte. Sans pub.",
+  "og_desc": "Calculez le volume de béton et le nombre exact de sacs pour votre dalle. Gratuit, sans pub.",
+  "h1": "Calcul béton pour dalle",
+  "lede": "Saisissez les dimensions de votre dalle et obtenez le volume de béton ainsi que le nombre exact de sacs nécessaires, avec une marge de perte. Gratuit, immédiat, sans pub.",
+  "length": "Longueur",
+  "width": "Largeur",
+  "thickness": "Épaisseur",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in est l'épaisseur courante pour une terrasse ou une allée.",
+  "thickness_hint_metric": "10 cm est l'épaisseur courante pour une terrasse ou une allée.",
+  "bag_label": "Taille du sac",
+  "bag_hint": "Béton prêt à l'emploi, il suffit d'ajouter de l'eau.",
+  "waste_label": "Marge de perte (%)",
+  "waste_hint": "10% couvre les pertes et un support irrégulier.",
+  "how_text": "Une dalle est un simple pavé : longueur fois largeur fois épaisseur donne le volume. Le calculateur convertit l'épaisseur dans la même unité que les côtés, ajoute votre marge de perte, divise par le rendement d'un sac et arrondit au sac entier supérieur :",
+  "formula": "volume (cu ft) = longueur (ft) &times; largeur (ft) &times; épaisseur (in) / 12<br>yards cubes = volume / 27<br>volume (m&sup3;) = longueur (m) &times; largeur (m) &times; épaisseur (cm) / 100<br>sacs = ceil(volume &times; (1 + perte / 100) / rendement du sac)",
+  "yields_text": "Rendement par sac : un sac de 80 lb donne environ 0,60 cu ft, un sac de 60 lb 0,45 cu ft, un sac de 40 lb 0,30 cu ft, et un sac de 25 kg environ 0,0123 m³.",
+  "example_imperial": "Supposons que vous couliez une terrasse de 10 × 10 ft, épaisse de 4 pouces. Le volume est 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, soit 33,33 / 27 = <strong>1,23 cu yd</strong>. Avec des sacs de 80 lb de 0,60 cu ft chacun, cela donne 33,33 / 0,60 = 55,6, arrondi à <strong>56 sacs</strong>. Ajoutez la marge de perte habituelle de 10% (33,33 × 1,1 = 36,67 cu ft) et il vaut mieux acheter <strong>62 sacs</strong>. Quelques sacs en trop, c'est plus simple qu'un deuxième passage au magasin, alors arrondissez vers le haut.",
+  "example_metric": "Supposons que vous couliez une terrasse de 3 × 3 m, épaisse de 10 cm. Le volume est 3 × 3 × 10/100 = <strong>0,9 m³</strong>. Avec des sacs de 25 kg d'environ 0,0123 m³ chacun, cela donne 0,9 / 0,0123 = 73,2, arrondi à <strong>74 sacs</strong>. Ajoutez la marge de perte habituelle de 10% (0,9 × 1,1 = 0,99 m³) et il vaut mieux acheter 0,99 / 0,0123 = 80,5, arrondi à <strong>81 sacs</strong>. Quelques sacs en trop, c'est plus simple qu'un deuxième passage au magasin, alors arrondissez vers le haut.",
+  "table_title": "Tailles de sacs et rendements",
+  "col_bag": "Taille du sac",
+  "col_yield": "Rendement",
+  "col_per": "Sacs par volume",
+  "more_text": "Vous préparez la suite du chantier ? Essayez les autres calculateurs gratuits :",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} sacs de {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} sacs de {bag}</small>",
+    "vol_imperial": "volume = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "volume = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Avec {waste}% de perte : {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Avec {waste}% de perte : {vol} × {factor} = {total} m³",
+    "bags_line": "sacs = {total} / {yield}, arrondi au supérieur = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} par cu yd",
+    "tbl_per_kg": "environ {m3} par m³, {yd} par cu yd"
+  },
+  "faq": [
+    [
+      "Combien de sacs de béton faut-il pour un mètre cube ?",
+      "Avec des sacs de 25 kg, il en faut environ 81 par mètre cube (1,31 cubic yard). En mesures américaines, un sac de 80 lb donne environ 0,60 cubic feet et un cubic yard fait 27 cubic feet, il faut donc 45 sacs de 80 lb par cubic yard. Pour des sacs de 60 lb, c'est 60, et pour des sacs de 40 lb, 90."
+    ],
+    [
+      "Quelle épaisseur pour une dalle en béton ?",
+      "10 cm (4 pouces) est l'épaisseur courante pour une terrasse, une allée ou une dalle d'abri de jardin. Une allée carrossable pour voitures demande en général 12 à 15 cm (5 à 6 pouces), et les dalles pour véhicules lourds ou ateliers vont souvent jusqu'à 15 cm (6 pouces) ou plus. Vérifiez les règles de construction locales avant de couler."
+    ],
+    [
+      "Faut-il des fers à béton ou un treillis soudé dans une dalle ?",
+      "Les petites dalles comme les allées se contentent souvent de joints de retrait, mais un treillis soudé ou des fers à béton aident à limiter l'ouverture des fissures dans les terrasses, les allées carrossables et les sols de garage. Placez l'armature au milieu de l'épaisseur de la dalle, environ 5 cm (2 pouces) au-dessus du sol dans une dalle de 10 cm (4 pouces), et non posée par terre."
+    ],
+    [
+      "Quand commander une toupie de béton plutôt que des sacs ?",
+      "Autour de 0,76 mètre cube (1 cubic yard), c'est le seuil habituel. Cela représente déjà environ 62 sacs de 25 kg ou 45 sacs de 80 lb à transporter et à gâcher à la main. Au-delà, une toupie de béton prêt à l'emploi est plus rapide, plus homogène et souvent moins chère, même si les petites livraisons peuvent coûter un supplément."
+    ],
+    [
+      "Combien de temps faut-il au béton pour sécher ?",
+      "Le béton prend en quelques heures mais durcit lentement. On peut généralement marcher dessus après 24 à 48 heures et rouler dessus après environ 7 jours. Il atteint l'essentiel de sa résistance au bout de 28 jours. Gardez-le humide la première semaine pour qu'il durcisse bien au lieu de sécher trop vite."
+    ]
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "meta_title": "瓷砖用量计算器 - 需要多少块瓷砖？",
+  "meta_desc": "免费瓷砖用量计算器。输入地面或墙面尺寸、瓷砖规格和缝宽，算出含损耗的瓷砖片数和箱数。即时、无广告。",
+  "og_desc": "算出地面或墙面所需的瓷砖片数和箱数，已含损耗。免费、无广告。",
+  "h1": "瓷砖用量计算器",
+  "lede": "算出地面或墙面需要多少片瓷砖、多少箱，已计入缝宽和损耗。免费、即时、无广告。",
+  "mode_label": "面积",
+  "mode_dims": "长 x 宽",
+  "mode_area": "我已知道面积",
+  "length": "长度",
+  "width": "宽度",
+  "area": "面积",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "瓷砖规格（英寸）",
+  "tile_size_metric": "瓷砖规格（cm）",
+  "opt_subway": "3 x 6 地铁砖",
+  "opt_custom": "自定义",
+  "tile_w": "瓷砖宽度",
+  "tile_h": "瓷砖长度",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "砖缝宽度",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "无缝填 0。1/8 in = 0.125。",
+  "gap_hint_metric": "无缝填 0。地砖常用 3 mm。",
+  "pattern": "铺贴方式",
+  "pattern_straight": "直铺（损耗 10%）",
+  "pattern_diag": "斜铺 / 人字铺（损耗 15%）",
+  "perbox": "每箱片数（可选）",
+  "perbox_hint": "印在包装箱上。不填则跳过。",
+  "how_text": "计算器用面积除以一片瓷砖加砖缝所占的面积，再加上切割和破损的损耗，最后向上取整为整片：",
+  "formula": "有效单片面积 = (瓷砖宽度 + 砖缝宽度) &times; (瓷砖长度 + 砖缝宽度)<br>片数 = ceil( 面积 / 有效单片面积 &times; (1 + 损耗) )<br>箱数 = ceil( 片数 / 每箱片数 )",
+  "how_text2": "直铺网格按 10% 损耗计算，斜铺或人字铺按 15% 计算，因为会有更多边角料用不上。砖缝越宽，每片砖占的面积越大，所以需要的片数会略少一点。",
+  "example_imperial": "假设要铺一块 10 ft × 12 ft 的地面，面积为 <strong>120 sq ft</strong>（17,280 sq in），用 12 x 12 英寸瓷砖直铺，砖缝 1/8 英寸（0.125 in）。每片砖加砖缝占 12.125 × 12.125 = 147.02 sq in，所以净用量为 17,280 / 147.02 = 117.54 片。加 10% 损耗：117.54 × 1.1 = 129.29，向上取整为 <strong>130 片</strong>。如果每箱 8 片，就是 ceil(130 / 8) = <strong>17 箱</strong>。同样的地面斜铺按 15% 损耗需要 136 片。",
+  "example_metric": "假设要铺一块 4 m × 3 m 的地面，面积为 <strong>12 m²</strong>（120,000 cm²），用 30 x 30 cm 瓷砖直铺，砖缝 3 mm（0.3 cm）。每片砖加砖缝占 30.3 × 30.3 = 918.09 cm²，所以净用量为 120,000 / 918.09 = 130.71 片。加 10% 损耗：130.71 × 1.1 = 143.78，向上取整为 <strong>144 片</strong>。如果每箱 11 片，就是 ceil(144 / 11) = <strong>14 箱</strong>。同样的地面斜铺按 15% 损耗需要 151 片。",
+  "table_title_imperial": "每 100 sq ft 所需瓷砖",
+  "table_title_metric": "每 10 m² 所需瓷砖",
+  "table_note": "常见瓷砖规格，直铺，损耗 10%，不计砖缝：",
+  "col_size": "瓷砖规格",
+  "col_area": "单片面积",
+  "col_count_imperial": "每 100 sq ft 片数",
+  "col_count_metric": "每 10 m² 片数",
+  "more_text": "还要计划其他工序？试试其他免费计算器：",
+  "js": {
+    "main": "{tiles} 片",
+    "main_boxes": "{tiles} 片 <small>= {boxes} 箱（每箱 {perbox} 片）</small>",
+    "area_line_imperial": "铺贴面积：<strong>{area} sq ft</strong>",
+    "area_line_metric": "铺贴面积：<strong>{area} m²</strong>",
+    "eff_line_imperial": "单片有效面积：({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "单片有效面积：({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "损耗余量：<strong>{pct}%</strong>（直铺）",
+    "waste_diag": "损耗余量：<strong>{pct}%</strong>（斜铺 / 人字铺）",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "3 x 6 in 地铁砖",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "瓷砖应该多买多少？",
+      "比净用量多买 10% 到 15%。沿墙切割、破损和以后的维修都会用掉这部分余量。矩形房间简单直铺按 10%，斜铺、人字铺、小砖或墙角多的房间按 15%。"
+    ],
+    [
+      "什么是瓷砖损耗？",
+      "损耗就是买了但最终没铺在地上的那部分：墙边和洁具周围的边角料、切割或运输时碎掉的砖，以及留着以后维修的备用砖。这很正常，不是失误。本计算器会先加上损耗百分比，再向上取整为整片。"
+    ],
+    [
+      "100 平方英尺需要多少片 12x12 的瓷砖？",
+      "一片 12x12 英寸（30x30 cm）的瓷砖面积是 1 平方英尺，所以 100 平方英尺（9.3 m²）净用量是 100 片。直铺加 10% 损耗，应该买 110 片。有砖缝时每片砖占的面积稍大，片数还会略少一点。"
+    ],
+    [
+      "斜铺需要更多瓷砖吗？",
+      "是的。按 45 度斜铺时，每一排到墙边都要斜切，很多边角料无法再用。斜铺或人字铺按约 15% 损耗计划，而不是直铺常用的 10%。"
+    ],
+    [
+      "算瓷砖时要把砖缝算进去吗？",
+      "要，而且对你有利。每片砖加上砖缝（常见 1/8 英寸或 3 mm）所占的面积比砖本身略大，所以砖缝越宽，需要的片数略少。大砖影响很小，小的地铁砖就比较明显。"
+    ]
+  ]
+}

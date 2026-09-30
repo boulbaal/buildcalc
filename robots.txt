@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://boulbaal.github.io/buildcalc/sitemap.xml

@@ -1,0 +1,76 @@
+{
+  "meta_title": "Kikokotoo cha Rangi - Ninahitaji Rangi Kiasi Gani?",
+  "meta_desc": "Kikokotoo cha rangi bure. Weka ukubwa wa chumba, milango, madirisha na tabaka upate lita au galoni za rangi zinazohitajika. Papo hapo, bila matangazo.",
+  "og_desc": "Weka ukubwa wa chumba, milango, madirisha na tabaka upate lita au galoni za rangi. Bure, bila matangazo.",
+  "h1": "Kikokotoo cha Rangi",
+  "lede": "Hesabu chumba chako kinahitaji lita au galoni ngapi za rangi, ukizingatia milango, madirisha na idadi ya tabaka. Bure, papo hapo, bila matangazo.",
+  "length": "Urefu wa chumba",
+  "width": "Upana wa chumba",
+  "height": "Kimo cha ukuta",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Milango",
+  "doors_hint": "Haipakwi rangi. Kila mlango hutoa eneo la mlango wa kawaida.",
+  "windows": "Madirisha",
+  "coats": "Tabaka",
+  "coats_hint": "Tabaka mbili ndio mpango wa kawaida.",
+  "coverage": "Eneo linalofunikwa",
+  "sfx_cov_imperial": "(sq ft kwa galoni)",
+  "sfx_cov_metric": "(m² kwa lita)",
+  "coverage_hint_imperial": "kawaida 250-400",
+  "coverage_hint_metric": "kawaida 8-12",
+  "ceiling": "Jumuisha dari",
+  "how_text": "Kikokotoo hupima eneo la kuta kuzunguka chumba, hutoa eneo la kawaida kwa kila mlango na dirisha, huongeza dari ukichagua, huzidisha kwa idadi ya tabaka, na hugawanya kwa eneo ambalo rangi yako hufunika. Tokeo hukadiriwa juu kila mara hadi makopo kamili, kwa sababu huwezi kununua galoni 1.8:",
+  "formula": "eneo la kuta = 2 &times; (urefu + upana) &times; kimo<br>eneo la kupaka = eneo la kuta &minus; milango &times; eneo la mlango &minus; madirisha &times; eneo la dirisha (+ dari)<br>makopo = eneo la kupaka &times; tabaka &divide; eneo linalofunikwa, hukamilishwa juu",
+  "metric_note": "Katika mfumo wa metriki mlango mmoja huhesabiwa kama 1.95 m², dirisha 1.4 m², na eneo linalofunikwa ni kwa lita. Katika mfumo wa imperial mlango huhesabiwa kama sq ft 21 na dirisha sq ft 15.",
+  "example_imperial": "Tuseme chumba chako ni ft 12 × 10 chenye kuta za ft 8, mlango mmoja na dirisha moja, na unapanga tabaka mbili kwa sq ft 350 kwa galoni. Eneo la kuta ni 2 × (12 + 10) × 8 = <strong>sq ft 352</strong>. Toa mlango (sq ft 21) na dirisha (sq ft 15) upate <strong>sq ft 316 kwa kila tabaka</strong>. Tabaka mbili ni sq ft 632, na 632 ÷ 350 = 1.81, ikikadiriwa juu inakuwa <strong>galoni 2</strong>. Weka alama kwenye \"Jumuisha dari\" na dari ya sq ft 120 inaifanya iwe sq ft 436 kwa kila tabaka, jumla sq ft 872, kwa hiyo unahitaji <strong>galoni 3</strong>.",
+  "example_metric": "Tuseme chumba chako ni m 4 × 3 chenye kuta za m 2.5, mlango mmoja na dirisha moja, na unapanga tabaka mbili kwa 10 m² kwa lita. Eneo la kuta ni 2 × (4 + 3) × 2.5 = <strong>35 m²</strong>. Toa mlango (1.95 m²) na dirisha (1.4 m²) upate <strong>31.65 m² kwa kila tabaka</strong>. Tabaka mbili ni 63.3 m², na 63.3 ÷ 10 = 6.33, ikikadiriwa juu inakuwa <strong>lita 7</strong>. Weka alama kwenye \"Jumuisha dari\" na dari ya 12 m² inaifanya iwe 43.65 m² kwa kila tabaka, jumla 87.3 m², kwa hiyo unahitaji <strong>lita 9</strong>.",
+  "table_title": "Rangi inayohitajika kwa ukubwa wa chumba",
+  "table_note_imperial": "Kuta zenye dari ya ft 8, mlango mmoja, dirisha moja, tabaka mbili, sq ft 350 kwa galoni:",
+  "table_note_metric": "Kuta zenye kimo cha m 2.5, mlango mmoja, dirisha moja, tabaka mbili, 10 m² kwa lita:",
+  "col_room": "Chumba",
+  "col_walls": "Kuta tu",
+  "col_both": "Kuta + dari",
+  "more_text": "Unapanga sehemu nyingine ya kazi? Jaribu vikokotoo vingine vya bure:",
+  "js": {
+    "main": "{cansText} <small>kwa {coatsText}</small>",
+    "cans_imperial_one": "galoni {cans}",
+    "cans_imperial": "galoni {cans}",
+    "cans_metric_one": "lita {cans}",
+    "cans_metric": "lita {cans}",
+    "coats_one": "tabaka {coats}",
+    "coats_other": "tabaka {coats}",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Eneo la kuta: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Toa milango {doors} na madirisha {windows}: −{deduct} {a} = <strong>{per} {a} kwa kila tabaka</strong>",
+    "deduct_ceiling_line": "Toa milango {doors} na madirisha {windows}: −{deduct} {a}, ongeza dari {ceil} {a} = <strong>{per} {a} kwa kila tabaka</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, ikikadiriwa juu inakuwa <strong>{cansText}</strong>",
+    "room_imperial": "ft {l} × {w}",
+    "room_metric": "m {l} × {w}",
+    "cell_imperial": "gal {n}",
+    "cell_metric": "L {n}"
+  },
+  "faq": [
+    [
+      "Galoni moja ya rangi hufunika eneo gani?",
+      "Rangi nyingi za ndani hufunika futi za mraba 250 hadi 400 kwa galoni (takriban 6 hadi 10 m² kwa lita) kwenye ukuta laini uliopakwa rangi ya msingi. Kikokotoo hiki kinatumia sq ft 350 kwa galoni au 10 m² kwa lita kama chaguo-msingi. Nyuso zilizo na mikwaruzo, zinazonyonya au ambazo hazijapakwa hunyonya rangi zaidi, kwa hiyo tumia kiwango cha chini."
+    ],
+    [
+      "Je, ninahitaji rangi ya msingi (primer) kabla ya kupaka rangi?",
+      "Tumia primer kwenye gypsum mpya, mbao tupu, nyuso zenye madoa au zinazong'aa, na unapofunika rangi nzito kwa rangi nyepesi. Kwenye kuta zilizopakwa awali zikiwa katika hali nzuri na rangi inayofanana, rangi bora yenye primer ndani yake kwa kawaida inatosha. Primer ni nafuu kuliko tabaka la ziada la rangi."
+    ],
+    [
+      "Je, tabaka moja la rangi linatosha, au ninahitaji mbili?",
+      "Panga tabaka mbili kwa umaliziaji ulio sawa na unaodumu. Tabaka moja linaweza kutosha unapopaka upya kwa rangi ile ile na mng'ao ule ule kwenye ukuta ulioandaliwa vizuri. Mabadiliko makubwa ya rangi, rangi nyekundu na njano, au kupaka juu ya viraka mara nyingi huhitaji tabaka mbili pamoja na primer yenye rangi chini yake."
+    ],
+    [
+      "Ninahitaji rangi kiasi gani kwa chumba cha 12x12?",
+      "Chumba cha futi 12 kwa 12 chenye kuta za futi 8 kina sq ft 384 za ukuta. Ukitoa mlango na dirisha ni sq ft 348 kwa kila tabaka, kwa hiyo tabaka mbili zinahitaji galoni 2 kwa sq ft 350 kwa galoni. Chumba kinachofanana cha m 4 kwa 4 chenye kuta za m 2.5 kinahitaji lita 8 kwa 10 m² kwa lita."
+    ],
+    [
+      "Je, rangi ya dari ni tofauti na rangi ya ukuta?",
+      "Rangi ya dari hutengenezwa ikiwa nzito zaidi ili isirukie na kudondoka sana, na karibu kila mara haing'ai ili mwanga usionyeshe alama za roller. Unaweza kutumia rangi ya ukuta isiyong'aa kwenye dari, lakini rangi maalum ya dari ni rahisi kupaka juu ya kichwa na huficha kasoro vizuri zaidi."
+    ]
+  ]
+}

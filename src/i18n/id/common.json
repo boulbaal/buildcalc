@@ -1,0 +1,26 @@
+{
+  "home": "Beranda",
+  "language": "Bahasa",
+  "units_label": "Satuan",
+  "tagline": "gratis · tanpa iklan · tanpa pelacakan · bisa offline",
+  "made_by": "Dibuat oleh satu pengembang independen yang bosan dengan situs kalkulator penuh iklan. Menemukan kesalahan? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Laporkan di GitHub</a>.",
+  "donate_text": "Gratis, tanpa iklan, dibuat oleh satu orang. Kalau ini menghemat satu kali bolak-balik ke toko bangunan, Anda bisa traktir saya kopi.",
+  "donate_paypal": "Donasi lewat PayPal",
+  "donate_kofi": "Dukung di Ko-fi",
+  "how_it_works": "Cara kerjanya",
+  "worked_example": "Contoh perhitungan",
+  "faq_title": "Tanya jawab",
+  "more_title": "Kalkulator gratis lainnya",
+  "disclaimer": "Hasil perhitungan adalah perkiraan untuk perencanaan dan bukan pengganti saran profesional. Selalu periksa peraturan bangunan setempat dan petunjuk dari pabrik.",
+  "name_roof": "Kalkulator Kemiringan Atap",
+  "name_concrete": "Kalkulator Cor Beton",
+  "name_paint": "Kalkulator Cat",
+  "name_tile": "Kalkulator Keramik",
+  "name_stair": "Kalkulator Tangga",
+  "js": {
+    "err_empty": "Masukkan nilai.",
+    "err_nan": "Masukkan angka yang valid.",
+    "err_negative": "Harus bernilai positif.",
+    "err_zero": "Harus lebih dari nol."
+  }
+}

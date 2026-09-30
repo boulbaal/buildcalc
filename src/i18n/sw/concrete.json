@@ -1,0 +1,67 @@
+{
+  "meta_title": "Kikokotoo cha Zege - Mifuko na Ujazo, Bure",
+  "meta_desc": "Kikokotoo cha zege bure. Pata ujazo kwa m³ au cu yd na idadi ya mifuko ya lb 40, 60, 80 au kg 25, pamoja na ziada ya upotevu. Bila matangazo.",
+  "og_desc": "Pata ujazo wa zege na idadi kamili ya mifuko kwa sakafu yako ya zege. Bure, bila matangazo.",
+  "h1": "Kikokotoo cha Zege",
+  "lede": "Weka vipimo vya sakafu yako ya zege upate ujazo wa zege pamoja na idadi kamili ya mifuko unayohitaji, na ziada ya upotevu. Bure, papo hapo, bila matangazo.",
+  "length": "Urefu",
+  "width": "Upana",
+  "thickness": "Unene",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "in 4 ni kawaida kwa baraza na njia za kutembea.",
+  "thickness_hint_metric": "cm 10 ni kawaida kwa baraza na njia za kutembea.",
+  "bag_label": "Ukubwa wa mfuko",
+  "bag_hint": "Zege iliyochanganywa tayari, ongeza maji tu.",
+  "waste_label": "Ziada ya upotevu (%)",
+  "waste_hint": "10% inafidia kinachomwagika na msingi usio sawa.",
+  "how_text": "Sakafu ya zege ni boksi rahisi: urefu mara upana mara unene hutoa ujazo. Kikokotoo hubadilisha unene kuwa kipimo sawa na cha pande, huongeza ziada ya upotevu, kisha hugawanya kwa kiasi kinachotoka kwenye mfuko mmoja na kukadiria juu hadi mifuko kamili:",
+  "formula": "ujazo (cu ft) = urefu (ft) &times; upana (ft) &times; unene (in) / 12<br>yadi za ujazo = ujazo / 27<br>ujazo (m&sup3;) = urefu (m) &times; upana (m) &times; unene (cm) / 100<br>mifuko = ceil(ujazo &times; (1 + upotevu / 100) / kiasi kwa mfuko)",
+  "yields_text": "Kiasi kwa kila mfuko: mfuko wa lb 80 hutoa takriban cu ft 0.60, mfuko wa lb 60 cu ft 0.45, mfuko wa lb 40 cu ft 0.30, na mfuko wa kg 25 takriban 0.0123 m³.",
+  "example_imperial": "Tuseme unamwaga baraza la ft 10 × 10, lenye unene wa inchi 4. Ujazo ni 10 × 10 × 4/12 = <strong>33.33 cu ft</strong>, ambayo ni 33.33 / 27 = <strong>1.23 cu yd</strong>. Kwa mifuko ya lb 80 yenye cu ft 0.60 kila mmoja, hiyo ni 33.33 / 0.60 = 55.6, ikikadiriwa juu inakuwa <strong>mifuko 56</strong>. Ongeza ziada ya kawaida ya upotevu ya 10% (33.33 × 1.1 = 36.67 cu ft) na unapaswa kununua <strong>mifuko 62</strong>. Mifuko inayobaki ni rahisi kuliko safari ya pili dukani, kwa hiyo kadiria juu.",
+  "example_metric": "Tuseme unamwaga baraza la m 3 × 3, lenye unene wa cm 10. Ujazo ni 3 × 3 × 10/100 = <strong>0.9 m³</strong>. Kwa mifuko ya kg 25 yenye takriban 0.0123 m³ kila mmoja, hiyo ni 0.9 / 0.0123 = 73.2, ikikadiriwa juu inakuwa <strong>mifuko 74</strong>. Ongeza ziada ya kawaida ya upotevu ya 10% (0.9 × 1.1 = 0.99 m³) na unapaswa kununua 0.99 / 0.0123 = 80.5, ikikadiriwa juu inakuwa <strong>mifuko 81</strong>. Mifuko inayobaki ni rahisi kuliko safari ya pili dukani, kwa hiyo kadiria juu.",
+  "table_title": "Ukubwa wa mifuko na kiasi kinachotoka",
+  "col_bag": "Ukubwa wa mfuko",
+  "col_yield": "Kiasi",
+  "col_per": "Mifuko kwa ujazo",
+  "more_text": "Unapanga sehemu nyingine ya kazi? Jaribu vikokotoo vingine vya bure:",
+  "js": {
+    "bag_lb": "lb {n}",
+    "bag_kg": "kg {n}",
+    "main_imperial": "{yd} cu yd <small>= mifuko {bags} ya {bag}</small>",
+    "main_metric": "{vol} m³ <small>= mifuko {bags} ya {bag}</small>",
+    "vol_imperial": "ujazo = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "ujazo = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Pamoja na upotevu wa {waste}%: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Pamoja na upotevu wa {waste}%: {vol} × {factor} = {total} m³",
+    "bags_line": "mifuko = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} kwa cu yd",
+    "tbl_per_kg": "takriban {m3} kwa m³, {yd} kwa cu yd"
+  },
+  "faq": [
+    [
+      "Kuna mifuko mingapi ya zege katika cubic yard moja?",
+      "Mfuko wa lb 80 hutoa takriban futi za ujazo 0.60, na cubic yard moja ni futi za ujazo 27, kwa hiyo unahitaji mifuko 45 ya mchanganyiko wa lb 80 kwa kila cubic yard. Kwa mifuko ya lb 60 ni 60, na kwa mifuko ya lb 40 ni 90. Kwa mifuko ya kg 25 unahitaji takriban 81 kwa kila mita ya ujazo (cubic yard 1.31)."
+    ],
+    [
+      "Sakafu ya zege inapaswa kuwa na unene gani?",
+      "Inchi 4 (cm 10) ni unene wa kawaida kwa baraza, njia za kutembea na sakafu za stoo ndogo. Njia za magari kuingia nyumbani kwa kawaida zinahitaji inchi 5 hadi 6 (cm 12 hadi 15), na sakafu za magari mazito au karakana mara nyingi hufika inchi 6 (cm 15) au zaidi. Angalia kanuni za ujenzi za eneo lako kabla ya kumwaga."
+    ],
+    [
+      "Je, ninahitaji nondo au wavu wa chuma (BRC) kwenye sakafu ya zege?",
+      "Sakafu ndogo kama njia za kutembea mara nyingi zinatosha kwa viungo vya kudhibiti nyufa tu, lakini wavu wa chuma au nondo husaidia kushikilia nyufa zisipanuke kwenye baraza, njia za magari na sakafu za gereji. Weka chuma katikati ya unene wa sakafu, takriban inchi 2 (cm 5) kutoka chini kwenye sakafu ya inchi 4 (cm 10), si juu ya ardhi."
+    ],
+    [
+      "Ni lini niagize lori la zege tayari (ready-mix) badala ya mifuko?",
+      "Takriban cubic yard 1 (mita za ujazo 0.76) ndiyo kawaida mahali pa kubadilisha. Hiyo tayari ni mifuko 45 ya lb 80 au takriban mifuko 62 ya kg 25 ya kubeba na kuchanganya kwa mkono. Zaidi ya hapo, lori la ready-mix ni la haraka zaidi, lina ubora sawa zaidi na mara nyingi ni nafuu, ingawa mizigo midogo inaweza kulipishwa zaidi."
+    ],
+    [
+      "Zege huchukua muda gani kukauka na kukomaa?",
+      "Zege hushika ndani ya saa chache lakini hukomaa polepole. Kwa kawaida unaweza kutembea juu yake baada ya saa 24 hadi 48 na kuendesha gari juu yake baada ya takriban siku 7. Hufikia sehemu kubwa ya nguvu yake iliyokusudiwa baada ya siku 28. Iweke na unyevu katika wiki ya kwanza ili ikomae kwa nguvu badala ya kukauka haraka mno."
+    ]
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "meta_title": "Tính số lượng gạch ốp lát - Cần bao nhiêu viên?",
+  "meta_desc": "Tính số lượng gạch lát nền, ốp tường miễn phí. Nhập kích thước sàn hoặc tường, cỡ gạch và mạch ron để ra số viên và số thùng, đã tính hao hụt. Không quảng cáo.",
+  "og_desc": "Tính số viên gạch và số thùng cho sàn hoặc tường, đã tính hao hụt. Miễn phí, không quảng cáo.",
+  "h1": "Tính số lượng gạch ốp lát",
+  "lede": "Tính xem bạn cần bao nhiêu viên gạch và bao nhiêu thùng cho sàn hoặc tường, đã tính mạch ron và hao hụt. Miễn phí, tức thì, không quảng cáo.",
+  "mode_label": "Diện tích",
+  "mode_dims": "Dài x rộng",
+  "mode_area": "Tôi biết diện tích",
+  "length": "Chiều dài",
+  "width": "Chiều rộng",
+  "area": "Diện tích",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Kích thước gạch (inch)",
+  "tile_size_metric": "Kích thước gạch (cm)",
+  "opt_subway": "Gạch thẻ 3 x 6",
+  "opt_custom": "Kích thước khác",
+  "tile_w": "Chiều rộng gạch",
+  "tile_h": "Chiều cao gạch",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Mạch ron",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 nếu không có ron. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 nếu không có ron. 3 mm là phổ biến cho gạch lát nền.",
+  "pattern": "Kiểu lát",
+  "pattern_straight": "Lát thẳng (hao hụt 10%)",
+  "pattern_diag": "Lát chéo / xương cá (hao hụt 15%)",
+  "perbox": "Số viên mỗi thùng (tùy chọn)",
+  "perbox_hint": "In trên thùng. Để trống nếu không cần.",
+  "how_text": "Công cụ chia diện tích của bạn cho diện tích một viên gạch cộng mạch ron, cộng phần hao hụt do cắt và vỡ, rồi làm tròn lên thành số viên nguyên:",
+  "formula": "diện tích hiệu dụng mỗi viên = (chiều rộng gạch + mạch ron) &times; (chiều cao gạch + mạch ron)<br>số viên = ceil( diện tích / diện tích hiệu dụng mỗi viên &times; (1 + hao hụt) )<br>số thùng = ceil( số viên / số viên mỗi thùng )",
+  "how_text2": "Hao hụt là 10% cho kiểu lát thẳng và 15% cho lát chéo hoặc xương cá, vì nhiều mẩu cắt thừa không dùng được. Mạch ron rộng hơn khiến mỗi viên chiếm diện tích lớn hơn một chút, nên số viên giảm đi một ít.",
+  "example_imperial": "Giả sử bạn lát một sàn 10 ft x 12 ft, tức <strong>120 sq ft</strong> (17.280 sq in), bằng gạch 12 x 12 inch lát thẳng với mạch ron 1/8 inch (0,125 in). Mỗi viên cộng mạch ron chiếm 12,125 × 12,125 = 147,02 sq in, nên số viên thuần là 17.280 / 147,02 = 117,54 viên. Cộng 10% hao hụt: 117,54 × 1,1 = 129,29, làm tròn lên thành <strong>130 viên</strong>. Nếu mỗi thùng có 8 viên, cần ceil(130 / 8) = <strong>17 thùng</strong>. Cùng sàn đó lát chéo với 15% hao hụt cần 136 viên.",
+  "example_metric": "Giả sử bạn lát một sàn 4 m x 3 m, tức <strong>12 m²</strong> (120.000 cm²), bằng gạch 30 x 30 cm lát thẳng với mạch ron 3 mm (0,3 cm). Mỗi viên cộng mạch ron chiếm 30,3 × 30,3 = 918,09 cm², nên số viên thuần là 120.000 / 918,09 = 130,71 viên. Cộng 10% hao hụt: 130,71 × 1,1 = 143,78, làm tròn lên thành <strong>144 viên</strong>. Nếu mỗi thùng có 11 viên, cần ceil(144 / 11) = <strong>14 thùng</strong>. Cùng sàn đó lát chéo với 15% hao hụt cần 151 viên.",
+  "table_title_imperial": "Số viên gạch cho 100 sq ft",
+  "table_title_metric": "Số viên gạch cho 10 m²",
+  "table_note": "Các cỡ gạch phổ biến, lát thẳng với 10% hao hụt và không có mạch ron:",
+  "col_size": "Cỡ gạch",
+  "col_area": "Diện tích viên",
+  "col_count_imperial": "Số viên cho 100 sq ft",
+  "col_count_metric": "Số viên cho 10 m²",
+  "more_text": "Đang tính các phần khác của công trình? Thử các công cụ miễn phí khác:",
+  "js": {
+    "main": "{tiles} viên gạch",
+    "main_boxes": "{tiles} viên gạch <small>= {boxes} thùng loại {perbox} viên</small>",
+    "area_line_imperial": "Diện tích cần lát: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Diện tích cần lát: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Diện tích hiệu dụng mỗi viên: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Diện tích hiệu dụng mỗi viên: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Hao hụt: <strong>{pct}%</strong> (lát thẳng)",
+    "waste_diag": "Hao hụt: <strong>{pct}%</strong> (lát chéo / xương cá)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "Gạch thẻ 3 x 6 in",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Nên mua dư bao nhiêu gạch?",
+      "Mua dư 10 đến 15% so với số viên thuần. Các vết cắt dọc tường, gạch vỡ và việc sửa chữa sau này đều dùng đến phần dư. Dùng 10% cho kiểu lát thẳng đơn giản trong phòng hình chữ nhật, và 15% cho lát chéo hoặc xương cá, gạch nhỏ, hoặc phòng có nhiều góc."
+    ],
+    [
+      "Hao hụt gạch là gì?",
+      "Hao hụt là phần gạch bạn mua nhưng không nằm trên mặt sàn: mẩu cắt ở mép tường và quanh thiết bị, viên bị nứt khi cắt hoặc vận chuyển, và gạch dự phòng để sửa sau này. Đó là chuyện bình thường, không phải sai sót. Công cụ này cộng phần trăm hao hụt trước khi làm tròn lên thành số viên nguyên."
+    ],
+    [
+      "Cần bao nhiêu viên gạch 12x12 cho 100 sq ft?",
+      "Một viên gạch 12x12 inch (30x30 cm) phủ 1 feet vuông, nên 100 feet vuông (9,3 m²) cần 100 viên thuần. Cộng 10% hao hụt cho kiểu lát thẳng thì bạn nên mua 110 viên. Có mạch ron thì mỗi viên phủ rộng hơn một chút, nên số viên có thể giảm nhẹ."
+    ],
+    [
+      "Lát chéo có tốn gạch hơn không?",
+      "Có. Lát gạch xoay 45 độ nghĩa là hàng nào cũng kết thúc bằng một vết cắt xiên ở tường, và nhiều mẩu cắt đó không dùng lại được. Hãy tính khoảng 15% hao hụt cho lát chéo hoặc xương cá thay vì 10% như lát thẳng thông thường."
+    ],
+    [
+      "Có tính mạch ron khi tính gạch không?",
+      "Có, và nó có lợi cho bạn. Mỗi viên cộng mạch ron, thường 1/8 inch (3 mm), chiếm diện tích lớn hơn một chút so với riêng viên gạch, nên ron rộng hơn làm giảm nhẹ số viên cần mua. Ảnh hưởng này nhỏ với gạch lớn nhưng thấy rõ với gạch thẻ nhỏ."
+    ]
+  ]
+}

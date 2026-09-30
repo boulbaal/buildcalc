@@ -1,0 +1,64 @@
+{
+  "meta_title": "Trap berekenen - Optrede, aantrede en traplengte",
+  "meta_desc": "Trap berekenen, gratis. Vul de totale hoogte in en krijg het aantal optredes, de exacte optrede, de treden en de traplengte, met norm- en comfortcontrole.",
+  "og_desc": "Bereken optredes, optredehoogte, treden en traplengte vanuit de totale hoogte. Direct, gratis, zonder advertenties.",
+  "h1": "Trap berekenen",
+  "lede": "Vul de totale hoogte in en krijg het aantal optredes, de exacte optredehoogte, de treden en de totale traplengte, met norm- en comfortcontrole. Gratis, direct, zonder advertenties.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Totale hoogte",
+  "rise_hint": "Van afgewerkte vloer tot afgewerkte vloer, verticaal gemeten.",
+  "desired": "Gewenste optrede",
+  "desired_hint": "Hoe hoog je elke trede zou willen. Ter vergelijking getoond.",
+  "tread": "Aantrede",
+  "tread_hint": "Horizontale diepte van elke trede, van neus tot neus.",
+  "space": "Beschikbare lengte",
+  "space_hint": "Optioneel. Horizontale ruimte die je hebt voor de trap.",
+  "how_text": "De rekenhulp deelt de totale hoogte door de maximale optrede van 7,75 in (19,7 cm) en rondt naar boven af om het aantal optredes te krijgen. Deel je de totale hoogte door dat aantal, dan krijg je de exacte optrede om op de trapboom af te tekenen. Voor comfort moet twee keer de optrede plus de aantrede tussen 24 en 25 in (61 tot 63,5 cm) liggen.",
+  "formula": "optredes = ceil(totale hoogte / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>optrede = totale hoogte / optredes<br>aantredes = optredes - 1<br>totale traplengte = aantredes &times; aantrede<br>comfort = 2 &times; optrede + aantrede",
+  "how_note": "Je gewenste optrede staat naast de echte, zodat je ziet hoe dicht de indeling in de buurt komt. <strong>De normgrenzen hier volgen de Amerikaanse bouwcode IRC (max. optrede 7,75 in of 19,7 cm, min. aantrede 10 in of 25,4 cm). Lokale regels kunnen verschillen, dus controleer altijd voor je zaagt.</strong>",
+  "example_imperial": "Stel dat de totale hoogte van vloer tot vloer 100 inch is. Dan is 100 / 7,75 = 12,9, naar boven afgerond <strong>13 optredes</strong>. Elke optrede is 100 / 13 = <strong>7,69 in</strong>, en er zijn 13 - 1 = <strong>12 treden</strong>. Met een aantrede van 10,5 in is de totale traplengte 12 × 10,5 = <strong>126 in</strong>. De comfortwaarde is 2 × 7,69 + 10,5 = 25,88 in, net boven het ideale bereik van 24 tot 25 in. Eén optrede extra (14 optredes van 7,14 in) brengt het op 24,79 in, binnen het bereik.",
+  "example_metric": "Stel dat de totale hoogte van vloer tot vloer 270 cm is. Dan is 270 / 19,7 = 13,7, naar boven afgerond <strong>14 optredes</strong>. Elke optrede is 270 / 14 = <strong>19,29 cm</strong>, en er zijn 14 - 1 = <strong>13 treden</strong>. Met een aantrede van 27 cm is de totale traplengte 13 × 27 = <strong>351 cm</strong>. De comfortwaarde is 2 × 19,2857 + 27 = 65,57 cm, boven het ideale bereik van 61 tot 63,5 cm. Eén optrede extra (15 optredes van 18 cm) brengt het op 63 cm, binnen het bereik.",
+  "table_title": "Optredes per totale hoogte",
+  "col_rise": "Totale hoogte",
+  "col_risers": "Optredes",
+  "col_riser": "Optrede",
+  "col_treads": "Treden",
+  "more_text": "Plan je de rest van de klus? Probeer de andere gratis rekenhulpen:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} optredes van {riser} {u}, {treads} treden",
+    "run_line": "Totale traplengte: <strong>{run} {u}</strong> ({treads} treden × {tread} {u})",
+    "target_line": "Je gewenste optrede: {desired} {u}, werkelijk: {riser} {u}",
+    "comfort_line": "Comfort (2O+A): {comfort} {u} {badge}",
+    "comfort_in": "Binnen het bereik van {lo} tot {hi} {u}",
+    "comfort_out": "Buiten het bereik van {lo} tot {hi} {u}",
+    "irc_ok": "Voldoet aan de Amerikaanse IRC-grenzen (optrede ≤ {max} {u}, aantrede ≥ {min} {u})",
+    "irc_bad": "Buiten de Amerikaanse IRC-grenzen: max. optrede {max} {u}, min. aantrede {min} {u}",
+    "irc_note": "De IRC is een Amerikaanse bouwcode; controleer je lokale regels.",
+    "no_fit": "Past niet: vraagt {run} {u} lengte, je hebt {space} {u}"
+  },
+  "faq": [
+    [
+      "Wat is de maximale optrede volgens de norm?",
+      "De Amerikaanse bouwcode IRC staat een maximale optrede van 7,75 inch (19,7 cm) toe voor woningtrappen. Optredes binnen één trap mogen niet meer dan 3/8 inch (ongeveer 1 cm) verschillen. Codes voor niet-residentiële gebouwen en veel lokale regels zijn strenger, dus controleer altijd bij je gemeente of lokale bouwdienst."
+    ],
+    [
+      "Wat is de ideale optrede voor een trap?",
+      "De meeste mensen vinden optredes van 18 tot 19 cm (7 tot 7,5 inch) het comfortabelst om te beklimmen. Lagere optredes rond 15 cm (6 inch) passen bij buitentrappen en oudere gebruikers. Alles boven het Amerikaanse IRC-maximum van 19,7 cm (7,75 inch) voelt steil aan en is daar niet toegestaan."
+    ],
+    [
+      "Wat is de trapformule 2O+A?",
+      "De comfortregel 2O+A (2R+T in het Engels) zegt dat twee keer de optrede plus de aantrede tussen 61 en 63,5 cm (24 en 25 inch) moet liggen. Dat benadert een natuurlijke paslengte. Trappen binnen dat bereik lopen comfortabel, trappen erbuiten voelen te steil of te vlak aan."
+    ],
+    [
+      "Hoe bereken ik het aantal treden van een trap?",
+      "Meet de totale hoogte van afgewerkte vloer tot afgewerkte vloer, deel die door de maximale optrede van 19,7 cm (7,75 inch) en rond naar boven af. Dat geeft het aantal optredes. Deel je de totale hoogte door dat aantal, dan krijg je de exacte optrede. Het aantal treden is één minder dan het aantal optredes."
+    ],
+    [
+      "Wat is de minimale aantrede volgens de norm?",
+      "De Amerikaanse IRC vraagt een aantrede van minstens 25,4 cm (10 inch), gemeten van neus tot neus. Diepere treden van 27 tot 28 cm (10,5 tot 11 inch) zijn comfortabeler en gebruikelijk. Aantredes binnen één trap mogen niet meer dan 3/8 inch (ongeveer 1 cm) verschillen. Controleer de lokale regels voor je bouwt."
+    ]
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "meta_title": "Calculadora de azulejos - Quantos azulejos preciso?",
+  "meta_desc": "Calculadora de azulejos grátis. Introduza a área, o tamanho da peça e a junta, e obtenha peças e caixas com desperdício incluído. Sem anúncios.",
+  "og_desc": "Calcule peças e caixas de azulejo para o seu chão ou parede, com desperdício incluído. Grátis, sem anúncios.",
+  "h1": "Calculadora de azulejos e mosaicos",
+  "lede": "Calcule quantos azulejos e caixas precisa para um chão ou uma parede, com junta e desperdício incluídos. Grátis, imediato, sem anúncios.",
+  "mode_label": "Área",
+  "mode_dims": "Comprimento x largura",
+  "mode_area": "Conheço a área",
+  "length": "Comprimento",
+  "width": "Largura",
+  "area": "Área",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Tamanho da peça (polegadas)",
+  "tile_size_metric": "Tamanho da peça (cm)",
+  "opt_subway": "Metro 3 x 6",
+  "opt_custom": "Personalizado",
+  "tile_w": "Largura da peça",
+  "tile_h": "Altura da peça",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Junta",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 se não houver junta. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 se não houver junta. 3 mm é comum em pavimentos.",
+  "pattern": "Tipo de assentamento",
+  "pattern_straight": "Direito (10% de desperdício)",
+  "pattern_diag": "Diagonal / espinha (15% de desperdício)",
+  "perbox": "Peças por caixa (opcional)",
+  "perbox_hint": "Vem impresso na caixa. Deixe vazio para ignorar.",
+  "how_text": "A calculadora divide a sua área pela área ocupada por uma peça mais a junta, junta uma margem de desperdício para cortes e quebras, e arredonda para cima para peças inteiras:",
+  "formula": "área efetiva por peça = (largura da peça + junta) &times; (altura da peça + junta)<br>peças = ceil( área / área efetiva por peça &times; (1 + desperdício) )<br>caixas = ceil( peças / peças por caixa )",
+  "how_text2": "O desperdício é de 10% num assentamento direito e de 15% em diagonal ou espinha, onde mais recortes acabam por não servir. Uma junta mais larga faz com que cada peça ocupe um pouco mais de área, por isso o número de peças desce um pouco.",
+  "example_imperial": "Imagine que vai assentar um chão de 10 ft por 12 ft, ou seja <strong>120 sq ft</strong> (17 280 sq in), com peças de 12 x 12 polegadas em assentamento direito e uma junta de 1/8 de polegada (0,125 in). Cada peça com a junta ocupa 12,125 × 12,125 = 147,02 sq in, por isso sem desperdício são 17 280 / 147,02 = 117,54 peças. Junte 10%: 117,54 × 1,1 = 129,29, que arredonda para <strong>130 peças</strong>. Se vierem 8 por caixa, são ceil(130 / 8) = <strong>17 caixas</strong>. O mesmo chão em diagonal com 15% de desperdício precisa de 136 peças.",
+  "example_metric": "Imagine que vai assentar um chão de 4 m por 3 m, ou seja <strong>12 m²</strong> (120 000 cm²), com peças de 30 x 30 cm em assentamento direito e uma junta de 3 mm (0,3 cm). Cada peça com a junta ocupa 30,3 × 30,3 = 918,09 cm², por isso sem desperdício são 120 000 / 918,09 = 130,71 peças. Junte 10%: 130,71 × 1,1 = 143,78, que arredonda para <strong>144 peças</strong>. Se vierem 11 por caixa, são ceil(144 / 11) = <strong>14 caixas</strong>. O mesmo chão em diagonal com 15% de desperdício precisa de 151 peças.",
+  "table_title_imperial": "Peças por 100 sq ft",
+  "table_title_metric": "Peças por 10 m²",
+  "table_note": "Tamanhos de peça comuns, assentamento direito com 10% de desperdício e sem junta:",
+  "col_size": "Tamanho da peça",
+  "col_area": "Área da peça",
+  "col_count_imperial": "Peças por 100 sq ft",
+  "col_count_metric": "Peças por 10 m²",
+  "more_text": "A planear o resto da obra? Experimente as outras calculadoras grátis:",
+  "js": {
+    "main": "{tiles} peças",
+    "main_boxes": "{tiles} peças <small>= {boxes} caixas de {perbox}</small>",
+    "area_line_imperial": "Área a revestir: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Área a revestir: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Área efetiva por peça: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Área efetiva por peça: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Margem de desperdício: <strong>{pct}%</strong> (assentamento direito)",
+    "waste_diag": "Margem de desperdício: <strong>{pct}%</strong> (diagonal / espinha)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "Metro 3 x 6 in",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Quanto azulejo a mais devo comprar?",
+      "Compre 10 a 15% a mais do que a área líquida. Os cortes junto às paredes, as quebras e as reparações futuras gastam essa folga. Use 10% para um assentamento direito simples numa divisão retangular, e 15% para assentamentos em diagonal ou espinha, peças pequenas ou divisões com muitos cantos."
+    ],
+    [
+      "O que é o desperdício de azulejo?",
+      "O desperdício são as peças que compra mas que não acabam assentes: recortes junto às paredes e à volta de loiças sanitárias, peças que partem ao cortar ou no transporte, e peças de reserva para reparações. É normal, não é um erro. Esta calculadora junta a percentagem de desperdício antes de arredondar para peças inteiras."
+    ],
+    [
+      "Quantos azulejos de 30x30 preciso para 9,3 m² (100 sq ft)?",
+      "Uma peça de 30x30 cm (12x12 polegadas) cobre 1 pé quadrado, por isso 100 pés quadrados (9,3 m²) precisam de 100 peças sem desperdício. Junte 10% para um assentamento direito e deve comprar 110 peças. Com junta, cada peça ocupa um pouco mais, por isso o número pode descer ligeiramente."
+    ],
+    [
+      "O assentamento em diagonal precisa de mais azulejo?",
+      "Sim. Assentar as peças a 45 graus faz com que cada fiada termine num corte em ângulo junto à parede, e muitos desses recortes não podem ser reaproveitados. Conte com cerca de 15% de desperdício em diagonal ou espinha, em vez dos 10% habituais num assentamento direito."
+    ],
+    [
+      "Devo contar as juntas ao calcular o azulejo?",
+      "Sim, e jogam a seu favor. Cada peça com a sua junta, muitas vezes de 3 mm (1/8 de polegada), ocupa um pouco mais do que a peça sozinha, por isso uma junta mais larga reduz ligeiramente o número de peças necessárias. O efeito é pequeno com peças grandes mas nota-se com azulejo metro pequeno."
+    ]
+  ]
+}

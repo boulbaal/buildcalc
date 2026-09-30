@@ -1,0 +1,56 @@
+{
+  "meta_title": "Roof Pitch Calculator - Free, No Ads",
+  "meta_desc": "Free roof pitch calculator. Convert rise and run to degrees, percent and X:12 pitch, and get the pitch multiplier for roof area. Instant, no ads, works offline.",
+  "og_desc": "Convert rise and run to degrees, percent and X:12 pitch. Instant, free, no ads.",
+  "h1": "Roof Pitch Calculator",
+  "lede": "Convert rise and run to degrees, percent and X:12 pitch, and get the pitch multiplier for your roof area. Free, instant, no ads.",
+  "mode_label": "I know the",
+  "mode_riserun": "Rise and run",
+  "mode_angle": "Angle in degrees",
+  "mode_percent": "Slope in percent",
+  "rise": "Rise",
+  "rise_hint": "Vertical height. Use the same unit as the run.",
+  "run": "Run",
+  "run_hint": "Horizontal distance. A run of 12 gives the X:12 pitch directly.",
+  "angle": "Angle (degrees)",
+  "percent": "Slope (%)",
+  "how_text": "Roof pitch is the ratio between the vertical rise and the horizontal run. This calculator converts between the three common ways of writing it, plus the pitch multiplier used to estimate roof area:",
+  "formula": "angle = atan(rise / run)<br>percent = rise / run &times; 100<br>pitch = (rise / run &times; 12) : 12<br>multiplier = &radic;(1 + (rise / run)&sup2;)",
+  "example_imperial": "Say your roof rises 6 inches for every 12 inches of run. Then rise / run = 0.5, so the angle is atan(0.5) = <strong>26.57°</strong>, the slope is <strong>50%</strong>, and the pitch is written <strong>6:12</strong>. The multiplier is √(1 + 0.25) = <strong>1.118</strong>: a house with a 1,000 sq ft footprint under that roof has roughly 1,118 sq ft of actual roof surface.",
+  "example_metric": "Say your roof rises 50 cm for every 100 cm of horizontal distance. Then rise / run = 0.5, so the angle is atan(0.5) = <strong>26.57°</strong>, the slope is <strong>50%</strong>, and in American notation the pitch is <strong>6:12</strong>. The multiplier is √(1 + 0.25) = <strong>1.118</strong>: a house with a 100 m² footprint under that roof has roughly 111.8 m² of actual roof surface.",
+  "table_title": "Common roof pitches",
+  "col_pitch": "Pitch",
+  "col_angle": "Angle",
+  "col_slope": "Slope",
+  "col_mult": "Multiplier",
+  "more_text": "Planning the rest of the job? Try the other free calculators:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = {pct}% slope</small>",
+    "main_metric": "{deg}° <small>= {pct}% slope = {pitch}:12</small>",
+    "mult_line": "Pitch multiplier: <strong>{mult}</strong> (flat footprint × {mult} = true roof area)",
+    "angle_line": "angle = atan({ratio}) = {deg}°",
+    "pct_line": "percent = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "What is a 6/12 roof pitch in degrees?",
+      "A 6/12 pitch means the roof rises 6 units for every 12 units of horizontal run. That equals 26.57 degrees, or a 50% slope. It is one of the most common pitches on houses."
+    ],
+    [
+      "What is the pitch multiplier used for?",
+      "It converts the flat footprint area of a roof into the true sloped surface area. Multiply the footprint by the multiplier to estimate roofing material or underlayment. For a 6/12 pitch (26.57 degrees) the multiplier is 1.118."
+    ],
+    [
+      "What is the minimum pitch for shingles?",
+      "Most asphalt shingle manufacturers require at least a 2/12 pitch (about 9.5 degrees), and below 4/12 (about 18.4 degrees) they require extra underlayment. Flatter roofs need a membrane instead. Always check the manufacturer's instructions."
+    ],
+    [
+      "How do I measure roof pitch from inside the attic?",
+      "Hold a level horizontally against a rafter and mark a fixed distance along it, for example 12 inches or 100 cm. Then measure straight up from that mark to the underside of the rafter. Enter both numbers here as run and rise."
+    ],
+    [
+      "Is a steeper roof pitch better?",
+      "Steeper roofs shed water and snow faster and often last longer, but they cost more to build and are more dangerous to work on. Most house roofs are between about 18 and 37 degrees (4/12 to 9/12)."
+    ]
+  ]
+}

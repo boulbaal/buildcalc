@@ -1,0 +1,56 @@
+{
+  "meta_title": "Calcular pendiente de tejado - Gratis, sin anuncios",
+  "meta_desc": "Calculadora de pendiente de tejado gratis. Convierte altura y proyección a grados, porcentaje y pendiente X:12, con el factor para la superficie. Sin anuncios.",
+  "og_desc": "Convierte altura y proyección a grados, porcentaje y pendiente X:12. Al instante, gratis, sin anuncios.",
+  "h1": "Calculadora de pendiente de tejado",
+  "lede": "Convierte altura y proyección horizontal a grados, porcentaje y pendiente X:12, y obtén el factor de pendiente para la superficie de tu tejado. Gratis, al instante, sin anuncios.",
+  "mode_label": "Conozco",
+  "mode_riserun": "Altura y proyección",
+  "mode_angle": "Ángulo en grados",
+  "mode_percent": "Pendiente en porcentaje",
+  "rise": "Altura",
+  "rise_hint": "Altura vertical. Usa la misma unidad que la proyección.",
+  "run": "Proyección",
+  "run_hint": "Distancia horizontal. Con una proyección de 12 obtienes directamente la pendiente X:12.",
+  "angle": "Ángulo (grados)",
+  "percent": "Pendiente (%)",
+  "how_text": "La pendiente de un tejado es la relación entre la altura vertical y la proyección horizontal. Esta calculadora convierte entre las tres formas habituales de expresarla, y además da el factor de pendiente que se usa para estimar la superficie del tejado:",
+  "formula": "ángulo = atan(altura / proyección)<br>porcentaje = altura / proyección &times; 100<br>pendiente = (altura / proyección &times; 12) : 12<br>factor = &radic;(1 + (altura / proyección)&sup2;)",
+  "example_imperial": "Supongamos que tu tejado sube 6 pulgadas por cada 12 pulgadas de proyección. Entonces altura / proyección = 0,5, así que el ángulo es atan(0,5) = <strong>26,57°</strong>, la pendiente es del <strong>50%</strong> y se escribe <strong>6:12</strong>. El factor es √(1 + 0,25) = <strong>1,118</strong>: una casa con una planta de 1000 sq ft bajo ese tejado tiene unos 1118 sq ft de superficie real de cubierta.",
+  "example_metric": "Supongamos que tu tejado sube 50 cm por cada 100 cm de distancia horizontal. Entonces altura / proyección = 0,5, así que el ángulo es atan(0,5) = <strong>26,57°</strong>, la pendiente es del <strong>50%</strong> y, en notación americana, se escribe <strong>6:12</strong>. El factor es √(1 + 0,25) = <strong>1,118</strong>: una casa con una planta de 100 m² bajo ese tejado tiene unos 111,8 m² de superficie real de cubierta.",
+  "table_title": "Pendientes de tejado habituales",
+  "col_pitch": "Pendiente",
+  "col_angle": "Ángulo",
+  "col_slope": "Porcentaje",
+  "col_mult": "Factor",
+  "more_text": "¿Planificando el resto de la obra? Prueba las otras calculadoras gratis:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = {pct}% de pendiente</small>",
+    "main_metric": "{deg}° <small>= {pct}% de pendiente = {pitch}:12</small>",
+    "mult_line": "Factor de pendiente: <strong>{mult}</strong> (superficie en planta × {mult} = superficie real del tejado)",
+    "angle_line": "ángulo = atan({ratio}) = {deg}°",
+    "pct_line": "porcentaje = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "¿Cuántos grados son una pendiente de tejado 6/12?",
+      "Una pendiente 6/12 significa que el tejado sube 6 unidades por cada 12 unidades de proyección horizontal. Equivale a 26,57 grados, o a una pendiente del 50%. Es una de las pendientes más comunes en viviendas."
+    ],
+    [
+      "¿Para qué sirve el factor de pendiente?",
+      "Convierte la superficie en planta de un tejado en la superficie inclinada real. Multiplica la superficie en planta por el factor para calcular el material de cubierta o la lámina impermeable. Para una pendiente 6/12 (26,57 grados) el factor es 1,118."
+    ],
+    [
+      "¿Cuál es la pendiente mínima para tejas asfálticas?",
+      "La mayoría de fabricantes de tejas asfálticas exigen al menos una pendiente 2/12 (unos 9,5 grados), y por debajo de 4/12 (unos 18,4 grados) piden una lámina impermeable adicional. Los tejados más planos necesitan una membrana. Consulta siempre las instrucciones del fabricante."
+    ],
+    [
+      "¿Cómo mido la pendiente del tejado desde el desván?",
+      "Apoya un nivel en horizontal contra un cabio y marca una distancia fija sobre él, por ejemplo 12 pulgadas o 100 cm. Después mide en vertical desde esa marca hasta la cara inferior del cabio. Introduce aquí ambos números como proyección y altura."
+    ],
+    [
+      "¿Es mejor un tejado con más pendiente?",
+      "Los tejados más inclinados evacuan el agua y la nieve más rápido y suelen durar más, pero cuestan más de construir y es más peligroso trabajar en ellos. La mayoría de tejados de vivienda están entre unos 18 y 37 grados (de 4/12 a 9/12)."
+    ]
+  ]
+}

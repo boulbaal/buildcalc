@@ -1,0 +1,67 @@
+{
+  "meta_title": "Beton berechnen - Betonplatte in m³ und Säcken",
+  "meta_desc": "Beton für die Bodenplatte kostenlos berechnen. Volumen in m³ oder cu yd und Anzahl der Säcke zu 25 kg oder 40, 60, 80 lb, mit Verschnitt. Ohne Werbung.",
+  "og_desc": "Berechne das Betonvolumen und die genaue Anzahl Säcke für deine Betonplatte. Kostenlos, ohne Werbung.",
+  "h1": "Beton berechnen für die Betonplatte",
+  "lede": "Gib die Maße deiner Platte ein und erhalte das Betonvolumen sowie die genaue Anzahl Säcke, inklusive Verschnittzuschlag. Kostenlos, sofort, ohne Werbung.",
+  "length": "Länge",
+  "width": "Breite",
+  "thickness": "Dicke",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in sind üblich für Terrassen und Gehwege.",
+  "thickness_hint_metric": "10 cm sind üblich für Terrassen und Gehwege.",
+  "bag_label": "Sackgröße",
+  "bag_hint": "Fertigbeton, nur Wasser zugeben.",
+  "waste_label": "Verschnittzuschlag (%)",
+  "waste_hint": "10% decken Verluste und einen unebenen Untergrund ab.",
+  "how_text": "Eine Platte ist ein einfacher Quader: Länge mal Breite mal Dicke ergibt das Volumen. Der Rechner wandelt die Dicke in dieselbe Einheit wie die Seiten um, addiert deinen Zuschlag, teilt durch die Ergiebigkeit eines Sacks und rundet auf ganze Säcke auf:",
+  "formula": "Volumen (cu ft) = Länge (ft) &times; Breite (ft) &times; Dicke (in) / 12<br>Kubikyards = Volumen / 27<br>Volumen (m&sup3;) = Länge (m) &times; Breite (m) &times; Dicke (cm) / 100<br>Säcke = ceil(Volumen &times; (1 + Zuschlag / 100) / Ergiebigkeit pro Sack)",
+  "yields_text": "Ergiebigkeit pro Sack: Ein 80-lb-Sack ergibt etwa 0,60 cu ft, ein 60-lb-Sack 0,45 cu ft, ein 40-lb-Sack 0,30 cu ft und ein 25-kg-Sack etwa 0,0123 m³.",
+  "example_imperial": "Angenommen, du gießt eine Terrasse von 10 × 10 ft, 4 Zoll dick. Das Volumen ist 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, also 33,33 / 27 = <strong>1,23 cu yd</strong>. Mit 80-lb-Säcken zu je 0,60 cu ft sind das 33,33 / 0,60 = 55,6, aufgerundet <strong>56 Säcke</strong>. Mit dem üblichen Zuschlag von 10% (33,33 × 1,1 = 36,67 cu ft) solltest du <strong>62 Säcke</strong> kaufen. Übrige Säcke sind einfacher als eine zweite Fahrt zum Baumarkt, also runde auf.",
+  "example_metric": "Angenommen, du gießt eine Terrasse von 3 × 3 m, 10 cm dick. Das Volumen ist 3 × 3 × 10/100 = <strong>0,9 m³</strong>. Mit 25-kg-Säcken zu je etwa 0,0123 m³ sind das 0,9 / 0,0123 = 73,2, aufgerundet <strong>74 Säcke</strong>. Mit dem üblichen Zuschlag von 10% (0,9 × 1,1 = 0,99 m³) solltest du 0,99 / 0,0123 = 80,5, aufgerundet <strong>81 Säcke</strong> kaufen. Übrige Säcke sind einfacher als eine zweite Fahrt zum Baumarkt, also runde auf.",
+  "table_title": "Sackgrößen und Ergiebigkeit",
+  "col_bag": "Sackgröße",
+  "col_yield": "Ergiebigkeit",
+  "col_per": "Säcke pro Volumen",
+  "more_text": "Du planst den Rest des Projekts? Probiere die anderen kostenlosen Rechner:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} Säcke zu {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} Säcke zu {bag}</small>",
+    "vol_imperial": "Volumen = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "Volumen = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Mit {waste}% Zuschlag: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Mit {waste}% Zuschlag: {vol} × {factor} = {total} m³",
+    "bags_line": "Säcke = {total} / {yield}, aufgerundet = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} pro cu yd",
+    "tbl_per_kg": "etwa {m3} pro m³, {yd} pro cu yd"
+  },
+  "faq": [
+    [
+      "Wie viele Säcke Beton braucht man für einen Kubikmeter?",
+      "Mit 25-kg-Säcken brauchst du etwa 81 pro Kubikmeter (1,31 Kubikyard). In US-Maßen ergibt ein 80-lb-Sack etwa 0,60 Kubikfuß, und ein Kubikyard hat 27 Kubikfuß, also brauchst du 45 Säcke zu 80 lb pro Kubikyard. Bei 60-lb-Säcken sind es 60, bei 40-lb-Säcken 90."
+    ],
+    [
+      "Wie dick muss eine Betonplatte sein?",
+      "10 cm (4 Zoll) sind die übliche Dicke für Terrassen, Gehwege und Fundamente für Gartenhäuser. Einfahrten, auf denen Autos fahren, brauchen meist 12 bis 15 cm (5 bis 6 Zoll), und Platten für schwere Fahrzeuge oder Werkstätten gehen oft auf 15 cm (6 Zoll) oder mehr. Prüfe vor dem Betonieren die örtlichen Bauvorschriften."
+    ],
+    [
+      "Brauche ich Bewehrung oder Baustahlmatten in der Platte?",
+      "Kleine Platten wie Gehwege kommen oft nur mit Dehnungs- oder Scheinfugen aus, aber Baustahlmatten oder Bewehrungsstahl halten Risse in Terrassen, Einfahrten und Garagenböden geschlossen. Lege die Bewehrung in die Mitte der Plattendicke, bei einer 10-cm-Platte (4 Zoll) also etwa 5 cm (2 Zoll) hoch, nicht direkt auf den Boden."
+    ],
+    [
+      "Ab wann lohnt sich Transportbeton statt Sackware?",
+      "Etwa 0,76 Kubikmeter (1 Kubikyard) sind die übliche Grenze. Das sind schon rund 62 Säcke zu 25 kg oder 45 Säcke zu 80 lb, die du schleppen und von Hand mischen musst. Darüber ist ein Fahrmischer mit Transportbeton schneller, gleichmäßiger und oft günstiger, auch wenn kleine Mengen einen Aufpreis kosten können."
+    ],
+    [
+      "Wie lange braucht Beton zum Aushärten?",
+      "Beton bindet in wenigen Stunden ab, härtet aber langsam aus. Begehen kannst du ihn meist nach 24 bis 48 Stunden, befahren nach etwa 7 Tagen. Nach 28 Tagen hat er den Großteil seiner Festigkeit erreicht. Halte ihn in der ersten Woche feucht, damit er fest aushärtet statt zu schnell auszutrocknen."
+    ]
+  ]
+}

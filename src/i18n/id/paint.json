@@ -1,0 +1,76 @@
+{
+  "meta_title": "Kalkulator Cat - Hitung Kebutuhan Cat Dinding",
+  "meta_desc": "Hitung kebutuhan cat gratis. Masukkan ukuran ruangan, pintu, jendela dan jumlah lapisan untuk tahu berapa liter cat yang dibutuhkan. Instan, tanpa iklan.",
+  "og_desc": "Masukkan ukuran ruangan, pintu, jendela dan lapisan untuk tahu berapa liter atau galon cat. Gratis, tanpa iklan.",
+  "h1": "Kalkulator Kebutuhan Cat",
+  "lede": "Hitung berapa liter atau galon cat yang dibutuhkan ruangan Anda, dengan pintu, jendela dan jumlah lapisan sudah diperhitungkan. Gratis, instan, tanpa iklan.",
+  "length": "Panjang ruangan",
+  "width": "Lebar ruangan",
+  "height": "Tinggi dinding",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Pintu",
+  "doors_hint": "Tidak dicat. Setiap pintu mengurangi luas pintu standar.",
+  "windows": "Jendela",
+  "coats": "Lapisan",
+  "coats_hint": "Dua lapis adalah rencana yang biasa.",
+  "coverage": "Daya sebar",
+  "sfx_cov_imperial": "(sq ft per galon)",
+  "sfx_cov_metric": "(m² per liter)",
+  "coverage_hint_imperial": "biasanya 250-400",
+  "coverage_hint_metric": "biasanya 8-12",
+  "ceiling": "Termasuk plafon",
+  "how_text": "Kalkulator mengukur luas dinding di sekeliling ruangan, mengurangi luas standar untuk setiap pintu dan jendela, menambahkan plafon jika dipilih, mengalikan dengan jumlah lapisan, lalu membagi dengan daya sebar cat Anda. Hasilnya selalu dibulatkan ke atas menjadi kaleng utuh, karena Anda tidak bisa membeli 1,8 galon:",
+  "formula": "luas dinding = 2 &times; (panjang + lebar) &times; tinggi<br>luas dicat = luas dinding &minus; pintu &times; luas pintu &minus; jendela &times; luas jendela (+ plafon)<br>kaleng = luas dicat &times; lapisan &divide; daya sebar, dibulatkan ke atas",
+  "metric_note": "Dalam mode metrik, satu pintu dihitung 1,95 m², satu jendela 1,4 m², dan daya sebar per liter. Dalam mode imperial, satu pintu dihitung 21 sq ft dan satu jendela 15 sq ft.",
+  "example_imperial": "Misalkan ruangan Anda 12 × 10 ft dengan dinding 8 ft, satu pintu dan satu jendela, dan Anda merencanakan dua lapis dengan daya sebar 350 sq ft per galon. Luas dinding 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Kurangi pintu (21 sq ft) dan jendela (15 sq ft) sehingga menjadi <strong>316 sq ft per lapis</strong>. Dua lapis berarti 632 sq ft, dan 632 ÷ 350 = 1,81, dibulatkan ke atas menjadi <strong>2 galon</strong>. Centang \"Termasuk plafon\" dan plafon 120 sq ft membuatnya menjadi 436 sq ft per lapis, total 872 sq ft, jadi Anda butuh <strong>3 galon</strong>.",
+  "example_metric": "Misalkan ruangan Anda 4 × 3 m dengan dinding setinggi 2,5 m, satu pintu dan satu jendela, dan Anda merencanakan dua lapis dengan daya sebar 10 m² per liter. Luas dinding 2 × (4 + 3) × 2,5 = <strong>35 m²</strong>. Kurangi pintu (1,95 m²) dan jendela (1,4 m²) sehingga menjadi <strong>31,65 m² per lapis</strong>. Dua lapis berarti 63,3 m², dan 63,3 ÷ 10 = 6,33, dibulatkan ke atas menjadi <strong>7 liter</strong>. Centang \"Termasuk plafon\" dan plafon 12 m² membuatnya menjadi 43,65 m² per lapis, total 87,3 m², jadi Anda butuh <strong>9 liter</strong>.",
+  "table_title": "Kebutuhan cat menurut ukuran ruangan",
+  "table_note_imperial": "Dinding dengan plafon 8 ft, satu pintu, satu jendela, dua lapis, 350 sq ft per galon:",
+  "table_note_metric": "Dinding setinggi 2,5 m, satu pintu, satu jendela, dua lapis, 10 m² per liter:",
+  "col_room": "Ruangan",
+  "col_walls": "Dinding saja",
+  "col_both": "Dinding + plafon",
+  "more_text": "Merencanakan bagian lain pekerjaan? Coba kalkulator gratis lainnya:",
+  "js": {
+    "main": "{cansText} <small>untuk {coatsText}</small>",
+    "cans_imperial_one": "{cans} galon",
+    "cans_imperial": "{cans} galon",
+    "cans_metric_one": "{cans} liter",
+    "cans_metric": "{cans} liter",
+    "coats_one": "{coats} lapis",
+    "coats_other": "{coats} lapis",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Luas dinding: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Dikurangi {doors} pintu dan {windows} jendela: −{deduct} {a} = <strong>{per} {a} per lapis</strong>",
+    "deduct_ceiling_line": "Dikurangi {doors} pintu dan {windows} jendela: −{deduct} {a}, ditambah plafon {ceil} {a} = <strong>{per} {a} per lapis</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, dibulatkan ke atas menjadi <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "Satu galon cat bisa untuk berapa luas?",
+      "Kebanyakan cat interior mampu menutupi 250 sampai 400 sq ft per galon (sekitar 6 sampai 10 m² per liter) pada dinding halus yang sudah diberi cat dasar. Kalkulator ini memakai nilai bawaan 350 sq ft per galon atau 10 m² per liter. Permukaan kasar, berpori atau belum dicat menyerap lebih banyak cat, jadi pakai angka terendah dari rentang itu."
+    ],
+    [
+      "Apakah perlu cat dasar sebelum mengecat?",
+      "Gunakan cat dasar (primer) pada gypsum baru, kayu mentah, permukaan bernoda atau mengkilap, dan saat menutup warna gelap dengan warna yang lebih terang. Pada dinding yang sudah dicat, dalam kondisi baik dan warnanya mirip, cat berkualitas yang sudah mengandung primer biasanya cukup. Cat dasar lebih murah daripada satu lapis cat tambahan."
+    ],
+    [
+      "Cukup satu lapis cat, atau perlu dua?",
+      "Rencanakan dua lapis untuk hasil yang rata dan awet. Satu lapis bisa cukup saat mengecat ulang dengan warna dan tingkat kilap yang sama pada dinding yang disiapkan dengan baik. Perubahan warna besar, warna merah dan kuning, atau mengecat di atas tambalan sering butuh dua lapis plus cat dasar berwarna di bawahnya."
+    ],
+    [
+      "Berapa kebutuhan cat untuk ruangan 12x12?",
+      "Ruangan 12 kali 12 kaki dengan dinding 8 kaki memiliki 384 sq ft dinding. Dikurangi satu pintu dan satu jendela menjadi 348 sq ft per lapis, jadi dua lapis butuh 2 galon dengan daya sebar 350 sq ft per galon. Ruangan serupa 4 kali 4 m dengan dinding 2,5 m butuh 8 liter dengan daya sebar 10 m² per liter."
+    ],
+    [
+      "Apakah cat plafon berbeda dengan cat dinding?",
+      "Cat plafon dibuat lebih kental supaya tidak banyak memercik dan menetes, dan hampir selalu doff agar cahaya tidak menonjolkan bekas roller. Anda bisa memakai cat dinding doff untuk plafon, tetapi cat plafon khusus lebih mudah diaplikasikan di atas kepala dan lebih baik menyamarkan ketidaksempurnaan."
+    ]
+  ]
+}

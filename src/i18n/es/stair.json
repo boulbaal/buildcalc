@@ -1,0 +1,64 @@
+{
+  "meta_title": "Calcular escalera - Peldaños, huella y contrahuella",
+  "meta_desc": "Calculadora de escaleras gratis. Con la altura total obtienes peldaños, contrahuella exacta, huellas y desarrollo, con comprobaciones. Sin anuncios.",
+  "og_desc": "Obtén contrahuellas, altura de peldaño, huellas y desarrollo a partir de la altura total. Al instante, gratis, sin anuncios.",
+  "h1": "Calculadora de escaleras",
+  "lede": "Introduce la altura total y obtén el número de contrahuellas, su altura exacta, las huellas y el desarrollo total, con comprobación de normativa y comodidad. Gratis, al instante, sin anuncios.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Altura total",
+  "rise_hint": "De suelo terminado a suelo terminado, medida en vertical.",
+  "desired": "Contrahuella deseada",
+  "desired_hint": "La altura que te gustaría para cada peldaño. Se muestra para comparar.",
+  "tread": "Huella",
+  "tread_hint": "Profundidad horizontal de cada peldaño, de borde a borde.",
+  "space": "Desarrollo disponible",
+  "space_hint": "Opcional. Espacio horizontal que tienes para la escalera.",
+  "how_text": "La calculadora divide la altura total entre la contrahuella máxima de 19,7 cm (7,75 in) y redondea hacia arriba para obtener el número de contrahuellas. Al dividir la altura total entre ese número sale la contrahuella exacta que hay que marcar en la zanca. Para que sea cómoda, dos veces la contrahuella más la huella debe quedar entre 61 y 63,5 cm (24 a 25 in).",
+  "formula": "contrahuellas = ceil(altura total / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>altura de contrahuella = altura total / contrahuellas<br>huellas = contrahuellas - 1<br>desarrollo total = huellas &times; huella<br>comodidad = 2 &times; altura de contrahuella + huella",
+  "how_note": "Tu contrahuella deseada aparece junto a la real para que veas cuánto se acerca el trazado. <strong>Los límites aquí siguen el código de construcción de EE. UU. (IRC): contrahuella máxima de 19,7 cm o 7,75 in y huella mínima de 25,4 cm o 10 in. La normativa local puede ser distinta, así que compruébala siempre antes de cortar.</strong>",
+  "example_imperial": "Supongamos que la altura total de suelo a suelo es de 100 pulgadas. Entonces 100 / 7,75 = 12,9, redondeado a <strong>13 contrahuellas</strong>. Cada contrahuella mide 100 / 13 = <strong>7,69 in</strong>, y hay 13 - 1 = <strong>12 huellas</strong>. Con una huella de 10,5 in el desarrollo total es 12 × 10,5 = <strong>126 in</strong>. El valor de comodidad es 2 × 7,69 + 10,5 = 25,88 in, algo por encima del rango ideal de 24 a 25 in. Con una contrahuella más (14 contrahuellas de 7,14 in) bajaría a 24,79 in, dentro del rango.",
+  "example_metric": "Supongamos que la altura total de suelo a suelo es de 270 cm. Entonces 270 / 19,7 = 13,7, redondeado a <strong>14 contrahuellas</strong>. Cada contrahuella mide 270 / 14 = <strong>19,29 cm</strong>, y hay 14 - 1 = <strong>13 huellas</strong>. Con una huella de 27 cm el desarrollo total es 13 × 27 = <strong>351 cm</strong>. El valor de comodidad es 2 × 19,2857 + 27 = 65,57 cm, por encima del rango ideal de 61 a 63,5 cm. Con una contrahuella más (15 contrahuellas de 18 cm) bajaría a 63 cm, dentro del rango.",
+  "table_title": "Contrahuellas según la altura total",
+  "col_rise": "Altura total",
+  "col_risers": "Contrahuellas",
+  "col_riser": "Contrahuella",
+  "col_treads": "Huellas",
+  "more_text": "¿Planificando el resto de la obra? Prueba las otras calculadoras gratis:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} contrahuellas de {riser} {u}, {treads} huellas",
+    "run_line": "Desarrollo total: <strong>{run} {u}</strong> ({treads} huellas × {tread} {u})",
+    "target_line": "Tu contrahuella deseada: {desired} {u}, real: {riser} {u}",
+    "comfort_line": "Comodidad (2C+H): {comfort} {u} {badge}",
+    "comfort_in": "Dentro del rango de {lo} a {hi} {u}",
+    "comfort_out": "Fuera del rango de {lo} a {hi} {u}",
+    "irc_ok": "Cumple los límites del IRC de EE. UU. (contrahuella ≤ {max} {u}, huella ≥ {min} {u})",
+    "irc_bad": "Fuera de los límites del IRC de EE. UU.: contrahuella máx. {max} {u}, huella mín. {min} {u}",
+    "irc_note": "El IRC es un código de EE. UU.; consulta tu normativa local.",
+    "no_fit": "No cabe: necesita {run} {u} de desarrollo y tienes {space} {u}"
+  },
+  "faq": [
+    [
+      "¿Cuál es la altura máxima de contrahuella según la norma?",
+      "El IRC de EE. UU. permite una contrahuella máxima de 19,7 cm (7,75 pulgadas) en escaleras de vivienda. Las contrahuellas de un mismo tramo no pueden variar más de 1 cm aproximadamente (3/8 de pulgada). Las normas para edificios comerciales y muchas normativas locales son más estrictas, así que consulta siempre con tu ayuntamiento."
+    ],
+    [
+      "¿Cuál es la altura ideal de contrahuella?",
+      "A la mayoría de la gente le resultan más cómodas las contrahuellas de 18 a 19 cm (7 a 7,5 pulgadas). Las más bajas, de unos 15 cm (6 pulgadas), van bien en escalones exteriores y para personas mayores. Todo lo que supere el máximo del IRC de EE. UU. de 19,7 cm (7,75 pulgadas) resulta empinado y allí no está permitido."
+    ],
+    [
+      "¿Qué es la regla 2C+H de las escaleras?",
+      "La regla de comodidad 2C+H dice que dos veces la contrahuella más la huella debe quedar entre 61 y 63,5 cm (24 a 25 pulgadas). Se aproxima a la longitud de un paso natural. Las escaleras dentro de ese rango resultan cómodas, y las que quedan fuera se notan demasiado empinadas o demasiado tendidas."
+    ],
+    [
+      "¿Cómo calculo el número de peldaños de una escalera?",
+      "Mide la altura total de suelo terminado a suelo terminado, divídela entre la contrahuella máxima de 19,7 cm (7,75 pulgadas) y redondea hacia arriba. Eso te da el número de contrahuellas. Al dividir la altura total entre ese número obtienes la contrahuella exacta. El número de huellas es uno menos que el de contrahuellas."
+    ],
+    [
+      "¿Cuál es la huella mínima según la norma?",
+      "El IRC de EE. UU. exige una huella mínima de 25,4 cm (10 pulgadas), medida de borde a borde. Las huellas de 27 a 28 cm (10,5 a 11 pulgadas) son más cómodas y habituales. Las huellas de un mismo tramo no pueden variar más de 1 cm aproximadamente (3/8 de pulgada). Consulta la normativa local antes de construir."
+    ]
+  ]
+}

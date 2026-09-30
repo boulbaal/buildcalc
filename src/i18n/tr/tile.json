@@ -1,0 +1,85 @@
+{
+  "meta_title": "Fayans Hesaplama - Kaç Fayans Gerekir?",
+  "meta_desc": "Ücretsiz fayans hesaplama. Zemin veya duvar ölçüsünü, fayans ölçüsünü ve derz aralığını girin, fireyle birlikte fayans ve kutu sayısını alın. Reklamsız.",
+  "og_desc": "Zemin veya duvarınız için fireli fayans ve kutu sayısını bulun. Ücretsiz, reklamsız.",
+  "h1": "Fayans Hesaplama",
+  "lede": "Bir zemin veya duvar için kaç fayans ve kaç kutu gerektiğini derz aralığı ve fire dahil hesaplayın. Ücretsiz, anında, reklamsız.",
+  "mode_label": "Alan",
+  "mode_dims": "Uzunluk x genişlik",
+  "mode_area": "Alanı biliyorum",
+  "length": "Uzunluk",
+  "width": "Genişlik",
+  "area": "Alan",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Fayans ölçüsü (inç)",
+  "tile_size_metric": "Fayans ölçüsü (cm)",
+  "opt_subway": "3 x 6 metro fayans",
+  "opt_custom": "Özel ölçü",
+  "tile_w": "Fayans genişliği",
+  "tile_h": "Fayans yüksekliği",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Derz aralığı",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "Derz yoksa 0. 1/8 in = 0.125.",
+  "gap_hint_metric": "Derz yoksa 0. Yer karosu için 3 mm yaygındır.",
+  "pattern": "Döşeme deseni",
+  "pattern_straight": "Düz (%10 fire)",
+  "pattern_diag": "Çapraz / balıksırtı (%15 fire)",
+  "perbox": "Kutu başına fayans (isteğe bağlı)",
+  "perbox_hint": "Kutunun üzerinde yazar. Atlamak için boş bırakın.",
+  "how_text": "Hesaplayıcı alanınızı bir fayansın derz aralığıyla birlikte kapladığı alana böler, kesim ve kırılma için fire payı ekler ve tam fayansa yukarı yuvarlar:",
+  "formula": "derzli fayans alanı = (fayans genişliği + derz) &times; (fayans yüksekliği + derz)<br>fayans = ceil( alan / derzli fayans alanı &times; (1 + fire) )<br>kutu = ceil( fayans / kutu başına fayans )",
+  "how_text2": "Fire, düz döşemede %10, daha fazla artık parçanın kullanılamaz hale geldiği çapraz veya balıksırtı döşemede %15'tir. Daha geniş derz, her fayansın biraz daha fazla alan kaplaması demektir, bu yüzden fayans sayısı biraz azalır.",
+  "example_imperial": "10 ft'e 12 ft, yani <strong>120 sq ft</strong> (17.280 sq in) bir zemini 12 x 12 inç fayanslarla düz ve 1/8 inç (0,125 in) derzle döşediğinizi varsayalım. Derziyle birlikte her fayans 12,125 × 12,125 = 147,02 sq in kaplar, yani fireden önce 17.280 / 147,02 = 117,54 fayans gerekir. %10 fire ekleyin: 117,54 × 1,1 = 129,29, yukarı yuvarlanınca <strong>130 fayans</strong>. Kutuda 8 fayans varsa bu ceil(130 / 8) = <strong>17 kutu</strong> eder. Aynı zemin %15 fireyle çapraz döşenirse 136 fayans gerekir.",
+  "example_metric": "4 m'ye 3 m, yani <strong>12 m²</strong> (120.000 cm²) bir zemini 30 x 30 cm fayanslarla düz ve 3 mm (0,3 cm) derzle döşediğinizi varsayalım. Derziyle birlikte her fayans 30,3 × 30,3 = 918,09 cm² kaplar, yani fireden önce 120.000 / 918,09 = 130,71 fayans gerekir. %10 fire ekleyin: 130,71 × 1,1 = 143,78, yukarı yuvarlanınca <strong>144 fayans</strong>. Kutuda 11 fayans varsa bu ceil(144 / 11) = <strong>14 kutu</strong> eder. Aynı zemin %15 fireyle çapraz döşenirse 151 fayans gerekir.",
+  "table_title_imperial": "100 sq ft başına fayans",
+  "table_title_metric": "10 m² başına fayans",
+  "table_note": "Yaygın fayans ölçüleri, düz döşeme, %10 fire, derzsiz:",
+  "col_size": "Fayans ölçüsü",
+  "col_area": "Fayans alanı",
+  "col_count_imperial": "100 sq ft başına fayans",
+  "col_count_metric": "10 m² başına fayans",
+  "more_text": "İşin geri kalanını mı planlıyorsunuz? Diğer ücretsiz hesaplayıcıları deneyin:",
+  "js": {
+    "main": "{tiles} fayans",
+    "main_boxes": "{tiles} fayans <small>= {perbox}'lik {boxes} kutu</small>",
+    "area_line_imperial": "Döşenecek alan: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Döşenecek alan: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Derzli fayans alanı: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Derzli fayans alanı: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Fire payı: <strong>%{pct}</strong> (düz döşeme)",
+    "waste_diag": "Fire payı: <strong>%{pct}</strong> (çapraz / balıksırtı)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "3 x 6 in metro fayans",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Ne kadar fazla fayans almalıyım?",
+      "Net alandan %10 ile %15 fazla alın. Duvar kenarındaki kesimler, kırılmalar ve ileride yapılacak tamirler bu fazlayı tüketir. Dikdörtgen bir odada basit düz döşeme için %10, çapraz veya balıksırtı döşeme, küçük fayanslar ya da çok köşeli odalar için %15 kullanın."
+    ],
+    [
+      "Fayans firesi nedir?",
+      "Fire, satın aldığınız ama üzerinde yürümeyeceğiniz fayanstır: duvar kenarlarında ve armatürlerin çevresindeki artık parçalar, kesim veya taşıma sırasında çatlayan fayanslar ve ileride tamir için saklanan yedekler. Bu normaldir, hata değildir. Bu hesaplayıcı tam fayansa yuvarlamadan önce fire yüzdesini ekler."
+    ],
+    [
+      "100 fit kare için kaç tane 30x30 fayans gerekir?",
+      "12x12 inç (30x30 cm) bir fayans 1 fit kare kaplar, bu yüzden 100 fit kare (9,3 m²) için fireden önce 100 fayans gerekir. Düz döşeme için %10 fire ekleyin, almanız gereken 110 fayans. Derz aralığıyla her fayans biraz daha fazla alan kaplar, bu yüzden sayı biraz düşebilir."
+    ],
+    [
+      "Çapraz döşeme daha fazla fayans ister mi?",
+      "Evet. Fayansları 45 derecede döşemek, her sıranın duvarda açılı bir kesimle bitmesi demektir ve bu artıkların çoğu yeniden kullanılamaz. Düz döşemedeki olağan %10 yerine çapraz veya balıksırtı döşeme için yaklaşık %15 fire planlayın."
+    ],
+    [
+      "Fayans hesaplarken derzleri saymalı mıyım?",
+      "Evet, üstelik lehinize çalışırlar. Genelde 1/8 inç (3 mm) olan derziyle birlikte her fayans, tek başına fayanstan biraz daha fazla alan kaplar, bu yüzden daha geniş derz gereken fayans sayısını biraz azaltır. Büyük fayanslarda etki küçüktür ama küçük metro fayansta fark edilir."
+    ]
+  ]
+}

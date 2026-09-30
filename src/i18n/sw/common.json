@@ -1,0 +1,26 @@
+{
+  "home": "Mwanzo",
+  "language": "Lugha",
+  "units_label": "Vipimo",
+  "tagline": "bure · bila matangazo · bila ufuatiliaji · inafanya kazi bila mtandao",
+  "made_by": "Imetengenezwa na msanidi programu mmoja huru aliyechoka na tovuti za vikokotoo zilizojaa matangazo. Umeona kosa? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Liripoti kwenye GitHub</a>.",
+  "donate_text": "Bure, bila matangazo, imejengwa na mtu mmoja. Kama hii imekuokolea safari moja ya dukani, unaweza kuninunulia kahawa.",
+  "donate_paypal": "Changia kupitia PayPal",
+  "donate_kofi": "Saidia kwenye Ko-fi",
+  "how_it_works": "Jinsi inavyofanya kazi",
+  "worked_example": "Mfano wa hesabu",
+  "faq_title": "Maswali yanayoulizwa mara kwa mara",
+  "more_title": "Vikokotoo vingine vya bure",
+  "disclaimer": "Matokeo ni makadirio kwa ajili ya kupanga na hayachukui nafasi ya ushauri wa kitaalamu. Daima angalia kanuni za ujenzi za eneo lako na maelekezo ya mtengenezaji.",
+  "name_roof": "Kikokotoo cha Mteremko wa Paa",
+  "name_concrete": "Kikokotoo cha Zege",
+  "name_paint": "Kikokotoo cha Rangi",
+  "name_tile": "Kikokotoo cha Vigae",
+  "name_stair": "Kikokotoo cha Ngazi",
+  "js": {
+    "err_empty": "Weka thamani.",
+    "err_nan": "Weka namba sahihi.",
+    "err_negative": "Lazima iwe chanya.",
+    "err_zero": "Lazima iwe zaidi ya sifuri."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "meta_title": "Tính khối lượng bê tông sàn - Số bao, miễn phí",
+  "meta_desc": "Tính khối lượng bê tông sàn miễn phí. Ra thể tích theo m³ hoặc cu yd và số bao 40, 60, 80 lb hoặc 25 kg, có tính hao hụt. Không quảng cáo.",
+  "og_desc": "Tính khối lượng bê tông và số bao chính xác cho tấm sàn của bạn. Miễn phí, không quảng cáo.",
+  "h1": "Tính khối lượng bê tông",
+  "lede": "Nhập kích thước tấm sàn để biết khối lượng bê tông và số bao chính xác cần mua, có tính hao hụt. Miễn phí, tức thì, không quảng cáo.",
+  "length": "Chiều dài",
+  "width": "Chiều rộng",
+  "thickness": "Độ dày",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in là mức thường dùng cho sân và lối đi.",
+  "thickness_hint_metric": "10 cm là mức thường dùng cho sân và lối đi.",
+  "bag_label": "Loại bao",
+  "bag_hint": "Bê tông trộn sẵn, chỉ cần thêm nước.",
+  "waste_label": "Hao hụt (%)",
+  "waste_hint": "10% bù cho phần rơi vãi và nền không bằng phẳng.",
+  "how_text": "Tấm sàn là một khối hộp đơn giản: dài nhân rộng nhân dày ra thể tích. Công cụ đổi độ dày sang cùng đơn vị với các cạnh, cộng phần hao hụt, rồi chia cho lượng bê tông của một bao và làm tròn lên thành số bao nguyên:",
+  "formula": "thể tích (cu ft) = chiều dài (ft) &times; chiều rộng (ft) &times; độ dày (in) / 12<br>yard khối = thể tích / 27<br>thể tích (m&sup3;) = chiều dài (m) &times; chiều rộng (m) &times; độ dày (cm) / 100<br>số bao = ceil(thể tích &times; (1 + hao hụt / 100) / sản lượng mỗi bao)",
+  "yields_text": "Lượng bê tông mỗi bao: bao 80 lb cho khoảng 0,60 cu ft, bao 60 lb 0,45 cu ft, bao 40 lb 0,30 cu ft, và bao 25 kg khoảng 0,0123 m³.",
+  "example_imperial": "Giả sử bạn đổ một sân 10 × 10 ft, dày 4 inch. Thể tích là 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, tức 33,33 / 27 = <strong>1,23 cu yd</strong>. Với bao 80 lb mỗi bao 0,60 cu ft, cần 33,33 / 0,60 = 55,6, làm tròn lên thành <strong>56 bao</strong>. Cộng hao hụt tiêu chuẩn 10% (33,33 × 1,1 = 36,67 cu ft) thì bạn nên mua <strong>62 bao</strong>. Dư vài bao vẫn đỡ hơn phải đi mua thêm, nên cứ làm tròn lên.",
+  "example_metric": "Giả sử bạn đổ một sân 3 × 3 m, dày 10 cm. Thể tích là 3 × 3 × 10/100 = <strong>0,9 m³</strong>. Với bao 25 kg mỗi bao khoảng 0,0123 m³, cần 0,9 / 0,0123 = 73,2, làm tròn lên thành <strong>74 bao</strong>. Cộng hao hụt tiêu chuẩn 10% (0,9 × 1,1 = 0,99 m³) thì bạn nên mua 0,99 / 0,0123 = 80,5, làm tròn lên thành <strong>81 bao</strong>. Dư vài bao vẫn đỡ hơn phải đi mua thêm, nên cứ làm tròn lên.",
+  "table_title": "Loại bao và lượng bê tông",
+  "col_bag": "Loại bao",
+  "col_yield": "Lượng bê tông",
+  "col_per": "Số bao theo thể tích",
+  "more_text": "Đang tính các phần khác của công trình? Thử các công cụ miễn phí khác:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} bao loại {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} bao loại {bag}</small>",
+    "vol_imperial": "thể tích = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "thể tích = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Cộng {waste}% hao hụt: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Cộng {waste}% hao hụt: {vol} × {factor} = {total} m³",
+    "bags_line": "số bao = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} bao mỗi cu yd",
+    "tbl_per_kg": "khoảng {m3} bao mỗi m³, {yd} bao mỗi cu yd"
+  },
+  "faq": [
+    [
+      "Một cubic yard bê tông cần bao nhiêu bao?",
+      "Một bao 80 lb cho khoảng 0,60 feet khối, và một cubic yard là 27 feet khối, nên bạn cần 45 bao 80 lb cho mỗi cubic yard. Với bao 60 lb là 60 bao, và với bao 40 lb là 90 bao. Với bao 25 kg bạn cần khoảng 81 bao cho mỗi mét khối (1,31 cubic yard)."
+    ],
+    [
+      "Sàn bê tông nên dày bao nhiêu?",
+      "4 inch (10 cm) là độ dày thông thường cho sân, lối đi và nền nhà kho nhỏ. Đường vào nhà có ô tô chạy thường cần 5 đến 6 inch (12 đến 15 cm), còn sàn cho xe tải nặng hoặc xưởng thường từ 6 inch (15 cm) trở lên. Hãy kiểm tra quy chuẩn xây dựng địa phương trước khi đổ."
+    ],
+    [
+      "Sàn bê tông có cần cốt thép hoặc lưới thép không?",
+      "Tấm sàn nhỏ như lối đi thường chỉ cần khe co giãn là đủ, nhưng lưới thép hoặc cốt thép giúp giữ vết nứt khép lại ở sân, đường vào nhà và sàn gara. Đặt cốt thép ở giữa chiều dày sàn, khoảng 2 inch (5 cm) tính từ đáy với sàn dày 4 inch (10 cm), không đặt sát nền đất."
+    ],
+    [
+      "Khi nào nên đặt xe bê tông tươi thay vì dùng bao?",
+      "Khoảng 1 cubic yard (0,76 mét khối) thường là ngưỡng chuyển. Lượng đó đã là 45 bao 80 lb hoặc khoảng 62 bao 25 kg phải khuân vác và trộn tay. Nhiều hơn thế, xe bê tông tươi nhanh hơn, đồng đều hơn và thường rẻ hơn, dù đơn hàng nhỏ có thể bị tính thêm phí."
+    ],
+    [
+      "Bê tông cần bao lâu để đông cứng?",
+      "Bê tông ninh kết trong vài giờ nhưng đạt cường độ chậm. Thường bạn có thể đi lại trên đó sau 24 đến 48 giờ và cho xe chạy sau khoảng 7 ngày. Bê tông đạt phần lớn cường độ thiết kế sau 28 ngày. Giữ ẩm trong tuần đầu để bê tông cứng chắc thay vì bị khô quá nhanh."
+    ]
+  ]
+}

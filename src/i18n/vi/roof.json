@@ -1,0 +1,56 @@
+{
+  "meta_title": "Tính độ dốc mái - Miễn phí, không quảng cáo",
+  "meta_desc": "Công cụ tính độ dốc mái miễn phí. Đổi chiều cao và chiều dài ngang sang độ, phần trăm và X:12, kèm hệ số độ dốc để tính diện tích mái. Dùng được offline.",
+  "og_desc": "Đổi chiều cao và chiều dài ngang sang độ, phần trăm và độ dốc X:12. Tức thì, miễn phí, không quảng cáo.",
+  "h1": "Tính độ dốc mái",
+  "lede": "Đổi chiều cao và chiều dài ngang sang độ, phần trăm và độ dốc X:12, kèm hệ số độ dốc để tính diện tích mái. Miễn phí, tức thì, không quảng cáo.",
+  "mode_label": "Tôi biết",
+  "mode_riserun": "Chiều cao và chiều dài ngang",
+  "mode_angle": "Góc theo độ",
+  "mode_percent": "Độ dốc theo phần trăm",
+  "rise": "Chiều cao",
+  "rise_hint": "Chiều cao theo phương đứng. Dùng cùng đơn vị với chiều dài ngang.",
+  "run": "Chiều dài ngang",
+  "run_hint": "Khoảng cách theo phương ngang. Nhập 12 sẽ ra ngay độ dốc X:12.",
+  "angle": "Góc (độ)",
+  "percent": "Độ dốc (%)",
+  "how_text": "Độ dốc mái là tỷ lệ giữa chiều cao theo phương đứng và chiều dài theo phương ngang. Công cụ này quy đổi giữa ba cách viết phổ biến, kèm hệ số độ dốc dùng để ước tính diện tích mái:",
+  "formula": "góc = atan(chiều cao / chiều dài ngang)<br>phần trăm = chiều cao / chiều dài ngang &times; 100<br>độ dốc = (chiều cao / chiều dài ngang &times; 12) : 12<br>hệ số = &radic;(1 + (chiều cao / chiều dài ngang)&sup2;)",
+  "example_imperial": "Giả sử mái của bạn cao lên 6 inch cho mỗi 12 inch chiều ngang. Khi đó chiều cao / chiều ngang = 0,5, nên góc là atan(0,5) = <strong>26,57°</strong>, độ dốc là <strong>50%</strong>, và viết là <strong>6:12</strong>. Hệ số là √(1 + 0,25) = <strong>1,118</strong>: một ngôi nhà có diện tích mặt bằng 1.000 sq ft dưới mái đó có khoảng 1.118 sq ft bề mặt mái thực tế.",
+  "example_metric": "Giả sử mái của bạn cao lên 50 cm cho mỗi 100 cm chiều ngang. Khi đó chiều cao / chiều ngang = 0,5, nên góc là atan(0,5) = <strong>26,57°</strong>, độ dốc là <strong>50%</strong>, và theo cách viết của Mỹ là <strong>6:12</strong>. Hệ số là √(1 + 0,25) = <strong>1,118</strong>: một ngôi nhà có diện tích mặt bằng 100 m² dưới mái đó có khoảng 111,8 m² bề mặt mái thực tế.",
+  "table_title": "Các độ dốc mái phổ biến",
+  "col_pitch": "Độ dốc",
+  "col_angle": "Góc",
+  "col_slope": "Phần trăm",
+  "col_mult": "Hệ số",
+  "more_text": "Đang tính các phần khác của công trình? Thử các công cụ miễn phí khác:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = độ dốc {pct}%</small>",
+    "main_metric": "{deg}° <small>= độ dốc {pct}% = {pitch}:12</small>",
+    "mult_line": "Hệ số độ dốc: <strong>{mult}</strong> (diện tích mặt bằng × {mult} = diện tích mái thực tế)",
+    "angle_line": "góc = atan({ratio}) = {deg}°",
+    "pct_line": "phần trăm = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Độ dốc mái 6/12 là bao nhiêu độ?",
+      "Độ dốc 6/12 nghĩa là mái cao lên 6 đơn vị cho mỗi 12 đơn vị chiều ngang. Tương đương 26,57 độ, hay độ dốc 50%. Đây là một trong những độ dốc phổ biến nhất cho nhà ở."
+    ],
+    [
+      "Hệ số độ dốc dùng để làm gì?",
+      "Hệ số này đổi diện tích mặt bằng của mái thành diện tích bề mặt nghiêng thực tế. Nhân diện tích mặt bằng với hệ số để ước tính vật liệu lợp hoặc lớp lót chống thấm. Với độ dốc 6/12 (26,57 độ), hệ số là 1,118."
+    ],
+    [
+      "Độ dốc tối thiểu cho ngói bitum là bao nhiêu?",
+      "Phần lớn nhà sản xuất ngói bitum yêu cầu độ dốc tối thiểu 2/12 (khoảng 9,5 độ), và dưới 4/12 (khoảng 18,4 độ) thì cần thêm lớp lót chống thấm. Mái thoải hơn cần dùng màng chống thấm. Luôn kiểm tra hướng dẫn của nhà sản xuất."
+    ],
+    [
+      "Làm sao đo độ dốc mái từ trong gác mái?",
+      "Đặt thước thủy nằm ngang áp vào cầu phong và đánh dấu một khoảng cố định dọc theo thước, ví dụ 12 inch hoặc 100 cm. Sau đó đo thẳng đứng từ điểm đánh dấu lên mặt dưới của cầu phong. Nhập hai số đó vào đây làm chiều dài ngang và chiều cao."
+    ],
+    [
+      "Mái dốc hơn có tốt hơn không?",
+      "Mái dốc hơn thoát nước và tuyết nhanh hơn và thường bền hơn, nhưng tốn kém hơn khi thi công và nguy hiểm hơn khi làm việc trên mái. Phần lớn mái nhà ở có độ dốc khoảng 18 đến 37 độ (4/12 đến 9/12)."
+    ]
+  ]
+}

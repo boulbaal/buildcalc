@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>{{meta_title}}</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body data-units="{{@units}}">
+<div class="wrap">
+<header class="site">
+  <nav aria-label="{{home}}">
+    <div class="left"><a class="brand" href="{{@url_home}}">Build<span>Calc</span></a></div>
+    {{@langselect}}
+  </nav>
+</header>
+<main>
+<h1>{{h1}}</h1>
+<p class="lede">{{lede}}</p>
+<p><a href="{{@url_home}}">{{back}}</a></p>
+</main>
+</div>
+{{@T}}
+<script src="/assets/calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "home": "Strona główna",
+  "language": "Język",
+  "units_label": "Jednostki",
+  "tagline": "za darmo · bez reklam · bez śledzenia · działa offline",
+  "made_by": "Zrobione przez jednego niezależnego programistę, który miał dość stron z kalkulatorami pełnych reklam. Widzisz błąd? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Zgłoś go na GitHubie</a>.",
+  "donate_text": "Za darmo, bez reklam, robione przez jedną osobę. Jeśli oszczędziło ci to wyjazdu do marketu, możesz postawić mi kawę.",
+  "donate_paypal": "Wesprzyj przez PayPal",
+  "donate_kofi": "Wesprzyj na Ko-fi",
+  "how_it_works": "Jak to działa",
+  "worked_example": "Przykład obliczeń",
+  "faq_title": "Najczęstsze pytania",
+  "more_title": "Więcej darmowych kalkulatorów",
+  "disclaimer": "Wyniki są szacunkowe i służą do planowania, nie zastępują porady fachowca. Zawsze sprawdź lokalne przepisy budowlane i instrukcje producenta.",
+  "name_roof": "Kalkulator kąta nachylenia dachu",
+  "name_concrete": "Kalkulator betonu",
+  "name_paint": "Kalkulator farby",
+  "name_tile": "Kalkulator płytek",
+  "name_stair": "Kalkulator schodów",
+  "js": {
+    "err_empty": "Wpisz wartość.",
+    "err_nan": "Wpisz poprawną liczbę.",
+    "err_negative": "Wartość musi być dodatnia.",
+    "err_zero": "Wartość musi być większa od zera."
+  }
+}

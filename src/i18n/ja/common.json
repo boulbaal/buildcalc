@@ -1,0 +1,26 @@
+{
+  "home": "ホーム",
+  "language": "言語",
+  "units_label": "単位",
+  "tagline": "無料 · 広告なし · トラッキングなし · オフライン対応",
+  "made_by": "広告だらけの計算サイトにうんざりした個人開発者が作りました。間違いを見つけたら <a href=\"https://github.com/boulbaal/buildcalc/issues\">GitHub で報告してください</a>。",
+  "donate_text": "無料、広告なし、一人で作っています。ホームセンターへの無駄な往復が一回減ったなら、コーヒー一杯おごってもらえるとうれしいです。",
+  "donate_paypal": "PayPal で寄付する",
+  "donate_kofi": "Ko-fi で応援する",
+  "how_it_works": "計算のしくみ",
+  "worked_example": "計算例",
+  "faq_title": "よくある質問",
+  "more_title": "ほかの無料計算ツール",
+  "disclaimer": "計算結果は計画用の目安であり、専門家の助言に代わるものではありません。必ず地域の建築基準やメーカーの施工説明書を確認してください。",
+  "name_roof": "屋根勾配計算",
+  "name_concrete": "コンクリート量計算",
+  "name_paint": "塗料量計算",
+  "name_tile": "タイル枚数計算",
+  "name_stair": "階段計算",
+  "js": {
+    "err_empty": "値を入力してください。",
+    "err_nan": "有効な数値を入力してください。",
+    "err_negative": "正の数を入力してください。",
+    "err_zero": "0 より大きい値を入力してください。"
+  }
+}

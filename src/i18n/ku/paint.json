@@ -1,0 +1,76 @@
+{
+  "meta_title": "Hesabkirina Boyaxê - Çiqas Boyax Lazim e?",
+  "meta_desc": "Hesabkera boyaxê ya belaş. Mezinahiya odeyê, derî, pencere û qatan binivîse û bizane çend lître boyax lazim e. Bilez, bê reklam, bê înternet jî dixebite.",
+  "og_desc": "Mezinahiya odeyê, derî, pencere û qatan binivîse û mîqdara boyaxê bistîne. Belaş, bê reklam.",
+  "h1": "Hesabkirina boyaxê",
+  "lede": "Hesab bike ka odeya te çend galon an lître boyax dixwaze, bi derî, pencere û qatan re. Belaş, bilez, bê reklam.",
+  "length": "Dirêjahiya odeyê",
+  "width": "Firehiya odeyê",
+  "height": "Bilindahiya dîwêr",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Derî",
+  "doors_hint": "Nayên boyaxkirin. Her yek rûbereke standard a derî kêm dike.",
+  "windows": "Pencere",
+  "coats": "Qat",
+  "coats_hint": "Du qat plana asayî ye.",
+  "coverage": "Rûbera boyaxkirinê",
+  "sfx_cov_imperial": "(sq ft ji bo her galonê)",
+  "sfx_cov_metric": "(m² ji bo her lîtreyê)",
+  "coverage_hint_imperial": "asayî 250-400",
+  "coverage_hint_metric": "asayî 8-12",
+  "ceiling": "Tavan jî tê de be",
+  "how_text": "Hesabker rûbera dîwaran li dora odeyê dipîve, ji bo her derî û pencereyê rûbereke standard kêm dike, heke tu bixwazî tavanê lê zêde dike, bi hejmara qatan re zêde dike û li rûbera boyaxkirinê ya boyaxa te parve dike. Encam her tim ber bi qutiyên tam ve tê bilindkirin, ji ber ku tu nikarî 1,8 galonan bikirî:",
+  "formula": "rûbera dîwaran = 2 &times; (dirêjahî + firehî) &times; bilindahî<br>rûbera ku tê boyaxkirin = rûbera dîwaran &minus; derî &times; rûbera derî &minus; pencere &times; rûbera pencereyê (+ tavan)<br>teneke = rûbera ku tê boyaxkirin &times; qat &divide; rûbera boyaxkirinê, ber bi jor ve tê girover kirin",
+  "metric_note": "Di moda metrîk de derîyek wekî 1,95 m², pencereyek wekî 1,4 m² tê hesabkirin, û rûbera boyaxkirinê ji bo her lîtreyê ye. Di moda împeryal de derîyek wekî 21 sq ft û pencereyek wekî 15 sq ft tê hesabkirin.",
+  "example_imperial": "Bifikire ku odeya te 12 × 10 ft e bi dîwarên 8 ft, derîyek û pencereyek, û tu du qatan bi 350 sq ft ji bo her galonê plan dikî. Rûbera dîwaran 2 × (12 + 10) × 8 = <strong>352 sq ft</strong> e. Derî (21 sq ft) û pencereyê (15 sq ft) kêm bike û tu digihîjî <strong>316 sq ft ji bo her qatê</strong>. Du qat tê wateya 632 sq ft, û 632 ÷ 350 = 1,81, ku dibe <strong>2 galon</strong>. \"Tavan jî tê de be\" nîşan bike û tavana 120 sq ft wê dike 436 sq ft ji bo her qatê, bi giştî 872 sq ft, ji ber vê yekê <strong>3 galon</strong> lazim in.",
+  "example_metric": "Bifikire ku odeya te 4 × 3 m e bi dîwarên 2,5 m, derîyek û pencereyek, û tu du qatan bi 10 m² ji bo her lîtreyê plan dikî. Rûbera dîwaran 2 × (4 + 3) × 2,5 = <strong>35 m²</strong> e. Derî (1,95 m²) û pencereyê (1,4 m²) kêm bike û tu digihîjî <strong>31,65 m² ji bo her qatê</strong>. Du qat tê wateya 63,3 m², û 63,3 ÷ 10 = 6,33, ku dibe <strong>7 lître</strong>. \"Tavan jî tê de be\" nîşan bike û tavana 12 m² wê dike 43,65 m² ji bo her qatê, bi giştî 87,3 m², ji ber vê yekê <strong>9 lître</strong> lazim in.",
+  "table_title": "Boyaxa lazim li gorî mezinahiya odeyê",
+  "table_note_imperial": "Dîwar bi tavanên 8 ft, derîyek, pencereyek, du qat, 350 sq ft ji bo her galonê:",
+  "table_note_metric": "Dîwar 2,5 m bilind, derîyek, pencereyek, du qat, 10 m² ji bo her lîtreyê:",
+  "col_room": "Ode",
+  "col_walls": "Tenê dîwar",
+  "col_both": "Dîwar + tavan",
+  "more_text": "Mayî ya karê plan dikî? Hesabkerên din ên belaş biceribîne:",
+  "js": {
+    "main": "{cansText} <small>ji bo {coatsText}</small>",
+    "cans_imperial_one": "{cans} galon",
+    "cans_imperial": "{cans} galon",
+    "cans_metric_one": "{cans} lître",
+    "cans_metric": "{cans} lître",
+    "coats_one": "{coats} qat",
+    "coats_other": "{coats} qat",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Rûbera dîwaran: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "{doors} derî û {windows} pencere kêm bike: −{deduct} {a} = <strong>{per} {a} ji bo her qatê</strong>",
+    "deduct_ceiling_line": "{doors} derî û {windows} pencere kêm bike: −{deduct} {a}, tavan lê zêde bike {ceil} {a} = <strong>{per} {a} ji bo her qatê</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, bilindkirî dibe <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "Galonek boyax çiqas rûber digire?",
+      "Piraniya boyaxên hundir li ser dîwarekî nerm û astarkirî 250 heta 400 lingên çargoşe ji bo her galonê digirin (nêzîkî 6 heta 10 m² ji bo her lîtreyê). Ev hesabker bi xwe 350 sq ft ji bo her galonê an 10 m² ji bo her lîtreyê bi kar tîne. Rûberên hişk, kunkunî an tazî bêtir boyax dikişînin, ji ber vê yekê dawiya kêm a rêzê bi kar bîne."
+    ],
+    [
+      "Berî boyaxkirinê astar lazim e?",
+      "Astarê li ser alçîpana tazî, dara tazî, rûberên lekedar an biriqok bi kar bîne, û dema ku rengekî tarî bi rengekî vekirî dinixumînî. Li ser dîwarên berê boyaxkirî yên di rewşeke baş de û bi rengekî nêzîk, boyaxeke baş a bi astarê re bi gelemperî têra xwe dike. Astar ji qateke boyaxê ya zêde erzantir e."
+    ],
+    [
+      "Qatek boyax têra xwe dike, an du qat lazim in?",
+      "Ji bo rûyekî yeksan û demdirêj du qatan plan bike. Qatek dikare bixebite dema ku bi heman reng û biriqê li ser dîwarekî baş amadekirî ji nû ve boyax dikî. Guhertinên rengê mezin, sor û zer, an boyaxkirina li ser pîneyan pir caran du qat û astareke rengîn li bin dixwazin."
+    ],
+    [
+      "Ji bo odeyeke 12x12 çiqas boyax lazim e?",
+      "Odeyeke 12 bi 12 lingî bi dîwarên 8 lingî 384 sq ft dîwar heye. Derîyek û pencereyek kêm bike, dibe 348 sq ft ji bo her qatê, ji ber vê yekê du qat bi 350 sq ft ji bo her galonê 2 galonan dixwazin. Odeyeke wekhev a 4 bi 4 m bi dîwarên 2,5 m bi 10 m² ji bo her lîtreyê 8 lître dixwaze."
+    ],
+    [
+      "Boyaxa tavanê ji boyaxa dîwêr cuda ye?",
+      "Boyaxa tavanê stûrtir tê çêkirin da ku kêmtir biperike û bidilope, û hema her tim mat e da ku ronahî şopên rolê dernexe holê. Tu dikarî boyaxa dîwêr a mat li ser tavanê bi kar bînî, lê boyaxeke taybet a tavanê li jor serê te hêsantir tê sepandin û kêmasiyan baştir vedişêre."
+    ]
+  ]
+}

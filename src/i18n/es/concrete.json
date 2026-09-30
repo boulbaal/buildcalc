@@ -1,0 +1,67 @@
+{
+  "meta_title": "Calcular hormigón para losa - Sacos y volumen, gratis",
+  "meta_desc": "Calculadora de hormigón gratis. Volumen en m³ o yardas cúbicas y número de sacos de 25 kg o de 40, 60 y 80 lb, con margen de desperdicio. Sin anuncios.",
+  "og_desc": "Calcula el volumen de hormigón y el número exacto de sacos para tu losa. Gratis, sin anuncios.",
+  "h1": "Calculadora de hormigón para losas",
+  "lede": "Introduce las medidas de tu losa y obtén el volumen de hormigón y el número exacto de sacos que necesitas, con margen de desperdicio. Gratis, al instante, sin anuncios.",
+  "length": "Largo",
+  "width": "Ancho",
+  "thickness": "Espesor",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in es lo habitual para patios y caminos.",
+  "thickness_hint_metric": "10 cm es lo habitual para patios y caminos.",
+  "bag_label": "Tamaño del saco",
+  "bag_hint": "Hormigón preparado, solo hay que añadir agua.",
+  "waste_label": "Margen de desperdicio (%)",
+  "waste_hint": "Un 10% cubre lo que se derrama y una base irregular.",
+  "how_text": "Una losa es una caja sencilla: largo por ancho por espesor da el volumen. La calculadora pasa el espesor a la misma unidad que los lados, añade tu margen de desperdicio, divide entre el rendimiento de un saco y redondea hacia arriba a sacos enteros:",
+  "formula": "volumen (cu ft) = largo (ft) &times; ancho (ft) &times; espesor (in) / 12<br>yardas cúbicas = volumen / 27<br>volumen (m&sup3;) = largo (m) &times; ancho (m) &times; espesor (cm) / 100<br>sacos = ceil(volumen &times; (1 + desperdicio / 100) / rendimiento del saco)",
+  "yields_text": "Rendimiento por saco: un saco de 80 lb da unos 0,60 cu ft, uno de 60 lb 0,45 cu ft, uno de 40 lb 0,30 cu ft y un saco de 25 kg unos 0,0123 m³.",
+  "example_imperial": "Supongamos que hormigonas un patio de 10 × 10 ft y 4 pulgadas de espesor. El volumen es 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, es decir 33,33 / 27 = <strong>1,23 cu yd</strong>. Con sacos de 80 lb de 0,60 cu ft cada uno, salen 33,33 / 0,60 = 55,6, redondeado a <strong>56 sacos</strong>. Añade el margen habitual del 10% (33,33 × 1,1 = 36,67 cu ft) y deberías comprar <strong>62 sacos</strong>. Que sobren sacos es mejor que volver a la tienda, así que redondea hacia arriba.",
+  "example_metric": "Supongamos que hormigonas un patio de 3 × 3 m y 10 cm de espesor. El volumen es 3 × 3 × 10/100 = <strong>0,9 m³</strong>. Con sacos de 25 kg de unos 0,0123 m³ cada uno, salen 0,9 / 0,0123 = 73,2, redondeado a <strong>74 sacos</strong>. Añade el margen habitual del 10% (0,9 × 1,1 = 0,99 m³) y deberías comprar 0,99 / 0,0123 = 80,5, redondeado a <strong>81 sacos</strong>. Que sobren sacos es mejor que volver a la tienda, así que redondea hacia arriba.",
+  "table_title": "Tamaños de saco y rendimiento",
+  "col_bag": "Tamaño del saco",
+  "col_yield": "Rendimiento",
+  "col_per": "Sacos por volumen",
+  "more_text": "¿Planificando el resto de la obra? Prueba las otras calculadoras gratis:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} sacos de {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} sacos de {bag}</small>",
+    "vol_imperial": "volumen = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "volumen = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Con un {waste}% de desperdicio: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Con un {waste}% de desperdicio: {vol} × {factor} = {total} m³",
+    "bags_line": "sacos = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} por cu yd",
+    "tbl_per_kg": "unos {m3} por m³, {yd} por cu yd"
+  },
+  "faq": [
+    [
+      "¿Cuántos sacos de hormigón hay en una yarda cúbica?",
+      "Un saco de 80 lb rinde unos 0,60 pies cúbicos, y una yarda cúbica son 27 pies cúbicos, así que necesitas 45 sacos de 80 lb por yarda cúbica. Con sacos de 60 lb son 60, y con sacos de 40 lb son 90. Con sacos de 25 kg necesitas unos 81 por metro cúbico (1,31 yardas cúbicas)."
+    ],
+    [
+      "¿Qué espesor debe tener una losa de hormigón?",
+      "10 cm (4 pulgadas) es el espesor habitual para patios, caminos y bases de casetas. Las entradas de garaje por las que pasan coches suelen necesitar de 12 a 15 cm (5 a 6 pulgadas), y las losas para vehículos pesados o talleres suelen llegar a 15 cm (6 pulgadas) o más. Consulta la normativa local antes de hormigonar."
+    ],
+    [
+      "¿Necesito ferralla o mallazo en una losa?",
+      "Las losas pequeñas como los caminos suelen ir bien solo con juntas de retracción, pero el mallazo o las barras de acero ayudan a mantener cerradas las fisuras en patios, entradas y suelos de garaje. Coloca la armadura en la mitad del espesor de la losa, unos 5 cm (2 pulgadas) por encima del suelo en una losa de 10 cm (4 pulgadas), no apoyada en el terreno."
+    ],
+    [
+      "¿Cuándo conviene pedir un camión hormigonera en lugar de sacos?",
+      "El punto de inflexión suele estar en torno a 0,76 metros cúbicos (1 yarda cúbica). Eso ya son 45 sacos de 80 lb o unos 62 sacos de 25 kg que cargar y mezclar a mano. Por encima de esa cantidad, el hormigón de camión es más rápido, más uniforme y a menudo más barato, aunque las cargas pequeñas pueden tener un recargo."
+    ],
+    [
+      "¿Cuánto tarda en curar el hormigón?",
+      "El hormigón fragua en horas pero cura despacio. Normalmente se puede pisar a las 24 a 48 horas y pasar con el coche después de unos 7 días. Alcanza la mayor parte de su resistencia de proyecto a los 28 días. Mantenlo húmedo la primera semana para que cure fuerte en lugar de secarse demasiado rápido."
+    ]
+  ]
+}

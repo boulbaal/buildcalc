@@ -1,0 +1,56 @@
+{
+  "meta_title": "Calcul pente de toit en degrés et % - Gratuit",
+  "meta_desc": "Calcul de pente de toit gratuit. Convertissez hauteur et longueur en degrés, pourcentage et pente X:12, avec le coefficient de surface. Immédiat, sans pub.",
+  "og_desc": "Convertissez hauteur et longueur en degrés, pourcentage et pente X:12. Immédiat, gratuit, sans pub.",
+  "h1": "Calcul pente de toit",
+  "lede": "Convertissez la hauteur et la longueur horizontale en degrés, en pourcentage et en pente X:12, et obtenez le coefficient de pente pour votre surface de toiture. Gratuit, immédiat, sans pub.",
+  "mode_label": "Je connais",
+  "mode_riserun": "Hauteur et longueur",
+  "mode_angle": "Angle en degrés",
+  "mode_percent": "Pente en pourcentage",
+  "rise": "Hauteur",
+  "rise_hint": "Hauteur verticale. Utilisez la même unité que pour la longueur.",
+  "run": "Longueur",
+  "run_hint": "Distance horizontale. Une longueur de 12 donne directement la pente X:12.",
+  "angle": "Angle (degrés)",
+  "percent": "Pente (%)",
+  "how_text": "La pente d'un toit est le rapport entre la hauteur verticale et la longueur horizontale. Ce calculateur convertit entre les trois façons courantes de l'écrire, et donne le coefficient de pente utilisé pour estimer la surface de toiture :",
+  "formula": "angle = atan(hauteur / longueur)<br>pourcentage = hauteur / longueur &times; 100<br>pente = (hauteur / longueur &times; 12) : 12<br>coefficient = &radic;(1 + (hauteur / longueur)&sup2;)",
+  "example_imperial": "Supposons que votre toit monte de 6 pouces pour 12 pouces de longueur horizontale. Alors hauteur / longueur = 0,5, donc l'angle vaut atan(0,5) = <strong>26,57°</strong>, la pente est de <strong>50%</strong> et elle s'écrit <strong>6:12</strong>. Le coefficient vaut √(1 + 0,25) = <strong>1,118</strong> : une maison de 1 000 sq ft d'emprise au sol sous ce toit a environ 1 118 sq ft de surface de toiture réelle.",
+  "example_metric": "Supposons que votre toit monte de 50 cm pour 100 cm de distance horizontale. Alors hauteur / longueur = 0,5, donc l'angle vaut atan(0,5) = <strong>26,57°</strong>, la pente est de <strong>50%</strong> et, en notation américaine, elle s'écrit <strong>6:12</strong>. Le coefficient vaut √(1 + 0,25) = <strong>1,118</strong> : une maison de 100 m² d'emprise au sol sous ce toit a environ 111,8 m² de surface de toiture réelle.",
+  "table_title": "Pentes de toit courantes",
+  "col_pitch": "Pente",
+  "col_angle": "Angle",
+  "col_slope": "Pourcentage",
+  "col_mult": "Coefficient",
+  "more_text": "Vous préparez la suite du chantier ? Essayez les autres calculateurs gratuits :",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = pente de {pct}%</small>",
+    "main_metric": "{deg}° <small>= pente de {pct}% = {pitch}:12</small>",
+    "mult_line": "Coefficient de pente : <strong>{mult}</strong> (emprise au sol × {mult} = surface réelle du toit)",
+    "angle_line": "angle = atan({ratio}) = {deg}°",
+    "pct_line": "pourcentage = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Combien de degrés fait une pente de toit 6/12 ?",
+      "Une pente 6/12 signifie que le toit monte de 6 unités pour 12 unités de longueur horizontale. Cela correspond à 26,57 degrés, soit une pente de 50%. C'est l'une des pentes les plus courantes sur les maisons."
+    ],
+    [
+      "À quoi sert le coefficient de pente ?",
+      "Il convertit l'emprise au sol d'un toit en surface inclinée réelle. Multipliez l'emprise par le coefficient pour estimer la couverture ou l'écran sous-toiture nécessaire. Pour une pente 6/12 (26,57 degrés), le coefficient est de 1,118."
+    ],
+    [
+      "Quelle est la pente minimale pour des bardeaux ?",
+      "La plupart des fabricants de bardeaux bitumés exigent au moins une pente de 2/12 (environ 9,5 degrés), et en dessous de 4/12 (environ 18,4 degrés) ils demandent une sous-couche supplémentaire. Les toits plus plats nécessitent une membrane d'étanchéité. Vérifiez toujours les instructions du fabricant."
+    ],
+    [
+      "Comment mesurer la pente du toit depuis les combles ?",
+      "Tenez un niveau à bulle à l'horizontale contre un chevron et marquez une distance fixe, par exemple 12 pouces ou 100 cm. Mesurez ensuite à la verticale depuis cette marque jusqu'au dessous du chevron. Saisissez ces deux valeurs ici comme longueur et hauteur."
+    ],
+    [
+      "Un toit plus pentu est-il meilleur ?",
+      "Les toits plus pentus évacuent plus vite l'eau et la neige et durent souvent plus longtemps, mais ils coûtent plus cher à construire et sont plus dangereux pour travailler. La plupart des toits de maisons ont une pente comprise entre environ 18 et 37 degrés (4/12 à 9/12)."
+    ]
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "meta_title": "Fliesen berechnen - Wie viele Fliesen brauche ich?",
+  "meta_desc": "Fliesenbedarf kostenlos berechnen. Boden- oder Wandmaße, Fliesenformat und Fugenbreite eingeben und Anzahl Fliesen und Pakete inklusive Verschnitt erhalten.",
+  "og_desc": "Anzahl Fliesen und Pakete für Boden oder Wand, inklusive Verschnitt. Kostenlos, ohne Werbung.",
+  "h1": "Fliesen berechnen: Wie viele Fliesen brauche ich?",
+  "lede": "Berechne, wie viele Fliesen und Pakete du für Boden oder Wand brauchst, mit Fugenbreite und Verschnitt. Kostenlos, sofort, ohne Werbung.",
+  "mode_label": "Fläche",
+  "mode_dims": "Länge x Breite",
+  "mode_area": "Ich kenne die Fläche",
+  "length": "Länge",
+  "width": "Breite",
+  "area": "Fläche",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Fliesenformat (Zoll)",
+  "tile_size_metric": "Fliesenformat (cm)",
+  "opt_subway": "3 x 6 Metrofliese",
+  "opt_custom": "Eigenes Format",
+  "tile_w": "Fliesenbreite",
+  "tile_h": "Fliesenhöhe",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Fugenbreite",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 für keine Fuge. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 für keine Fuge. 3 mm sind bei Bodenfliesen üblich.",
+  "pattern": "Verlegemuster",
+  "pattern_straight": "Gerade (10% Verschnitt)",
+  "pattern_diag": "Diagonal / Fischgrät (15% Verschnitt)",
+  "perbox": "Fliesen pro Paket (optional)",
+  "perbox_hint": "Steht auf dem Paket. Leer lassen, um es zu überspringen.",
+  "how_text": "Der Rechner teilt deine Fläche durch die Fläche einer Fliese samt Fuge, addiert einen Zuschlag für Zuschnitt und Bruch und rundet auf ganze Fliesen auf:",
+  "formula": "effektive Fliesenfläche = (Fliesenbreite + Fuge) &times; (Fliesenhöhe + Fuge)<br>Fliesen = ceil( Fläche / effektive Fliesenfläche &times; (1 + Verschnitt) )<br>Pakete = ceil( Fliesen / Fliesen pro Paket )",
+  "how_text2": "Der Verschnitt beträgt 10% bei gerader Verlegung und 15% bei diagonaler oder Fischgrät-Verlegung, weil dort mehr Reststücke unbrauchbar sind. Eine breitere Fuge bedeutet, dass jede Fliese etwas mehr Fläche abdeckt, die Anzahl Fliesen sinkt also ein wenig.",
+  "example_imperial": "Angenommen, du fliest einen Boden von 10 ft mal 12 ft, also <strong>120 sq ft</strong> (17.280 sq in), mit 12 x 12 Zoll Fliesen, gerade verlegt, mit 1/8 Zoll (0,125 in) Fuge. Jede Fliese samt Fuge deckt 12,125 × 12,125 = 147,02 sq in ab, ohne Verschnitt sind das also 17.280 / 147,02 = 117,54 Fliesen. Plus 10% Verschnitt: 117,54 × 1,1 = 129,29, aufgerundet <strong>130 Fliesen</strong>. Bei 8 Fliesen pro Paket sind das ceil(130 / 8) = <strong>17 Pakete</strong>. Derselbe Boden diagonal verlegt mit 15% Verschnitt braucht 136 Fliesen.",
+  "example_metric": "Angenommen, du fliest einen Boden von 4 m mal 3 m, also <strong>12 m²</strong> (120.000 cm²), mit 30 x 30 cm Fliesen, gerade verlegt, mit 3 mm (0,3 cm) Fuge. Jede Fliese samt Fuge deckt 30,3 × 30,3 = 918,09 cm² ab, ohne Verschnitt sind das also 120.000 / 918,09 = 130,71 Fliesen. Plus 10% Verschnitt: 130,71 × 1,1 = 143,78, aufgerundet <strong>144 Fliesen</strong>. Bei 11 Fliesen pro Paket sind das ceil(144 / 11) = <strong>14 Pakete</strong>. Derselbe Boden diagonal verlegt mit 15% Verschnitt braucht 151 Fliesen.",
+  "table_title_imperial": "Fliesen pro 100 sq ft",
+  "table_title_metric": "Fliesen pro 10 m²",
+  "table_note": "Übliche Fliesenformate, gerade verlegt mit 10% Verschnitt und ohne Fuge:",
+  "col_size": "Fliesenformat",
+  "col_area": "Fläche pro Fliese",
+  "col_count_imperial": "Fliesen pro 100 sq ft",
+  "col_count_metric": "Fliesen pro 10 m²",
+  "more_text": "Du planst den Rest des Projekts? Probiere die anderen kostenlosen Rechner:",
+  "js": {
+    "main": "{tiles} Fliesen",
+    "main_boxes": "{tiles} Fliesen <small>= {boxes} Pakete zu {perbox}</small>",
+    "area_line_imperial": "Zu fliesende Fläche: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Zu fliesende Fläche: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Effektive Fliesenfläche: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Effektive Fliesenfläche: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Verschnittzuschlag: <strong>{pct}%</strong> (gerade Verlegung)",
+    "waste_diag": "Verschnittzuschlag: <strong>{pct}%</strong> (diagonal / Fischgrät)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "3 x 6 in Metrofliese",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Wie viel Fliesen sollte ich zusätzlich kaufen?",
+      "Kaufe 10 bis 15% mehr als die reine Fläche ergibt. Zuschnitte an den Wänden, Bruch und spätere Reparaturen zehren alle von der Reserve. Rechne 10% für eine einfache gerade Verlegung in einem rechteckigen Raum und 15% für diagonale oder Fischgrät-Verlegung, kleine Fliesen oder Räume mit vielen Ecken."
+    ],
+    [
+      "Was ist Fliesenverschnitt?",
+      "Verschnitt sind die Fliesen, die du kaufst, auf denen du am Ende aber nicht läufst: Reststücke an den Wänden und um Sanitärobjekte, Fliesen, die beim Schneiden oder beim Transport brechen, und Reservefliesen für spätere Reparaturen. Das ist normal und kein Fehler. Dieser Rechner addiert den Verschnitt, bevor er auf ganze Fliesen aufrundet."
+    ],
+    [
+      "Wie viele 12x12-Zoll-Fliesen (30x30 cm) brauche ich für 100 sq ft?",
+      "Eine Fliese von 12x12 Zoll (30x30 cm) deckt 1 Quadratfuß ab, also brauchen 100 Quadratfuß (9,3 m²) ohne Verschnitt 100 Fliesen. Mit 10% Verschnitt bei gerader Verlegung solltest du 110 Fliesen kaufen. Mit Fuge deckt jede Fliese etwas mehr ab, die Anzahl kann also leicht sinken."
+    ],
+    [
+      "Braucht man bei diagonaler Verlegung mehr Fliesen?",
+      "Ja. Wenn du Fliesen im 45-Grad-Winkel verlegst, endet jede Reihe an der Wand mit einem schrägen Schnitt, und viele dieser Reststücke lassen sich nicht wiederverwenden. Plane bei diagonaler oder Fischgrät-Verlegung etwa 15% Verschnitt ein statt der üblichen 10% bei gerader Verlegung."
+    ],
+    [
+      "Muss ich die Fugen beim Fliesen berechnen mitzählen?",
+      "Ja, und sie arbeiten zu deinen Gunsten. Jede Fliese samt Fuge, oft 3 mm (1/8 Zoll), deckt etwas mehr Fläche ab als die Fliese allein, eine breitere Fuge senkt also leicht die Anzahl Fliesen. Bei großen Fliesen ist der Effekt klein, bei kleinen Metrofliesen aber spürbar."
+    ]
+  ]
+}

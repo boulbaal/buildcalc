@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Công cụ tính toán xây dựng miễn phí",
+  "meta_desc": "Công cụ tính toán xây dựng miễn phí: độ dốc mái, bê tông, sơn, gạch ốp lát và cầu thang. Kết quả tức thì, không quảng cáo, không theo dõi, dùng offline.",
+  "og_desc": "Tính độ dốc mái, bê tông, sơn, gạch và cầu thang. Miễn phí, tức thì, không quảng cáo.",
+  "h1": "Công cụ tính toán xây dựng miễn phí",
+  "lede": "Năm công cụ tính nhanh cho công việc thực tế. Không quảng cáo, không theo dõi, không cần đăng ký. Mỗi kết quả đều hiện công thức tính, và mọi thứ vẫn chạy offline sau khi đã tải xong.",
+  "card_roof": "Đổi chiều cao và chiều dài ngang sang độ, phần trăm và X:12, kèm hệ số độ dốc để tính diện tích mái.",
+  "card_concrete": "Khối lượng và số bao chính xác, có tính hao hụt.",
+  "card_paint": "Cần bao nhiêu sơn cho phòng của bạn, đã trừ cửa đi và cửa sổ, theo số lớp sơn.",
+  "card_tile": "Số viên gạch và số thùng từ diện tích và kích thước gạch, có tính mạch ron và hao hụt khi cắt.",
+  "card_stair": "Số bậc và chiều cao bậc từ tổng chiều cao, đối chiếu với giới hạn quy chuẩn và quy tắc bước chân thoải mái.",
+  "why_title": "Vì sao có trang này",
+  "why_text": "Phần lớn các trang tính toán giấu một công thức đơn giản dưới quảng cáo, cửa sổ bật lên và yêu cầu đăng ký nhận tin. Năm công cụ này làm ngược lại: phần tính toán nằm ngay trên cùng, công thức được in dưới kết quả, và trang tải trong nháy mắt. Nếu một công cụ giúp bạn khỏi một chuyến ra cửa hàng vô ích, có một nút ủng hộ sau kết quả. Đó là toàn bộ mô hình kinh doanh."
+}

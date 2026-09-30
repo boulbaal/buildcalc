@@ -1,0 +1,85 @@
+{
+  "meta_title": "Kalkulator Keramik - Hitung Kebutuhan Keramik",
+  "meta_desc": "Hitung kebutuhan keramik gratis. Masukkan ukuran lantai atau dinding, ukuran keramik dan celah nat untuk jumlah keramik dan dus, sudah termasuk sisa. Tanpa iklan.",
+  "og_desc": "Hitung jumlah keramik dan dus untuk lantai atau dinding, sudah termasuk sisa potongan. Gratis, tanpa iklan.",
+  "h1": "Kalkulator Kebutuhan Keramik",
+  "lede": "Hitung berapa keramik dan dus yang Anda butuhkan untuk lantai atau dinding, sudah termasuk celah nat dan sisa potongan. Gratis, instan, tanpa iklan.",
+  "mode_label": "Luas",
+  "mode_dims": "Panjang x lebar",
+  "mode_area": "Saya tahu luasnya",
+  "length": "Panjang",
+  "width": "Lebar",
+  "area": "Luas",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Ukuran keramik (inci)",
+  "tile_size_metric": "Ukuran keramik (cm)",
+  "opt_subway": "Subway 3 x 6",
+  "opt_custom": "Ukuran lain",
+  "tile_w": "Lebar keramik",
+  "tile_h": "Tinggi keramik",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Celah nat",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 jika tanpa celah. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 jika tanpa celah. 3 mm umum untuk keramik lantai.",
+  "pattern": "Pola pemasangan",
+  "pattern_straight": "Lurus (sisa 10%)",
+  "pattern_diag": "Diagonal / tulang ikan (sisa 15%)",
+  "perbox": "Keramik per dus (opsional)",
+  "perbox_hint": "Tertulis di dus. Kosongkan untuk melewati.",
+  "how_text": "Kalkulator membagi luas Anda dengan luas satu keramik ditambah celah natnya, menambahkan cadangan untuk potongan dan pecah, lalu membulatkan ke atas menjadi keramik utuh:",
+  "formula": "luas efektif keramik = (lebar keramik + celah nat) &times; (tinggi keramik + celah nat)<br>keramik = ceil( luas / luas efektif keramik &times; (1 + sisa) )<br>dus = ceil( keramik / keramik per dus )",
+  "how_text2": "Sisa dihitung 10% untuk pola lurus dan 15% untuk diagonal atau tulang ikan (herringbone), karena lebih banyak potongan yang tidak terpakai. Celah nat yang lebih lebar membuat setiap keramik menutupi luas yang sedikit lebih besar, sehingga jumlah keramik sedikit berkurang.",
+  "example_imperial": "Misalkan Anda memasang keramik di lantai 10 ft kali 12 ft, yaitu <strong>120 sq ft</strong> (17.280 sq in), dengan keramik 12 x 12 inci pola lurus dan celah nat 1/8 inci (0,125 in). Setiap keramik plus celahnya menutupi 12,125 × 12,125 = 147,02 sq in, jadi kebutuhan bersih 17.280 / 147,02 = 117,54 keramik. Tambah sisa 10%: 117,54 × 1,1 = 129,29, dibulatkan ke atas menjadi <strong>130 keramik</strong>. Kalau isi satu dus 8 keramik, itu ceil(130 / 8) = <strong>17 dus</strong>. Lantai yang sama dengan pola diagonal dan sisa 15% butuh 136 keramik.",
+  "example_metric": "Misalkan Anda memasang keramik di lantai 4 m kali 3 m, yaitu <strong>12 m²</strong> (120.000 cm²), dengan keramik 30 x 30 cm pola lurus dan celah nat 3 mm (0,3 cm). Setiap keramik plus celahnya menutupi 30,3 × 30,3 = 918,09 cm², jadi kebutuhan bersih 120.000 / 918,09 = 130,71 keramik. Tambah sisa 10%: 130,71 × 1,1 = 143,78, dibulatkan ke atas menjadi <strong>144 keramik</strong>. Kalau isi satu dus 11 keramik, itu ceil(144 / 11) = <strong>14 dus</strong>. Lantai yang sama dengan pola diagonal dan sisa 15% butuh 151 keramik.",
+  "table_title_imperial": "Keramik per 100 sq ft",
+  "table_title_metric": "Keramik per 10 m²",
+  "table_note": "Ukuran keramik umum, pola lurus dengan sisa 10% dan tanpa celah nat:",
+  "col_size": "Ukuran keramik",
+  "col_area": "Luas keramik",
+  "col_count_imperial": "Keramik per 100 sq ft",
+  "col_count_metric": "Keramik per 10 m²",
+  "more_text": "Merencanakan bagian lain pekerjaan? Coba kalkulator gratis lainnya:",
+  "js": {
+    "main": "{tiles} keramik",
+    "main_boxes": "{tiles} keramik <small>= {boxes} dus isi {perbox}</small>",
+    "area_line_imperial": "Luas yang dipasang: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Luas yang dipasang: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Luas efektif keramik: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Luas efektif keramik: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Cadangan sisa: <strong>{pct}%</strong> (pola lurus)",
+    "waste_diag": "Cadangan sisa: <strong>{pct}%</strong> (diagonal / tulang ikan)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "Subway 3 x 6 in",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Berapa banyak keramik lebih yang harus dibeli?",
+      "Beli 10 sampai 15% lebih banyak dari kebutuhan bersih. Potongan di tepi dinding, keramik pecah dan perbaikan di kemudian hari semuanya memakai cadangan itu. Pakai 10% untuk pola lurus sederhana di ruangan persegi, dan 15% untuk pola diagonal atau tulang ikan, keramik kecil, atau ruangan dengan banyak sudut."
+    ],
+    [
+      "Apa itu sisa keramik?",
+      "Sisa adalah keramik yang Anda beli tetapi tidak berakhir di lantai: potongan di tepi dinding dan di sekitar perlengkapan, keramik yang retak saat dipotong atau diangkut, dan cadangan untuk perbaikan nanti. Itu normal, bukan kesalahan. Kalkulator ini menambahkan persentase sisa sebelum membulatkan ke atas menjadi keramik utuh."
+    ],
+    [
+      "Berapa keramik 12x12 yang dibutuhkan untuk 100 sq ft?",
+      "Keramik 12x12 inci (30x30 cm) menutupi 1 sq ft, jadi 100 sq ft (9,3 m²) butuh 100 keramik bersih. Tambah sisa 10% untuk pola lurus dan Anda sebaiknya membeli 110 keramik. Dengan celah nat setiap keramik menutupi sedikit lebih luas, jadi jumlahnya bisa sedikit berkurang."
+    ],
+    [
+      "Apakah pola diagonal butuh lebih banyak keramik?",
+      "Ya. Memasang keramik dengan sudut 45 derajat berarti setiap baris berakhir dengan potongan miring di dinding, dan banyak potongan itu tidak bisa dipakai lagi. Rencanakan sisa sekitar 15% untuk pola diagonal atau tulang ikan, bukan 10% seperti biasa untuk pola lurus."
+    ],
+    [
+      "Apakah celah nat ikut dihitung saat menghitung keramik?",
+      "Ya, dan itu menguntungkan Anda. Setiap keramik plus celah natnya, sering 1/8 inci (3 mm), menutupi luas yang sedikit lebih besar dari keramiknya saja, sehingga celah yang lebih lebar sedikit mengurangi jumlah keramik yang dibutuhkan. Efeknya kecil pada keramik besar tetapi terasa pada keramik subway yang kecil."
+    ]
+  ]
+}

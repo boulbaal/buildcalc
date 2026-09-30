@@ -1,0 +1,85 @@
+{
+  "meta_title": "Kikokotoo cha Vigae - Ninahitaji Vigae Vingapi?",
+  "meta_desc": "Kikokotoo cha vigae bure. Weka ukubwa wa sakafu au ukuta, ukubwa wa kigae na nafasi ya grout upate idadi ya vigae na maboksi, pamoja na upotevu. Bila matangazo.",
+  "og_desc": "Pata idadi ya vigae na maboksi kwa sakafu au ukuta wako, pamoja na upotevu. Bure, bila matangazo.",
+  "h1": "Kikokotoo cha Vigae",
+  "lede": "Hesabu unahitaji vigae na maboksi mangapi kwa sakafu au ukuta, pamoja na nafasi ya grout na upotevu. Bure, papo hapo, bila matangazo.",
+  "mode_label": "Eneo",
+  "mode_dims": "Urefu x upana",
+  "mode_area": "Ninajua eneo",
+  "length": "Urefu",
+  "width": "Upana",
+  "area": "Eneo",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Ukubwa wa kigae (inchi)",
+  "tile_size_metric": "Ukubwa wa kigae (cm)",
+  "opt_subway": "Subway 3 x 6",
+  "opt_custom": "Ukubwa mwingine",
+  "tile_w": "Upana wa kigae",
+  "tile_h": "Kimo cha kigae",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Nafasi ya grout",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 kama hakuna nafasi. 1/8 in = 0.125.",
+  "gap_hint_metric": "0 kama hakuna nafasi. mm 3 ni kawaida kwa vigae vya sakafu.",
+  "pattern": "Mtindo wa kupanga",
+  "pattern_straight": "Mstari ulionyooka (upotevu 10%)",
+  "pattern_diag": "Mshazari / herringbone (upotevu 15%)",
+  "perbox": "Vigae kwa boksi (hiari)",
+  "perbox_hint": "Imeandikwa kwenye boksi. Acha wazi kuruka.",
+  "how_text": "Kikokotoo hugawanya eneo lako kwa eneo la kigae kimoja pamoja na nafasi yake ya grout, huongeza ziada kwa ajili ya kukata na kuvunjika, na hukadiria juu hadi vigae kamili:",
+  "formula": "eneo halisi la kigae = (upana wa kigae + nafasi) &times; (kimo cha kigae + nafasi)<br>vigae = ceil( eneo / eneo halisi la kigae &times; (1 + upotevu) )<br>maboksi = ceil( vigae / vigae kwa boksi )",
+  "how_text2": "Upotevu ni 10% kwa mpangilio wa mistari iliyonyooka na 15% kwa mshazari au herringbone, ambapo vipande vingi vilivyokatwa huishia kutotumika. Nafasi pana ya grout inamaanisha kila kigae hufunika eneo kubwa kidogo, kwa hiyo idadi ya vigae hupungua kidogo.",
+  "example_imperial": "Tuseme unaweka vigae kwenye sakafu ya ft 10 kwa ft 12, ambayo ni <strong>sq ft 120</strong> (sq in 17,280), kwa vigae vya inchi 12 x 12 vilivyopangwa kwa mstari na nafasi ya grout ya inchi 1/8 (in 0.125). Kila kigae pamoja na nafasi yake hufunika 12.125 × 12.125 = sq in 147.02, kwa hiyo hitaji halisi ni 17,280 / 147.02 = vigae 117.54. Ongeza upotevu wa 10%: 117.54 × 1.1 = 129.29, ikikadiriwa juu inakuwa <strong>vigae 130</strong>. Kama vigae vinakuja 8 kwa boksi, hiyo ni ceil(130 / 8) = <strong>maboksi 17</strong>. Sakafu ile ile ikipangwa kwa mshazari na upotevu wa 15% inahitaji vigae 136.",
+  "example_metric": "Tuseme unaweka vigae kwenye sakafu ya m 4 kwa m 3, ambayo ni <strong>12 m²</strong> (120,000 cm²), kwa vigae vya cm 30 x 30 vilivyopangwa kwa mstari na nafasi ya grout ya mm 3 (cm 0.3). Kila kigae pamoja na nafasi yake hufunika 30.3 × 30.3 = 918.09 cm², kwa hiyo hitaji halisi ni 120,000 / 918.09 = vigae 130.71. Ongeza upotevu wa 10%: 130.71 × 1.1 = 143.78, ikikadiriwa juu inakuwa <strong>vigae 144</strong>. Kama vigae vinakuja 11 kwa boksi, hiyo ni ceil(144 / 11) = <strong>maboksi 14</strong>. Sakafu ile ile ikipangwa kwa mshazari na upotevu wa 15% inahitaji vigae 151.",
+  "table_title_imperial": "Vigae kwa sq ft 100",
+  "table_title_metric": "Vigae kwa 10 m²",
+  "table_note": "Ukubwa wa kawaida wa vigae, mpangilio wa mstari na upotevu wa 10% bila nafasi ya grout:",
+  "col_size": "Ukubwa wa kigae",
+  "col_area": "Eneo la kigae",
+  "col_count_imperial": "Vigae kwa sq ft 100",
+  "col_count_metric": "Vigae kwa 10 m²",
+  "more_text": "Unapanga sehemu nyingine ya kazi? Jaribu vikokotoo vingine vya bure:",
+  "js": {
+    "main": "vigae {tiles}",
+    "main_boxes": "vigae {tiles} <small>= maboksi {boxes} ya vigae {perbox}</small>",
+    "area_line_imperial": "Eneo la kuweka vigae: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Eneo la kuweka vigae: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Eneo halisi la kigae: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Eneo halisi la kigae: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Ziada ya upotevu: <strong>{pct}%</strong> (mpangilio wa mstari)",
+    "waste_diag": "Ziada ya upotevu: <strong>{pct}%</strong> (mshazari / herringbone)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "Subway 3 x 6 in",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Ninunue vigae vya ziada kiasi gani?",
+      "Nunua 10 hadi 15% zaidi ya hitaji halisi. Vipande vya kukata kando ya kuta, vigae vinavyovunjika na matengenezo ya baadaye vyote hutumia ziada hiyo. Tumia 10% kwa mpangilio rahisi wa mstari katika chumba cha mstatili, na 15% kwa mshazari au herringbone, vigae vidogo, au vyumba vyenye kona nyingi."
+    ],
+    [
+      "Upotevu wa vigae ni nini?",
+      "Upotevu ni vigae unavyonunua lakini haviishii sakafuni: vipande vilivyokatwa kando ya kuta na kuzunguka vifaa, vigae vinavyopasuka wakati wa kukata au kusafirisha, na vya akiba kwa matengenezo ya baadaye. Ni jambo la kawaida, si kosa. Kikokotoo hiki huongeza asilimia ya upotevu kabla ya kukadiria juu hadi vigae kamili."
+    ],
+    [
+      "Ninahitaji vigae vingapi vya 12x12 kwa futi za mraba 100?",
+      "Kigae cha inchi 12x12 (cm 30x30) hufunika futi ya mraba 1, kwa hiyo futi za mraba 100 (9.3 m²) zinahitaji vigae 100 bila ziada. Ongeza upotevu wa 10% kwa mpangilio wa mstari na unapaswa kununua vigae 110. Ukiwa na nafasi ya grout kila kigae hufunika kidogo zaidi, kwa hiyo idadi inaweza kupungua kidogo."
+    ],
+    [
+      "Je, mpangilio wa mshazari unahitaji vigae zaidi?",
+      "Ndiyo. Kupanga vigae kwa nyuzi 45 kunamaanisha kila mstari unaishia kwa kukata kwa mshazari ukutani, na vipande vingi hivyo haviwezi kutumika tena. Panga upotevu wa takriban 15% kwa mshazari au herringbone badala ya 10% ya kawaida kwa mpangilio wa mstari."
+    ],
+    [
+      "Je, nahesabu mistari ya grout ninapokokotoa vigae?",
+      "Ndiyo, na inakufaidisha. Kila kigae pamoja na nafasi yake ya grout, mara nyingi inchi 1/8 (mm 3), hufunika eneo kubwa kidogo kuliko kigae peke yake, kwa hiyo nafasi pana hupunguza kidogo idadi ya vigae vinavyohitajika. Athari ni ndogo kwa vigae vikubwa lakini inaonekana kwa vigae vidogo vya subway."
+    ]
+  ]
+}

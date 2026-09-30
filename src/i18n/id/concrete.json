@@ -1,0 +1,67 @@
+{
+  "meta_title": "Kalkulator Cor Beton - Volume dan Jumlah Sak",
+  "meta_desc": "Hitung kebutuhan beton gratis. Dapatkan volume dalam m³ atau cu yd dan jumlah sak 40, 60, 80 lb atau 25 kg, dengan cadangan material. Tanpa iklan.",
+  "og_desc": "Hitung volume beton dan jumlah sak yang tepat untuk pelat cor Anda. Gratis, tanpa iklan.",
+  "h1": "Kalkulator Cor Beton",
+  "lede": "Masukkan ukuran pelat cor dan dapatkan volume beton plus jumlah sak yang tepat, dengan cadangan material. Gratis, instan, tanpa iklan.",
+  "length": "Panjang",
+  "width": "Lebar",
+  "thickness": "Tebal",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in umum untuk teras dan jalan setapak.",
+  "thickness_hint_metric": "10 cm umum untuk teras dan jalan setapak.",
+  "bag_label": "Ukuran sak",
+  "bag_hint": "Beton siap pakai (premix), cukup tambah air.",
+  "waste_label": "Cadangan material (%)",
+  "waste_hint": "10% menutup yang tumpah dan dasar yang tidak rata.",
+  "how_text": "Pelat cor adalah balok sederhana: panjang kali lebar kali tebal memberi volumenya. Kalkulator mengubah tebal ke satuan yang sama dengan sisi-sisinya, menambahkan cadangan material, lalu membagi dengan hasil satu sak dan membulatkan ke atas menjadi sak utuh:",
+  "formula": "volume (cu ft) = panjang (ft) &times; lebar (ft) &times; tebal (in) / 12<br>yard kubik = volume / 27<br>volume (m&sup3;) = panjang (m) &times; lebar (m) &times; tebal (cm) / 100<br>sak = ceil(volume &times; (1 + cadangan / 100) / hasil per sak)",
+  "yields_text": "Hasil per sak: sak 80 lb menghasilkan sekitar 0,60 cu ft, sak 60 lb 0,45 cu ft, sak 40 lb 0,30 cu ft, dan sak 25 kg sekitar 0,0123 m³.",
+  "example_imperial": "Misalkan Anda mengecor teras 10 × 10 ft dengan tebal 4 inci. Volumenya 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, yaitu 33,33 / 27 = <strong>1,23 cu yd</strong>. Dengan sak 80 lb yang masing-masing 0,60 cu ft, itu 33,33 / 0,60 = 55,6, dibulatkan ke atas menjadi <strong>56 sak</strong>. Tambahkan cadangan standar 10% (33,33 × 1,1 = 36,67 cu ft) dan Anda sebaiknya membeli <strong>62 sak</strong>. Sisa sak lebih mudah daripada harus ke toko lagi, jadi bulatkan ke atas.",
+  "example_metric": "Misalkan Anda mengecor teras 3 × 3 m dengan tebal 10 cm. Volumenya 3 × 3 × 10/100 = <strong>0,9 m³</strong>. Dengan sak 25 kg yang masing-masing sekitar 0,0123 m³, itu 0,9 / 0,0123 = 73,2, dibulatkan ke atas menjadi <strong>74 sak</strong>. Tambahkan cadangan standar 10% (0,9 × 1,1 = 0,99 m³) dan Anda sebaiknya membeli 0,99 / 0,0123 = 80,5, dibulatkan ke atas menjadi <strong>81 sak</strong>. Sisa sak lebih mudah daripada harus ke toko lagi, jadi bulatkan ke atas.",
+  "table_title": "Ukuran sak dan hasilnya",
+  "col_bag": "Ukuran sak",
+  "col_yield": "Hasil",
+  "col_per": "Sak per volume",
+  "more_text": "Merencanakan bagian lain pekerjaan? Coba kalkulator gratis lainnya:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} sak {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} sak {bag}</small>",
+    "vol_imperial": "volume = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "volume = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Dengan cadangan {waste}%: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Dengan cadangan {waste}%: {vol} × {factor} = {total} m³",
+    "bags_line": "sak = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} per cu yd",
+    "tbl_per_kg": "sekitar {m3} per m³, {yd} per cu yd"
+  },
+  "faq": [
+    [
+      "Berapa sak beton dalam satu cubic yard?",
+      "Satu sak 80 lb menghasilkan sekitar 0,60 cubic feet, dan satu cubic yard adalah 27 cubic feet, jadi Anda butuh 45 sak campuran 80 lb per cubic yard. Untuk sak 60 lb butuh 60, dan untuk sak 40 lb butuh 90. Dengan sak 25 kg Anda butuh sekitar 81 sak per meter kubik (1,31 cubic yard)."
+    ],
+    [
+      "Berapa tebal pelat beton yang ideal?",
+      "4 inci (10 cm) adalah tebal umum untuk teras, jalan setapak dan lantai gudang kecil. Jalan masuk yang dilewati mobil biasanya butuh 5 sampai 6 inci (12 sampai 15 cm), dan lantai untuk kendaraan berat atau bengkel sering 6 inci (15 cm) atau lebih. Periksa peraturan bangunan setempat sebelum mengecor."
+    ],
+    [
+      "Apakah pelat cor perlu besi tulangan atau wiremesh?",
+      "Pelat kecil seperti jalan setapak sering cukup dengan sambungan dilatasi (nat kontrol), tetapi wiremesh atau besi tulangan membantu menahan retakan tetap rapat pada teras, jalan masuk dan lantai garasi. Letakkan tulangan di tengah ketebalan pelat, sekitar 2 inci (5 cm) dari bawah pada pelat 4 inci (10 cm), bukan di atas tanah."
+    ],
+    [
+      "Kapan sebaiknya pesan beton ready mix daripada pakai sak?",
+      "Sekitar 1 cubic yard (0,76 meter kubik) biasanya menjadi titik baliknya. Itu sudah 45 sak campuran 80 lb atau sekitar 62 sak campuran 25 kg yang harus diangkut dan diaduk manual. Di atas itu, truk molen ready mix lebih cepat, lebih konsisten dan sering lebih murah, meskipun muatan kecil bisa kena biaya tambahan."
+    ],
+    [
+      "Berapa lama beton mengering?",
+      "Beton mengeras dalam hitungan jam tetapi proses curing-nya lambat. Biasanya Anda bisa berjalan di atasnya setelah 24 sampai 48 jam dan melintas dengan mobil setelah sekitar 7 hari. Beton mencapai sebagian besar kekuatan rencananya pada 28 hari. Jaga tetap lembap selama minggu pertama agar kuat dan tidak kering terlalu cepat."
+    ]
+  ]
+}

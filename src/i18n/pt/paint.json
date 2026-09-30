@@ -1,0 +1,76 @@
+{
+  "meta_title": "Calculadora de tinta - Quanta tinta preciso?",
+  "meta_desc": "Calculadora de tinta grátis. Introduza as medidas da divisão, portas, janelas e demãos e obtenha os litros de tinta necessários. Imediato, sem anúncios.",
+  "og_desc": "Introduza medidas, portas, janelas e demãos para saber os litros ou galões de tinta. Grátis, sem anúncios.",
+  "h1": "Calculadora de tinta",
+  "lede": "Calcule quantos litros ou galões de tinta a sua divisão precisa, contando com portas, janelas e número de demãos. Grátis, imediato, sem anúncios.",
+  "length": "Comprimento da divisão",
+  "width": "Largura da divisão",
+  "height": "Altura da parede",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Portas",
+  "doors_hint": "Não são pintadas. Cada uma desconta a área de uma porta normal.",
+  "windows": "Janelas",
+  "coats": "Demãos",
+  "coats_hint": "O normal é dar duas demãos.",
+  "coverage": "Rendimento",
+  "sfx_cov_imperial": "(sq ft por galão)",
+  "sfx_cov_metric": "(m² por litro)",
+  "coverage_hint_imperial": "habitual 250-400",
+  "coverage_hint_metric": "habitual 8-12",
+  "ceiling": "Incluir teto",
+  "how_text": "A calculadora mede a área das paredes à volta da divisão, desconta uma área normal por cada porta e janela, junta o teto se quiser, multiplica pelo número de demãos e divide pelo rendimento da sua tinta. O resultado é sempre arredondado para cima para embalagens inteiras, porque não se compram 1,8 galões:",
+  "formula": "área de parede = 2 &times; (comprimento + largura) &times; altura<br>a pintar = área de parede &minus; portas &times; área da porta &minus; janelas &times; área da janela (+ teto)<br>latas = a pintar &times; demãos &divide; rendimento, arredondado para cima",
+  "metric_note": "No modo métrico uma porta conta como 1,95 m², uma janela como 1,4 m² e o rendimento é por litro. No modo imperial uma porta conta como 21 sq ft e uma janela como 15 sq ft.",
+  "example_imperial": "Imagine que a sua divisão tem 12 × 10 ft com paredes de 8 ft, uma porta e uma janela, e pensa dar duas demãos com um rendimento de 350 sq ft por galão. A área de parede é 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Desconte a porta (21 sq ft) e a janela (15 sq ft) e ficam <strong>316 sq ft por demão</strong>. Duas demãos são 632 sq ft, e 632 ÷ 350 = 1,81, que arredonda para <strong>2 galões</strong>. Se marcar \"Incluir teto\", o teto de 120 sq ft leva o total a 436 sq ft por demão, 872 sq ft ao todo, por isso precisa de <strong>3 galões</strong>.",
+  "example_metric": "Imagine que a sua divisão tem 4 × 3 m com paredes de 2,5 m, uma porta e uma janela, e pensa dar duas demãos com um rendimento de 10 m² por litro. A área de parede é 2 × (4 + 3) × 2,5 = <strong>35 m²</strong>. Desconte a porta (1,95 m²) e a janela (1,4 m²) e ficam <strong>31,65 m² por demão</strong>. Duas demãos são 63,3 m², e 63,3 ÷ 10 = 6,33, que arredonda para <strong>7 litros</strong>. Se marcar \"Incluir teto\", o teto de 12 m² leva o total a 43,65 m² por demão, 87,3 m² ao todo, por isso precisa de <strong>9 litros</strong>.",
+  "table_title": "Tinta necessária por tamanho de divisão",
+  "table_note_imperial": "Paredes com tetos de 8 ft, uma porta, uma janela, duas demãos, 350 sq ft por galão:",
+  "table_note_metric": "Paredes com 2,5 m de altura, uma porta, uma janela, duas demãos, 10 m² por litro:",
+  "col_room": "Divisão",
+  "col_walls": "Só paredes",
+  "col_both": "Paredes + teto",
+  "more_text": "A planear o resto da obra? Experimente as outras calculadoras grátis:",
+  "js": {
+    "main": "{cansText} <small>para {coatsText}</small>",
+    "cans_imperial_one": "{cans} galão",
+    "cans_imperial": "{cans} galões",
+    "cans_metric_one": "{cans} litro",
+    "cans_metric": "{cans} litros",
+    "coats_one": "{coats} demão",
+    "coats_other": "{coats} demãos",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Área de parede: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Menos {doors} porta(s) e {windows} janela(s): −{deduct} {a} = <strong>{per} {a} por demão</strong>",
+    "deduct_ceiling_line": "Menos {doors} porta(s) e {windows} janela(s): −{deduct} {a}, mais teto {ceil} {a} = <strong>{per} {a} por demão</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, arredondado para <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "Quanto cobre um litro de tinta?",
+      "A maioria das tintas de interior cobre cerca de 6 a 10 m² por litro (250 a 400 pés quadrados por galão) numa parede lisa e com primário. Esta calculadora usa por defeito 10 m² por litro ou 350 sq ft por galão. Superfícies rugosas, porosas ou em bruto absorvem mais tinta, por isso use o valor mais baixo do intervalo."
+    ],
+    [
+      "Preciso de primário antes de pintar?",
+      "Use primário em pladur novo, madeira em bruto, superfícies manchadas ou brilhantes, e quando for cobrir uma cor escura com uma mais clara. Em paredes já pintadas, em bom estado e com uma cor parecida, uma boa tinta com primário incorporado costuma chegar. O primário é mais barato do que uma demão extra de tinta."
+    ],
+    [
+      "Uma demão de tinta chega ou são precisas duas?",
+      "Conte com duas demãos para um acabamento uniforme e duradouro. Uma demão pode chegar quando repinta com a mesma cor e o mesmo brilho numa parede bem preparada. Grandes mudanças de cor, vermelhos e amarelos, ou pintar por cima de remendos precisam muitas vezes de duas demãos e de um primário pigmentado por baixo."
+    ],
+    [
+      "Quanta tinta preciso para uma divisão de 4x4?",
+      "Uma divisão de 4 por 4 m com paredes de 2,5 m precisa de 8 litros com um rendimento de 10 m² por litro. Em medidas imperiais, uma divisão de 12 por 12 pés com paredes de 8 pés tem 384 sq ft de parede. Descontando uma porta e uma janela ficam 348 sq ft por demão, por isso duas demãos precisam de 2 galões a 350 sq ft por galão."
+    ],
+    [
+      "A tinta para tetos é diferente da tinta para paredes?",
+      "A tinta para tetos é mais espessa para salpicar e escorrer menos, e é quase sempre mate para que a luz não realce as marcas do rolo. Pode usar tinta mate de parede num teto, mas uma tinta própria para tetos é mais fácil de aplicar por cima da cabeça e disfarça melhor as imperfeições."
+    ]
+  ]
+}

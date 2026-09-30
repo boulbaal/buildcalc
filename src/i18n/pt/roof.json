@@ -1,0 +1,56 @@
+{
+  "meta_title": "Calcular inclinação do telhado - Grátis, sem anúncios",
+  "meta_desc": "Calculadora de inclinação de telhado grátis. Converta altura e projeção em graus, percentagem e X:12, com o fator para a área do telhado. Sem anúncios.",
+  "og_desc": "Converta altura e projeção em graus, percentagem e inclinação X:12. Imediato, grátis, sem anúncios.",
+  "h1": "Calculadora de inclinação de telhado",
+  "lede": "Converta altura e projeção horizontal em graus, percentagem e inclinação X:12, e obtenha o fator de inclinação para a área do seu telhado. Grátis, imediato, sem anúncios.",
+  "mode_label": "Conheço",
+  "mode_riserun": "Altura e projeção",
+  "mode_angle": "Ângulo em graus",
+  "mode_percent": "Inclinação em percentagem",
+  "rise": "Altura",
+  "rise_hint": "Altura vertical. Use a mesma unidade da projeção.",
+  "run": "Projeção",
+  "run_hint": "Distância horizontal. Uma projeção de 12 dá diretamente a inclinação X:12.",
+  "angle": "Ângulo (graus)",
+  "percent": "Inclinação (%)",
+  "how_text": "A inclinação de um telhado é a relação entre a altura vertical e a projeção horizontal. Esta calculadora converte entre as três formas habituais de a escrever, e dá ainda o fator de inclinação usado para estimar a área do telhado:",
+  "formula": "ângulo = atan(altura / projeção)<br>percentagem = altura / projeção &times; 100<br>inclinação = (altura / projeção &times; 12) : 12<br>fator = &radic;(1 + (altura / projeção)&sup2;)",
+  "example_imperial": "Imagine que o seu telhado sobe 6 polegadas por cada 12 polegadas de projeção. Então altura / projeção = 0,5, por isso o ângulo é atan(0,5) = <strong>26,57°</strong>, a inclinação é de <strong>50%</strong> e escreve-se <strong>6:12</strong>. O fator é √(1 + 0,25) = <strong>1,118</strong>: uma casa com uma implantação de 1000 sq ft debaixo desse telhado tem cerca de 1118 sq ft de área real de cobertura.",
+  "example_metric": "Imagine que o seu telhado sobe 50 cm por cada 100 cm de distância horizontal. Então altura / projeção = 0,5, por isso o ângulo é atan(0,5) = <strong>26,57°</strong>, a inclinação é de <strong>50%</strong> e, na notação americana, escreve-se <strong>6:12</strong>. O fator é √(1 + 0,25) = <strong>1,118</strong>: uma casa com uma implantação de 100 m² debaixo desse telhado tem cerca de 111,8 m² de área real de cobertura.",
+  "table_title": "Inclinações de telhado comuns",
+  "col_pitch": "Inclinação",
+  "col_angle": "Ângulo",
+  "col_slope": "Percentagem",
+  "col_mult": "Fator",
+  "more_text": "A planear o resto da obra? Experimente as outras calculadoras grátis:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = {pct}% de inclinação</small>",
+    "main_metric": "{deg}° <small>= {pct}% de inclinação = {pitch}:12</small>",
+    "mult_line": "Fator de inclinação: <strong>{mult}</strong> (área em planta × {mult} = área real do telhado)",
+    "angle_line": "ângulo = atan({ratio}) = {deg}°",
+    "pct_line": "percentagem = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Quantos graus tem uma inclinação de telhado 6/12?",
+      "Uma inclinação 6/12 significa que o telhado sobe 6 unidades por cada 12 unidades de projeção horizontal. Isso equivale a 26,57 graus, ou a uma inclinação de 50%. É uma das inclinações mais comuns em moradias."
+    ],
+    [
+      "Para que serve o fator de inclinação?",
+      "Converte a área em planta de um telhado na área real inclinada. Multiplique a área em planta pelo fator para estimar o material de cobertura ou a subtelha. Para uma inclinação 6/12 (26,57 graus) o fator é 1,118."
+    ],
+    [
+      "Qual é a inclinação mínima para telhas asfálticas?",
+      "A maioria dos fabricantes de telhas asfálticas exige pelo menos uma inclinação 2/12 (cerca de 9,5 graus), e abaixo de 4/12 (cerca de 18,4 graus) exige uma subtelha adicional. Telhados mais planos precisam de uma membrana. Consulte sempre as instruções do fabricante."
+    ],
+    [
+      "Como meço a inclinação do telhado a partir do sótão?",
+      "Encoste um nível na horizontal a um caibro e marque uma distância fixa ao longo dele, por exemplo 12 polegadas ou 100 cm. Depois meça na vertical desde essa marca até à face inferior do caibro. Introduza aqui os dois valores como projeção e altura."
+    ],
+    [
+      "Um telhado mais inclinado é melhor?",
+      "Telhados mais inclinados escoam a água e a neve mais depressa e costumam durar mais, mas são mais caros de construir e mais perigosos para trabalhar. A maioria dos telhados de moradias fica entre cerca de 18 e 37 graus (de 4/12 a 9/12)."
+    ]
+  ]
+}

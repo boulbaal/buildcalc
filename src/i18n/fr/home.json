@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Calculateurs de chantier gratuits",
+  "meta_desc": "Calculateurs gratuits pour le bâtiment et le bricolage : pente de toit, dalle béton, peinture, carrelage et escalier. Résultat immédiat, sans pub, hors ligne.",
+  "og_desc": "Calcul pente de toit, béton, peinture, carrelage et escalier. Gratuit, immédiat, sans pub.",
+  "h1": "Calculateurs de chantier gratuits",
+  "lede": "Cinq calculateurs rapides pour de vrais chantiers. Sans pub, sans pistage, sans inscription. Chaque résultat affiche le calcul détaillé, et tout continue de fonctionner hors ligne une fois la page chargée.",
+  "card_roof": "De la hauteur et de la longueur aux degrés, au pourcentage et à X:12, plus le coefficient de pente pour la surface de toiture.",
+  "card_concrete": "Volume et nombre exact de sacs, avec une marge de perte.",
+  "card_paint": "La quantité de peinture pour votre pièce, portes et fenêtres déduites, selon le nombre de couches.",
+  "card_tile": "Carreaux et cartons selon la surface et le format, avec joints et pertes à la coupe.",
+  "card_stair": "Marches et hauteur de marche à partir de la hauteur totale, vérifiées selon les normes et la règle de confort.",
+  "why_title": "Pourquoi ce site existe",
+  "why_text": "La plupart des sites de calcul cachent une formule simple sous des pubs, des fenêtres surgissantes et des demandes d'inscription à une newsletter. Ces cinq outils font l'inverse : le calculateur est en haut, la formule est affichée sous le résultat, et la page se charge en une fraction de seconde. Si un outil vous évite un aller-retour inutile au magasin, vous trouverez un bouton de don après votre résultat. C'est tout le modèle économique."
+}

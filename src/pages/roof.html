@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_desc}}">
+<link rel="canonical" href="{{@canonical}}">
+{{@hreflang}}
+<meta property="og:title" content="{{meta_title}}">
+<meta property="og:description" content="{{og_desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{@canonical}}">
+<link rel="stylesheet" href="/assets/style.css">
+{{@appld}}
+{{@faqld}}
+</head>
+<body data-units="{{@units}}">
+<div class="wrap">
+
+<header class="site">
+  <nav aria-label="{{home}}">
+    <div class="left">
+      <a class="brand" href="{{@url_home}}">Build<span>Calc</span></a>
+      <a class="crumb" href="{{@url_home}}">{{home}}</a>
+      <span class="crumb" aria-current="page">{{h1}}</span>
+    </div>
+    {{@langselect}}
+  </nav>
+</header>
+
+<main>
+<h1>{{h1}}</h1>
+<p class="lede">{{lede}}</p>
+
+<div class="calc">
+  <div class="grid">
+    <div class="field">
+      <label for="mode">{{mode_label}}</label>
+      <select id="mode">
+        <option value="riserun" selected>{{mode_riserun}}</option>
+        <option value="angle">{{mode_angle}}</option>
+        <option value="percent">{{mode_percent}}</option>
+      </select>
+    </div>
+    <div></div>
+    <div class="field" data-mode="riserun">
+      <label for="rise">{{rise}}</label>
+      <input id="rise" type="number" inputmode="decimal" min="0" step="any" value="{{#u:6|50}}" aria-describedby="rise-error rise-hint">
+      <span class="hint" id="rise-hint">{{rise_hint}}</span>
+      <span class="error" id="rise-error" aria-live="polite"></span>
+    </div>
+    <div class="field" data-mode="riserun">
+      <label for="run">{{run}}</label>
+      <input id="run" type="number" inputmode="decimal" min="0" step="any" value="{{#u:12|100}}" aria-describedby="run-error run-hint">
+      <span class="hint" id="run-hint">{{run_hint}}</span>
+      <span class="error" id="run-error" aria-live="polite"></span>
+    </div>
+    <div class="field" data-mode="angle" hidden>
+      <label for="angle">{{angle}}</label>
+      <input id="angle" type="number" inputmode="decimal" min="0" max="89.9" step="any" value="26.57" aria-describedby="angle-error">
+      <span class="error" id="angle-error" aria-live="polite"></span>
+    </div>
+    <div class="field" data-mode="percent" hidden>
+      <label for="percent">{{percent}}</label>
+      <input id="percent" type="number" inputmode="decimal" min="0" step="any" value="50" aria-describedby="percent-error">
+      <span class="error" id="percent-error" aria-live="polite"></span>
+    </div>
+  </div>
+</div>
+
+<div class="result" aria-live="polite" id="result">
+  <div class="big" id="r-main">&nbsp;</div>
+  <ul class="path" id="r-path"></ul>
+</div>
+
+<div class="donate" id="donate" hidden>
+  <p>{{donate_text}}</p>
+  <div class="btns">
+    <a class="btn" data-donate="paypal" href="#" rel="noopener">{{donate_paypal}}</a>
+    <a class="btn alt" data-donate="kofi" href="#" rel="noopener">{{donate_kofi}}</a>
+  </div>
+</div>
+
+<h2>{{how_it_works}}</h2>
+<p>{{how_text}}</p>
+<div class="formula">{{formula}}</div>
+
+<h2>{{worked_example}}</h2>
+<p>{{example@u}}</p>
+
+<h2>{{table_title}}</h2>
+<table>
+  <thead><tr><th scope="col">{{col_pitch}}</th><th scope="col">{{col_angle}}</th><th scope="col">{{col_slope}}</th><th scope="col">{{col_mult}}</th></tr></thead>
+  <tbody id="pitch-table"></tbody>
+</table>
+
+<h2>{{faq_title}}</h2>
+{{@faq}}
+
+<h2>{{more_title}}</h2>
+<p>{{more_text}}</p>
+<ul>
+  <li><a href="{{@url_concrete}}">{{name_concrete}}</a></li>
+  <li><a href="{{@url_paint}}">{{name_paint}}</a></li>
+  <li><a href="{{@url_tile}}">{{name_tile}}</a></li>
+  <li><a href="{{@url_stair}}">{{name_stair}}</a></li>
+</ul>
+
+<p class="disclaimer">{{disclaimer}}</p>
+</main>
+
+<footer class="site">
+  <p class="made">{{made_by}}</p>
+  <p><a href="{{@url_home}}">BuildCalc</a> &middot; {{tagline}}</p>
+</footer>
+</div>
+
+{{@T}}
+<script src="/assets/calc.js"></script>
+<script>
+"use strict";
+const modeSel = document.getElementById("mode");
+
+function setMode() {
+  const m = modeSel.value;
+  document.querySelectorAll("[data-mode]").forEach((el) => { el.hidden = el.dataset.mode !== m; });
+  compute();
+}
+modeSel.addEventListener("change", setMode);
+
+function compute() {
+  const m = modeSel.value;
+  let ratio = NaN;
+  if (m === "riserun") {
+    const rise = readNum(document.getElementById("rise"), { allowZero: true });
+    const run = readNum(document.getElementById("run"));
+    if (isFinite(rise) && isFinite(run)) ratio = rise / run;
+  } else if (m === "angle") {
+    const a = readNum(document.getElementById("angle"), { allowZero: true });
+    if (isFinite(a) && a < 90) ratio = Math.tan(a * Math.PI / 180);
+  } else {
+    const p = readNum(document.getElementById("percent"), { allowZero: true });
+    if (isFinite(p)) ratio = p / 100;
+  }
+  const main = document.getElementById("r-main");
+  const path = document.getElementById("r-path");
+  if (!isFinite(ratio)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+
+  const v = {
+    deg: fmt(Math.atan(ratio) * 180 / Math.PI, 2),
+    pct: fmt(ratio * 100, 1),
+    pitch: fmt(ratio * 12, 2),
+    mult: fmt(Math.sqrt(1 + ratio * ratio), 3),
+    ratio: fmt(ratio, 4)
+  };
+  main.innerHTML = t(currentUnits() === "imperial" ? "main" : "main_metric", v);
+  path.innerHTML = "<li>" + t("mult_line", v) + "</li><li class=\"ltr\">" + t("angle_line", v) + "</li><li class=\"ltr\">" + t("pct_line", v) + "</li>";
+  showDonate();
+}
+
+/* Reference table 1:12 .. 12:12 */
+(function () {
+  let rows = "";
+  for (let x = 1; x <= 12; x++) {
+    const r = x / 12;
+    rows += "<tr><td>" + x + ":12</td><td>" + fmt(Math.atan(r) * 180 / Math.PI, 2) + "&deg;</td><td>" + fmt(r * 100, 1) + "%</td><td>" + fmt(Math.sqrt(1 + r * r), 3) + "</td></tr>";
+  }
+  document.getElementById("pitch-table").innerHTML = rows;
+})();
+
+bindInputs(compute);
+compute();
+</script>
+</body>
+</html>

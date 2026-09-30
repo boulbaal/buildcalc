@@ -1,0 +1,67 @@
+{
+  "meta_title": "Kuverenga Kongiri - Mabhegi neHuwandu, Mahara",
+  "meta_desc": "Chiverengi chekongiri chemahara. Wana huwandu mu cu yd kana m³ nenhamba yemabhegi e40, 60, 80 lb kana 25 kg, pamwe nechikamu chekurasika. Hapana kushambadza.",
+  "og_desc": "Wana huwandu hwekongiri nenhamba chaiyo yemabhegi eslab yako. Mahara, hapana kushambadza.",
+  "h1": "Kuverenga kongiri yeslab",
+  "lede": "Isa hukuru hweslab yako uwane huwandu hwekongiri nenhamba chaiyo yemabhegi aunoda, pamwe nechikamu chekurasika. Mahara, pakarepo, hapana kushambadza.",
+  "length": "Kureba",
+  "width": "Upamhi",
+  "thickness": "Ukobvu",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in ndizvo zvinowanzoitwa pamavharanda nenzira dzekufamba.",
+  "thickness_hint_metric": "10 cm ndizvo zvinowanzoitwa pamavharanda nenzira dzekufamba.",
+  "bag_label": "Hukuru hwebhegi",
+  "bag_hint": "Kongiri yakatosanganiswa, wedzera mvura chete.",
+  "waste_label": "Chikamu chekurasika (%)",
+  "waste_hint": "10% inovhara kudeuka nepasi pasina kuenzana.",
+  "how_text": "Slab ibhokisi riri nyore: kureba kwakawanzwa neupamhi kwakawanzwa neukobvu kunopa huwandu. Chiverengi chinoshandura ukobvu kuva chiyero chimwe chete nemativi, chowedzera chikamu chekurasika, chobva chagovanisa nezvinobudiswa nebhegi rimwe chokwidza kusvika pamabhegi akazara:",
+  "formula": "vhoriyamu (cu ft) = kureba (ft) &times; upamhi (ft) &times; ukobvu (in) / 12<br>mayadhi ekyubhu = vhoriyamu / 27<br>vhoriyamu (m&sup3;) = kureba (m) &times; upamhi (m) &times; ukobvu (cm) / 100<br>mabhegi = ceil(vhoriyamu &times; (1 + kurasika / 100) / zvinobudiswa nebhegi)",
+  "yields_text": "Zvinobudiswa nemabhegi: bhegi re80 lb rinopa anenge 0.60 cu ft, bhegi re60 lb 0.45 cu ft, bhegi re40 lb 0.30 cu ft, uye bhegi re25 kg anenge 0.0123 m³.",
+  "example_imperial": "Ngatiti uri kudira vharanda re10 × 10 ft, rakakora mainchi 4. Huwandu i10 × 10 × 4/12 = <strong>33.33 cu ft</strong>, zvinova 33.33 / 27 = <strong>1.23 cu yd</strong>. Nemabhegi e80 lb ane 0.60 cu ft rimwe nerimwe, izvi i33.33 / 0.60 = 55.6, zvinokwidzwa kusvika <strong>mabhegi 56</strong>. Wedzera chikamu chekurasika chinowanzoitwa che10% (33.33 × 1.1 = 36.67 cu ft) uye unofanira kutenga <strong>mabhegi 62</strong>. Mabhegi anosara ari nyore kupfuura rwendo rwechipiri kuchitoro, saka kwidza.",
+  "example_metric": "Ngatiti uri kudira vharanda re3 × 3 m, rakakora 10 cm. Huwandu i3 × 3 × 10/100 = <strong>0.9 m³</strong>. Nemabhegi e25 kg ane anenge 0.0123 m³ rimwe nerimwe, izvi i0.9 / 0.0123 = 73.2, zvinokwidzwa kusvika <strong>mabhegi 74</strong>. Wedzera chikamu chekurasika chinowanzoitwa che10% (0.9 × 1.1 = 0.99 m³) uye unofanira kutenga 0.99 / 0.0123 = 80.5, zvinokwidzwa kusvika <strong>mabhegi 81</strong>. Mabhegi anosara ari nyore kupfuura rwendo rwechipiri kuchitoro, saka kwidza.",
+  "table_title": "Hukuru hwemabhegi nezvaanobudisa",
+  "col_bag": "Hukuru hwebhegi",
+  "col_yield": "Zvinobudiswa",
+  "col_per": "Mabhegi pahuwandu",
+  "more_text": "Uri kuronga rimwe basa? Edza zvimwe zviverengi zvemahara:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= mabhegi {bags} e{bag}</small>",
+    "main_metric": "{vol} m³ <small>= mabhegi {bags} e{bag}</small>",
+    "vol_imperial": "huwandu = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "huwandu = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Ne{waste}% yekurasika: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Ne{waste}% yekurasika: {vol} × {factor} = {total} m³",
+    "bags_line": "mabhegi = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} pa cu yd",
+    "tbl_per_kg": "anenge {m3} pa m³, {yd} pa cu yd"
+  },
+  "faq": [
+    [
+      "Mune mabhegi mangani ekongiri mu cubic yard?",
+      "Bhegi re80 lb rinopa anenge 0.60 cubic feet, uye cubic yard imwe i27 cubic feet, saka unoda mabhegi 45 e80 lb pa cubic yard. Nemabhegi e60 lb i60, uye nemabhegi e40 lb i90. Nemabhegi e25 kg unoda anenge 81 pa cubic meter (1.31 cubic yards)."
+    ],
+    [
+      "Slab yekongiri inofanira kukora zvakadii?",
+      "Mainchi 4 (10 cm) ndihwo ukobvu hunowanzoitwa pamavharanda, nzira dzekufamba neslab dzematura. Nzira dzemotokari dzinowanzoda mainchi 5 kusvika 6 (12 kusvika 15 cm), uye slab dzemotokari huru kana maworkshop dzinowanzosvika mainchi 6 (15 cm) kana kupfuura. Ongorora mitemo yekuvaka yenzvimbo yako usati wadira."
+    ],
+    [
+      "Ndinoda simbi (rebar) kana wire mesh muslab here?",
+      "Slab duku senzira dzekufamba dzinowanzoshanda zvakanaka nemajoini ekudzora chete, asi wire mesh kana rebar zvinobatsira kubata mitswe yakasungwa pamavharanda, nzira dzemotokari nepasi pegaraji. Isa simbi pakati peukobvu hweslab, anenge mainchi 2 (5 cm) kumusoro muslab ye4 inch (10 cm), kwete pasi pevhu."
+    ],
+    [
+      "Ndingaraira rori reready-mix riini pachinzvimbo chemabhegi?",
+      "Anenge 1 cubic yard (0.76 cubic meters) ndipo panowanzochinja. Iwo mabhegi 45 e80 lb kana anenge mabhegi 62 e25 kg ekutakura nekusanganisa nemaoko. Kupfuura ipapo, rori reready-mix rinokurumidza, rinoenzana uye rinowanzo kuva nemutengo wakaderera, kunyange mitoro midiki ichigona kudhura zvimwe."
+    ],
+    [
+      "Kongiri inotora nguva yakareba sei kuoma?",
+      "Kongiri inobatana mumaawa asi inooma zvishoma nezvishoma. Unowanzogona kufamba pairi mushure memaawa 24 kusvika 48 uye kutyaira pairi mushure memazuva anenge 7. Inosvika pasimba rayo rakawanda pamazuva 28. Iite nyoro kwevhiki yekutanga kuti ioome yakasimba pachinzvimbo chekuoma nekukurumidza."
+    ]
+  ]
+}

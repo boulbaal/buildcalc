@@ -1,0 +1,76 @@
+{
+  "meta_title": "Farbbedarf berechnen - Wie viel Wandfarbe brauche ich?",
+  "meta_desc": "Farbbedarf kostenlos berechnen. Raummaße, Türen, Fenster und Anstriche eingeben und sehen, wie viele Liter Wandfarbe du brauchst. Sofort, ohne Werbung.",
+  "og_desc": "Raummaße, Türen, Fenster und Anstriche eingeben und die benötigten Liter Farbe erhalten. Kostenlos, ohne Werbung.",
+  "h1": "Farbbedarf berechnen: Wie viel Wandfarbe brauche ich?",
+  "lede": "Berechne, wie viele Liter (oder Gallonen) Farbe dein Raum braucht, mit Türen, Fenstern und Anzahl der Anstriche. Kostenlos, sofort, ohne Werbung.",
+  "length": "Raumlänge",
+  "width": "Raumbreite",
+  "height": "Wandhöhe",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Türen",
+  "doors_hint": "Werden nicht gestrichen. Jede zieht eine Standard-Türfläche ab.",
+  "windows": "Fenster",
+  "coats": "Anstriche",
+  "coats_hint": "Zwei Anstriche sind der Normalfall.",
+  "coverage": "Ergiebigkeit",
+  "sfx_cov_imperial": "(sq ft pro Gallone)",
+  "sfx_cov_metric": "(m² pro Liter)",
+  "coverage_hint_imperial": "meist 250-400",
+  "coverage_hint_metric": "meist 8-12",
+  "ceiling": "Decke mitrechnen",
+  "how_text": "Der Rechner ermittelt die Wandfläche rund um den Raum, zieht für jede Tür und jedes Fenster eine Standardfläche ab, addiert bei Bedarf die Decke, multipliziert mit der Anzahl der Anstriche und teilt durch die Ergiebigkeit deiner Farbe. Das Ergebnis wird immer auf ganze Gebinde aufgerundet, denn 1,8 Gallonen kann man nicht kaufen:",
+  "formula": "Wandfläche = 2 &times; (Länge + Breite) &times; Höhe<br>Streichfläche = Wandfläche &minus; Türen &times; Türfläche &minus; Fenster &times; Fensterfläche (+ Decke)<br>Eimer = Streichfläche &times; Anstriche &divide; Ergiebigkeit, aufgerundet",
+  "metric_note": "Im metrischen Modus zählt eine Tür als 1,95 m², ein Fenster als 1,4 m², und die Ergiebigkeit gilt pro Liter. Im imperialen Modus zählt eine Tür als 21 sq ft und ein Fenster als 15 sq ft.",
+  "example_imperial": "Angenommen, dein Raum misst 12 × 10 ft mit 8 ft hohen Wänden, einer Tür und einem Fenster, und du planst zwei Anstriche mit 350 sq ft pro Gallone. Die Wandfläche ist 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Zieh die Tür (21 sq ft) und das Fenster (15 sq ft) ab, dann bleiben <strong>316 sq ft pro Anstrich</strong>. Zwei Anstriche ergeben 632 sq ft, und 632 ÷ 350 = 1,81, aufgerundet <strong>2 Gallonen</strong>. Mit \"Decke mitrechnen\" kommt die Decke mit 120 sq ft dazu: 436 sq ft pro Anstrich, 872 sq ft insgesamt, also brauchst du <strong>3 Gallonen</strong>.",
+  "example_metric": "Angenommen, dein Raum misst 4 × 3 m mit 2,5 m hohen Wänden, einer Tür und einem Fenster, und du planst zwei Anstriche mit 10 m² pro Liter. Die Wandfläche ist 2 × (4 + 3) × 2,5 = <strong>35 m²</strong>. Zieh die Tür (1,95 m²) und das Fenster (1,4 m²) ab, dann bleiben <strong>31,65 m² pro Anstrich</strong>. Zwei Anstriche ergeben 63,3 m², und 63,3 ÷ 10 = 6,33, aufgerundet <strong>7 Liter</strong>. Mit \"Decke mitrechnen\" kommt die Decke mit 12 m² dazu: 43,65 m² pro Anstrich, 87,3 m² insgesamt, also brauchst du <strong>9 Liter</strong>.",
+  "table_title": "Farbbedarf nach Raumgröße",
+  "table_note_imperial": "Wände mit 8 ft Deckenhöhe, eine Tür, ein Fenster, zwei Anstriche, 350 sq ft pro Gallone:",
+  "table_note_metric": "Wände 2,5 m hoch, eine Tür, ein Fenster, zwei Anstriche, 10 m² pro Liter:",
+  "col_room": "Raum",
+  "col_walls": "Nur Wände",
+  "col_both": "Wände + Decke",
+  "more_text": "Du planst den Rest des Projekts? Probiere die anderen kostenlosen Rechner:",
+  "js": {
+    "main": "{cansText} <small>für {coatsText}</small>",
+    "cans_imperial_one": "{cans} Gallone",
+    "cans_imperial": "{cans} Gallonen",
+    "cans_metric_one": "{cans} Liter",
+    "cans_metric": "{cans} Liter",
+    "coats_one": "{coats} Anstrich",
+    "coats_other": "{coats} Anstriche",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Wandfläche: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Abzüglich {doors} Tür(en) und {windows} Fenster: −{deduct} {a} = <strong>{per} {a} pro Anstrich</strong>",
+    "deduct_ceiling_line": "Abzüglich {doors} Tür(en) und {windows} Fenster: −{deduct} {a}, plus Decke {ceil} {a} = <strong>{per} {a} pro Anstrich</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, aufgerundet <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "Wie viele m² schafft ein Liter Wandfarbe?",
+      "Die meisten Innenfarben reichen für etwa 6 bis 10 m² pro Liter (250 bis 400 Quadratfuß pro Gallone) auf einer glatten, grundierten Wand. Dieser Rechner geht standardmäßig von 10 m² pro Liter bzw. 350 sq ft pro Gallone aus. Raue, saugende oder unbehandelte Untergründe nehmen mehr Farbe auf, rechne dann mit dem unteren Wert."
+    ],
+    [
+      "Muss ich vor dem Streichen grundieren?",
+      "Grundiere rohe Gipskartonplatten, unbehandeltes Holz, fleckige oder glänzende Flächen und wenn du eine dunkle Farbe mit einer helleren überstreichst. Auf bereits gestrichenen Wänden in gutem Zustand und ähnlichem Farbton reicht meist eine hochwertige Farbe mit integrierter Grundierung. Grundierung ist günstiger als ein zusätzlicher Anstrich."
+    ],
+    [
+      "Reicht ein Anstrich oder brauche ich zwei?",
+      "Plane zwei Anstriche für ein gleichmäßiges, haltbares Ergebnis. Ein Anstrich kann reichen, wenn du mit gleicher Farbe und gleichem Glanzgrad auf einer gut vorbereiteten Wand überstreichst. Große Farbwechsel, Rot- und Gelbtöne oder gespachtelte Stellen brauchen oft zwei Anstriche plus eine getönte Grundierung darunter."
+    ],
+    [
+      "Wie viel Farbe brauche ich für einen Raum von 12x12?",
+      "Ein Raum von 12 mal 12 Fuß mit 8 Fuß hohen Wänden hat 384 sq ft Wandfläche. Abzüglich einer Tür und eines Fensters sind das 348 sq ft pro Anstrich, zwei Anstriche brauchen also 2 Gallonen bei 350 sq ft pro Gallone. Ein vergleichbarer Raum von 4 mal 4 m mit 2,5 m hohen Wänden braucht 8 Liter bei 10 m² pro Liter."
+    ],
+    [
+      "Ist Deckenfarbe anders als Wandfarbe?",
+      "Deckenfarbe ist dickflüssiger, damit sie weniger spritzt und tropft, und fast immer matt, damit das Licht keine Rollspuren sichtbar macht. Du kannst matte Wandfarbe an der Decke verwenden, aber echte Deckenfarbe lässt sich über Kopf leichter auftragen und kaschiert Unebenheiten besser."
+    ]
+  ]
+}

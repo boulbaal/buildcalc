@@ -1,0 +1,85 @@
+{
+  "meta_title": "Tegels berekenen - Hoeveel tegels heb ik nodig?",
+  "meta_desc": "Tegels berekenen, gratis. Vul de maten van je vloer of muur, het tegelformaat en de voegbreedte in en krijg het aantal tegels en dozen, inclusief snijverlies.",
+  "og_desc": "Bereken het aantal tegels en dozen voor je vloer of muur, inclusief snijverlies. Gratis, zonder advertenties.",
+  "h1": "Tegels berekenen: hoeveel tegels heb ik nodig?",
+  "lede": "Bereken hoeveel tegels en dozen je nodig hebt voor een vloer of muur, met voeg en snijverlies inbegrepen. Gratis, direct, zonder advertenties.",
+  "mode_label": "Oppervlakte",
+  "mode_dims": "Lengte x breedte",
+  "mode_area": "Ik ken de oppervlakte",
+  "length": "Lengte",
+  "width": "Breedte",
+  "area": "Oppervlakte",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Tegelformaat (inch)",
+  "tile_size_metric": "Tegelformaat (cm)",
+  "opt_subway": "3 x 6 metrotegel",
+  "opt_custom": "Eigen formaat",
+  "tile_w": "Breedte tegel",
+  "tile_h": "Hoogte tegel",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Voegbreedte",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 voor geen voeg. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 voor geen voeg. 3 mm is gebruikelijk voor vloertegels.",
+  "pattern": "Legpatroon",
+  "pattern_straight": "Recht (10% verlies)",
+  "pattern_diag": "Diagonaal / visgraat (15% verlies)",
+  "perbox": "Tegels per doos (optioneel)",
+  "perbox_hint": "Staat op de doos. Laat leeg om over te slaan.",
+  "how_text": "De rekenhulp deelt je oppervlakte door de oppervlakte van één tegel plus zijn voeg, telt een marge bij voor snijwerk en breuk en rondt naar boven af op hele tegels:",
+  "formula": "effectieve tegeloppervlakte = (breedte tegel + voeg) &times; (hoogte tegel + voeg)<br>tegels = ceil( oppervlakte / effectieve tegeloppervlakte &times; (1 + verlies) )<br>dozen = ceil( tegels / tegels per doos )",
+  "how_text2": "Het verlies is 10% bij een recht legpatroon en 15% bij diagonaal of visgraat, omdat er dan meer restjes onbruikbaar zijn. Een bredere voeg betekent dat elke tegel iets meer oppervlakte dekt, dus het aantal tegels daalt een beetje.",
+  "example_imperial": "Stel dat je een vloer van 10 ft bij 12 ft betegelt, dat is <strong>120 sq ft</strong> (17.280 sq in), met tegels van 12 x 12 inch, recht gelegd, met een voeg van 1/8 inch (0,125 in). Elke tegel plus voeg dekt 12,125 × 12,125 = 147,02 sq in, dus zonder verlies is dat 17.280 / 147,02 = 117,54 tegels. Tel 10% verlies erbij: 117,54 × 1,1 = 129,29, naar boven afgerond <strong>130 tegels</strong>. Zitten er 8 tegels in een doos, dan is dat ceil(130 / 8) = <strong>17 dozen</strong>. Dezelfde vloer diagonaal gelegd met 15% verlies vraagt 136 tegels.",
+  "example_metric": "Stel dat je een vloer van 4 m bij 3 m betegelt, dat is <strong>12 m²</strong> (120.000 cm²), met tegels van 30 x 30 cm, recht gelegd, met een voeg van 3 mm (0,3 cm). Elke tegel plus voeg dekt 30,3 × 30,3 = 918,09 cm², dus zonder verlies is dat 120.000 / 918,09 = 130,71 tegels. Tel 10% verlies erbij: 130,71 × 1,1 = 143,78, naar boven afgerond <strong>144 tegels</strong>. Zitten er 11 tegels in een doos, dan is dat ceil(144 / 11) = <strong>14 dozen</strong>. Dezelfde vloer diagonaal gelegd met 15% verlies vraagt 151 tegels.",
+  "table_title_imperial": "Tegels per 100 sq ft",
+  "table_title_metric": "Tegels per 10 m²",
+  "table_note": "Gangbare tegelformaten, recht gelegd met 10% verlies en zonder voeg:",
+  "col_size": "Tegelformaat",
+  "col_area": "Oppervlakte tegel",
+  "col_count_imperial": "Tegels per 100 sq ft",
+  "col_count_metric": "Tegels per 10 m²",
+  "more_text": "Plan je de rest van de klus? Probeer de andere gratis rekenhulpen:",
+  "js": {
+    "main": "{tiles} tegels",
+    "main_boxes": "{tiles} tegels <small>= {boxes} dozen van {perbox}</small>",
+    "area_line_imperial": "Te betegelen oppervlakte: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Te betegelen oppervlakte: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Effectieve tegeloppervlakte: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Effectieve tegeloppervlakte: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Marge voor verlies: <strong>{pct}%</strong> (recht gelegd)",
+    "waste_diag": "Marge voor verlies: <strong>{pct}%</strong> (diagonaal / visgraat)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "3 x 6 in metrotegel",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Hoeveel tegels moet ik extra kopen?",
+      "Koop 10 tot 15% meer dan de kale oppervlakte aangeeft. Snijwerk langs de muren, breuk en latere herstellingen gaan allemaal van die reserve af. Reken 10% voor een eenvoudig recht patroon in een rechthoekige ruimte, en 15% voor diagonaal of visgraat, kleine tegels of ruimtes met veel hoeken."
+    ],
+    [
+      "Wat is snijverlies bij tegels?",
+      "Snijverlies zijn de tegels die je koopt maar waar je uiteindelijk niet op loopt: restjes aan de muren en rond leidingen of sanitair, tegels die breken bij het snijden of het vervoer, en reservetegels voor latere herstellingen. Dat is normaal, geen fout. Deze rekenhulp telt het verliespercentage erbij voordat hij afrondt op hele tegels."
+    ],
+    [
+      "Hoeveel tegels van 12x12 inch (30x30 cm) heb ik nodig voor 100 sq ft?",
+      "Een tegel van 12x12 inch (30x30 cm) dekt 1 square foot, dus 100 square feet (9,3 m²) vraagt 100 tegels zonder verlies. Tel 10% verlies erbij voor een recht legpatroon en je koopt best 110 tegels. Met een voeg dekt elke tegel iets meer, dus het aantal kan een beetje dalen."
+    ],
+    [
+      "Heb ik meer tegels nodig bij diagonaal leggen?",
+      "Ja. Leg je tegels onder 45 graden, dan eindigt elke rij aan de muur met een schuine snede, en veel van die restjes zijn niet meer bruikbaar. Reken op ongeveer 15% verlies bij diagonaal of visgraat, in plaats van de gebruikelijke 10% bij een recht patroon."
+    ],
+    [
+      "Moet ik de voegen meerekenen bij het berekenen van tegels?",
+      "Ja, en dat is in je voordeel. Elke tegel plus zijn voeg, vaak 3 mm (1/8 inch), dekt iets meer oppervlakte dan de tegel alleen, dus een bredere voeg vermindert het aantal tegels een beetje. Bij grote tegels is het effect klein, bij kleine metrotegels merk je het wel."
+    ]
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "meta_title": "Kikokotoo cha Ngazi - Vidato, Kimo na Urefu",
+  "meta_desc": "Kikokotoo cha ngazi bure. Weka kimo cha jumla upate idadi ya vidato, kimo kamili cha kidato, makanyagio na urefu wa jumla, na ukaguzi wa kanuni na starehe.",
+  "og_desc": "Pata idadi ya vidato, kimo cha kidato, makanyagio na urefu wa jumla kutoka kimo cha jumla. Papo hapo, bure, bila matangazo.",
+  "h1": "Kikokotoo cha Ngazi",
+  "lede": "Weka kimo cha jumla upate idadi ya vidato, kimo kamili cha kidato, makanyagio na urefu wa jumla, pamoja na ukaguzi wa kanuni na starehe. Bure, papo hapo, bila matangazo.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Kimo cha jumla",
+  "rise_hint": "Kutoka sakafu iliyokamilika hadi sakafu iliyokamilika, kipimo cha wima.",
+  "desired": "Kimo cha kidato unachotaka",
+  "desired_hint": "Kimo unachotaka kila kidato kiwe. Kinaonyeshwa kwa kulinganisha.",
+  "tread": "Upana wa kanyagio",
+  "tread_hint": "Kina cha mlalo cha kila kidato, kutoka ncha hadi ncha.",
+  "space": "Nafasi iliyopo",
+  "space_hint": "Hiari. Nafasi ya mlalo uliyonayo kwa ajili ya ngazi.",
+  "how_text": "Kikokotoo hugawanya kimo cha jumla kwa kimo cha juu kabisa cha kidato cha in 7.75 (cm 19.7) na kukadiria juu ili kupata idadi ya vidato. Kugawanya kimo cha jumla kwa idadi hiyo hutoa kimo kamili cha kidato cha kuweka alama kwenye ubao wa pembeni wa ngazi. Kwa starehe, mara mbili ya kimo cha kidato pamoja na upana wa kanyagio inapaswa kuwa kati ya in 24 na 25 (cm 61 hadi 63.5).",
+  "formula": "vidato = ceil(kimo cha jumla / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>kimo cha kidato = kimo cha jumla / vidato<br>makanyagio = vidato - 1<br>umbali mlalo wa jumla = makanyagio &times; upana wa kanyagio<br>starehe = 2 &times; kimo cha kidato + upana wa kanyagio",
+  "how_note": "Kimo cha kidato unachotaka kinaonyeshwa kando ya kimo halisi ili uone jinsi mpangilio unavyokaribia. <strong>Mipaka ya kanuni hapa inafuata kanuni ya ujenzi ya Marekani (US IRC): kidato cha juu kabisa in 7.75 au cm 19.7, kanyagio cha chini kabisa in 10 au cm 25.4. Kanuni za eneo lako zinaweza kuwa tofauti, kwa hiyo hakiki kila mara kabla ya kukata.</strong>",
+  "example_imperial": "Tuseme kimo cha jumla kutoka sakafu hadi sakafu ni inchi 100. Basi 100 / 7.75 = 12.9, ikikadiriwa juu inakuwa <strong>vidato 13</strong>. Kila kidato ni 100 / 13 = <strong>in 7.69</strong>, na kuna 13 - 1 = <strong>makanyagio 12</strong>. Kwa kanyagio la in 10.5 urefu wa jumla ni 12 × 10.5 = <strong>in 126</strong>. Thamani ya starehe ni 2 × 7.69 + 10.5 = in 25.88, juu kidogo ya kiwango bora cha in 24 hadi 25. Kidato kimoja cha ziada (vidato 14 vya in 7.14) kingeifanya iwe in 24.79, ndani ya kiwango.",
+  "example_metric": "Tuseme kimo cha jumla kutoka sakafu hadi sakafu ni cm 270. Basi 270 / 19.7 = 13.7, ikikadiriwa juu inakuwa <strong>vidato 14</strong>. Kila kidato ni 270 / 14 = <strong>cm 19.29</strong>, na kuna 14 - 1 = <strong>makanyagio 13</strong>. Kwa kanyagio la cm 27 urefu wa jumla ni 13 × 27 = <strong>cm 351</strong>. Thamani ya starehe ni 2 × 19.2857 + 27 = cm 65.57, juu ya kiwango bora cha cm 61 hadi 63.5. Kidato kimoja cha ziada (vidato 15 vya cm 18) kingeifanya iwe cm 63, ndani ya kiwango.",
+  "table_title": "Vidato kwa kimo cha jumla",
+  "col_rise": "Kimo cha jumla",
+  "col_risers": "Vidato",
+  "col_riser": "Kimo cha kidato",
+  "col_treads": "Makanyagio",
+  "more_text": "Unapanga sehemu nyingine ya kazi? Jaribu vikokotoo vingine vya bure:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "vidato {risers} vya {riser} {u}, makanyagio {treads}",
+    "run_line": "Urefu wa jumla: <strong>{run} {u}</strong> (makanyagio {treads} × {tread} {u})",
+    "target_line": "Kidato unachotaka: {desired} {u}, halisi: {riser} {u}",
+    "comfort_line": "Starehe (2R+T): {comfort} {u} {badge}",
+    "comfort_in": "Ndani ya kiwango cha {lo} hadi {hi} {u}",
+    "comfort_out": "Nje ya kiwango cha {lo} hadi {hi} {u}",
+    "irc_ok": "Inakidhi mipaka ya US IRC (kidato ≤ {max} {u}, kanyagio ≥ {min} {u})",
+    "irc_bad": "Nje ya mipaka ya US IRC: kidato cha juu {max} {u}, kanyagio cha chini {min} {u}",
+    "irc_note": "IRC ni kanuni ya Marekani; angalia sheria za eneo lako.",
+    "no_fit": "Haitoshi: inahitaji urefu wa {run} {u}, una {space} {u}"
+  },
+  "faq": [
+    [
+      "Kimo cha juu kabisa cha kidato kwa mujibu wa kanuni ni kipi?",
+      "Kanuni ya ujenzi ya Marekani (US IRC) inaruhusu kimo cha juu kabisa cha kidato cha inchi 7.75 (cm 19.7) kwa ngazi za makazi. Vidato ndani ya mkondo mmoja wa ngazi havipaswi kutofautiana kwa zaidi ya inchi 3/8 (takriban cm 1). Kanuni za majengo ya biashara na kanuni nyingi za maeneo ni kali zaidi, kwa hiyo hakiki kila mara na idara ya ujenzi ya eneo lako."
+    ],
+    [
+      "Kimo bora cha kidato cha ngazi ni kipi?",
+      "Watu wengi huona vidato vya inchi 7 hadi 7.5 (cm 18 hadi 19) ndivyo rahisi zaidi kupanda. Vidato vifupi zaidi vya takriban inchi 6 (cm 15) vinafaa ngazi za nje na wazee. Chochote juu ya kiwango cha juu cha US IRC cha inchi 7.75 (cm 19.7) huhisi kikali na hakiruhusiwi huko."
+    ],
+    [
+      "Kanuni ya 2R+T kwa ngazi ni ipi?",
+      "Kanuni ya starehe ya 2R+T inasema mara mbili ya kimo cha kidato pamoja na upana wa kanyagio inapaswa kuwa kati ya inchi 24 na 25 (cm 61 hadi 63.5). Inakaribia urefu wa hatua ya kawaida ya kutembea. Ngazi zilizo ndani ya kiwango hicho huhisi za starehe, huku zilizo nje yake huhisi kali mno au fupi mno."
+    ],
+    [
+      "Ninakokotoaje idadi ya vidato kwenye ngazi?",
+      "Pima kimo cha jumla kutoka sakafu iliyokamilika hadi sakafu iliyokamilika, kisha gawanya kwa kimo cha juu kabisa cha kidato cha inchi 7.75 (cm 19.7) na ukadirie juu. Hiyo inatoa idadi ya vidato. Kugawanya kimo cha jumla kwa idadi hiyo hutoa kimo kamili cha kidato. Idadi ya makanyagio ni pungufu kwa moja kuliko idadi ya vidato."
+    ],
+    [
+      "Upana wa chini kabisa wa kanyagio kwa mujibu wa kanuni ni upi?",
+      "US IRC inahitaji upana wa chini kabisa wa kanyagio wa inchi 10 (cm 25.4), kipimo kutoka ncha hadi ncha. Makanyagio mapana zaidi ya inchi 10.5 hadi 11 (cm 27 hadi 28) ni ya starehe zaidi na ni ya kawaida. Makanyagio ndani ya mkondo mmoja wa ngazi hayapaswi kutofautiana kwa zaidi ya inchi 3/8 (takriban cm 1). Angalia sheria za eneo lako kabla ya kujenga."
+    ]
+  ]
+}

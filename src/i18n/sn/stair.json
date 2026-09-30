@@ -1,0 +1,64 @@
+{
+  "meta_title": "Kuverenga Masitepisi - Nhanho neKureba Kwese",
+  "meta_desc": "Chiverengi chemasitepisi chemahara. Isa kukwira kwese uwane nhamba yenhanho, kukwirira kwenhanho, matanho nekureba kwese, pamwe nekuongorora mitemo nekugadzikana.",
+  "og_desc": "Wana nhanho, kukwirira kwenhanho, matanho nekureba kwese kubva pakukwira kwese. Pakarepo, mahara, hapana kushambadza.",
+  "h1": "Kuverenga masitepisi",
+  "lede": "Isa kukwira kwese uwane nhamba yenhanho, kukwirira chaiko kwenhanho, matanho nekureba kwese, pamwe nekuongorora mitemo nekugadzikana. Mahara, pakarepo, hapana kushambadza.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Kukwira kwese",
+  "rise_hint": "Kubva papasi rakapedzwa kusvika papasi rakapedzwa, kwakayerwa kwakamira.",
+  "desired": "Kukwirira kwenhanho kwaunoda",
+  "desired_hint": "Zvaungade kuti nhanho imwe neimwe ive. Zvinoratidzwa kuti uenzanise.",
+  "tread": "Kudzika kwetanho",
+  "tread_hint": "Kudzika kwakatwasuka kwetanho rimwe nerimwe, kubva pamuromo kusvika pamuromo.",
+  "space": "Kureba kuripo",
+  "space_hint": "Kana uchida. Nzvimbo yakatwasuka yaunayo yemasitepisi.",
+  "how_text": "Chiverengi chinogovanisa kukwira kwese nekukwirira kwenhanho kukuru kwe7.75 in (19.7 cm) chokwidza kuti uwane nhamba yenhanho. Kugovanisa kukwira kwese nenhamba iyoyo kunopa kukwirira chaiko kwenhanho kwekumaka pastringer. Kuti zvigadzikane, kukwirira kwenhanho kwakapetwa kaviri pamwe nekudzika kwetanho kunofanira kuva pakati pe24 ne25 in (61 kusvika 63.5 cm).",
+  "formula": "nhanho = ceil(kukwira kwese / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>kukwirira kwenhanho = kukwira kwese / nhanho<br>matanho = nhanho - 1<br>kureba kwese = matanho &times; kudzika kwetanho<br>kugadzikana = 2 &times; kukwirira kwenhanho + kudzika kwetanho",
+  "how_note": "Kukwirira kwenhanho kwaunoda kunoratidzwa padivi pekwechokwadi kuti uone kuti hurongwa huri pedyo zvakadii. <strong>Miganhu yemutemo pano inotevera US IRC, mutemo wekuvaka weAmerica (nhanho yakakwirira kupfuura 7.75 in kana 19.7 cm, tanho shoma 10 in kana 25.4 cm). Mitemo yenzvimbo yako inogona kusiyana, saka gara uchiongorora usati wacheka.</strong>",
+  "example_imperial": "Ngatiti kukwira kwese kubva pasi kusvika pasi kuri mainchi 100. Saka 100 / 7.75 = 12.9, zvinokwidzwa kusvika <strong>nhanho 13</strong>. Nhanho imwe neimwe i100 / 13 = <strong>7.69 in</strong>, uye pane 13 - 1 = <strong>matanho 12</strong>. Nekudzika kwetanho kwe10.5 in kureba kwese i12 × 10.5 = <strong>126 in</strong>. Nhamba yekugadzikana i2 × 7.69 + 10.5 = 25.88 in, zvishoma pamusoro pechikamu chakanaka che24 kusvika 25 in. Nhanho imwe yakawedzerwa (nhanho 14 dze7.14 in) inozviisa pa24.79 in, mukati mechikamu.",
+  "example_metric": "Ngatiti kukwira kwese kubva pasi kusvika pasi kuri 270 cm. Saka 270 / 19.7 = 13.7, zvinokwidzwa kusvika <strong>nhanho 14</strong>. Nhanho imwe neimwe i270 / 14 = <strong>19.29 cm</strong>, uye pane 14 - 1 = <strong>matanho 13</strong>. Nekudzika kwetanho kwe27 cm kureba kwese i13 × 27 = <strong>351 cm</strong>. Nhamba yekugadzikana i2 × 19.2857 + 27 = 65.57 cm, pamusoro pechikamu chakanaka che61 kusvika 63.5 cm. Nhanho imwe yakawedzerwa (nhanho 15 dze18 cm) inozviisa pa63 cm, mukati mechikamu.",
+  "table_title": "Nhanho zvichienderana nekukwira kwese",
+  "col_rise": "Kukwira kwese",
+  "col_risers": "Nhanho",
+  "col_riser": "Kukwirira kwenhanho",
+  "col_treads": "Matanho",
+  "more_text": "Uri kuronga rimwe basa? Edza zvimwe zviverengi zvemahara:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "nhanho {risers} dze{riser} {u}, matanho {treads}",
+    "run_line": "Kureba kwese: <strong>{run} {u}</strong> (matanho {treads} × {tread} {u})",
+    "target_line": "Nhanho yaunoda: {desired} {u}, yechokwadi: {riser} {u}",
+    "comfort_line": "Kugadzikana (2R+T): {comfort} {u} {badge}",
+    "comfort_in": "Mukati mechikamu che{lo} kusvika {hi} {u}",
+    "comfort_out": "Kunze kwechikamu che{lo} kusvika {hi} {u}",
+    "irc_ok": "Zvinoenderana nemiganhu yeUS IRC (nhanho ≤ {max} {u}, tanho ≥ {min} {u})",
+    "irc_bad": "Kunze kwemiganhu yeUS IRC: nhanho yakakwirira kupfuura {max} {u}, tanho shoma {min} {u}",
+    "irc_note": "IRC mutemo weAmerica; ongorora mitemo yenzvimbo yako.",
+    "no_fit": "Hazvikwani: zvinoda {run} {u} yekureba, iwe une {space} {u}"
+  },
+  "faq": [
+    [
+      "Kukwirira kukuru kwenhanho maererano nemutemo ndekupi?",
+      "US IRC inobvumira kukwirira kwenhanho kukuru kwemainchi 7.75 (19.7 cm) pamasitepisi edzimba. Nhanho dziri mumutsara mumwe hadzifaniri kusiyana nepamusoro pe3/8 inch (anenge 1 cm). Mitemo yezvivakwa zvebhizimisi nemitemo mizhinji yenzvimbo yakaoma kupfuura, saka gara uchiongorora nehofisi yekuvaka yenzvimbo yako."
+    ],
+    [
+      "Kukwirira kwenhanho kwakanaka kwemasitepisi ndekupi?",
+      "Vanhu vazhinji vanowana nhanho dzemainchi 7 kusvika 7.5 (18 kusvika 19 cm) dzakanyanya kugadzikana kukwira. Nhanho dzakaderera dzemainchi anenge 6 (15 cm) dzakanakira masitepisi ekunze nevakwegura. Chero chiri pamusoro pemuganhu weUS IRC wemainchi 7.75 (19.7 cm) chinonzwika chakakwirira uye hachibvumirwe ikoko."
+    ],
+    [
+      "Mutemo we2R+T wemasitepisi chii?",
+      "Mutemo wekugadzikana we2R+T unoti kukwirira kwenhanho kwakapetwa kaviri pamwe nekudzika kwetanho kunofanira kuva pakati pemainchi 24 ne25 (61 kusvika 63.5 cm). Unofananidza nhanho yekufamba kwechisikigo. Masitepisi ari muchikamu ichi anogadzikana, asi ari kunze kwacho anonzwika akakwirira kana akaderera zvakanyanya."
+    ],
+    [
+      "Ndinoverenga sei nhamba yenhanho dzemasitepisi?",
+      "Yera kukwira kwese kubva papasi rakapedzwa kusvika papasi rakapedzwa, wobva wagovanisa nekukwirira kwenhanho kukuru kwemainchi 7.75 (19.7 cm) wokwidza. Izvi zvinopa nhamba yenhanho. Kugovanisa kukwira kwese nenhamba iyoyo kunopa kukwirira chaiko kwenhanho. Nhamba yematanho ishoma neimwe pane nhamba yenhanho."
+    ],
+    [
+      "Kudzika kushoma kwetanho maererano nemutemo ndekupi?",
+      "US IRC inoda kudzika kwetanho kushoma kwemainchi 10 (25.4 cm), kwakayerwa kubva pamuromo kusvika pamuromo. Matanho akadzika e10.5 kusvika 11 inches (27 kusvika 28 cm) anogadzikana zvikuru uye anowanzoitwa. Matanho ari mumutsara mumwe haafaniri kusiyana nepamusoro pe3/8 inch (anenge 1 cm). Ongorora mitemo yenzvimbo yako usati wavaka."
+    ]
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "meta_title": "Calculadora de pintura - ¿Cuánta pintura necesito?",
+  "meta_desc": "Calculadora de pintura gratis. Introduce las medidas de la habitación, puertas, ventanas y manos, y obtén los litros de pintura. Al instante y sin anuncios.",
+  "og_desc": "Introduce medidas, puertas, ventanas y manos para saber los litros o galones de pintura. Gratis, sin anuncios.",
+  "h1": "Calculadora de pintura",
+  "lede": "Calcula cuántos litros o galones de pintura necesita tu habitación, teniendo en cuenta puertas, ventanas y número de manos. Gratis, al instante, sin anuncios.",
+  "length": "Largo de la habitación",
+  "width": "Ancho de la habitación",
+  "height": "Altura de pared",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Puertas",
+  "doors_hint": "No se pintan. Cada una resta la superficie de una puerta estándar.",
+  "windows": "Ventanas",
+  "coats": "Manos",
+  "coats_hint": "Lo normal es dar dos manos.",
+  "coverage": "Rendimiento",
+  "sfx_cov_imperial": "(sq ft por galón)",
+  "sfx_cov_metric": "(m² por litro)",
+  "coverage_hint_imperial": "habitual 250-400",
+  "coverage_hint_metric": "habitual 8-12",
+  "ceiling": "Incluir techo",
+  "how_text": "La calculadora mide la superficie de las paredes alrededor de la habitación, resta una superficie estándar por cada puerta y ventana, añade el techo si quieres, multiplica por el número de manos y divide entre el rendimiento de tu pintura. El resultado siempre se redondea hacia arriba a unidades enteras, porque no puedes comprar 1,8 galones:",
+  "formula": "superficie de pared = 2 &times; (largo + ancho) &times; altura<br>a pintar = superficie de pared &minus; puertas &times; área de puerta &minus; ventanas &times; área de ventana (+ techo)<br>botes = a pintar &times; manos &divide; rendimiento, redondeado hacia arriba",
+  "metric_note": "En modo métrico una puerta cuenta como 1,95 m², una ventana como 1,4 m² y el rendimiento es por litro. En modo imperial una puerta cuenta como 21 sq ft y una ventana como 15 sq ft.",
+  "example_imperial": "Supongamos que tu habitación mide 12 × 10 ft con paredes de 8 ft, una puerta y una ventana, y piensas dar dos manos con un rendimiento de 350 sq ft por galón. La superficie de pared es 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Resta la puerta (21 sq ft) y la ventana (15 sq ft) y quedan <strong>316 sq ft por mano</strong>. Dos manos son 632 sq ft, y 632 ÷ 350 = 1,81, que se redondea a <strong>2 galones</strong>. Si marcas \"Incluir techo\", el techo de 120 sq ft lo sube a 436 sq ft por mano, 872 sq ft en total, así que necesitas <strong>3 galones</strong>.",
+  "example_metric": "Supongamos que tu habitación mide 4 × 3 m con paredes de 2,5 m, una puerta y una ventana, y piensas dar dos manos con un rendimiento de 10 m² por litro. La superficie de pared es 2 × (4 + 3) × 2,5 = <strong>35 m²</strong>. Resta la puerta (1,95 m²) y la ventana (1,4 m²) y quedan <strong>31,65 m² por mano</strong>. Dos manos son 63,3 m², y 63,3 ÷ 10 = 6,33, que se redondea a <strong>7 litros</strong>. Si marcas \"Incluir techo\", el techo de 12 m² lo sube a 43,65 m² por mano, 87,3 m² en total, así que necesitas <strong>9 litros</strong>.",
+  "table_title": "Pintura necesaria según el tamaño de la habitación",
+  "table_note_imperial": "Paredes con techos de 8 ft, una puerta, una ventana, dos manos, 350 sq ft por galón:",
+  "table_note_metric": "Paredes de 2,5 m de alto, una puerta, una ventana, dos manos, 10 m² por litro:",
+  "col_room": "Habitación",
+  "col_walls": "Solo paredes",
+  "col_both": "Paredes + techo",
+  "more_text": "¿Planificando el resto de la obra? Prueba las otras calculadoras gratis:",
+  "js": {
+    "main": "{cansText} <small>para {coatsText}</small>",
+    "cans_imperial_one": "{cans} galón",
+    "cans_imperial": "{cans} galones",
+    "cans_metric_one": "{cans} litro",
+    "cans_metric": "{cans} litros",
+    "coats_one": "{coats} mano",
+    "coats_other": "{coats} manos",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Superficie de pared: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Menos {doors} puerta(s) y {windows} ventana(s): −{deduct} {a} = <strong>{per} {a} por mano</strong>",
+    "deduct_ceiling_line": "Menos {doors} puerta(s) y {windows} ventana(s): −{deduct} {a}, más techo {ceil} {a} = <strong>{per} {a} por mano</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, redondeado a <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "¿Cuánto cubre un litro de pintura?",
+      "La mayoría de pinturas de interior cubren unos 6 a 10 m² por litro (250 a 400 pies cuadrados por galón) sobre una pared lisa e imprimada. Esta calculadora usa por defecto 10 m² por litro o 350 sq ft por galón. Las superficies rugosas, porosas o sin tratar absorben más pintura, así que usa la parte baja del rango."
+    ],
+    [
+      "¿Necesito imprimación antes de pintar?",
+      "Usa imprimación sobre pladur nuevo, madera sin tratar, superficies manchadas o brillantes, y cuando cubras un color oscuro con uno más claro. En paredes ya pintadas en buen estado y de un color parecido, suele bastar una buena pintura con imprimación incorporada. La imprimación sale más barata que una mano extra de pintura."
+    ],
+    [
+      "¿Basta con una mano de pintura o hacen falta dos?",
+      "Cuenta con dos manos para un acabado uniforme y duradero. Una mano puede valer si repintas con el mismo color y acabado sobre una pared bien preparada. Los cambios de color grandes, los rojos y amarillos o pintar sobre parches suelen necesitar dos manos y una imprimación tintada debajo."
+    ],
+    [
+      "¿Cuánta pintura necesito para una habitación de 4x4?",
+      "Una habitación de 4 por 4 m con paredes de 2,5 m necesita 8 litros con un rendimiento de 10 m² por litro. En medidas imperiales, una habitación de 12 por 12 pies con paredes de 8 pies tiene 384 sq ft de pared. Descontando una puerta y una ventana quedan 348 sq ft por mano, así que dos manos necesitan 2 galones a 350 sq ft por galón."
+    ],
+    [
+      "¿La pintura de techos es distinta de la de paredes?",
+      "La pintura de techos es más espesa para que salpique y gotee menos, y casi siempre es mate para que la luz no marque las pasadas del rodillo. Puedes usar pintura mate de paredes en un techo, pero una pintura específica para techos es más fácil de aplicar por encima de la cabeza y disimula mejor los defectos."
+    ]
+  ]
+}

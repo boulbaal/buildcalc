@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Kostenlose Rechner für Bau und Heimwerken",
+  "meta_desc": "Kostenlose Bau- und Heimwerker-Rechner: Dachneigung, Betonplatte, Wandfarbe, Fliesen und Treppe. Sofort, ohne Werbung, ohne Tracking, offline nutzbar.",
+  "og_desc": "Rechner für Dachneigung, Beton, Farbe, Fliesen und Treppe. Kostenlos, sofort, ohne Werbung.",
+  "h1": "Kostenlose Baurechner",
+  "lede": "Fünf schnelle Rechner für echte Baustellen. Keine Werbung, kein Tracking, keine Anmeldung. Jedes Ergebnis zeigt den Rechenweg, und nach dem ersten Laden funktioniert alles auch offline.",
+  "card_roof": "Von Höhe und Länge zu Grad, Prozent und X:12, dazu der Neigungsfaktor für die Dachfläche.",
+  "card_concrete": "Volumen und genaue Anzahl Säcke, mit Verschnittzuschlag.",
+  "card_paint": "Wie viel Farbe dein Raum braucht, abzüglich Türen und Fenster, je nach Anzahl der Anstriche.",
+  "card_tile": "Fliesen und Pakete aus Fläche und Fliesenformat, mit Fugenbreite und Verschnitt.",
+  "card_stair": "Steigungen und Auftritte aus der Geschosshöhe, geprüft gegen Vorschriften und Schrittmaßregel.",
+  "why_title": "Warum es diese Seite gibt",
+  "why_text": "Die meisten Rechner-Seiten verstecken eine einfache Formel unter Werbung, Pop-ups und Newsletter-Hürden. Diese fünf Tools machen es umgekehrt: Der Rechner steht oben, die Formel steht unter dem Ergebnis und die Seite lädt in einem Bruchteil einer Sekunde. Wenn dir ein Tool eine unnötige Fahrt zum Baumarkt erspart, findest du nach dem Ergebnis einen Spenden-Button. Das ist das ganze Geschäftsmodell."
+}

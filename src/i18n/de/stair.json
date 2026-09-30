@@ -1,0 +1,64 @@
+{
+  "meta_title": "Treppe berechnen - Steigung, Auftritt und Lauflänge",
+  "meta_desc": "Treppe kostenlos berechnen. Geschosshöhe eingeben und Anzahl Steigungen, genaue Steigungshöhe, Auftritte und Lauflänge erhalten, mit Norm- und Komfortprüfung.",
+  "og_desc": "Steigungen, Steigungshöhe, Auftritte und Lauflänge aus der Geschosshöhe. Sofort, kostenlos, ohne Werbung.",
+  "h1": "Treppe berechnen",
+  "lede": "Gib die Geschosshöhe ein und erhalte die Anzahl Steigungen, die genaue Steigungshöhe, die Auftritte und die gesamte Lauflänge, mit Norm- und Komfortprüfung. Kostenlos, sofort, ohne Werbung.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Geschosshöhe",
+  "rise_hint": "Von Fertigfußboden zu Fertigfußboden, senkrecht gemessen.",
+  "desired": "Gewünschte Steigungshöhe",
+  "desired_hint": "Wie hoch jede Stufe sein soll. Wird zum Vergleich angezeigt.",
+  "tread": "Auftrittstiefe",
+  "tread_hint": "Waagerechte Tiefe jeder Stufe, von Vorderkante zu Vorderkante.",
+  "space": "Verfügbare Lauflänge",
+  "space_hint": "Optional. Waagerechter Platz, den du für die Treppe hast.",
+  "how_text": "Der Rechner teilt die Geschosshöhe durch die maximale Steigungshöhe von 7,75 in (19,7 cm) und rundet auf, um die Anzahl Steigungen zu erhalten. Teilt man die Geschosshöhe durch diese Anzahl, ergibt sich die genaue Steigungshöhe zum Anreißen auf der Treppenwange. Für bequemes Gehen sollte zweimal die Steigungshöhe plus die Auftrittstiefe zwischen 24 und 25 in (61 bis 63,5 cm) liegen.",
+  "formula": "Steigungen = ceil(Geschosshöhe / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>Steigungshöhe = Geschosshöhe / Steigungen<br>Auftritte = Steigungen - 1<br>Lauflänge = Auftritte &times; Auftrittstiefe<br>Schrittmaß = 2 &times; Steigungshöhe + Auftrittstiefe",
+  "how_note": "Deine gewünschte Steigungshöhe steht neben der tatsächlichen, damit du siehst, wie nah die Aufteilung herankommt. <strong>Die Grenzwerte hier folgen dem IRC, der US-Bauordnung (Steigung max. 7,75 in bzw. 19,7 cm, Auftritt min. 10 in bzw. 25,4 cm). Örtliche Vorschriften können abweichen, prüfe also immer, bevor du sägst.</strong>",
+  "example_imperial": "Angenommen, die Geschosshöhe von Boden zu Boden beträgt 100 Zoll. Dann ist 100 / 7,75 = 12,9, aufgerundet <strong>13 Steigungen</strong>. Jede Steigung ist 100 / 13 = <strong>7,69 in</strong> hoch, und es gibt 13 - 1 = <strong>12 Auftritte</strong>. Bei 10,5 in Auftrittstiefe ist die Lauflänge 12 × 10,5 = <strong>126 in</strong>. Der Komfortwert ist 2 × 7,69 + 10,5 = 25,88 in, knapp über dem idealen Bereich von 24 bis 25 in. Eine Steigung mehr (14 Steigungen zu 7,14 in) bringt ihn auf 24,79 in, also in den Bereich.",
+  "example_metric": "Angenommen, die Geschosshöhe von Boden zu Boden beträgt 270 cm. Dann ist 270 / 19,7 = 13,7, aufgerundet <strong>14 Steigungen</strong>. Jede Steigung ist 270 / 14 = <strong>19,29 cm</strong> hoch, und es gibt 14 - 1 = <strong>13 Auftritte</strong>. Bei 27 cm Auftrittstiefe ist die Lauflänge 13 × 27 = <strong>351 cm</strong>. Der Komfortwert ist 2 × 19,2857 + 27 = 65,57 cm, über dem idealen Bereich von 61 bis 63,5 cm. Eine Steigung mehr (15 Steigungen zu 18 cm) bringt ihn auf 63 cm, also in den Bereich.",
+  "table_title": "Steigungen nach Geschosshöhe",
+  "col_rise": "Geschosshöhe",
+  "col_risers": "Steigungen",
+  "col_riser": "Steigungshöhe",
+  "col_treads": "Auftritte",
+  "more_text": "Du planst den Rest des Projekts? Probiere die anderen kostenlosen Rechner:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} Steigungen zu {riser} {u}, {treads} Auftritte",
+    "run_line": "Lauflänge: <strong>{run} {u}</strong> ({treads} Auftritte × {tread} {u})",
+    "target_line": "Gewünschte Steigung: {desired} {u}, tatsächlich: {riser} {u}",
+    "comfort_line": "Schrittmaß (2S+A): {comfort} {u} {badge}",
+    "comfort_in": "Im Bereich von {lo} bis {hi} {u}",
+    "comfort_out": "Außerhalb des Bereichs von {lo} bis {hi} {u}",
+    "irc_ok": "Erfüllt die Grenzwerte des US-IRC (Steigung ≤ {max} {u}, Auftritt ≥ {min} {u})",
+    "irc_bad": "Außerhalb der Grenzwerte des US-IRC: Steigung max. {max} {u}, Auftritt min. {min} {u}",
+    "irc_note": "Der IRC ist eine US-Bauordnung; prüfe deine örtlichen Vorschriften.",
+    "no_fit": "Passt nicht: braucht {run} {u} Lauflänge, du hast {space} {u}"
+  },
+  "faq": [
+    [
+      "Wie hoch darf eine Treppenstufe laut Vorschrift maximal sein?",
+      "Der IRC, die US-Bauordnung, erlaubt für Wohnhaustreppen eine maximale Steigungshöhe von 7,75 Zoll (19,7 cm). Innerhalb eines Treppenlaufs dürfen die Steigungen um nicht mehr als 3/8 Zoll (etwa 1 cm) voneinander abweichen. Vorschriften für Gewerbebauten und viele örtliche Regeln sind strenger, prüfe also immer bei deiner Baubehörde."
+    ],
+    [
+      "Was ist die ideale Steigungshöhe für eine Treppe?",
+      "Die meisten Menschen empfinden Steigungen von 18 bis 19 cm (7 bis 7,5 Zoll) als am bequemsten. Flachere Steigungen um 15 cm (6 Zoll) passen zu Außentreppen und älteren Menschen. Alles über dem US-IRC-Maximum von 19,7 cm (7,75 Zoll) wirkt steil und ist dort nicht erlaubt."
+    ],
+    [
+      "Was ist die Schrittmaßregel 2S+A für Treppen?",
+      "Die Schrittmaßregel 2S+A (im Englischen 2R+T) besagt, dass zweimal die Steigungshöhe plus die Auftrittstiefe zwischen 61 und 63,5 cm (24 und 25 Zoll) liegen sollte. Das entspricht ungefähr einer natürlichen Schrittlänge. Treppen in diesem Bereich lassen sich bequem begehen, außerhalb davon wirken sie zu steil oder zu flach."
+    ],
+    [
+      "Wie berechne ich die Anzahl der Stufen einer Treppe?",
+      "Miss die Geschosshöhe von Fertigfußboden zu Fertigfußboden, teile sie durch die maximale Steigungshöhe von 19,7 cm (7,75 Zoll) und runde auf. Das ergibt die Anzahl Steigungen. Teilst du die Geschosshöhe durch diese Anzahl, erhältst du die genaue Steigungshöhe. Die Anzahl Auftritte ist um eins kleiner als die Anzahl Steigungen."
+    ],
+    [
+      "Was ist die Mindest-Auftrittstiefe laut Vorschrift?",
+      "Der US-IRC verlangt eine Auftrittstiefe von mindestens 25,4 cm (10 Zoll), gemessen von Vorderkante zu Vorderkante. Tiefere Auftritte von 27 bis 28 cm (10,5 bis 11 Zoll) sind bequemer und üblich. Innerhalb eines Laufs dürfen die Auftritte um nicht mehr als 3/8 Zoll (etwa 1 cm) abweichen. Prüfe vor dem Bauen die örtlichen Vorschriften."
+    ]
+  ]
+}

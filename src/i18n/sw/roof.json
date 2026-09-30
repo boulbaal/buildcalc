@@ -1,0 +1,56 @@
+{
+  "meta_title": "Kikokotoo cha Mteremko wa Paa - Bure",
+  "meta_desc": "Kikokotoo cha mteremko wa paa bure. Badilisha kimo na umbali mlalo kuwa nyuzi, asilimia na X:12, na upate kizidishio cha eneo la paa. Papo hapo, bila matangazo.",
+  "og_desc": "Badilisha kimo na umbali mlalo kuwa nyuzi, asilimia na mteremko wa X:12. Papo hapo, bure, bila matangazo.",
+  "h1": "Kikokotoo cha Mteremko wa Paa",
+  "lede": "Badilisha kimo na umbali mlalo kuwa nyuzi, asilimia na mteremko wa X:12, na upate kizidishio cha mteremko kwa eneo la paa lako. Bure, papo hapo, bila matangazo.",
+  "mode_label": "Ninajua",
+  "mode_riserun": "Kimo na umbali mlalo",
+  "mode_angle": "Pembe kwa nyuzi",
+  "mode_percent": "Mteremko kwa asilimia",
+  "rise": "Kimo",
+  "rise_hint": "Kimo cha wima. Tumia kipimo sawa na cha umbali mlalo.",
+  "run": "Umbali mlalo",
+  "run_hint": "Umbali wa mlalo. Umbali wa 12 unatoa mteremko wa X:12 moja kwa moja.",
+  "angle": "Pembe (nyuzi)",
+  "percent": "Mteremko (%)",
+  "how_text": "Mteremko wa paa ni uwiano kati ya kimo cha wima na umbali wa mlalo. Kikokotoo hiki hubadilisha kati ya njia tatu za kawaida za kuuandika, pamoja na kizidishio cha mteremko kinachotumika kukadiria eneo la paa:",
+  "formula": "pembe = atan(kimo / umbali mlalo)<br>asilimia = kimo / umbali mlalo &times; 100<br>mteremko = (kimo / umbali mlalo &times; 12) : 12<br>kizidishio = &radic;(1 + (kimo / umbali mlalo)&sup2;)",
+  "example_imperial": "Tuseme paa lako linapanda inchi 6 kwa kila inchi 12 za umbali mlalo. Basi kimo / umbali = 0.5, kwa hiyo pembe ni atan(0.5) = <strong>26.57°</strong>, mteremko ni <strong>50%</strong>, na unaandikwa <strong>6:12</strong>. Kizidishio ni √(1 + 0.25) = <strong>1.118</strong>: nyumba yenye eneo la sakafu la sq ft 1,000 chini ya paa hilo ina takriban sq ft 1,118 za uso halisi wa paa.",
+  "example_metric": "Tuseme paa lako linapanda cm 50 kwa kila cm 100 za umbali mlalo. Basi kimo / umbali = 0.5, kwa hiyo pembe ni atan(0.5) = <strong>26.57°</strong>, mteremko ni <strong>50%</strong>, na kwa mtindo wa Kimarekani mteremko ni <strong>6:12</strong>. Kizidishio ni √(1 + 0.25) = <strong>1.118</strong>: nyumba yenye eneo la sakafu la 100 m² chini ya paa hilo ina takriban 111.8 m² za uso halisi wa paa.",
+  "table_title": "Miteremko ya kawaida ya paa",
+  "col_pitch": "Mteremko",
+  "col_angle": "Pembe",
+  "col_slope": "Asilimia",
+  "col_mult": "Kizidishio",
+  "more_text": "Unapanga sehemu nyingine ya kazi? Jaribu vikokotoo vingine vya bure:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = mteremko wa {pct}%</small>",
+    "main_metric": "{deg}° <small>= mteremko wa {pct}% = {pitch}:12</small>",
+    "mult_line": "Kizidishio cha mteremko: <strong>{mult}</strong> (eneo la sakafu × {mult} = eneo halisi la paa)",
+    "angle_line": "pembe = atan({ratio}) = {deg}°",
+    "pct_line": "asilimia = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Mteremko wa paa wa 6/12 ni nyuzi ngapi?",
+      "Mteremko wa 6/12 unamaanisha paa linapanda vipimo 6 kwa kila vipimo 12 vya umbali mlalo. Hiyo ni sawa na nyuzi 26.57, au mteremko wa 50%. Ni mmoja wa miteremko ya kawaida zaidi kwenye nyumba."
+    ],
+    [
+      "Kizidishio cha mteremko kinatumika kwa nini?",
+      "Kinabadilisha eneo la sakafu la paa kuwa eneo halisi la uso ulioinama. Zidisha eneo la sakafu kwa kizidishio ili kukadiria vifaa vya kuezekea au tabaka la chini. Kwa mteremko wa 6/12 (nyuzi 26.57) kizidishio ni 1.118."
+    ],
+    [
+      "Mteremko wa chini kabisa kwa vigae vya lami (shingles) ni upi?",
+      "Watengenezaji wengi wa shingles za lami wanahitaji mteremko wa angalau 2/12 (takriban nyuzi 9.5), na chini ya 4/12 (takriban nyuzi 18.4) wanahitaji tabaka la chini la ziada. Paa lililo tambarare zaidi linahitaji utando wa kuzuia maji badala yake. Daima angalia maelekezo ya mtengenezaji."
+    ],
+    [
+      "Nitapimaje mteremko wa paa nikiwa ndani ya dari?",
+      "Shikilia kipimo cha usawa (level) kwa mlalo dhidi ya boriti ya paa na uweke alama kwa umbali maalum kando yake, kwa mfano inchi 12 au cm 100. Kisha pima wima kuanzia alama hiyo hadi upande wa chini wa boriti. Weka namba zote mbili hapa kama umbali mlalo na kimo."
+    ],
+    [
+      "Je, paa lenye mteremko mkali ni bora zaidi?",
+      "Paa lenye mteremko mkali huondoa maji na theluji haraka zaidi na mara nyingi hudumu muda mrefu, lakini ni ghali zaidi kujenga na ni hatari zaidi kufanyia kazi. Paa nyingi za nyumba ziko kati ya takriban nyuzi 18 na 37 (4/12 hadi 9/12)."
+    ]
+  ]
+}

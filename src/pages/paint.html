@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_desc}}">
+<link rel="canonical" href="{{@canonical}}">
+{{@hreflang}}
+<meta property="og:title" content="{{meta_title}}">
+<meta property="og:description" content="{{og_desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{@canonical}}">
+<link rel="stylesheet" href="/assets/style.css">
+{{@appld}}
+{{@faqld}}
+</head>
+<body data-units="{{@units}}">
+<div class="wrap">
+
+<header class="site">
+  <nav aria-label="{{home}}">
+    <div class="left">
+      <a class="brand" href="{{@url_home}}">Build<span>Calc</span></a>
+      <a class="crumb" href="{{@url_home}}">{{home}}</a>
+      <span class="crumb" aria-current="page">{{h1}}</span>
+    </div>
+    {{@langselect}}
+  </nav>
+</header>
+
+<main>
+<h1>{{h1}}</h1>
+<p class="lede">{{lede}}</p>
+
+<div class="calc">
+  <div class="units" role="group" aria-label="{{units_label}}">
+    <button type="button" data-units="imperial">ft / gal</button>
+    <button type="button" data-units="metric">m / L</button>
+  </div>
+  <div class="grid">
+    <div class="field">
+      <label for="length">{{length}} <span data-if-units="imperial">{{sfx_len_imperial}}</span><span data-if-units="metric">{{sfx_len_metric}}</span></label>
+      <input id="length" type="number" inputmode="decimal" min="0" step="any" value="{{#u:12|4}}" data-imperial="12" data-metric="4" aria-describedby="length-error">
+      <span class="error" id="length-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="width">{{width}} <span data-if-units="imperial">{{sfx_len_imperial}}</span><span data-if-units="metric">{{sfx_len_metric}}</span></label>
+      <input id="width" type="number" inputmode="decimal" min="0" step="any" value="{{#u:10|3}}" data-imperial="10" data-metric="3" aria-describedby="width-error">
+      <span class="error" id="width-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="height">{{height}} <span data-if-units="imperial">{{sfx_len_imperial}}</span><span data-if-units="metric">{{sfx_len_metric}}</span></label>
+      <input id="height" type="number" inputmode="decimal" min="0" step="any" value="{{#u:8|2.5}}" data-imperial="8" data-metric="2.5" aria-describedby="height-error">
+      <span class="error" id="height-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="doors">{{doors}}</label>
+      <input id="doors" type="number" inputmode="numeric" min="0" step="1" value="1" aria-describedby="doors-error doors-hint">
+      <span class="hint" id="doors-hint">{{doors_hint}}</span>
+      <span class="error" id="doors-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="windows">{{windows}}</label>
+      <input id="windows" type="number" inputmode="numeric" min="0" step="1" value="1" aria-describedby="windows-error">
+      <span class="error" id="windows-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="coats">{{coats}}</label>
+      <input id="coats" type="number" inputmode="numeric" min="1" step="1" value="2" aria-describedby="coats-error coats-hint">
+      <span class="hint" id="coats-hint">{{coats_hint}}</span>
+      <span class="error" id="coats-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="coverage">{{coverage}} <span data-if-units="imperial">{{sfx_cov_imperial}}</span><span data-if-units="metric">{{sfx_cov_metric}}</span></label>
+      <input id="coverage" type="number" inputmode="decimal" min="0" step="any" value="{{#u:350|10}}" data-imperial="350" data-metric="10" aria-describedby="coverage-error coverage-hint">
+      <span class="hint" id="coverage-hint"><span data-if-units="imperial">{{coverage_hint_imperial}}</span><span data-if-units="metric">{{coverage_hint_metric}}</span></span>
+      <span class="error" id="coverage-error" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="checkline">
+    <input id="ceiling" type="checkbox">
+    <label for="ceiling">{{ceiling}}</label>
+  </div>
+</div>
+
+<div class="result" aria-live="polite" id="result">
+  <div class="big" id="r-main">&nbsp;</div>
+  <ul class="path" id="r-path"></ul>
+</div>
+
+<div class="donate" id="donate" hidden>
+  <p>{{donate_text}}</p>
+  <div class="btns">
+    <a class="btn" data-donate="paypal" href="#" rel="noopener">{{donate_paypal}}</a>
+    <a class="btn alt" data-donate="kofi" href="#" rel="noopener">{{donate_kofi}}</a>
+  </div>
+</div>
+
+<h2>{{how_it_works}}</h2>
+<p>{{how_text}}</p>
+<div class="formula">{{formula}}</div>
+<p>{{metric_note}}</p>
+
+<h2>{{worked_example}}</h2>
+<p>{{example@u}}</p>
+
+<h2>{{table_title}}</h2>
+<p><span data-if-units="imperial">{{table_note_imperial}}</span><span data-if-units="metric">{{table_note_metric}}</span></p>
+<table>
+  <thead><tr><th scope="col">{{col_room}}</th><th scope="col">{{col_walls}}</th><th scope="col">{{col_both}}</th></tr></thead>
+  <tbody id="size-table"></tbody>
+</table>
+
+<h2>{{faq_title}}</h2>
+{{@faq}}
+
+<h2>{{more_title}}</h2>
+<p>{{more_text}}</p>
+<ul>
+  <li><a href="{{@url_roof}}">{{name_roof}}</a></li>
+  <li><a href="{{@url_concrete}}">{{name_concrete}}</a></li>
+  <li><a href="{{@url_tile}}">{{name_tile}}</a></li>
+  <li><a href="{{@url_stair}}">{{name_stair}}</a></li>
+</ul>
+
+<p class="disclaimer">{{disclaimer}}</p>
+</main>
+
+<footer class="site">
+  <p class="made">{{made_by}}</p>
+  <p><a href="{{@url_home}}">BuildCalc</a> &middot; {{tagline}}</p>
+</footer>
+</div>
+
+{{@T}}
+<script src="/assets/calc.js"></script>
+<script>
+"use strict";
+const DOOR = { imperial: 21, metric: 1.95 };
+const WINDOW_A = { imperial: 15, metric: 1.4 };
+
+function cansText(u, cans) { return t(cans === 1 ? "cans_" + u + "_one" : "cans_" + u, { cans: fmt(cans, 0) }); }
+function coatsText(coats) { return t(coats === 1 ? "coats_one" : "coats_other", { coats: fmt(coats, 0) }); }
+
+function compute() {
+  const u = currentUnits();
+  const L = readNum(document.getElementById("length"));
+  const W = readNum(document.getElementById("width"));
+  const H = readNum(document.getElementById("height"));
+  const doors = readNum(document.getElementById("doors"), { allowZero: true });
+  const windows = readNum(document.getElementById("windows"), { allowZero: true });
+  const coats = readNum(document.getElementById("coats"));
+  const coverage = readNum(document.getElementById("coverage"));
+  const withCeiling = document.getElementById("ceiling").checked;
+
+  const main = document.getElementById("r-main");
+  const path = document.getElementById("r-path");
+  if (![L, W, H, doors, windows, coats, coverage].every(isFinite) ||
+      !Number.isInteger(doors) || !Number.isInteger(windows) || !Number.isInteger(coats) || coats < 1) {
+    main.innerHTML = "&nbsp;"; path.innerHTML = ""; return;
+  }
+
+  const wall = 2 * (L + W) * H;
+  const deduct = doors * DOOR[u] + windows * WINDOW_A[u];
+  const ceilingArea = withCeiling ? L * W : 0;
+  const perCoat = Math.max(0, wall - deduct) + ceilingArea;
+  const total = perCoat * coats;
+  const cans = Math.ceil(total / coverage);
+  if (!isFinite(cans)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+
+  const v = {
+    a: t("area_" + u),
+    L: fmt(L), W: fmt(W), H: fmt(H),
+    wall: fmt(wall),
+    doors: fmt(doors, 0), windows: fmt(windows, 0),
+    deduct: fmt(deduct),
+    ceil: fmt(ceilingArea),
+    per: fmt(perCoat),
+    total: fmt(total),
+    coverage: fmt(coverage),
+    ratio: fmt(total / coverage, 2),
+    cansText: cansText(u, cans),
+    coatsText: coatsText(coats)
+  };
+  main.innerHTML = t("main", v);
+  path.innerHTML =
+    "<li class=\"ltr\">" + t("wall_line", v) + "</li>" +
+    "<li>" + t(withCeiling ? "deduct_ceiling_line" : "deduct_line", v) + "</li>" +
+    "<li>" + t("total_line", v) + "</li>";
+  showDonate();
+}
+
+/* Reference table. Imperial: 8 ft walls, 1 door, 1 window, 2 coats, 350 coverage.
+   Metric: 2.5 m walls, 1 door, 1 window, 2 coats, 10 coverage. */
+function renderTable() {
+  const u = currentUnits();
+  const cfg = u === "imperial"
+    ? { rooms: [[10, 10], [12, 12], [15, 15]], h: 8, cov: 350 }
+    : { rooms: [[3, 3], [4, 4], [5, 5]], h: 2.5, cov: 10 };
+  let rows = "";
+  cfg.rooms.forEach(([l, w]) => {
+    const per = 2 * (l + w) * cfg.h - DOOR[u] - WINDOW_A[u];
+    const walls = Math.ceil(per * 2 / cfg.cov);
+    const both = Math.ceil((per + l * w) * 2 / cfg.cov);
+    rows += "<tr><td>" + t("room_" + u, { l: fmt(l), w: fmt(w) }) + "</td><td>" + t("cell_" + u, { n: fmt(walls, 0) }) + "</td><td>" + t("cell_" + u, { n: fmt(both, 0) }) + "</td></tr>";
+  });
+  document.getElementById("size-table").innerHTML = rows;
+}
+
+initUnits((u) => {
+  const cov = document.getElementById("coverage");
+  cov.value = cov.dataset[u];
+  renderTable();
+  compute();
+});
+renderTable();
+bindInputs(compute);
+compute();
+</script>
+</body>
+</html>

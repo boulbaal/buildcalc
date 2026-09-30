@@ -1,0 +1,26 @@
+{
+  "home": "Início",
+  "language": "Idioma",
+  "units_label": "Unidades",
+  "tagline": "grátis · sem anúncios · sem rastreio · funciona offline",
+  "made_by": "Feito por um programador independente que se fartou de sites de calculadoras cheios de anúncios. Encontrou um erro? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Comunique-o no GitHub</a>.",
+  "donate_text": "Grátis, sem anúncios e feito por uma só pessoa. Se isto lhe poupou uma ida à loja, pode pagar-me um café.",
+  "donate_paypal": "Doar via PayPal",
+  "donate_kofi": "Apoiar no Ko-fi",
+  "how_it_works": "Como funciona",
+  "worked_example": "Exemplo prático",
+  "faq_title": "Perguntas frequentes",
+  "more_title": "Mais calculadoras grátis",
+  "disclaimer": "Os resultados são estimativas para planeamento e não substituem o aconselhamento de um profissional. Consulte sempre a regulamentação de construção local e as instruções do fabricante.",
+  "name_roof": "Calculadora de inclinação de telhado",
+  "name_concrete": "Calculadora de betão",
+  "name_paint": "Calculadora de tinta",
+  "name_tile": "Calculadora de azulejos",
+  "name_stair": "Calculadora de escadas",
+  "js": {
+    "err_empty": "Introduza um valor.",
+    "err_nan": "Introduza um número válido.",
+    "err_negative": "Tem de ser positivo.",
+    "err_zero": "Tem de ser maior que zero."
+  }
+}

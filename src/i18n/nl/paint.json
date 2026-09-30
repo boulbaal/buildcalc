@@ -1,0 +1,76 @@
+{
+  "meta_title": "Verf berekenen - Hoeveel verf heb ik nodig?",
+  "meta_desc": "Verf berekenen, gratis. Vul de afmetingen van je kamer, deuren, ramen en lagen in en zie hoeveel liter verf je nodig hebt. Direct, geen reclame, werkt offline.",
+  "og_desc": "Vul kamermaten, deuren, ramen en lagen in en zie hoeveel liter verf je nodig hebt. Gratis, zonder advertenties.",
+  "h1": "Verf berekenen: hoeveel verf heb ik nodig?",
+  "lede": "Bereken hoeveel liter (of gallon) verf je kamer nodig heeft, rekening houdend met deuren, ramen en het aantal lagen. Gratis, direct, zonder advertenties.",
+  "length": "Lengte kamer",
+  "width": "Breedte kamer",
+  "height": "Hoogte muur",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Deuren",
+  "doors_hint": "Niet geschilderd. Per deur gaat er een standaard oppervlakte af.",
+  "windows": "Ramen",
+  "coats": "Lagen",
+  "coats_hint": "Twee lagen is de gebruikelijke aanpak.",
+  "coverage": "Rendement",
+  "sfx_cov_imperial": "(sq ft per gallon)",
+  "sfx_cov_metric": "(m² per liter)",
+  "coverage_hint_imperial": "meestal 250-400",
+  "coverage_hint_metric": "meestal 8-12",
+  "ceiling": "Plafond meerekenen",
+  "how_text": "De rekenhulp meet de muuroppervlakte rondom de kamer, trekt een standaard oppervlakte af per deur en raam, telt eventueel het plafond erbij, vermenigvuldigt met het aantal lagen en deelt door het rendement van je verf. Het resultaat wordt altijd naar boven afgerond, want je kunt geen 1,8 gallon kopen:",
+  "formula": "muuroppervlakte = 2 &times; (lengte + breedte) &times; hoogte<br>te schilderen = muuroppervlakte &minus; deuren &times; deuroppervlakte &minus; ramen &times; raamoppervlakte (+ plafond)<br>blikken = te schilderen &times; lagen &divide; rendement, naar boven afgerond",
+  "metric_note": "In metrische modus telt een deur als 1,95 m², een raam als 1,4 m² en is het rendement per liter. In imperiale modus telt een deur als 21 sq ft en een raam als 15 sq ft.",
+  "example_imperial": "Stel dat je kamer 12 × 10 ft is met muren van 8 ft, één deur en één raam, en je plant twee lagen met 350 sq ft per gallon. De muuroppervlakte is 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Trek de deur (21 sq ft) en het raam (15 sq ft) af en je krijgt <strong>316 sq ft per laag</strong>. Twee lagen betekent 632 sq ft, en 632 ÷ 350 = 1,81, naar boven afgerond <strong>2 gallon</strong>. Vink \"Plafond meerekenen\" aan en het plafond van 120 sq ft brengt het op 436 sq ft per laag, 872 sq ft in totaal, dus je hebt <strong>3 gallon</strong> nodig.",
+  "example_metric": "Stel dat je kamer 4 × 3 m is met muren van 2,5 m, één deur en één raam, en je plant twee lagen met 10 m² per liter. De muuroppervlakte is 2 × (4 + 3) × 2,5 = <strong>35 m²</strong>. Trek de deur (1,95 m²) en het raam (1,4 m²) af en je krijgt <strong>31,65 m² per laag</strong>. Twee lagen betekent 63,3 m², en 63,3 ÷ 10 = 6,33, naar boven afgerond <strong>7 liter</strong>. Vink \"Plafond meerekenen\" aan en het plafond van 12 m² brengt het op 43,65 m² per laag, 87,3 m² in totaal, dus je hebt <strong>9 liter</strong> nodig.",
+  "table_title": "Benodigde verf per kamergrootte",
+  "table_note_imperial": "Muren met een plafondhoogte van 8 ft, één deur, één raam, twee lagen, 350 sq ft per gallon:",
+  "table_note_metric": "Muren van 2,5 m hoog, één deur, één raam, twee lagen, 10 m² per liter:",
+  "col_room": "Kamer",
+  "col_walls": "Enkel muren",
+  "col_both": "Muren + plafond",
+  "more_text": "Plan je de rest van de klus? Probeer de andere gratis rekenhulpen:",
+  "js": {
+    "main": "{cansText} <small>voor {coatsText}</small>",
+    "cans_imperial_one": "{cans} gallon",
+    "cans_imperial": "{cans} gallon",
+    "cans_metric_one": "{cans} liter",
+    "cans_metric": "{cans} liter",
+    "coats_one": "{coats} laag",
+    "coats_other": "{coats} lagen",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Muuroppervlakte: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Min {doors} deur(en) en {windows} raam/ramen: −{deduct} {a} = <strong>{per} {a} per laag</strong>",
+    "deduct_ceiling_line": "Min {doors} deur(en) en {windows} raam/ramen: −{deduct} {a}, plus plafond {ceil} {a} = <strong>{per} {a} per laag</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, naar boven afgerond <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "Hoeveel m² kan je schilderen met een liter verf?",
+      "De meeste binnenmuurverven dekken ongeveer 6 tot 10 m² per liter (250 tot 400 square feet per gallon) op een gladde, voorbehandelde muur. Deze rekenhulp gaat standaard uit van 10 m² per liter of 350 sq ft per gallon. Ruwe, poreuze of onbehandelde ondergronden zuigen meer verf op, dus reken dan met de onderkant van dat bereik."
+    ],
+    [
+      "Moet ik eerst een primer aanbrengen?",
+      "Gebruik een primer op kale gipsplaat, onbehandeld hout, vlekken of glanzende oppervlakken, en wanneer je een donkere kleur overschildert met een lichtere. Op eerder geschilderde muren in goede staat en in een gelijkaardige kleur volstaat meestal een kwaliteitsverf met ingebouwde primer. Een primer is goedkoper dan een extra laag verf."
+    ],
+    [
+      "Is één laag verf genoeg, of heb ik er twee nodig?",
+      "Reken op twee lagen voor een egale, duurzame afwerking. Eén laag kan volstaan als je overschildert in dezelfde kleur en glansgraad op een goed voorbereide muur. Grote kleurwissels, rood en geel, of schilderen over plamuurplekken vragen vaak twee lagen plus een getinte primer eronder."
+    ],
+    [
+      "Hoeveel verf heb ik nodig voor een kamer van 12x12?",
+      "Een kamer van 12 bij 12 voet met muren van 8 voet heeft 384 sq ft muur. Min een deur en een raam is dat 348 sq ft per laag, dus twee lagen vragen 2 gallon bij 350 sq ft per gallon. Een vergelijkbare kamer van 4 bij 4 m met muren van 2,5 m heeft 8 liter nodig bij 10 m² per liter."
+    ],
+    [
+      "Is plafondverf anders dan muurverf?",
+      "Plafondverf is dikker gemaakt, zodat ze minder spat en druipt, en is bijna altijd mat zodat licht de rolstrepen niet laat opvallen. Je kunt matte muurverf op een plafond gebruiken, maar echte plafondverf is makkelijker boven je hoofd aan te brengen en verbergt oneffenheden beter."
+    ]
+  ]
+}

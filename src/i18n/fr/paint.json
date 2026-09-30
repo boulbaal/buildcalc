@@ -1,0 +1,76 @@
+{
+  "meta_title": "Calcul peinture - Combien de litres de peinture ?",
+  "meta_desc": "Calcul de peinture gratuit. Saisissez dimensions de la pièce, portes, fenêtres et couches pour obtenir les litres nécessaires. Sans pub, hors ligne.",
+  "og_desc": "Saisissez dimensions, portes, fenêtres et couches pour obtenir les litres de peinture nécessaires. Gratuit, sans pub.",
+  "h1": "Calcul peinture : quelle quantité acheter ?",
+  "lede": "Calculez combien de litres (ou de gallons) de peinture il faut pour votre pièce, en tenant compte des portes, des fenêtres et du nombre de couches. Gratuit, immédiat, sans pub.",
+  "length": "Longueur de la pièce",
+  "width": "Largeur de la pièce",
+  "height": "Hauteur des murs",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Portes",
+  "doors_hint": "Non peintes. Chacune retire une surface de porte standard.",
+  "windows": "Fenêtres",
+  "coats": "Couches",
+  "coats_hint": "Deux couches, c'est le plus courant.",
+  "coverage": "Rendement",
+  "sfx_cov_imperial": "(sq ft par gallon)",
+  "sfx_cov_metric": "(m² par litre)",
+  "coverage_hint_imperial": "en général 250-400",
+  "coverage_hint_metric": "en général 8-12",
+  "ceiling": "Inclure le plafond",
+  "how_text": "Le calculateur mesure la surface des murs tout autour de la pièce, retire une surface standard pour chaque porte et fenêtre, ajoute le plafond si besoin, multiplie par le nombre de couches et divise par le rendement de votre peinture. Le résultat est toujours arrondi au-dessus, car on ne peut pas acheter 1,8 gallon :",
+  "formula": "surface des murs = 2 &times; (longueur + largeur) &times; hauteur<br>à peindre = surface des murs &minus; portes &times; surface porte &minus; fenêtres &times; surface fenêtre (+ plafond)<br>pots = à peindre &times; couches &divide; rendement, arrondi au supérieur",
+  "metric_note": "En mode métrique, une porte compte pour 1,95 m², une fenêtre pour 1,4 m², et le rendement est exprimé par litre. En mode impérial, une porte compte pour 21 sq ft et une fenêtre pour 15 sq ft.",
+  "example_imperial": "Supposons que votre pièce mesure 12 × 10 ft avec des murs de 8 ft, une porte et une fenêtre, et que vous prévoyiez deux couches à 350 sq ft par gallon. La surface des murs est 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>. Retirez la porte (21 sq ft) et la fenêtre (15 sq ft) pour obtenir <strong>316 sq ft par couche</strong>. Deux couches font 632 sq ft à couvrir, et 632 ÷ 350 = 1,81, arrondi à <strong>2 gallons</strong>. Cochez « Inclure le plafond » et le plafond de 120 sq ft porte le total à 436 sq ft par couche, 872 sq ft au total, il vous faut donc <strong>3 gallons</strong>.",
+  "example_metric": "Supposons que votre pièce mesure 4 × 3 m avec des murs de 2,5 m, une porte et une fenêtre, et que vous prévoyiez deux couches à 10 m² par litre. La surface des murs est 2 × (4 + 3) × 2,5 = <strong>35 m²</strong>. Retirez la porte (1,95 m²) et la fenêtre (1,4 m²) pour obtenir <strong>31,65 m² par couche</strong>. Deux couches font 63,3 m² à couvrir, et 63,3 ÷ 10 = 6,33, arrondi à <strong>7 litres</strong>. Cochez « Inclure le plafond » et le plafond de 12 m² porte le total à 43,65 m² par couche, 87,3 m² au total, il vous faut donc <strong>9 litres</strong>.",
+  "table_title": "Peinture nécessaire selon la taille de la pièce",
+  "table_note_imperial": "Murs avec plafond à 8 ft, une porte, une fenêtre, deux couches, 350 sq ft par gallon :",
+  "table_note_metric": "Murs de 2,5 m de haut, une porte, une fenêtre, deux couches, 10 m² par litre :",
+  "col_room": "Pièce",
+  "col_walls": "Murs seuls",
+  "col_both": "Murs + plafond",
+  "more_text": "Vous préparez la suite du chantier ? Essayez les autres calculateurs gratuits :",
+  "js": {
+    "main": "{cansText} <small>pour {coatsText}</small>",
+    "cans_imperial_one": "{cans} gallon",
+    "cans_imperial": "{cans} gallons",
+    "cans_metric_one": "{cans} litre",
+    "cans_metric": "{cans} litres",
+    "coats_one": "{coats} couche",
+    "coats_other": "{coats} couches",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Surface des murs : 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Moins {doors} porte(s) et {windows} fenêtre(s) : −{deduct} {a} = <strong>{per} {a} par couche</strong>",
+    "deduct_ceiling_line": "Moins {doors} porte(s) et {windows} fenêtre(s) : −{deduct} {a}, plus plafond {ceil} {a} = <strong>{per} {a} par couche</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, arrondi à <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "Combien de m² couvre un litre de peinture ?",
+      "La plupart des peintures intérieures couvrent environ 6 à 10 m² par litre (250 à 400 pieds carrés par gallon) sur un mur lisse et préparé avec une sous-couche. Ce calculateur utilise par défaut 10 m² par litre ou 350 sq ft par gallon. Les surfaces rugueuses, poreuses ou brutes absorbent plus de peinture, prenez alors le bas de la fourchette."
+    ],
+    [
+      "Faut-il une sous-couche avant de peindre ?",
+      "Utilisez une sous-couche sur plaque de plâtre brute, bois brut, surfaces tachées ou brillantes, et quand vous recouvrez une couleur foncée par une plus claire. Sur des murs déjà peints, en bon état et d'une couleur proche, une peinture de qualité avec sous-couche intégrée suffit en général. Une sous-couche coûte moins cher qu'une couche de peinture supplémentaire."
+    ],
+    [
+      "Une couche de peinture suffit-elle, ou en faut-il deux ?",
+      "Prévoyez deux couches pour un rendu uniforme et durable. Une seule couche peut suffire si vous repeignez avec la même couleur et la même finition sur un mur bien préparé. Les grands changements de couleur, les rouges et les jaunes, ou la peinture sur des zones rebouchées demandent souvent deux couches plus une sous-couche teintée."
+    ],
+    [
+      "Combien de peinture pour une pièce de 12x12 ?",
+      "Une pièce de 12 pieds sur 12 avec des murs de 8 pieds a 384 sq ft de murs. Moins une porte et une fenêtre, cela fait 348 sq ft par couche, donc deux couches demandent 2 gallons à 350 sq ft par gallon. Une pièce comparable de 4 m sur 4 avec des murs de 2,5 m demande 8 litres à 10 m² par litre."
+    ],
+    [
+      "La peinture plafond est-elle différente de la peinture murale ?",
+      "La peinture plafond est plus épaisse, pour moins éclabousser et moins couler, et elle est presque toujours mate pour que la lumière ne fasse pas ressortir les traces de rouleau. Vous pouvez utiliser une peinture murale mate au plafond, mais une vraie peinture plafond s'applique plus facilement au-dessus de la tête et masque mieux les défauts."
+    ]
+  ]
+}

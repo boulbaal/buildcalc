@@ -1,0 +1,56 @@
+{
+  "meta_title": "Dachneigung berechnen - Grad und Prozent, kostenlos",
+  "meta_desc": "Dachneigung kostenlos berechnen. Rechne Höhe und Länge in Grad, Prozent und X:12 um und erhalte den Neigungsfaktor für die Dachfläche. Sofort, ohne Werbung.",
+  "og_desc": "Rechne Höhe und Länge in Grad, Prozent und X:12 um. Sofort, kostenlos, ohne Werbung.",
+  "h1": "Dachneigung berechnen",
+  "lede": "Rechne Höhe und waagerechte Länge in Grad, Prozent und X:12 um und erhalte den Neigungsfaktor für deine Dachfläche. Kostenlos, sofort, ohne Werbung.",
+  "mode_label": "Ich kenne",
+  "mode_riserun": "Höhe und Länge",
+  "mode_angle": "Winkel in Grad",
+  "mode_percent": "Neigung in Prozent",
+  "rise": "Höhe",
+  "rise_hint": "Senkrechte Höhe. Nutze dieselbe Einheit wie bei der Länge.",
+  "run": "Länge",
+  "run_hint": "Waagerechter Abstand. Bei einer Länge von 12 erhältst du direkt die X:12-Neigung.",
+  "angle": "Winkel (Grad)",
+  "percent": "Neigung (%)",
+  "how_text": "Die Dachneigung ist das Verhältnis zwischen senkrechter Höhe und waagerechter Länge. Dieser Rechner wandelt zwischen den drei üblichen Schreibweisen um und liefert den Neigungsfaktor, mit dem du die Dachfläche schätzt:",
+  "formula": "Winkel = atan(Höhe / Länge)<br>Prozent = Höhe / Länge &times; 100<br>Neigung = (Höhe / Länge &times; 12) : 12<br>Faktor = &radic;(1 + (Höhe / Länge)&sup2;)",
+  "example_imperial": "Angenommen, dein Dach steigt 6 Zoll pro 12 Zoll waagerechter Länge. Dann ist Höhe / Länge = 0,5, also beträgt der Winkel atan(0,5) = <strong>26,57°</strong>, die Neigung <strong>50%</strong> und man schreibt sie als <strong>6:12</strong>. Der Faktor ist √(1 + 0,25) = <strong>1,118</strong>: Ein Haus mit 1.000 sq ft Grundfläche unter diesem Dach hat rund 1.118 sq ft tatsächliche Dachfläche.",
+  "example_metric": "Angenommen, dein Dach steigt 50 cm pro 100 cm waagerechtem Abstand. Dann ist Höhe / Länge = 0,5, also beträgt der Winkel atan(0,5) = <strong>26,57°</strong>, die Neigung <strong>50%</strong> und in amerikanischer Schreibweise <strong>6:12</strong>. Der Faktor ist √(1 + 0,25) = <strong>1,118</strong>: Ein Haus mit 100 m² Grundfläche unter diesem Dach hat rund 111,8 m² tatsächliche Dachfläche.",
+  "table_title": "Übliche Dachneigungen",
+  "col_pitch": "Neigung",
+  "col_angle": "Winkel",
+  "col_slope": "Prozent",
+  "col_mult": "Faktor",
+  "more_text": "Du planst den Rest des Projekts? Probiere die anderen kostenlosen Rechner:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = {pct}% Neigung</small>",
+    "main_metric": "{deg}° <small>= {pct}% Neigung = {pitch}:12</small>",
+    "mult_line": "Neigungsfaktor: <strong>{mult}</strong> (Grundfläche × {mult} = tatsächliche Dachfläche)",
+    "angle_line": "Winkel = atan({ratio}) = {deg}°",
+    "pct_line": "Prozent = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Wie viel Grad hat eine Dachneigung von 6/12?",
+      "Eine Neigung von 6/12 bedeutet, dass das Dach 6 Einheiten pro 12 Einheiten waagerechter Länge ansteigt. Das entspricht 26,57 Grad oder 50% Neigung. Es ist eine der häufigsten Neigungen bei Wohnhäusern."
+    ],
+    [
+      "Wofür braucht man den Neigungsfaktor?",
+      "Er rechnet die ebene Grundfläche eines Daches in die tatsächliche geneigte Fläche um. Multipliziere die Grundfläche mit dem Faktor, um Dacheindeckung oder Unterspannbahn zu schätzen. Bei einer Neigung von 6/12 (26,57 Grad) beträgt der Faktor 1,118."
+    ],
+    [
+      "Welche Mindestneigung brauchen Dachschindeln?",
+      "Die meisten Hersteller von Bitumenschindeln verlangen mindestens eine Neigung von 2/12 (etwa 9,5 Grad), und unter 4/12 (etwa 18,4 Grad) fordern sie eine zusätzliche Unterlage. Flachere Dächer brauchen stattdessen eine Dachbahn. Prüfe immer die Herstellerangaben."
+    ],
+    [
+      "Wie messe ich die Dachneigung vom Dachboden aus?",
+      "Halte eine Wasserwaage waagerecht an einen Sparren und markiere einen festen Abstand, zum Beispiel 12 Zoll oder 100 cm. Miss dann von dieser Markierung senkrecht nach oben bis zur Unterseite des Sparrens. Gib beide Werte hier als Länge und Höhe ein."
+    ],
+    [
+      "Ist ein steileres Dach besser?",
+      "Steilere Dächer leiten Wasser und Schnee schneller ab und halten oft länger, kosten aber mehr beim Bau und sind gefährlicher zum Arbeiten. Die meisten Wohnhausdächer liegen zwischen etwa 18 und 37 Grad (4/12 bis 9/12)."
+    ]
+  ]
+}

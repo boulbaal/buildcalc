@@ -1,0 +1,56 @@
+{
+  "meta_title": "Dakhelling berekenen - Gratis, zonder advertenties",
+  "meta_desc": "Dakhelling berekenen, gratis. Zet hoogte en lengte om naar graden, procent en X:12 en krijg de hellingsfactor voor de dakoppervlakte. Direct, werkt offline.",
+  "og_desc": "Zet hoogte en lengte om naar graden, procent en X:12. Direct, gratis, zonder advertenties.",
+  "h1": "Dakhelling berekenen",
+  "lede": "Zet hoogte en horizontale lengte om naar graden, procent en X:12, en krijg de hellingsfactor voor je dakoppervlakte. Gratis, direct, zonder advertenties.",
+  "mode_label": "Ik ken de",
+  "mode_riserun": "Hoogte en lengte",
+  "mode_angle": "Hoek in graden",
+  "mode_percent": "Helling in procent",
+  "rise": "Hoogte",
+  "rise_hint": "Verticale hoogte. Gebruik dezelfde eenheid als de lengte.",
+  "run": "Lengte",
+  "run_hint": "Horizontale afstand. Met een lengte van 12 krijg je meteen de X:12-helling.",
+  "angle": "Hoek (graden)",
+  "percent": "Helling (%)",
+  "how_text": "De dakhelling is de verhouding tussen de verticale hoogte en de horizontale lengte. Deze rekenhulp zet de drie gangbare schrijfwijzen in elkaar om, plus de hellingsfactor waarmee je de dakoppervlakte schat:",
+  "formula": "hoek = atan(hoogte / lengte)<br>procent = hoogte / lengte &times; 100<br>helling = (hoogte / lengte &times; 12) : 12<br>factor = &radic;(1 + (hoogte / lengte)&sup2;)",
+  "example_imperial": "Stel dat je dak 6 inch stijgt per 12 inch horizontale lengte. Dan is hoogte / lengte = 0,5, dus de hoek is atan(0,5) = <strong>26,57°</strong>, de helling is <strong>50%</strong> en de helling wordt geschreven als <strong>6:12</strong>. De factor is √(1 + 0,25) = <strong>1,118</strong>: een huis met een grondoppervlak van 1.000 sq ft onder dat dak heeft ongeveer 1.118 sq ft echte dakoppervlakte.",
+  "example_metric": "Stel dat je dak 50 cm stijgt per 100 cm horizontale afstand. Dan is hoogte / lengte = 0,5, dus de hoek is atan(0,5) = <strong>26,57°</strong>, de helling is <strong>50%</strong> en in Amerikaanse notatie is de helling <strong>6:12</strong>. De factor is √(1 + 0,25) = <strong>1,118</strong>: een huis met een grondoppervlak van 100 m² onder dat dak heeft ongeveer 111,8 m² echte dakoppervlakte.",
+  "table_title": "Gangbare dakhellingen",
+  "col_pitch": "Helling",
+  "col_angle": "Hoek",
+  "col_slope": "Procent",
+  "col_mult": "Factor",
+  "more_text": "Plan je de rest van de klus? Probeer de andere gratis rekenhulpen:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = {pct}% helling</small>",
+    "main_metric": "{deg}° <small>= {pct}% helling = {pitch}:12</small>",
+    "mult_line": "Hellingsfactor: <strong>{mult}</strong> (grondoppervlak × {mult} = echte dakoppervlakte)",
+    "angle_line": "hoek = atan({ratio}) = {deg}°",
+    "pct_line": "procent = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Hoeveel graden is een dakhelling van 6/12?",
+      "Een helling van 6/12 betekent dat het dak 6 eenheden stijgt per 12 eenheden horizontale lengte. Dat is 26,57 graden, of een helling van 50%. Het is een van de meest voorkomende hellingen bij woningen."
+    ],
+    [
+      "Waarvoor dient de hellingsfactor?",
+      "Hij zet het vlakke grondoppervlak van een dak om naar de echte schuine oppervlakte. Vermenigvuldig het grondoppervlak met de factor om dakbedekking of onderdakfolie te schatten. Bij een helling van 6/12 (26,57 graden) is de factor 1,118."
+    ],
+    [
+      "Wat is de minimale dakhelling voor shingles?",
+      "De meeste fabrikanten van bitumen shingles vragen minstens een helling van 2/12 (ongeveer 9,5 graden), en onder 4/12 (ongeveer 18,4 graden) eisen ze een extra onderlaag. Plattere daken hebben een dakbaan of membraan nodig. Controleer altijd de instructies van de fabrikant."
+    ],
+    [
+      "Hoe meet ik de dakhelling vanuit de zolder?",
+      "Houd een waterpas horizontaal tegen een spant of keper en markeer een vaste afstand, bijvoorbeeld 12 inch of 100 cm. Meet dan vanaf die markering recht omhoog tot de onderkant van de keper. Vul beide getallen hier in als lengte en hoogte."
+    ],
+    [
+      "Is een steiler dak beter?",
+      "Steilere daken voeren water en sneeuw sneller af en gaan vaak langer mee, maar ze zijn duurder om te bouwen en gevaarlijker om op te werken. De meeste woningdaken hebben een helling tussen ongeveer 18 en 37 graden (4/12 tot 9/12)."
+    ]
+  ]
+}

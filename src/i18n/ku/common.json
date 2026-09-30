@@ -1,0 +1,26 @@
+{
+  "home": "Destpêk",
+  "language": "Ziman",
+  "units_label": "Yekîne",
+  "tagline": "belaş · bê reklam · bê şopandin · bê înternet jî dixebite",
+  "made_by": "Ji aliyê pêşdebirekî serbixwe ve hatiye çêkirin, yê ku ji malperên hesabkerê yên tijî reklam aciz bûbû. Şaşiyek dît? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Li ser GitHub ragihîne</a>.",
+  "donate_text": "Belaş, bê reklam, ji aliyê kesekî ve hatiye çêkirin. Heke vê yekê çûyînek zêde ya dikanê ji te xilas kir, tu dikarî qehweyekê ji min re bikirî.",
+  "donate_paypal": "Bi PayPal bexş bike",
+  "donate_kofi": "Li ser Ko-fi piştgirî bide",
+  "how_it_works": "Çawa dixebite",
+  "worked_example": "Mînaka çareserkirî",
+  "faq_title": "Pirsên pir tên pirsîn",
+  "more_title": "Hesabkerên din ên belaş",
+  "disclaimer": "Encam texmînên ji bo plansaziyê ne û şûna şîreta pisporekî nagirin. Her tim rêzikên avahîsaziyê yên herêmî û rêwerzên hilberîner kontrol bike.",
+  "name_roof": "Hesabkera Meyla Banî",
+  "name_concrete": "Hesabkera Betonê",
+  "name_paint": "Hesabkera Boyaxê",
+  "name_tile": "Hesabkera Kaşiyan",
+  "name_stair": "Hesabkera Derenceyan",
+  "js": {
+    "err_empty": "Nirxekê binivîse.",
+    "err_nan": "Hejmareke derbasdar binivîse.",
+    "err_negative": "Divê erênî be.",
+    "err_zero": "Divê ji sifirê mezintir be."
+  }
+}

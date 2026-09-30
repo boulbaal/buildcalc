@@ -1,0 +1,85 @@
+{
+  "meta_title": "Kuverenga Mataira - Ndinoda Mataira Mangani?",
+  "meta_desc": "Chiverengi chemataira chemahara. Isa hukuru hwepasi kana madziro, hukuru hwetaira nemukaha wegrout uwane nhamba yemataira nemabhokisi pamwe nekurasika.",
+  "og_desc": "Wana nhamba yemataira nemabhokisi epasi kana madziro ako, kurasika kwakabatanidzwa. Mahara, hapana kushambadza.",
+  "h1": "Kuverenga mataira",
+  "lede": "Verenga kuti unoda mataira nemabhokisi mangani epasi kana madziro, mukaha wegrout nekurasika zvakabatanidzwa. Mahara, pakarepo, hapana kushambadza.",
+  "mode_label": "Nzvimbo",
+  "mode_dims": "Kureba x upamhi",
+  "mode_area": "Ndinoziva nzvimbo",
+  "length": "Kureba",
+  "width": "Upamhi",
+  "area": "Nzvimbo",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Hukuru hwetaira (mainchi)",
+  "tile_size_metric": "Hukuru hwetaira (cm)",
+  "opt_subway": "3 x 6 subway",
+  "opt_custom": "Zvako",
+  "tile_w": "Upamhi hwetaira",
+  "tile_h": "Kureba kwetaira",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Mukaha wegrout",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 kana pasina mukaha. 1/8 in = 0.125.",
+  "gap_hint_metric": "0 kana pasina mukaha. 3 mm inowanzoshandiswa pamataira epasi.",
+  "pattern": "Maisirwo",
+  "pattern_straight": "Zvakatwasuka (10% kurasika)",
+  "pattern_diag": "Zvakatsveyama / herringbone (15% kurasika)",
+  "perbox": "Mataira pabhokisi (kana uchida)",
+  "perbox_hint": "Zvakanyorwa pabhokisi. Siya pasina kuti usazviverengera.",
+  "how_text": "Chiverengi chinogovanisa nzvimbo yako nenzvimbo inotorwa netaira rimwe pamwe nemukaha waro wegrout, chowedzera kurasika kwekucheka nekutyoka, chokwidza kusvika pamataira akazara:",
+  "formula": "nzvimbo chaiyo yetaira = (upamhi hwetaira + mukaha) &times; (kureba kwetaira + mukaha)<br>mataira = ceil( nzvimbo / nzvimbo chaiyo yetaira &times; (1 + kurasika) )<br>mabhokisi = ceil( mataira / mataira pabhokisi )",
+  "how_text2": "Kurasika i10% pamaisirwo akatwasuka uye 15% pakatsveyama kana herringbone, pane zvimedu zvakawanda zvakachekwa zvisingashandiswe. Mukaha wegrout wakafara unoreva kuti taira rimwe nerimwe rinotora nzvimbo yakati kurei, saka nhamba yemataira inodzika zvishoma.",
+  "example_imperial": "Ngatiti uri kuisa mataira papasi pe10 ft ne12 ft, inova <strong>120 sq ft</strong> (17,280 sq in), nemataira e12 x 12 inch akaiswa akatwasuka nemukaha wegrout we1/8 inch (0.125 in). Taira rimwe nemukaha waro rinotora 12.125 × 12.125 = 147.02 sq in, saka kuvhara kusina kurasika i17,280 / 147.02 = 117.54 mataira. Wedzera 10% kurasika: 117.54 × 1.1 = 129.29, zvinokwidzwa kusvika <strong>mataira 130</strong>. Kana mataira achiuya 8 pabhokisi, izvi i ceil(130 / 8) = <strong>mabhokisi 17</strong>. Pasi rimwe chete rakaiswa zvakatsveyama ne15% kurasika rinoda mataira 136.",
+  "example_metric": "Ngatiti uri kuisa mataira papasi pe4 m ne3 m, inova <strong>12 m²</strong> (120,000 cm²), nemataira e30 x 30 cm akaiswa akatwasuka nemukaha wegrout we3 mm (0.3 cm). Taira rimwe nemukaha waro rinotora 30.3 × 30.3 = 918.09 cm², saka kuvhara kusina kurasika i120,000 / 918.09 = 130.71 mataira. Wedzera 10% kurasika: 130.71 × 1.1 = 143.78, zvinokwidzwa kusvika <strong>mataira 144</strong>. Kana mataira achiuya 11 pabhokisi, izvi i ceil(144 / 11) = <strong>mabhokisi 14</strong>. Pasi rimwe chete rakaiswa zvakatsveyama ne15% kurasika rinoda mataira 151.",
+  "table_title_imperial": "Mataira pa100 sq ft",
+  "table_title_metric": "Mataira pa10 m²",
+  "table_note": "Hukuru hwemataira hunowanzoitwa, maisirwo akatwasuka ne10% kurasika uye pasina mukaha wegrout:",
+  "col_size": "Hukuru hwetaira",
+  "col_area": "Nzvimbo yetaira",
+  "col_count_imperial": "Mataira pa100 sq ft",
+  "col_count_metric": "Mataira pa10 m²",
+  "more_text": "Uri kuronga rimwe basa? Edza zvimwe zviverengi zvemahara:",
+  "js": {
+    "main": "mataira {tiles}",
+    "main_boxes": "mataira {tiles} <small>= mabhokisi {boxes} e{perbox}</small>",
+    "area_line_imperial": "Nzvimbo yekuisa mataira: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Nzvimbo yekuisa mataira: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Nzvimbo chaiyo yetaira: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Nzvimbo chaiyo yetaira: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Kurasika: <strong>{pct}%</strong> (maisirwo akatwasuka)",
+    "waste_diag": "Kurasika: <strong>{pct}%</strong> (zvakatsveyama / herringbone)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "3 x 6 in subway",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Ndinofanira kutenga mataira akawedzerwa akawanda sei?",
+      "Tenga 10 kusvika 15% kupfuura nhamba yekuvhara isina kurasika. Kucheka pamadziro, kutyoka nekugadzirisa kweramangwana zvese zvinodya zvakawedzerwa. Shandisa 10% pamaisirwo akatwasuka ari nyore mumba ine mativi mana, uye 15% pamaisirwo akatsveyama kana herringbone, mataira madiki, kana dzimba dzine makona akawanda."
+    ],
+    [
+      "Kurasika kwemataira chii?",
+      "Kurasika itaira raunotenga asi risingazofambwi pariri: zvimedu zvakachekwa pamadziro nekutenderedza zvigadzirwa, mataira anotsemuka pakucheka kana pakutakura, uye asara anochengeterwa kugadzirisa kwepashure. Izvi zvakajairika, hachisi chikanganiso. Chiverengi ichi chinowedzera pesenti yekurasika chisati chakwidza kusvika pamataira akazara."
+    ],
+    [
+      "Ndinoda mataira mangani e12x12 pa100 square feet?",
+      "Taira re12x12 inch (30x30 cm) rinovhara square foot 1, saka 100 square feet (9.3 m²) zvinoda mataira 100 pasina kurasika. Wedzera 10% kurasika pamaisirwo akatwasuka uye unofanira kutenga mataira 110. Nemukaha wegrout taira rimwe nerimwe rinovhara zvishoma kupfuura, saka nhamba inogona kudzika zvishoma."
+    ],
+    [
+      "Maisirwo akatsveyama anoda mataira akawanda here?",
+      "Hongu. Kuisa mataira pamadhigirii 45 kunoreva kuti mutsara wega wega unopera nekucheka kwakatsveyama pamadziro, uye zvimedu zvakawanda izvozvo hazvigone kushandiswa zvakare. Ronga anenge 15% kurasika pamaisirwo akatsveyama kana herringbone pachinzvimbo che10% yakajairika pamaisirwo akatwasuka."
+    ],
+    [
+      "Ndinoverengera mitsetse yegrout here pakuverenga mataira?",
+      "Hongu, uye inokubatsira. Taira rimwe nerimwe pamwe nemukaha waro wegrout, kazhinji 1/8 inch (3 mm), rinotora nzvimbo yakati kurei pane taira roga, saka mukaha wakafara unoderedza zvishoma nhamba yemataira anodiwa. Mhedzisiro yacho idiki nemataira makuru asi inooneka nemataira madiki esubway."
+    ]
+  ]
+}

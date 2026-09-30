@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Ücretsiz İnşaat Hesaplama Araçları",
+  "meta_desc": "Ücretsiz inşaat ve kendin yap hesaplayıcıları: çatı eğimi, beton, boya, fayans ve merdiven. Anında sonuç, reklamsız, takip yok, çevrimdışı çalışır.",
+  "og_desc": "Çatı eğimi, beton, boya, fayans ve merdiven hesaplayıcıları. Ücretsiz, anında, reklamsız.",
+  "h1": "Ücretsiz inşaat hesaplama araçları",
+  "lede": "Gerçek işler için beş hızlı hesaplayıcı. Reklam yok, takip yok, kayıt yok. Her sonuç arkasındaki hesabı gösterir ve sayfa bir kez yüklendikten sonra her şey çevrimdışı da çalışır.",
+  "card_roof": "Yükseklik ve yatay mesafeden derece, yüzde ve X:12, ayrıca çatı alanı için eğim katsayısı.",
+  "card_concrete": "Hacim ve fire payıyla birlikte tam torba sayısı.",
+  "card_paint": "Kapı ve pencereler düşülerek, kat sayısına göre odanız için ne kadar boya gerektiği.",
+  "card_tile": "Alan ve fayans ölçüsünden, derz aralığı ve kesim firesiyle fayans ve kutu sayısı.",
+  "card_stair": "Toplam yükseklikten rıht ve basamaklar, yönetmelik sınırları ve konfor kuralıyla kontrol edilmiş.",
+  "why_title": "Bu site neden var",
+  "why_text": "Çoğu hesaplama sitesi basit bir formülü reklamların, açılır pencerelerin ve bülten duvarlarının altına gömer. Bu beş araç tam tersini yapar: hesaplayıcı en üstte, formül sonucun altında yazılı ve sayfa saniyenin kesri içinde yüklenir. Bir araç sizi markete boşuna gitmekten kurtarırsa, sonucunuzun altında bir bağış düğmesi var. Tüm iş modeli bu."
+}

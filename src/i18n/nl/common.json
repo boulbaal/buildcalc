@@ -1,0 +1,26 @@
+{
+  "home": "Home",
+  "language": "Taal",
+  "units_label": "Eenheden",
+  "tagline": "gratis · geen advertenties · geen tracking · werkt offline",
+  "made_by": "Gemaakt door één onafhankelijke ontwikkelaar die genoeg had van rekensites vol advertenties. Een fout gevonden? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Meld het op GitHub</a>.",
+  "donate_text": "Gratis, zonder advertenties, gemaakt door één persoon. Heeft dit je een extra rit naar de bouwmarkt bespaard? Trakteer me dan op een koffie.",
+  "donate_paypal": "Doneer via PayPal",
+  "donate_kofi": "Steun op Ko-fi",
+  "how_it_works": "Hoe het werkt",
+  "worked_example": "Rekenvoorbeeld",
+  "faq_title": "Veelgestelde vragen",
+  "more_title": "Meer gratis rekenhulpen",
+  "disclaimer": "De resultaten zijn schattingen om je werk te plannen en vervangen geen professioneel advies. Controleer altijd de lokale bouwvoorschriften en de instructies van de fabrikant.",
+  "name_roof": "Dakhelling berekenen",
+  "name_concrete": "Beton berekenen",
+  "name_paint": "Verf berekenen",
+  "name_tile": "Tegels berekenen",
+  "name_stair": "Trap berekenen",
+  "js": {
+    "err_empty": "Vul een waarde in.",
+    "err_nan": "Vul een geldig getal in.",
+    "err_negative": "Moet positief zijn.",
+    "err_zero": "Moet groter zijn dan nul."
+  }
+}

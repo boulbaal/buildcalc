@@ -1,0 +1,64 @@
+{
+  "meta_title": "Calcular escadas - Degraus, espelho e cobertor",
+  "meta_desc": "Calculadora de escadas grátis. Com a altura total obtenha o número de degraus, a altura do espelho, os cobertores e o lanço, com verificações.",
+  "og_desc": "Obtenha espelhos, altura do espelho, cobertores e lanço total a partir da altura total. Imediato, grátis, sem anúncios.",
+  "h1": "Calculadora de escadas",
+  "lede": "Introduza a altura total e obtenha o número de espelhos, a sua altura exata, os cobertores e o desenvolvimento total, com verificação regulamentar e de conforto. Grátis, imediato, sem anúncios.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Altura total",
+  "rise_hint": "De pavimento acabado a pavimento acabado, medida na vertical.",
+  "desired": "Espelho pretendido",
+  "desired_hint": "A altura que gostaria para cada degrau. Mostrada para comparação.",
+  "tread": "Cobertor",
+  "tread_hint": "Profundidade horizontal de cada degrau, de focinho a focinho.",
+  "space": "Desenvolvimento disponível",
+  "space_hint": "Opcional. Espaço horizontal que tem para a escada.",
+  "how_text": "A calculadora divide a altura total pelo espelho máximo de 19,7 cm (7,75 in) e arredonda para cima para obter o número de espelhos. Dividindo a altura total por esse número obtém a altura exata do espelho a marcar na perna (longarina) da escada. Para ser confortável, duas vezes o espelho mais o cobertor deve ficar entre 61 e 63,5 cm (24 a 25 in).",
+  "formula": "espelhos = ceil(altura total / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>altura do espelho = altura total / espelhos<br>cobertores = espelhos - 1<br>desenvolvimento total = cobertores &times; cobertor<br>conforto = 2 &times; altura do espelho + cobertor",
+  "how_note": "O seu espelho pretendido aparece ao lado do real para ver quanto o traçado se aproxima. <strong>Os limites aqui seguem o código de construção dos EUA (IRC): espelho máximo de 19,7 cm ou 7,75 in e cobertor mínimo de 25,4 cm ou 10 in. A regulamentação local pode ser diferente, por isso confirme sempre antes de cortar.</strong>",
+  "example_imperial": "Imagine que a altura total de piso a piso é de 100 polegadas. Então 100 / 7,75 = 12,9, arredondado para <strong>13 espelhos</strong>. Cada espelho tem 100 / 13 = <strong>7,69 in</strong>, e há 13 - 1 = <strong>12 cobertores</strong>. Com um cobertor de 10,5 in o desenvolvimento total é 12 × 10,5 = <strong>126 in</strong>. O valor de conforto é 2 × 7,69 + 10,5 = 25,88 in, um pouco acima do intervalo ideal de 24 a 25 in. Um espelho a mais (14 espelhos de 7,14 in) baixaria para 24,79 in, dentro do intervalo.",
+  "example_metric": "Imagine que a altura total de piso a piso é de 270 cm. Então 270 / 19,7 = 13,7, arredondado para <strong>14 espelhos</strong>. Cada espelho tem 270 / 14 = <strong>19,29 cm</strong>, e há 14 - 1 = <strong>13 cobertores</strong>. Com um cobertor de 27 cm o desenvolvimento total é 13 × 27 = <strong>351 cm</strong>. O valor de conforto é 2 × 19,2857 + 27 = 65,57 cm, acima do intervalo ideal de 61 a 63,5 cm. Um espelho a mais (15 espelhos de 18 cm) baixaria para 63 cm, dentro do intervalo.",
+  "table_title": "Espelhos por altura total",
+  "col_rise": "Altura total",
+  "col_risers": "Espelhos",
+  "col_riser": "Altura do espelho",
+  "col_treads": "Cobertores",
+  "more_text": "A planear o resto da obra? Experimente as outras calculadoras grátis:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} espelhos de {riser} {u}, {treads} cobertores",
+    "run_line": "Desenvolvimento total: <strong>{run} {u}</strong> ({treads} cobertores × {tread} {u})",
+    "target_line": "O seu espelho pretendido: {desired} {u}, real: {riser} {u}",
+    "comfort_line": "Conforto (2E+C): {comfort} {u} {badge}",
+    "comfort_in": "Dentro do intervalo de {lo} a {hi} {u}",
+    "comfort_out": "Fora do intervalo de {lo} a {hi} {u}",
+    "irc_ok": "Cumpre os limites do IRC dos EUA (espelho ≤ {max} {u}, cobertor ≥ {min} {u})",
+    "irc_bad": "Fora dos limites do IRC dos EUA: espelho máx. {max} {u}, cobertor mín. {min} {u}",
+    "irc_note": "O IRC é um código dos EUA; confirme as regras locais.",
+    "no_fit": "Não cabe: precisa de {run} {u} de desenvolvimento e tem {space} {u}"
+  },
+  "faq": [
+    [
+      "Qual é a altura máxima do espelho segundo o regulamento?",
+      "O IRC dos EUA permite uma altura máxima de espelho de 19,7 cm (7,75 polegadas) em escadas de habitação. Os espelhos de um mesmo lanço não podem variar mais de cerca de 1 cm (3/8 de polegada). Os códigos para edifícios comerciais e muitos regulamentos locais são mais exigentes, por isso confirme sempre junto da câmara municipal."
+    ],
+    [
+      "Qual é a altura ideal do espelho de uma escada?",
+      "A maioria das pessoas acha mais confortáveis espelhos de 18 a 19 cm (7 a 7,5 polegadas). Espelhos mais baixos, à volta de 15 cm (6 polegadas), são indicados para degraus exteriores e pessoas mais velhas. Tudo o que passe o máximo do IRC dos EUA de 19,7 cm (7,75 polegadas) parece íngreme e lá não é permitido."
+    ],
+    [
+      "O que é a regra 2E+C das escadas?",
+      "A regra de conforto 2E+C diz que duas vezes a altura do espelho mais a profundidade do cobertor deve ficar entre 61 e 63,5 cm (24 a 25 polegadas). Aproxima-se do passo natural ao andar. Escadas dentro desse intervalo são confortáveis, e as que ficam fora parecem demasiado íngremes ou demasiado baixas."
+    ],
+    [
+      "Como calculo o número de degraus de uma escada?",
+      "Meça a altura total de pavimento acabado a pavimento acabado, divida pelo espelho máximo de 19,7 cm (7,75 polegadas) e arredonde para cima. Isso dá o número de espelhos. Dividindo a altura total por esse número obtém a altura exata do espelho. O número de cobertores é igual ao número de espelhos menos um."
+    ],
+    [
+      "Qual é o cobertor mínimo segundo o regulamento?",
+      "O IRC dos EUA exige um cobertor mínimo de 25,4 cm (10 polegadas), medido de focinho a focinho. Cobertores de 27 a 28 cm (10,5 a 11 polegadas) são mais confortáveis e comuns. Os cobertores de um mesmo lanço não podem variar mais de cerca de 1 cm (3/8 de polegada). Confirme as regras locais antes de construir."
+    ]
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "meta_title": "Hesabkirina Kaşiyan - Çend Kaşî Lazim in?",
+  "meta_desc": "Hesabkera kaşiyan a belaş. Mezinahiya erd an dîwêr, mezinahiya kaşiyê û valahiya derzê binivîse û hejmara kaşî û qutiyan bi windabûnê bistîne. Bê reklam.",
+  "og_desc": "Hejmara kaşî û qutiyan ji bo erd an dîwarê xwe bistîne, windabûn tê de. Belaş, bê reklam.",
+  "h1": "Hesabkirina kaşiyan",
+  "lede": "Hesab bike ka ji bo erd an dîwarekî çend kaşî û qutî lazim in, bi valahiya derzê û windabûnê re. Belaş, bilez, bê reklam.",
+  "mode_label": "Rûber",
+  "mode_dims": "Dirêjahî x firehî",
+  "mode_area": "Ez rûberê dizanim",
+  "length": "Dirêjahî",
+  "width": "Firehî",
+  "area": "Rûber",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Mezinahiya kaşiyê (înç)",
+  "tile_size_metric": "Mezinahiya kaşiyê (cm)",
+  "opt_subway": "3 x 6 kaşiya metroyê",
+  "opt_custom": "Taybet",
+  "tile_w": "Firehiya kaşiyê",
+  "tile_h": "Bilindahiya kaşiyê",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Valahiya derzê",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 ji bo bê valahî. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 ji bo bê valahî. 3 mm ji bo kaşiyên erdê berbelav e.",
+  "pattern": "Awayê danînê",
+  "pattern_straight": "Rast (10% windabûn)",
+  "pattern_diag": "Xwar / stirî (15% windabûn)",
+  "perbox": "Kaşî di qutiyekê de (ne mecbûrî)",
+  "perbox_hint": "Li ser qutiyê nivîsandî ye. Vala bihêle da ku derbas bibe.",
+  "how_text": "Hesabker rûbera te li şopa kaşiyekê û valahiya derzê ya wê parve dike, ji bo birîn û şikestinê windabûnekê lê zêde dike, û ber bi kaşiyên tam ve bilind dike:",
+  "formula": "rûbera kaşiyê ya bi bandor = (firehiya kaşiyê + valahî) &times; (bilindahiya kaşiyê + valahî)<br>kaşî = ceil( rûber / rûbera kaşiyê ya bi bandor &times; (1 + windabûn) )<br>qutî = ceil( kaşî / kaşî di qutiyekê de )",
+  "how_text2": "Windabûn ji bo danîna rast a tor 10% e û ji bo xwar an stirî 15% e, ku tê de bêtir perçeyên birî bêkêr dimînin. Valahiya derzê ya firehtir tê wateya ku her kaşî şopeke hinekî mezintir digire, ji ber vê yekê hejmara kaşiyan hinekî kêm dibe.",
+  "example_imperial": "Bifikire ku tu erdeke 10 ft bi 12 ft kaşî dikî, ku dike <strong>120 sq ft</strong> (17.280 sq in), bi kaşiyên 12 x 12 înç ên rast danîn û valahiya derzê ya 1/8 înç (0,125 in). Her kaşî bi valahiya xwe re 12,125 × 12,125 = 147,02 sq in digire, ji ber vê yekê rûbera tazî 17.280 / 147,02 = 117,54 kaşî ye. 10% windabûn lê zêde bike: 117,54 × 1,1 = 129,29, ku dibe <strong>130 kaşî</strong>. Heke di her qutiyê de 8 kaşî hebin, ev dike ceil(130 / 8) = <strong>17 qutî</strong>. Heman erd bi danîna xwar û 15% windabûn 136 kaşiyan dixwaze.",
+  "example_metric": "Bifikire ku tu erdeke 4 m bi 3 m kaşî dikî, ku dike <strong>12 m²</strong> (120.000 cm²), bi kaşiyên 30 x 30 cm ên rast danîn û valahiya derzê ya 3 mm (0,3 cm). Her kaşî bi valahiya xwe re 30,3 × 30,3 = 918,09 cm² digire, ji ber vê yekê rûbera tazî 120.000 / 918,09 = 130,71 kaşî ye. 10% windabûn lê zêde bike: 130,71 × 1,1 = 143,78, ku dibe <strong>144 kaşî</strong>. Heke di her qutiyê de 11 kaşî hebin, ev dike ceil(144 / 11) = <strong>14 qutî</strong>. Heman erd bi danîna xwar û 15% windabûn 151 kaşiyan dixwaze.",
+  "table_title_imperial": "Kaşî ji bo her 100 sq ft",
+  "table_title_metric": "Kaşî ji bo her 10 m²",
+  "table_note": "Mezinahiyên kaşiyan ên berbelav, danîna rast bi 10% windabûn û bê valahiya derzê:",
+  "col_size": "Mezinahiya kaşiyê",
+  "col_area": "Rûbera kaşiyê",
+  "col_count_imperial": "Kaşî ji bo her 100 sq ft",
+  "col_count_metric": "Kaşî ji bo her 10 m²",
+  "more_text": "Mayî ya karê plan dikî? Hesabkerên din ên belaş biceribîne:",
+  "js": {
+    "main": "{tiles} kaşî",
+    "main_boxes": "{tiles} kaşî <small>= {boxes} qutiyên {perbox}</small>",
+    "area_line_imperial": "Rûbera ku tê kaşîkirin: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Rûbera ku tê kaşîkirin: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Rûbera kaşiyê ya bikêr: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Rûbera kaşiyê ya bikêr: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Windabûn: <strong>{pct}%</strong> (danîna rast)",
+    "waste_diag": "Windabûn: <strong>{pct}%</strong> (xwar / stirî)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "3 x 6 in kaşiya metroyê",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Divê ez çiqas kaşiyên zêde bikirim?",
+      "Ji hejmara rûbera tazî 10 heta 15% zêdetir bikire. Birînên li kêleka dîwaran, şikestin û tamîrên pêşerojê hemû ji ya zêde dixwin. Ji bo danîneke rast a hêsan di odeyeke çargoşe de 10% bi kar bîne, û ji bo danînên xwar an stirî, kaşiyên biçûk, an odeyên bi gelek goşeyan 15%."
+    ],
+    [
+      "Windabûna kaşiyan çi ye?",
+      "Windabûn ew kaşî ye ku tu dikirî lê di dawiyê de li ser nameşî: perçeyên birî li kêleka dîwaran û li dora amûran, kaşiyên ku di birîn an veguhestinê de dişikin, û yên zêde ku ji bo tamîrên paşê tên hilanîn. Ev asayî ye, ne şaşî ye. Ev hesabker berî bilindkirina ber bi kaşiyên tam ve rêjeya windabûnê lê zêde dike."
+    ],
+    [
+      "Ji bo 100 lingên çargoşe çend kaşiyên 12x12 lazim in?",
+      "Kaşiyek 12x12 înç (30x30 cm) lingekî çargoşe digire, ji ber vê yekê 100 lingên çargoşe (9,3 m²) 100 kaşiyan ji bo rûbera tazî dixwaze. Ji bo danîna rast 10% windabûn lê zêde bike û divê tu 110 kaşiyan bikirî. Bi valahiya derzê re her kaşî hinekî bêtir digire, ji ber vê yekê hejmar dikare hinekî kêm bibe."
+    ],
+    [
+      "Danîna xwar bêtir kaşî dixwaze?",
+      "Erê. Danîna kaşiyan bi 45 pileyan tê wateya ku her rêz li dîwêr bi birîneke xwar diqede, û gelek ji wan perçeyan dîsa nayên bikaranîn. Ji bo danînên xwar an stirî nêzîkî 15% windabûn plan bike li şûna 10% a asayî ji bo danîna rast a tor."
+    ],
+    [
+      "Dema hesabkirina kaşiyan ez xetên derzê jî dihesibînim?",
+      "Erê, û ew di berjewendiya te de ne. Her kaşî bi valahiya derzê ya xwe re, pir caran 1/8 înç (3 mm), şopeke hinekî mezintir ji kaşiyê bi tenê digire, ji ber vê yekê valahiyeke firehtir hejmara kaşiyên lazim hinekî kêm dike. Bandor bi kaşiyên mezin re biçûk e lê bi kaşiyên metroyê yên biçûk re diyar e."
+    ]
+  ]
+}

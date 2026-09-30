@@ -1,0 +1,64 @@
+{
+  "meta_title": "Merdiven Hesaplama - Rıht, Basamak ve Boy",
+  "meta_desc": "Ücretsiz merdiven hesaplama. Toplam yüksekliği girin, rıht sayısını, tam rıht yüksekliğini, basamakları ve merdiven boyunu yönetmelik ve konfor kontrolüyle alın.",
+  "og_desc": "Toplam yükseklikten rıht sayısı, rıht yüksekliği, basamaklar ve merdiven boyu. Anında, ücretsiz, reklamsız.",
+  "h1": "Merdiven Hesaplama",
+  "lede": "Toplam yüksekliği girin, rıht sayısını, tam rıht yüksekliğini, basamakları ve toplam merdiven boyunu yönetmelik ve konfor kontrolüyle alın. Ücretsiz, anında, reklamsız.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Toplam yükseklik",
+  "rise_hint": "Bitmiş zeminden bitmiş zemine, dikey olarak ölçülür.",
+  "desired": "Hedef rıht yüksekliği",
+  "desired_hint": "Her basamağın olmasını istediğiniz yükseklik. Karşılaştırma için gösterilir.",
+  "tread": "Basamak genişliği",
+  "tread_hint": "Her basamağın yatay derinliği, burundan buruna.",
+  "space": "Mevcut yatay alan",
+  "space_hint": "İsteğe bağlı. Merdiven için elinizdeki yatay mesafe.",
+  "how_text": "Hesaplayıcı toplam yüksekliği 7,75 in (19,7 cm) maksimum rıht yüksekliğine böler ve rıht sayısını bulmak için yukarı yuvarlar. Toplam yüksekliği bu sayıya bölmek, limon kirişine işaretlenecek tam rıht yüksekliğini verir. Konfor için rıht yüksekliğinin iki katı artı basamak genişliği 24 ile 25 in (61 ile 63,5 cm) arasında olmalıdır.",
+  "formula": "rıht = ceil(toplam yükseklik / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>rıht yüksekliği = toplam yükseklik / rıht<br>basamak = rıht - 1<br>toplam boy = basamak &times; basamak genişliği<br>konfor = 2 &times; rıht yüksekliği + basamak genişliği",
+  "how_note": "Hedef rıht yüksekliğiniz gerçek olanın yanında gösterilir, böylece planın ne kadar yaklaştığını görürsünüz. <strong>Buradaki sınırlar ABD yapı yönetmeliği US IRC'ye göredir (en fazla 7,75 in veya 19,7 cm rıht, en az 10 in veya 25,4 cm basamak). Yerel yönetmelikler farklı olabilir, bu yüzden kesmeden önce mutlaka kontrol edin.</strong>",
+  "example_imperial": "Zeminden zemine toplam yüksekliğin 100 inç olduğunu varsayalım. O zaman 100 / 7,75 = 12,9, yukarı yuvarlanınca <strong>13 rıht</strong>. Her rıht 100 / 13 = <strong>7,69 in</strong> olur ve 13 - 1 = <strong>12 basamak</strong> vardır. 10,5 in basamak genişliğiyle toplam boy 12 × 10,5 = <strong>126 in</strong> olur. Konfor değeri 2 × 7,69 + 10,5 = 25,88 in, ideal 24 ile 25 in aralığının biraz üstünde. Bir rıht daha eklemek (7,14 in'lik 14 rıht) değeri 24,79 in'e, yani aralığın içine getirir.",
+  "example_metric": "Zeminden zemine toplam yüksekliğin 270 cm olduğunu varsayalım. O zaman 270 / 19,7 = 13,7, yukarı yuvarlanınca <strong>14 rıht</strong>. Her rıht 270 / 14 = <strong>19,29 cm</strong> olur ve 14 - 1 = <strong>13 basamak</strong> vardır. 27 cm basamak genişliğiyle toplam boy 13 × 27 = <strong>351 cm</strong> olur. Konfor değeri 2 × 19,2857 + 27 = 65,57 cm, ideal 61 ile 63,5 cm aralığının üstünde. Bir rıht daha eklemek (18 cm'lik 15 rıht) değeri 63 cm'ye, yani aralığın içine getirir.",
+  "table_title": "Toplam yüksekliğe göre rıht sayısı",
+  "col_rise": "Toplam yükseklik",
+  "col_risers": "Rıht",
+  "col_riser": "Rıht yüksekliği",
+  "col_treads": "Basamak",
+  "more_text": "İşin geri kalanını mı planlıyorsunuz? Diğer ücretsiz hesaplayıcıları deneyin:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} rıht, her biri {riser} {u}, {treads} basamak",
+    "run_line": "Toplam boy: <strong>{run} {u}</strong> ({treads} basamak × {tread} {u})",
+    "target_line": "Hedef rıhtınız: {desired} {u}, gerçek: {riser} {u}",
+    "comfort_line": "Konfor (2R+T): {comfort} {u} {badge}",
+    "comfort_in": "{lo} ile {hi} {u} aralığında",
+    "comfort_out": "{lo} ile {hi} {u} aralığının dışında",
+    "irc_ok": "US IRC sınırlarına uygun (rıht ≤ {max} {u}, basamak ≥ {min} {u})",
+    "irc_bad": "US IRC sınırlarının dışında: en fazla rıht {max} {u}, en az basamak {min} {u}",
+    "irc_note": "IRC bir ABD yönetmeliğidir; yerel kurallarınızı kontrol edin.",
+    "no_fit": "Sığmıyor: {run} {u} yatay mesafe gerekiyor, sizde {space} {u} var"
+  },
+  "faq": [
+    [
+      "Yönetmeliğe göre maksimum rıht yüksekliği nedir?",
+      "ABD yapı yönetmeliği US IRC, konut merdivenleri için en fazla 7,75 inç (19,7 cm) rıht yüksekliğine izin verir. Bir kol içindeki rıhtlar birbirinden 3/8 inçten (yaklaşık 1 cm) fazla farklı olmamalıdır. Ticari yönetmelikler ve birçok yerel yönetmelik daha katıdır, bu yüzden her zaman yerel yapı biriminize danışın."
+    ],
+    [
+      "İdeal merdiven basamak yüksekliği nedir?",
+      "Çoğu insan 7 ile 7,5 inç (18 ile 19 cm) arası rıhtları çıkmak için en rahat bulur. Yaklaşık 6 inç (15 cm) civarındaki daha alçak rıhtlar dış mekan basamaklarına ve yaşlı kullanıcılara uygundur. US IRC'nin 7,75 inç (19,7 cm) maksimumunun üstündeki her şey dik hissettirir ve orada izin verilmez."
+    ],
+    [
+      "Merdivenlerde 2R+T kuralı nedir?",
+      "2R+T konfor kuralı, rıht yüksekliğinin iki katı artı basamak genişliğinin 24 ile 25 inç (61 ile 63,5 cm) arasında olması gerektiğini söyler. Bu, doğal bir adım uzunluğuna yakındır. Bu aralıktaki merdivenler rahat, dışındakiler ise fazla dik veya fazla yayvan hissettirir."
+    ],
+    [
+      "Merdiven basamak sayısı nasıl hesaplanır?",
+      "Bitmiş zeminden bitmiş zemine toplam yüksekliği ölçün, 7,75 inç (19,7 cm) maksimum rıht yüksekliğine bölün ve yukarı yuvarlayın. Bu rıht sayısıdır. Toplam yüksekliği bu sayıya bölmek tam rıht yüksekliğini verir. Basamak sayısı, rıht sayısından bir eksiktir."
+    ],
+    [
+      "Yönetmeliğe göre minimum basamak genişliği nedir?",
+      "US IRC, burundan buruna ölçülen en az 10 inç (25,4 cm) basamak genişliği ister. 10,5 ile 11 inç (27 ile 28 cm) daha geniş basamaklar daha rahattır ve yaygındır. Bir kol içindeki basamaklar birbirinden 3/8 inçten (yaklaşık 1 cm) fazla farklı olmamalıdır. Yapmadan önce yerel kuralları kontrol edin."
+    ]
+  ]
+}

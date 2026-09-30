@@ -1,0 +1,64 @@
+{
+  "meta_title": "Tính bậc cầu thang - Số bậc, chiều cao bậc",
+  "meta_desc": "Công cụ tính bậc cầu thang miễn phí. Nhập tổng chiều cao để ra số bậc, chiều cao bậc, mặt bậc và tổng chiều dài, có kiểm tra quy chuẩn và độ thoải mái.",
+  "og_desc": "Tính số bậc, chiều cao bậc, mặt bậc và tổng chiều dài cầu thang từ tổng chiều cao. Tức thì, miễn phí, không quảng cáo.",
+  "h1": "Tính bậc cầu thang",
+  "lede": "Nhập tổng chiều cao để biết số bậc, chiều cao bậc chính xác, số mặt bậc và tổng chiều dài, có kiểm tra quy chuẩn và độ thoải mái. Miễn phí, tức thì, không quảng cáo.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Tổng chiều cao",
+  "rise_hint": "Từ mặt sàn hoàn thiện đến mặt sàn hoàn thiện, đo theo phương đứng.",
+  "desired": "Chiều cao bậc mong muốn",
+  "desired_hint": "Chiều cao bạn muốn cho mỗi bậc. Hiển thị để so sánh.",
+  "tread": "Chiều rộng mặt bậc",
+  "tread_hint": "Chiều sâu theo phương ngang của mỗi bậc, tính từ mũi bậc đến mũi bậc.",
+  "space": "Chiều dài có sẵn",
+  "space_hint": "Tùy chọn. Khoảng không theo phương ngang bạn có cho cầu thang.",
+  "how_text": "Công cụ chia tổng chiều cao cho chiều cao bậc tối đa 7,75 in (19,7 cm) và làm tròn lên để ra số bậc. Chia tổng chiều cao cho số bậc đó sẽ ra chiều cao bậc chính xác để vạch trên dầm thang. Để đi lại thoải mái, hai lần chiều cao bậc cộng chiều rộng mặt bậc nên nằm trong khoảng 24 đến 25 in (61 đến 63,5 cm).",
+  "formula": "số bậc = ceil(tổng chiều cao / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>chiều cao bậc = tổng chiều cao / số bậc<br>số mặt bậc = số bậc - 1<br>tổng chiều dài = số mặt bậc &times; chiều rộng mặt bậc<br>độ thoải mái = 2 &times; chiều cao bậc + chiều rộng mặt bậc",
+  "how_note": "Chiều cao bậc mong muốn được hiển thị cạnh chiều cao thực tế để bạn thấy thiết kế sát đến đâu. <strong>Giới hạn quy chuẩn ở đây theo quy chuẩn xây dựng nhà ở Mỹ (IRC): chiều cao bậc tối đa 7,75 in hoặc 19,7 cm, mặt bậc tối thiểu 10 in hoặc 25,4 cm. Quy chuẩn địa phương có thể khác, vì vậy luôn kiểm tra trước khi cắt.</strong>",
+  "example_imperial": "Giả sử tổng chiều cao từ sàn đến sàn là 100 inch. Khi đó 100 / 7,75 = 12,9, làm tròn lên thành <strong>13 bậc</strong>. Mỗi bậc cao 100 / 13 = <strong>7,69 in</strong>, và có 13 - 1 = <strong>12 mặt bậc</strong>. Với mặt bậc rộng 10,5 in, tổng chiều dài là 12 × 10,5 = <strong>126 in</strong>. Chỉ số thoải mái là 2 × 7,69 + 10,5 = 25,88 in, hơi vượt khoảng lý tưởng 24 đến 25 in. Thêm một bậc (14 bậc cao 7,14 in) sẽ đưa về 24,79 in, nằm trong khoảng.",
+  "example_metric": "Giả sử tổng chiều cao từ sàn đến sàn là 270 cm. Khi đó 270 / 19,7 = 13,7, làm tròn lên thành <strong>14 bậc</strong>. Mỗi bậc cao 270 / 14 = <strong>19,29 cm</strong>, và có 14 - 1 = <strong>13 mặt bậc</strong>. Với mặt bậc rộng 27 cm, tổng chiều dài là 13 × 27 = <strong>351 cm</strong>. Chỉ số thoải mái là 2 × 19,2857 + 27 = 65,57 cm, vượt khoảng lý tưởng 61 đến 63,5 cm. Thêm một bậc (15 bậc cao 18 cm) sẽ đưa về 63 cm, nằm trong khoảng.",
+  "table_title": "Số bậc theo tổng chiều cao",
+  "col_rise": "Tổng chiều cao",
+  "col_risers": "Số bậc",
+  "col_riser": "Chiều cao bậc",
+  "col_treads": "Mặt bậc",
+  "more_text": "Đang tính các phần khác của công trình? Thử các công cụ miễn phí khác:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} bậc cao {riser} {u}, {treads} mặt bậc",
+    "run_line": "Tổng chiều dài: <strong>{run} {u}</strong> ({treads} mặt bậc × {tread} {u})",
+    "target_line": "Chiều cao bậc mong muốn: {desired} {u}, thực tế: {riser} {u}",
+    "comfort_line": "Độ thoải mái (2R+T): {comfort} {u} {badge}",
+    "comfort_in": "Trong khoảng {lo} đến {hi} {u}",
+    "comfort_out": "Ngoài khoảng {lo} đến {hi} {u}",
+    "irc_ok": "Đạt giới hạn IRC của Mỹ (bậc ≤ {max} {u}, mặt bậc ≥ {min} {u})",
+    "irc_bad": "Không đạt giới hạn IRC của Mỹ: bậc tối đa {max} {u}, mặt bậc tối thiểu {min} {u}",
+    "irc_note": "IRC là quy chuẩn của Mỹ; hãy kiểm tra quy định địa phương.",
+    "no_fit": "Không đủ chỗ: cần {run} {u} chiều dài, bạn có {space} {u}"
+  },
+  "faq": [
+    [
+      "Chiều cao bậc tối đa theo quy chuẩn là bao nhiêu?",
+      "Quy chuẩn xây dựng nhà ở Mỹ (IRC) cho phép chiều cao bậc tối đa 7,75 inch (19,7 cm) với cầu thang nhà ở. Các bậc trong cùng một vế thang không được chênh nhau quá 3/8 inch (khoảng 1 cm). Quy chuẩn cho công trình thương mại và nhiều quy chuẩn địa phương khắt khe hơn, vì vậy luôn hỏi cơ quan quản lý xây dựng địa phương."
+    ],
+    [
+      "Chiều cao bậc cầu thang lý tưởng là bao nhiêu?",
+      "Phần lớn mọi người thấy bậc cao 7 đến 7,5 inch (18 đến 19 cm) là dễ leo nhất. Bậc thấp hơn, khoảng 6 inch (15 cm), hợp với bậc ngoài trời và người lớn tuổi. Bậc cao hơn mức tối đa 7,75 inch (19,7 cm) của IRC Mỹ sẽ thấy dốc và không được phép ở đó."
+    ],
+    [
+      "Quy tắc 2R+T của cầu thang là gì?",
+      "Quy tắc thoải mái 2R+T nói rằng hai lần chiều cao bậc cộng chiều rộng mặt bậc nên nằm trong khoảng 24 đến 25 inch (61 đến 63,5 cm). Con số này gần với độ dài bước chân tự nhiên. Cầu thang trong khoảng đó đi thấy thoải mái, còn ngoài khoảng đó sẽ thấy quá dốc hoặc quá thoải."
+    ],
+    [
+      "Cách tính số bậc cầu thang như thế nào?",
+      "Đo tổng chiều cao từ mặt sàn hoàn thiện đến mặt sàn hoàn thiện, rồi chia cho chiều cao bậc tối đa 7,75 inch (19,7 cm) và làm tròn lên. Kết quả là số bậc. Chia tổng chiều cao cho số bậc sẽ ra chiều cao bậc chính xác. Số mặt bậc ít hơn số bậc một đơn vị."
+    ],
+    [
+      "Chiều rộng mặt bậc tối thiểu theo quy chuẩn là bao nhiêu?",
+      "IRC của Mỹ yêu cầu mặt bậc rộng tối thiểu 10 inch (25,4 cm), đo từ mũi bậc đến mũi bậc. Mặt bậc rộng hơn, 10,5 đến 11 inch (27 đến 28 cm), đi thoải mái hơn và phổ biến. Các mặt bậc trong cùng một vế thang không được chênh nhau quá 3/8 inch (khoảng 1 cm). Hãy kiểm tra quy định địa phương trước khi làm."
+    ]
+  ]
+}

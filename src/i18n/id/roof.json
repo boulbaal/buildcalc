@@ -1,0 +1,56 @@
+{
+  "meta_title": "Kalkulator Kemiringan Atap - Gratis, Tanpa Iklan",
+  "meta_desc": "Hitung kemiringan atap gratis. Ubah tinggi dan panjang horizontal ke derajat, persen dan X:12, plus faktor kemiringan untuk luas atap. Instan, bisa offline.",
+  "og_desc": "Ubah tinggi dan panjang horizontal ke derajat, persen dan kemiringan X:12. Instan, gratis, tanpa iklan.",
+  "h1": "Kalkulator Kemiringan Atap",
+  "lede": "Ubah tinggi dan panjang horizontal ke derajat, persen dan kemiringan X:12, dan dapatkan faktor kemiringan untuk luas atap Anda. Gratis, instan, tanpa iklan.",
+  "mode_label": "Yang saya tahu",
+  "mode_riserun": "Tinggi dan panjang",
+  "mode_angle": "Sudut dalam derajat",
+  "mode_percent": "Kemiringan dalam persen",
+  "rise": "Tinggi",
+  "rise_hint": "Tinggi vertikal. Gunakan satuan yang sama dengan panjang horizontal.",
+  "run": "Panjang horizontal",
+  "run_hint": "Jarak mendatar. Panjang 12 langsung memberi kemiringan X:12.",
+  "angle": "Sudut (derajat)",
+  "percent": "Kemiringan (%)",
+  "how_text": "Kemiringan atap adalah perbandingan antara tinggi vertikal dan panjang horizontal. Kalkulator ini mengonversi antara tiga cara umum untuk menuliskannya, plus faktor kemiringan yang dipakai untuk memperkirakan luas atap:",
+  "formula": "sudut = atan(tinggi / panjang horizontal)<br>persen = tinggi / panjang horizontal &times; 100<br>kemiringan = (tinggi / panjang horizontal &times; 12) : 12<br>faktor = &radic;(1 + (tinggi / panjang horizontal)&sup2;)",
+  "example_imperial": "Misalkan atap Anda naik 6 inci untuk setiap 12 inci panjang horizontal. Maka tinggi / panjang = 0,5, sehingga sudutnya atan(0,5) = <strong>26,57°</strong>, kemiringannya <strong>50%</strong>, dan ditulis <strong>6:12</strong>. Faktor kemiringannya √(1 + 0,25) = <strong>1,118</strong>: rumah dengan tapak 1.000 sq ft di bawah atap itu memiliki kira-kira 1.118 sq ft permukaan atap sebenarnya.",
+  "example_metric": "Misalkan atap Anda naik 50 cm untuk setiap 100 cm jarak horizontal. Maka tinggi / panjang = 0,5, sehingga sudutnya atan(0,5) = <strong>26,57°</strong>, kemiringannya <strong>50%</strong>, dan dalam notasi Amerika kemiringannya <strong>6:12</strong>. Faktor kemiringannya √(1 + 0,25) = <strong>1,118</strong>: rumah dengan tapak 100 m² di bawah atap itu memiliki kira-kira 111,8 m² permukaan atap sebenarnya.",
+  "table_title": "Kemiringan atap yang umum",
+  "col_pitch": "Kemiringan",
+  "col_angle": "Sudut",
+  "col_slope": "Persen",
+  "col_mult": "Faktor",
+  "more_text": "Merencanakan bagian lain pekerjaan? Coba kalkulator gratis lainnya:",
+  "js": {
+    "main": "{pitch}:12 <small>= {deg}° = kemiringan {pct}%</small>",
+    "main_metric": "{deg}° <small>= kemiringan {pct}% = {pitch}:12</small>",
+    "mult_line": "Faktor kemiringan: <strong>{mult}</strong> (luas tapak datar × {mult} = luas atap sebenarnya)",
+    "angle_line": "sudut = atan({ratio}) = {deg}°",
+    "pct_line": "persen = {ratio} × 100 = {pct}%"
+  },
+  "faq": [
+    [
+      "Berapa derajat kemiringan atap 6/12?",
+      "Kemiringan 6/12 berarti atap naik 6 satuan untuk setiap 12 satuan panjang horizontal. Itu sama dengan 26,57 derajat, atau kemiringan 50%. Ini salah satu kemiringan yang paling umum pada rumah."
+    ],
+    [
+      "Untuk apa faktor kemiringan dipakai?",
+      "Faktor ini mengubah luas tapak datar sebuah atap menjadi luas permukaan miring yang sebenarnya. Kalikan luas tapak dengan faktor ini untuk memperkirakan kebutuhan penutup atap atau lapisan bawah (underlayment). Untuk kemiringan 6/12 (26,57 derajat) faktornya 1,118."
+    ],
+    [
+      "Berapa kemiringan minimum untuk sirap aspal?",
+      "Sebagian besar pabrik sirap aspal mensyaratkan kemiringan minimal 2/12 (sekitar 9,5 derajat), dan di bawah 4/12 (sekitar 18,4 derajat) mereka mensyaratkan lapisan bawah tambahan. Atap yang lebih landai membutuhkan membran. Selalu periksa petunjuk dari pabrik."
+    ],
+    [
+      "Bagaimana mengukur kemiringan atap dari dalam loteng?",
+      "Tempelkan waterpass secara mendatar pada kasau dan tandai jarak tetap di sepanjangnya, misalnya 12 inci atau 100 cm. Lalu ukur lurus ke atas dari tanda itu sampai sisi bawah kasau. Masukkan kedua angka di sini sebagai panjang horizontal dan tinggi."
+    ],
+    [
+      "Apakah atap yang lebih curam lebih baik?",
+      "Atap yang lebih curam lebih cepat mengalirkan air dan salju dan sering lebih awet, tetapi biaya pembuatannya lebih mahal dan lebih berbahaya untuk dikerjakan. Sebagian besar atap rumah berada di antara sekitar 18 dan 37 derajat (4/12 sampai 9/12)."
+    ]
+  ]
+}

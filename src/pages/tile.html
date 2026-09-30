@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_desc}}">
+<link rel="canonical" href="{{@canonical}}">
+{{@hreflang}}
+<meta property="og:title" content="{{meta_title}}">
+<meta property="og:description" content="{{og_desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{@canonical}}">
+<link rel="stylesheet" href="/assets/style.css">
+{{@appld}}
+{{@faqld}}
+</head>
+<body data-units="{{@units}}">
+<div class="wrap">
+
+<header class="site">
+  <nav aria-label="{{home}}">
+    <div class="left">
+      <a class="brand" href="{{@url_home}}">Build<span>Calc</span></a>
+      <a class="crumb" href="{{@url_home}}">{{home}}</a>
+      <span class="crumb" aria-current="page">{{h1}}</span>
+    </div>
+    {{@langselect}}
+  </nav>
+</header>
+
+<main>
+<h1>{{h1}}</h1>
+<p class="lede">{{lede}}</p>
+
+<div class="calc">
+  <div class="units" role="group" aria-label="{{units_label}}">
+    <button type="button" data-units="imperial">ft / in</button>
+    <button type="button" data-units="metric">m / cm</button>
+  </div>
+  <div class="grid">
+    <div class="field">
+      <label for="mode">{{mode_label}}</label>
+      <select id="mode">
+        <option value="dims" selected>{{mode_dims}}</option>
+        <option value="area">{{mode_area}}</option>
+      </select>
+    </div>
+    <div></div>
+    <div class="field" data-mode="dims">
+      <label for="length">{{length}} <span data-if-units="imperial">{{sfx_len_imperial}}</span><span data-if-units="metric">{{sfx_len_metric}}</span></label>
+      <input id="length" type="number" inputmode="decimal" min="0" step="any" value="{{#u:10|4}}" data-imperial="10" data-metric="4" aria-describedby="length-error">
+      <span class="error" id="length-error" aria-live="polite"></span>
+    </div>
+    <div class="field" data-mode="dims">
+      <label for="width">{{width}} <span data-if-units="imperial">{{sfx_len_imperial}}</span><span data-if-units="metric">{{sfx_len_metric}}</span></label>
+      <input id="width" type="number" inputmode="decimal" min="0" step="any" value="{{#u:12|3}}" data-imperial="12" data-metric="3" aria-describedby="width-error">
+      <span class="error" id="width-error" aria-live="polite"></span>
+    </div>
+    <div class="field" data-mode="area" hidden>
+      <label for="area">{{area}} <span data-if-units="imperial">{{sfx_area_imperial}}</span><span data-if-units="metric">{{sfx_area_metric}}</span></label>
+      <input id="area" type="number" inputmode="decimal" min="0" step="any" value="{{#u:120|12}}" data-imperial="120" data-metric="12" aria-describedby="area-error">
+      <span class="error" id="area-error" aria-live="polite"></span>
+    </div>
+    <div class="field" data-if-units="imperial">
+      <label for="tile-i">{{tile_size_imperial}}</label>
+      <select id="tile-i">
+        <option value="12x12" selected>12 x 12</option>
+        <option value="18x18">18 x 18</option>
+        <option value="24x24">24 x 24</option>
+        <option value="12x24">12 x 24</option>
+        <option value="3x6">{{opt_subway}}</option>
+        <option value="custom">{{opt_custom}}</option>
+      </select>
+    </div>
+    <div class="field" data-if-units="metric">
+      <label for="tile-m">{{tile_size_metric}}</label>
+      <select id="tile-m">
+        <option value="30x30" selected>30 x 30</option>
+        <option value="60x60">60 x 60</option>
+        <option value="30x60">30 x 60</option>
+        <option value="custom">{{opt_custom}}</option>
+      </select>
+    </div>
+    <div class="field" id="custom-w-field" hidden>
+      <label for="tile-w">{{tile_w}} <span data-if-units="imperial">{{sfx_tile_imperial}}</span><span data-if-units="metric">{{sfx_tile_metric}}</span></label>
+      <input id="tile-w" type="number" inputmode="decimal" min="0" step="any" value="{{#u:12|30}}" data-imperial="12" data-metric="30" aria-describedby="tile-w-error">
+      <span class="error" id="tile-w-error" aria-live="polite"></span>
+    </div>
+    <div class="field" id="custom-h-field" hidden>
+      <label for="tile-h">{{tile_h}} <span data-if-units="imperial">{{sfx_tile_imperial}}</span><span data-if-units="metric">{{sfx_tile_metric}}</span></label>
+      <input id="tile-h" type="number" inputmode="decimal" min="0" step="any" value="{{#u:12|30}}" data-imperial="12" data-metric="30" aria-describedby="tile-h-error">
+      <span class="error" id="tile-h-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="gap">{{gap}} <span data-if-units="imperial">{{sfx_gap_imperial}}</span><span data-if-units="metric">{{sfx_gap_metric}}</span></label>
+      <input id="gap" type="number" inputmode="decimal" min="0" step="any" value="{{#u:0.125|3}}" data-imperial="0.125" data-metric="3" aria-describedby="gap-error gap-hint">
+      <span class="hint" id="gap-hint"><span data-if-units="imperial">{{gap_hint_imperial}}</span><span data-if-units="metric">{{gap_hint_metric}}</span></span>
+      <span class="error" id="gap-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="pattern">{{pattern}}</label>
+      <select id="pattern">
+        <option value="0.10" selected>{{pattern_straight}}</option>
+        <option value="0.15">{{pattern_diag}}</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="perbox">{{perbox}}</label>
+      <input id="perbox" type="number" inputmode="decimal" min="0" step="any" value="" aria-describedby="perbox-error perbox-hint">
+      <span class="hint" id="perbox-hint">{{perbox_hint}}</span>
+      <span class="error" id="perbox-error" aria-live="polite"></span>
+    </div>
+  </div>
+</div>
+
+<div class="result" aria-live="polite" id="result">
+  <div class="big" id="r-main">&nbsp;</div>
+  <ul class="path" id="r-path"></ul>
+</div>
+
+<div class="donate" id="donate" hidden>
+  <p>{{donate_text}}</p>
+  <div class="btns">
+    <a class="btn" data-donate="paypal" href="#" rel="noopener">{{donate_paypal}}</a>
+    <a class="btn alt" data-donate="kofi" href="#" rel="noopener">{{donate_kofi}}</a>
+  </div>
+</div>
+
+<h2>{{how_it_works}}</h2>
+<p>{{how_text}}</p>
+<div class="formula">{{formula}}</div>
+<p>{{how_text2}}</p>
+
+<h2>{{worked_example}}</h2>
+<p>{{example@u}}</p>
+
+<h2><span data-if-units="imperial">{{table_title_imperial}}</span><span data-if-units="metric">{{table_title_metric}}</span></h2>
+<p>{{table_note}}</p>
+<table>
+  <thead><tr><th scope="col">{{col_size}}</th><th scope="col">{{col_area}}</th><th scope="col"><span data-if-units="imperial">{{col_count_imperial}}</span><span data-if-units="metric">{{col_count_metric}}</span></th></tr></thead>
+  <tbody id="size-table"></tbody>
+</table>
+
+<h2>{{faq_title}}</h2>
+{{@faq}}
+
+<h2>{{more_title}}</h2>
+<p>{{more_text}}</p>
+<ul>
+  <li><a href="{{@url_roof}}">{{name_roof}}</a></li>
+  <li><a href="{{@url_concrete}}">{{name_concrete}}</a></li>
+  <li><a href="{{@url_paint}}">{{name_paint}}</a></li>
+  <li><a href="{{@url_stair}}">{{name_stair}}</a></li>
+</ul>
+
+<p class="disclaimer">{{disclaimer}}</p>
+</main>
+
+<footer class="site">
+  <p class="made">{{made_by}}</p>
+  <p><a href="{{@url_home}}">BuildCalc</a> &middot; {{tagline}}</p>
+</footer>
+</div>
+
+{{@T}}
+<script src="/assets/calc.js"></script>
+<script>
+"use strict";
+const modeSel = document.getElementById("mode");
+const tileI = document.getElementById("tile-i");
+const tileM = document.getElementById("tile-m");
+const gapEl = document.getElementById("gap");
+
+function setMode() {
+  const m = modeSel.value;
+  document.querySelectorAll("[data-mode]").forEach((el) => { el.hidden = el.dataset.mode !== m; });
+  compute();
+}
+modeSel.addEventListener("change", setMode);
+
+function tileSelect() { return currentUnits() === "imperial" ? tileI : tileM; }
+
+function setCustomVisibility() {
+  const custom = tileSelect().value === "custom";
+  document.getElementById("custom-w-field").hidden = !custom;
+  document.getElementById("custom-h-field").hidden = !custom;
+}
+
+/* Round to 9 decimals before ceil to avoid float noise (100 * 1.1 = 110.000000000001). */
+const ceil9 = (x) => Math.ceil(Number(x.toFixed(9)));
+
+function compute() {
+  const u = currentUnits();
+  const imp = u === "imperial";
+  setCustomVisibility();
+
+  /* Area in sq ft (imperial) or m2 (metric). */
+  let areaBig = NaN;
+  if (modeSel.value === "dims") {
+    const L = readNum(document.getElementById("length"));
+    const W = readNum(document.getElementById("width"));
+    if (isFinite(L) && isFinite(W)) areaBig = L * W;
+  } else {
+    areaBig = readNum(document.getElementById("area"));
+  }
+
+  /* Tile dimensions in in (imperial) or cm (metric). */
+  let tw = NaN, th = NaN;
+  const sel = tileSelect().value;
+  if (sel === "custom") {
+    tw = readNum(document.getElementById("tile-w"));
+    th = readNum(document.getElementById("tile-h"));
+  } else {
+    const parts = sel.split("x");
+    tw = Number(parts[0]);
+    th = Number(parts[1]);
+  }
+
+  /* Gap: inches (imperial) or mm (metric, converted to cm). */
+  let gap = readNum(gapEl, { allowZero: true });
+  if (!imp && isFinite(gap)) gap = gap / 10;
+
+  const waste = Number(document.getElementById("pattern").value);
+  const perBox = readNum(document.getElementById("perbox"), { allowZero: true, required: false });
+
+  const main = document.getElementById("r-main");
+  const path = document.getElementById("r-path");
+  if (!isFinite(areaBig) || !isFinite(tw) || !isFinite(th) || !isFinite(gap) || areaBig <= 0 || tw <= 0 || th <= 0) {
+    main.innerHTML = "&nbsp;"; path.innerHTML = ""; return;
+  }
+
+  const areaSmall = areaBig * (imp ? 144 : 10000);
+  const effTile = (tw + gap) * (th + gap);
+  const tiles = ceil9(areaSmall / effTile * (1 + waste));
+  const boxes = isFinite(perBox) && perBox > 0 ? ceil9(tiles / perBox) : 0;
+  if (!isFinite(tiles) || !isFinite(boxes)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+
+  const v = {
+    tiles: fmt(tiles, 0), boxes: fmt(boxes, 0), perbox: fmt(perBox, 0),
+    area: fmt(areaBig, 2),
+    tw: fmt(tw, 2), th: fmt(th, 2), gap: fmt(gap, 3), eff: fmt(effTile, 2),
+    pct: fmt(waste * 100, 0)
+  };
+  main.innerHTML = t(boxes ? "main_boxes" : "main", v);
+  path.innerHTML =
+    "<li>" + t("area_line_" + u, v) + "</li>" +
+    "<li class=\"ltr\">" + t("eff_line_" + u, v) + "</li>" +
+    "<li>" + t(waste > 0.1 ? "waste_diag" : "waste_straight", v) + "</li>";
+  showDonate();
+}
+
+/* Reference table: straight layout, 10% waste, no grout gap.
+   Imperial: tiles per 100 sq ft. Metric: tiles per 10 m2. */
+function renderTable() {
+  const u = currentUnits();
+  const imp = u === "imperial";
+  const sizes = imp ? [[12, 12], [18, 18], [24, 24], [12, 24], [3, 6]] : [[30, 30], [60, 60], [30, 60]];
+  const areaSmall = imp ? 100 * 144 : 10 * 10000;
+  let rows = "";
+  sizes.forEach(([w, h]) => {
+    const tileSmall = w * h;
+    const count = ceil9(areaSmall / tileSmall * 1.1);
+    const tileBig = tileSmall / (imp ? 144 : 10000);
+    const label = imp && w === 3 && h === 6 ? t("size_subway") : t("size_" + u, { w: fmt(w, 0), h: fmt(h, 0) });
+    rows += "<tr><td>" + label + "</td><td>" + t("tile_area_" + u, { n: fmt(tileBig, 3) }) + "</td><td>" + fmt(count, 0) + "</td></tr>";
+  });
+  document.getElementById("size-table").innerHTML = rows;
+}
+
+initUnits(() => {
+  setCustomVisibility();
+  renderTable();
+  compute();
+});
+tileI.addEventListener("change", setCustomVisibility);
+tileM.addEventListener("change", setCustomVisibility);
+renderTable();
+bindInputs(compute);
+compute();
+</script>
+</body>
+</html>

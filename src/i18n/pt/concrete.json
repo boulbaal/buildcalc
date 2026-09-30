@@ -1,0 +1,67 @@
+{
+  "meta_title": "Calcular betão para laje - Sacos e volume, grátis",
+  "meta_desc": "Calculadora de betão grátis. Volume em m³ ou jardas cúbicas e número de sacos de 25 kg ou de 40, 60 e 80 lb, com margem de desperdício. Sem anúncios.",
+  "og_desc": "Calcule o volume de betão e o número exato de sacos para a sua laje. Grátis, sem anúncios.",
+  "h1": "Calculadora de betão para lajes",
+  "lede": "Introduza as medidas da laje e obtenha o volume de betão e o número exato de sacos de que precisa, com margem de desperdício. Grátis, imediato, sem anúncios.",
+  "length": "Comprimento",
+  "width": "Largura",
+  "thickness": "Espessura",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in é o habitual para pátios e caminhos.",
+  "thickness_hint_metric": "10 cm é o habitual para pátios e caminhos.",
+  "bag_label": "Tamanho do saco",
+  "bag_hint": "Betão pronto, basta juntar água.",
+  "waste_label": "Margem de desperdício (%)",
+  "waste_hint": "10% cobre derrames e uma base irregular.",
+  "how_text": "Uma laje é uma caixa simples: comprimento vezes largura vezes espessura dá o volume. A calculadora converte a espessura para a mesma unidade dos lados, junta a margem de desperdício, divide pelo rendimento de um saco e arredonda para cima para sacos inteiros:",
+  "formula": "volume (cu ft) = comprimento (ft) &times; largura (ft) &times; espessura (in) / 12<br>jardas cúbicas = volume / 27<br>volume (m&sup3;) = comprimento (m) &times; largura (m) &times; espessura (cm) / 100<br>sacos = ceil(volume &times; (1 + desperdício / 100) / rendimento do saco)",
+  "yields_text": "Rendimento por saco: um saco de 80 lb dá cerca de 0,60 cu ft, um de 60 lb 0,45 cu ft, um de 40 lb 0,30 cu ft e um saco de 25 kg cerca de 0,0123 m³.",
+  "example_imperial": "Imagine que betona um pátio de 10 × 10 ft com 4 polegadas de espessura. O volume é 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, ou seja 33,33 / 27 = <strong>1,23 cu yd</strong>. Com sacos de 80 lb de 0,60 cu ft cada, dá 33,33 / 0,60 = 55,6, arredondado para <strong>56 sacos</strong>. Junte a margem habitual de 10% (33,33 × 1,1 = 36,67 cu ft) e deve comprar <strong>62 sacos</strong>. Sobrarem sacos é melhor do que voltar à loja, por isso arredonde para cima.",
+  "example_metric": "Imagine que betona um pátio de 3 × 3 m com 10 cm de espessura. O volume é 3 × 3 × 10/100 = <strong>0,9 m³</strong>. Com sacos de 25 kg de cerca de 0,0123 m³ cada, dá 0,9 / 0,0123 = 73,2, arredondado para <strong>74 sacos</strong>. Junte a margem habitual de 10% (0,9 × 1,1 = 0,99 m³) e deve comprar 0,99 / 0,0123 = 80,5, arredondado para <strong>81 sacos</strong>. Sobrarem sacos é melhor do que voltar à loja, por isso arredonde para cima.",
+  "table_title": "Tamanhos de saco e rendimento",
+  "col_bag": "Tamanho do saco",
+  "col_yield": "Rendimento",
+  "col_per": "Sacos por volume",
+  "more_text": "A planear o resto da obra? Experimente as outras calculadoras grátis:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} sacos de {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} sacos de {bag}</small>",
+    "vol_imperial": "volume = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "volume = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Com {waste}% de desperdício: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Com {waste}% de desperdício: {vol} × {factor} = {total} m³",
+    "bags_line": "sacos = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} por cu yd",
+    "tbl_per_kg": "cerca de {m3} por m³, {yd} por cu yd"
+  },
+  "faq": [
+    [
+      "Quantos sacos de betão há numa jarda cúbica?",
+      "Um saco de 80 lb rende cerca de 0,60 pés cúbicos, e uma jarda cúbica tem 27 pés cúbicos, por isso precisa de 45 sacos de 80 lb por jarda cúbica. Com sacos de 60 lb são 60, e com sacos de 40 lb são 90. Com sacos de 25 kg precisa de cerca de 81 por metro cúbico (1,31 jardas cúbicas)."
+    ],
+    [
+      "Que espessura deve ter uma laje de betão?",
+      "10 cm (4 polegadas) é a espessura habitual para pátios, caminhos e bases de arrecadações. Entradas de garagem onde passam carros precisam normalmente de 12 a 15 cm (5 a 6 polegadas), e lajes para veículos pesados ou oficinas chegam muitas vezes a 15 cm (6 polegadas) ou mais. Consulte a regulamentação local antes de betonar."
+    ],
+    [
+      "Preciso de varão ou malha electrossoldada numa laje?",
+      "Lajes pequenas como caminhos costumam ficar bem só com juntas de retração, mas a malha electrossoldada ou o varão ajudam a manter as fissuras fechadas em pátios, entradas e pavimentos de garagem. Coloque a armadura a meio da espessura da laje, cerca de 5 cm (2 polegadas) acima do fundo numa laje de 10 cm (4 polegadas), e não pousada no chão."
+    ],
+    [
+      "Quando devo encomendar um camião betoneira em vez de sacos?",
+      "O ponto de viragem costuma rondar os 0,76 metros cúbicos (1 jarda cúbica). Isso já são 45 sacos de 80 lb ou cerca de 62 sacos de 25 kg para carregar e misturar à mão. Acima disso, o betão pronto de camião é mais rápido, mais uniforme e muitas vezes mais barato, embora as cargas pequenas possam ter um custo extra."
+    ],
+    [
+      "Quanto tempo demora o betão a curar?",
+      "O betão faz presa em horas mas cura devagar. Normalmente pode caminhar sobre ele ao fim de 24 a 48 horas e passar de carro ao fim de cerca de 7 dias. Atinge a maior parte da resistência de projeto aos 28 dias. Mantenha-o húmido na primeira semana para que cure forte em vez de secar depressa demais."
+    ]
+  ]
+}

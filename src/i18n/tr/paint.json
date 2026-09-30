@@ -1,0 +1,76 @@
+{
+  "meta_title": "Boya Hesaplama - Ne Kadar Boya Gerekir?",
+  "meta_desc": "Ücretsiz boya hesaplama. Oda ölçülerini, kapı, pencere ve kat sayısını girin, kaç litre boya gerektiğini öğrenin. Anında, reklamsız, çevrimdışı çalışır.",
+  "og_desc": "Oda ölçülerini, kapı, pencere ve kat sayısını girin, litre veya galon olarak boya miktarını öğrenin. Ücretsiz, reklamsız.",
+  "h1": "Boya Hesaplama",
+  "lede": "Odanız için kaç litre veya galon boya gerektiğini kapı, pencere ve kat sayısını hesaba katarak bulun. Ücretsiz, anında, reklamsız.",
+  "length": "Oda uzunluğu",
+  "width": "Oda genişliği",
+  "height": "Duvar yüksekliği",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "Kapılar",
+  "doors_hint": "Boyanmaz. Her biri standart bir kapı alanı düşer.",
+  "windows": "Pencereler",
+  "coats": "Kat",
+  "coats_hint": "Genelde iki kat uygulanır.",
+  "coverage": "Sarfiyat",
+  "sfx_cov_imperial": "(galon başına sq ft)",
+  "sfx_cov_metric": "(litre başına m²)",
+  "coverage_hint_imperial": "tipik 250-400",
+  "coverage_hint_metric": "tipik 8-12",
+  "ceiling": "Tavanı dahil et",
+  "how_text": "Hesaplayıcı odanın çevresindeki duvar yüzeyini ölçer, her kapı ve pencere için standart bir alan düşer, isterseniz tavanı ekler, kat sayısıyla çarpar ve boyanızın sarfiyatına böler. Sonuç her zaman tam kutuya yukarı yuvarlanır, çünkü 1,8 galon boya satın alamazsınız:",
+  "formula": "duvar alanı = 2 &times; (uzunluk + genişlik) &times; yükseklik<br>boyanacak = duvar alanı &minus; kapılar &times; kapı alanı &minus; pencereler &times; pencere alanı (+ tavan)<br>kutu = boyanacak &times; kat &divide; sarfiyat, yukarı yuvarlanır",
+  "metric_note": "Metrik modda bir kapı 1,95 m², bir pencere 1,4 m² sayılır ve sarfiyat litre başınadır. İnç ve fit modunda bir kapı 21 sq ft, bir pencere 15 sq ft sayılır.",
+  "example_imperial": "Odanızın 12 × 10 ft, duvarların 8 ft yüksekliğinde olduğunu, bir kapı ve bir pencere bulunduğunu ve galon başına 350 sq ft ile iki kat planladığınızı varsayalım. Duvar alanı 2 × (12 + 10) × 8 = <strong>352 sq ft</strong> olur. Kapıyı (21 sq ft) ve pencereyi (15 sq ft) düşünce <strong>kat başına 316 sq ft</strong> kalır. İki kat 632 sq ft eder ve 632 ÷ 350 = 1,81, yukarı yuvarlanınca <strong>2 galon</strong>. \"Tavanı dahil et\" seçeneğini işaretlerseniz 120 sq ft tavan bunu kat başına 436 sq ft, toplam 872 sq ft yapar, yani <strong>3 galon</strong> gerekir.",
+  "example_metric": "Odanızın 4 × 3 m, duvarların 2,5 m yüksekliğinde olduğunu, bir kapı ve bir pencere bulunduğunu ve litre başına 10 m² ile iki kat planladığınızı varsayalım. Duvar alanı 2 × (4 + 3) × 2,5 = <strong>35 m²</strong> olur. Kapıyı (1,95 m²) ve pencereyi (1,4 m²) düşünce <strong>kat başına 31,65 m²</strong> kalır. İki kat 63,3 m² eder ve 63,3 ÷ 10 = 6,33, yukarı yuvarlanınca <strong>7 litre</strong>. \"Tavanı dahil et\" seçeneğini işaretlerseniz 12 m² tavan bunu kat başına 43,65 m², toplam 87,3 m² yapar, yani <strong>9 litre</strong> gerekir.",
+  "table_title": "Oda büyüklüğüne göre gereken boya",
+  "table_note_imperial": "8 ft yüksekliğinde duvarlar, bir kapı, bir pencere, iki kat, galon başına 350 sq ft:",
+  "table_note_metric": "2,5 m yüksekliğinde duvarlar, bir kapı, bir pencere, iki kat, litre başına 10 m²:",
+  "col_room": "Oda",
+  "col_walls": "Sadece duvarlar",
+  "col_both": "Duvarlar + tavan",
+  "more_text": "İşin geri kalanını mı planlıyorsunuz? Diğer ücretsiz hesaplayıcıları deneyin:",
+  "js": {
+    "main": "{cansText} <small>({coatsText} için)</small>",
+    "cans_imperial_one": "{cans} galon",
+    "cans_imperial": "{cans} galon",
+    "cans_metric_one": "{cans} litre",
+    "cans_metric": "{cans} litre",
+    "coats_one": "{coats} kat",
+    "coats_other": "{coats} kat",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "Duvar alanı: 2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "Eksi {doors} kapı ve {windows} pencere: −{deduct} {a} = <strong>kat başına {per} {a}</strong>",
+    "deduct_ceiling_line": "Eksi {doors} kapı ve {windows} pencere: −{deduct} {a}, artı tavan {ceil} {a} = <strong>kat başına {per} {a}</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}, yukarı yuvarlanınca <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "1 litre boya kaç metrekare boyar?",
+      "Çoğu iç cephe boyası düzgün, astarlı bir duvarda litre başına yaklaşık 6 ile 10 m² (galon başına 250 ile 400 fit kare) kaplar. Bu hesaplayıcı varsayılan olarak litre başına 10 m² veya galon başına 350 sq ft kullanır. Pürüzlü, gözenekli veya çıplak yüzeyler daha fazla boya emer, bu yüzden aralığın alt ucunu kullanın."
+    ],
+    [
+      "Boyamadan önce astar gerekir mi?",
+      "Çıplak alçıpan, işlenmemiş ahşap, lekeli veya parlak yüzeylerde ve koyu bir rengi açık bir renkle kapatırken astar kullanın. Daha önce boyanmış, iyi durumda ve benzer renkteki duvarlarda kaliteli bir astarlı boya genellikle yeterlidir. Astar, fazladan bir kat boyadan daha ucuzdur."
+    ],
+    [
+      "Tek kat boya yeterli mi, yoksa iki kat mı gerekir?",
+      "Düzgün ve dayanıklı bir sonuç için iki kat planlayın. İyi hazırlanmış bir duvarı aynı renk ve parlaklıkla yeniden boyarken tek kat yetebilir. Büyük renk değişimleri, kırmızı ve sarılar veya yamaların üzerini boyamak çoğu zaman iki kat artı altında renklendirilmiş astar gerektirir."
+    ],
+    [
+      "4x4 oda için ne kadar boya gerekir?",
+      "2,5 m duvarlı 4 x 4 m bir oda, litre başına 10 m² ile iki kat için 8 litre ister. ABD ölçüleriyle 8 fit duvarlı 12 x 12 fitlik bir odada 384 sq ft duvar vardır. Bir kapı ve bir pencere düşünce kat başına 348 sq ft kalır, yani galon başına 350 sq ft ile iki kat için 2 galon gerekir."
+    ],
+    [
+      "Tavan boyası duvar boyasından farklı mı?",
+      "Tavan boyası daha az sıçrasın ve damlasın diye daha kıvamlı üretilir ve rulo izleri ışıkta belli olmasın diye neredeyse her zaman mattır. Tavanda mat duvar boyası da kullanabilirsiniz, ama özel tavan boyası baş üstünde daha kolay uygulanır ve kusurları daha iyi gizler."
+    ]
+  ]
+}

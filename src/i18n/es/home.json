@@ -1,0 +1,14 @@
+{
+  "meta_title": "BuildCalc - Calculadoras de construcción gratis",
+  "meta_desc": "Calculadoras gratis para obra y bricolaje: pendiente de tejado, hormigón, pintura, azulejos y escaleras. Al instante, sin anuncios y sin conexión.",
+  "og_desc": "Calculadoras de pendiente de tejado, hormigón, pintura, azulejos y escaleras. Gratis, al instante, sin anuncios.",
+  "h1": "Calculadoras de construcción gratis",
+  "lede": "Cinco calculadoras rápidas para trabajos reales. Sin anuncios, sin rastreo y sin registro. Cada resultado muestra el cálculo que hay detrás, y todo sigue funcionando sin conexión una vez cargado.",
+  "card_roof": "Altura y proyección a grados, porcentaje y X:12, más el factor de pendiente para la superficie del tejado.",
+  "card_concrete": "Volumen y número exacto de sacos, con margen de desperdicio.",
+  "card_paint": "Cuánta pintura necesita tu habitación, descontando puertas y ventanas, según el número de manos.",
+  "card_tile": "Azulejos y cajas según la superficie y el tamaño de la pieza, con junta y recortes.",
+  "card_stair": "Contrahuellas y huellas a partir de la altura total, comprobadas con los límites normativos y la regla de comodidad.",
+  "why_title": "Por qué existe esta web",
+  "why_text": "La mayoría de webs de calculadoras esconden una fórmula sencilla bajo anuncios, ventanas emergentes y suscripciones al boletín. Estas cinco herramientas hacen lo contrario: la calculadora está arriba, la fórmula aparece bajo el resultado y la página carga en una fracción de segundo. Si una herramienta te ahorra un viaje inútil a la tienda, hay un botón de donación después del resultado. Ese es todo el modelo de negocio."
+}

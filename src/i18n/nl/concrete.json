@@ -1,0 +1,67 @@
+{
+  "meta_title": "Beton berekenen - Zakken en m³ voor je betonplaat",
+  "meta_desc": "Beton berekenen voor je betonplaat, gratis. Krijg het volume in m³ of cu yd en het aantal zakken van 25 kg of 40, 60, 80 lb, met marge voor verlies.",
+  "og_desc": "Bereken het betonvolume en het exacte aantal zakken voor je betonplaat. Gratis, zonder advertenties.",
+  "h1": "Beton berekenen voor een betonplaat",
+  "lede": "Vul de afmetingen van je plaat in en krijg het betonvolume plus het exacte aantal zakken dat je nodig hebt, met een marge voor verlies. Gratis, direct, zonder advertenties.",
+  "length": "Lengte",
+  "width": "Breedte",
+  "thickness": "Dikte",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in is gebruikelijk voor terrassen en paden.",
+  "thickness_hint_metric": "10 cm is gebruikelijk voor terrassen en paden.",
+  "bag_label": "Zakgrootte",
+  "bag_hint": "Kant-en-klaar beton, enkel water toevoegen.",
+  "waste_label": "Marge voor verlies (%)",
+  "waste_hint": "10% dekt morsen en een oneffen ondergrond.",
+  "how_text": "Een plaat is een eenvoudige balk: lengte maal breedte maal dikte geeft het volume. De rekenhulp zet de dikte om naar dezelfde eenheid als de zijden, telt je marge voor verlies erbij, deelt door de opbrengst van één zak en rondt af naar boven op hele zakken:",
+  "formula": "volume (cu ft) = lengte (ft) &times; breedte (ft) &times; dikte (in) / 12<br>kubieke yards = volume / 27<br>volume (m&sup3;) = lengte (m) &times; breedte (m) &times; dikte (cm) / 100<br>zakken = ceil(volume &times; (1 + verlies / 100) / opbrengst per zak)",
+  "yields_text": "Opbrengst per zak: een zak van 80 lb geeft ongeveer 0,60 cu ft, een zak van 60 lb 0,45 cu ft, een zak van 40 lb 0,30 cu ft, en een zak van 25 kg ongeveer 0,0123 m³.",
+  "example_imperial": "Stel dat je een terras van 10 × 10 ft stort, 4 inch dik. Het volume is 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, dat is 33,33 / 27 = <strong>1,23 cu yd</strong>. Met zakken van 80 lb van elk 0,60 cu ft is dat 33,33 / 0,60 = 55,6, naar boven afgerond <strong>56 zakken</strong>. Tel de gebruikelijke 10% verlies erbij (33,33 × 1,1 = 36,67 cu ft) en je koopt best <strong>62 zakken</strong>. Een paar zakken over is handiger dan een tweede rit naar de winkel, dus rond naar boven af.",
+  "example_metric": "Stel dat je een terras van 3 × 3 m stort, 10 cm dik. Het volume is 3 × 3 × 10/100 = <strong>0,9 m³</strong>. Met zakken van 25 kg van elk ongeveer 0,0123 m³ is dat 0,9 / 0,0123 = 73,2, naar boven afgerond <strong>74 zakken</strong>. Tel de gebruikelijke 10% verlies erbij (0,9 × 1,1 = 0,99 m³) en je koopt best 0,99 / 0,0123 = 80,5, naar boven afgerond <strong>81 zakken</strong>. Een paar zakken over is handiger dan een tweede rit naar de winkel, dus rond naar boven af.",
+  "table_title": "Zakgroottes en opbrengst",
+  "col_bag": "Zakgrootte",
+  "col_yield": "Opbrengst",
+  "col_per": "Zakken per volume",
+  "more_text": "Plan je de rest van de klus? Probeer de andere gratis rekenhulpen:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= {bags} zakken van {bag}</small>",
+    "main_metric": "{vol} m³ <small>= {bags} zakken van {bag}</small>",
+    "vol_imperial": "volume = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "volume = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Met {waste}% verlies: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Met {waste}% verlies: {vol} × {factor} = {total} m³",
+    "bags_line": "zakken = {total} / {yield}, naar boven afgerond = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} per cu yd",
+    "tbl_per_kg": "ongeveer {m3} per m³, {yd} per cu yd"
+  },
+  "faq": [
+    [
+      "Hoeveel zakken beton heb je nodig per kubieke meter?",
+      "Een zak van 25 kg geeft ongeveer 0,0123 m³, dus je hebt ongeveer 81 zakken nodig per kubieke meter (1,31 cubic yard). In Amerikaanse maten geeft een zak van 80 lb ongeveer 0,60 cubic feet en is een cubic yard 27 cubic feet, dus dat zijn 45 zakken van 80 lb per cubic yard. Met zakken van 60 lb zijn het er 60, met zakken van 40 lb 90."
+    ],
+    [
+      "Hoe dik moet een betonplaat zijn?",
+      "10 cm (4 inch) is de gebruikelijke dikte voor terrassen, paden en funderingsplaten voor een tuinhuis. Opritten waar auto's over rijden hebben meestal 12 tot 15 cm (5 tot 6 inch) nodig, en platen voor zware voertuigen of werkplaatsen gaan vaak naar 15 cm (6 inch) of meer. Controleer de lokale bouwvoorschriften voor je stort."
+    ],
+    [
+      "Heb ik wapening of een wapeningsnet nodig in een plaat?",
+      "Kleine platen zoals paden kunnen vaak met alleen krimpvoegen, maar een wapeningsnet of betonstaal helpt om scheuren dicht te houden in terrassen, opritten en garagevloeren. Leg de wapening in het midden van de plaatdikte, ongeveer 5 cm (2 inch) hoog in een plaat van 10 cm (4 inch), niet op de grond."
+    ],
+    [
+      "Wanneer bestel ik beter een betonmixer dan zakken?",
+      "Rond 0,76 kubieke meter (1 cubic yard) ligt meestal het omslagpunt. Dat zijn al ongeveer 62 zakken van 25 kg of 45 zakken van 80 lb om te sjouwen en met de hand te mengen. Daarboven is een truckmixer met stortklaar beton sneller, gelijkmatiger en vaak goedkoper, al kunnen kleine leveringen extra kosten."
+    ],
+    [
+      "Hoe lang moet beton uitharden?",
+      "Beton bindt in enkele uren maar hardt traag uit. Je kunt er meestal na 24 tot 48 uur op lopen en na ongeveer 7 dagen over rijden. Na 28 dagen heeft het het grootste deel van zijn sterkte. Houd het de eerste week vochtig, zodat het sterk uithardt in plaats van te snel uit te drogen."
+    ]
+  ]
+}

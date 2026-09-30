@@ -1,0 +1,85 @@
+{
+  "meta_title": "Kalkulator płytek - ile płytek potrzebuję?",
+  "meta_desc": "Darmowy kalkulator płytek. Wpisz wymiary podłogi lub ściany, rozmiar płytki i fugę, a poznasz liczbę płytek i opakowań z zapasem. Od razu, bez reklam.",
+  "og_desc": "Oblicz liczbę płytek i opakowań na podłogę lub ścianę, z zapasem. Za darmo, bez reklam.",
+  "h1": "Kalkulator płytek",
+  "lede": "Oblicz, ile płytek i opakowań potrzebujesz na podłogę lub ścianę, z fugą i zapasem na docinki. Za darmo, od razu, bez reklam.",
+  "mode_label": "Powierzchnia",
+  "mode_dims": "Długość x szerokość",
+  "mode_area": "Znam powierzchnię",
+  "length": "Długość",
+  "width": "Szerokość",
+  "area": "Powierzchnia",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Rozmiar płytki (cale)",
+  "tile_size_metric": "Rozmiar płytki (cm)",
+  "opt_subway": "Cegiełka 3 x 6",
+  "opt_custom": "Własny",
+  "tile_w": "Szerokość płytki",
+  "tile_h": "Wysokość płytki",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Szerokość fugi",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 bez fugi. 1/8 in = 0,125.",
+  "gap_hint_metric": "0 bez fugi. 3 mm to częsta fuga na podłodze.",
+  "pattern": "Układ",
+  "pattern_straight": "Prosty (10% zapasu)",
+  "pattern_diag": "Po skosie / jodełka (15% zapasu)",
+  "perbox": "Płytek w opakowaniu (opcjonalnie)",
+  "perbox_hint": "Podane na opakowaniu. Zostaw puste, aby pominąć.",
+  "how_text": "Kalkulator dzieli powierzchnię przez powierzchnię jednej płytki razem z fugą, dolicza zapas na docinki i stłuczki, i zaokrągla w górę do pełnych płytek:",
+  "formula": "powierzchnia płytki z fugą = (szerokość płytki + fuga) &times; (wysokość płytki + fuga)<br>płytki = ceil( powierzchnia / powierzchnia płytki z fugą &times; (1 + zapas) )<br>opakowania = ceil( płytki / płytek w opakowaniu )",
+  "how_text2": "Zapas wynosi 10% przy układzie prostym i 15% przy układzie po skosie lub w jodełkę, gdzie więcej docinków nie nadaje się do użycia. Szersza fuga sprawia, że każda płytka zajmuje trochę większą powierzchnię, więc liczba płytek nieco spada.",
+  "example_imperial": "Załóżmy, że układasz płytki na podłodze 10 ft na 12 ft, czyli <strong>120 sq ft</strong> (17 280 sq in), płytkami 12 x 12 cali w układzie prostym z fugą 1/8 cala (0,125 in). Każda płytka z fugą zajmuje 12,125 × 12,125 = 147,02 sq in, więc bez zapasu wychodzi 17 280 / 147,02 = 117,54 płytki. Dolicz 10%: 117,54 × 1,1 = 129,29, w górę do <strong>130 płytek</strong>. Jeśli w opakowaniu jest 8 sztuk, to ceil(130 / 8) = <strong>17 opakowań</strong>. Ta sama podłoga po skosie z 15% zapasu wymaga 136 płytek.",
+  "example_metric": "Załóżmy, że układasz płytki na podłodze 4 m na 3 m, czyli <strong>12 m²</strong> (120 000 cm²), płytkami 30 x 30 cm w układzie prostym z fugą 3 mm (0,3 cm). Każda płytka z fugą zajmuje 30,3 × 30,3 = 918,09 cm², więc bez zapasu wychodzi 120 000 / 918,09 = 130,71 płytki. Dolicz 10%: 130,71 × 1,1 = 143,78, w górę do <strong>144 płytek</strong>. Jeśli w opakowaniu jest 11 sztuk, to ceil(144 / 11) = <strong>14 opakowań</strong>. Ta sama podłoga po skosie z 15% zapasu wymaga 151 płytek.",
+  "table_title_imperial": "Płytek na 100 sq ft",
+  "table_title_metric": "Płytek na 10 m²",
+  "table_note": "Popularne rozmiary płytek, układ prosty z 10% zapasu i bez fugi:",
+  "col_size": "Rozmiar płytki",
+  "col_area": "Powierzchnia płytki",
+  "col_count_imperial": "Płytek na 100 sq ft",
+  "col_count_metric": "Płytek na 10 m²",
+  "more_text": "Planujesz resztę roboty? Wypróbuj pozostałe darmowe kalkulatory:",
+  "js": {
+    "main": "Płytki: {tiles} szt.",
+    "main_boxes": "Płytki: {tiles} szt. <small>= opakowania po {perbox} szt.: {boxes}</small>",
+    "area_line_imperial": "Powierzchnia do wyłożenia: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Powierzchnia do wyłożenia: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Powierzchnia płytki z fugą: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Powierzchnia płytki z fugą: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Zapas: <strong>{pct}%</strong> (układ prosty)",
+    "waste_diag": "Zapas: <strong>{pct}%</strong> (po skosie / jodełka)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "Cegiełka 3 x 6 in",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "Ile płytek kupić na zapas?",
+      "Kup o 10 do 15% więcej, niż wynika z samej powierzchni. Docinki przy ścianach, stłuczki i przyszłe naprawy zjadają ten zapas. Przyjmij 10% przy prostym układzie w prostokątnym pomieszczeniu, a 15% przy układzie po skosie lub w jodełkę, małych płytkach albo pomieszczeniach z wieloma narożnikami."
+    ],
+    [
+      "Czym jest zapas na płytki?",
+      "Zapas to płytki, które kupujesz, ale które nie trafią na podłogę: docinki przy ścianach i wokół armatury, płytki pęknięte przy cięciu lub w transporcie oraz płytki odłożone na późniejsze naprawy. To normalne, a nie błąd. Ten kalkulator dolicza procent zapasu przed zaokrągleniem w górę do pełnych płytek."
+    ],
+    [
+      "Ile płytek 30x30 potrzeba na 9,3 m² (100 sq ft)?",
+      "Płytka 30x30 cm (12x12 cali) pokrywa 1 stopę kwadratową, więc 100 stóp kwadratowych (9,3 m²) wymaga 100 płytek bez zapasu. Dolicz 10% przy układzie prostym i kup 110 płytek. Z fugą każda płytka zajmuje nieco więcej, więc liczba może trochę spaść."
+    ],
+    [
+      "Czy układ po skosie wymaga więcej płytek?",
+      "Tak. Przy układaniu płytek pod kątem 45 stopni każdy rząd kończy się ukośnym docinkiem przy ścianie, a wielu z tych docinków nie da się wykorzystać. Przy układzie po skosie lub w jodełkę zaplanuj około 15% zapasu zamiast zwykłych 10% przy układzie prostym."
+    ],
+    [
+      "Czy przy liczeniu płytek uwzględniać fugi?",
+      "Tak, i działają na twoją korzyść. Każda płytka z fugą, często 3 mm (1/8 cala), zajmuje nieco większą powierzchnię niż sama płytka, więc szersza fuga lekko zmniejsza liczbę potrzebnych płytek. Przy dużych płytkach efekt jest mały, ale przy małych cegiełkach jest zauważalny."
+    ]
+  ]
+}

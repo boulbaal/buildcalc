@@ -1,0 +1,64 @@
+{
+  "meta_title": "Hesabkirina Derenceyan - Gav, Pêpelûk û Dirêjahî",
+  "meta_desc": "Hesabkera derenceyan a belaş. Bilindahiya giştî binivîse û hejmara gavan, bilindahiya gavê, pêpelûk û dirêjahiya giştî bistîne, bi kontrola rêzik û rehetiyê.",
+  "og_desc": "Ji bilindahiya giştî gav, bilindahiya gavê, pêpelûk û dirêjahiya giştî bistîne. Bilez, belaş, bê reklam.",
+  "h1": "Hesabkirina derenceyan",
+  "lede": "Bilindahiya giştî binivîse û hejmara gavan, bilindahiya rastîn a gavê, pêpelûk û dirêjahiya giştî bistîne, bi kontrola rêzik û rehetiyê. Belaş, bilez, bê reklam.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Bilindahiya giştî",
+  "rise_hint": "Ji erda qedandî heta erda qedandî, bi stûnî tê pîvandin.",
+  "desired": "Bilindahiya gavê ya xwestî",
+  "desired_hint": "Tu dixwazî her gav çiqas be. Ji bo berhevdanê tê nîşandan.",
+  "tread": "Kûrahiya pêpelûkê",
+  "tread_hint": "Kûrahiya asoyî ya her gavê, ji serê pêş heta serê pêş.",
+  "space": "Dirêjahiya berdest",
+  "space_hint": "Ne mecbûrî. Cihê asoyî yê ku ji bo derenceyê heye.",
+  "how_text": "Hesabker bilindahiya giştî li bilindahiya gavê ya herî zêde 7,75 in (19,7 cm) parve dike û bilind dike da ku hejmara gavan derkeve. Parvekirina bilindahiya giştî li ser wê hejmarê bilindahiya rastîn a gavê dide ku li ser kêleka derenceyê were nîşankirin. Ji bo rehetiyê, du caran bilindahiya gavê û kûrahiya pêpelûkê divê di navbera 24 û 25 in (61 heta 63,5 cm) de be.",
+  "formula": "gav = ceil(bilindahiya giştî / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>bilindahiya gavê = bilindahiya giştî / gav<br>pêpelûk = gav - 1<br>dirêjahiya giştî = pêpelûk &times; kûrahiya pêpelûkê<br>rehetî = 2 &times; bilindahiya gavê + kûrahiya pêpelûkê",
+  "how_note": "Bilindahiya gavê ya ku te xwestiye li kêleka ya rastîn tê nîşandan da ku tu bibînî plan çiqas nêzîk e. <strong>Sînorên rêzikan li vir li gorî US IRC, rêzika avahîsaziyê ya Amerîkî ne (gava herî zêde 7,75 in an 19,7 cm, pêpelûka herî kêm 10 in an 25,4 cm). Rêzikên herêmî dikarin cuda bin, ji ber vê yekê berî birînê her tim kontrol bike.</strong>",
+  "example_imperial": "Bifikire ku bilindahiya giştî ji erdê heta erdê 100 înç e. Wê demê 100 / 7,75 = 12,9, bilindkirî dibe <strong>13 gav</strong>. Her gav 100 / 13 = <strong>7,69 in</strong> e, û 13 - 1 = <strong>12 pêpelûk</strong> hene. Bi kûrahiya pêpelûkê ya 10,5 in dirêjahiya giştî 12 × 10,5 = <strong>126 in</strong> e. Nirxa rehetiyê 2 × 7,69 + 10,5 = 25,88 in e, hinekî li ser rêza îdeal a 24 heta 25 in. Gaveke zêde (14 gavên 7,14 in) wê dike 24,79 in, di nav rêzê de.",
+  "example_metric": "Bifikire ku bilindahiya giştî ji erdê heta erdê 270 cm e. Wê demê 270 / 19,7 = 13,7, bilindkirî dibe <strong>14 gav</strong>. Her gav 270 / 14 = <strong>19,29 cm</strong> e, û 14 - 1 = <strong>13 pêpelûk</strong> hene. Bi kûrahiya pêpelûkê ya 27 cm dirêjahiya giştî 13 × 27 = <strong>351 cm</strong> e. Nirxa rehetiyê 2 × 19,2857 + 27 = 65,57 cm e, li ser rêza îdeal a 61 heta 63,5 cm. Gaveke zêde (15 gavên 18 cm) wê dike 63 cm, di nav rêzê de.",
+  "table_title": "Gav li gorî bilindahiya giştî",
+  "col_rise": "Bilindahiya giştî",
+  "col_risers": "Gav",
+  "col_riser": "Bilindahiya gavê",
+  "col_treads": "Pêpelûk",
+  "more_text": "Mayî ya karê plan dikî? Hesabkerên din ên belaş biceribîne:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} gavên {riser} {u}, {treads} pêpelûk",
+    "run_line": "Dirêjahiya giştî: <strong>{run} {u}</strong> ({treads} pêpelûk × {tread} {u})",
+    "target_line": "Gava te ya xwestî: {desired} {u}, ya rastîn: {riser} {u}",
+    "comfort_line": "Rehetî (2R+T): {comfort} {u} {badge}",
+    "comfort_in": "Di rêza {lo} heta {hi} {u} de",
+    "comfort_out": "Li derveyî rêza {lo} heta {hi} {u}",
+    "irc_ok": "Li gorî sînorên US IRC ye (gav ≤ {max} {u}, pêpelûk ≥ {min} {u})",
+    "irc_bad": "Li derveyî sînorên US IRC: gava herî zêde {max} {u}, pêpelûka herî kêm {min} {u}",
+    "irc_note": "IRC rêzikeke Amerîkî ye; rêzikên xwe yên herêmî kontrol bike.",
+    "no_fit": "Cih nabe: {run} {u} dirêjahî lazim e, ya te {space} {u} heye"
+  },
+  "faq": [
+    [
+      "Li gorî rêzikan bilindahiya gavê ya herî zêde çi ye?",
+      "US IRC ji bo derenceyên xaniyan bilindahiya gavê ya herî zêde 7,75 înç (19,7 cm) destûr dide. Gavên di yek beşê derenceyê de nabe ku ji 3/8 înç (nêzîkî 1 cm) bêtir ji hev cuda bin. Rêzikên bazirganî û gelek rêzikên herêmî hişktir in, ji ber vê yekê her tim bi dezgeha avahîsaziyê ya herêmî re kontrol bike."
+    ],
+    [
+      "Bilindahiya gavê ya îdeal ji bo derenceyan çi ye?",
+      "Piraniya mirovan gavên 7 heta 7,5 înç (18 heta 19 cm) ji bo hilkişînê herî rehet dibînin. Gavên nizmtir ên nêzîkî 6 înç (15 cm) ji bo derenceyên derve û kesên temenmezin baş in. Her tiştê li ser herî zêdeya US IRC ya 7,75 înç (19,7 cm) tûj xuya dike û li wir destûr nayê dayîn."
+    ],
+    [
+      "Qaîdeya 2R+T ya derenceyan çi ye?",
+      "Qaîdeya rehetiyê ya 2R+T dibêje du caran bilindahiya gavê û kûrahiya pêpelûkê divê di navbera 24 û 25 înç (61 heta 63,5 cm) de be. Ev nêzîkî gava meşê ya xwezayî ye. Derenceyên di vê rêzê de rehet in, lê yên li derveyî wê pir tûj an pir nizm xuya dikin."
+    ],
+    [
+      "Ez çawa hejmara gavên derenceyekê hesab dikim?",
+      "Bilindahiya giştî ji erda qedandî heta erda qedandî bipîve, paşê li bilindahiya gavê ya herî zêde 7,75 înç (19,7 cm) parve bike û bilind bike. Ev hejmara gavan dide. Parvekirina bilindahiya giştî li ser wê bilindahiya rastîn a gavê dide. Hejmara pêpelûkan yek ji hejmara gavan kêmtir e."
+    ],
+    [
+      "Li gorî rêzikan kûrahiya pêpelûkê ya herî kêm çi ye?",
+      "US IRC kûrahiya pêpelûkê ya herî kêm 10 înç (25,4 cm) dixwaze, ji serê pêş heta serê pêş tê pîvandin. Pêpelûkên kûrtir ên 10,5 heta 11 înç (27 heta 28 cm) rehettir û berbelav in. Pêpelûkên di yek beşê derenceyê de nabe ku ji 3/8 înç (nêzîkî 1 cm) bêtir ji hev cuda bin. Berî avakirinê rêzikên herêmî kontrol bike."
+    ]
+  ]
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_desc}}">
+<link rel="canonical" href="{{@canonical}}">
+{{@hreflang}}
+<meta property="og:title" content="{{meta_title}}">
+<meta property="og:description" content="{{og_desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{@canonical}}">
+<link rel="stylesheet" href="/assets/style.css">
+{{@appld}}
+{{@faqld}}
+</head>
+<body data-units="{{@units}}">
+<div class="wrap">
+
+<header class="site">
+  <nav aria-label="{{home}}">
+    <div class="left">
+      <a class="brand" href="{{@url_home}}">Build<span>Calc</span></a>
+      <a class="crumb" href="{{@url_home}}">{{home}}</a>
+      <span class="crumb" aria-current="page">{{h1}}</span>
+    </div>
+    {{@langselect}}
+  </nav>
+</header>
+
+<main>
+<h1>{{h1}}</h1>
+<p class="lede">{{lede}}</p>
+
+<div class="calc">
+  <div class="units" role="group" aria-label="{{units_label}}">
+    <button type="button" data-units="imperial">in</button>
+    <button type="button" data-units="metric">cm</button>
+  </div>
+  <div class="grid">
+    <div class="field">
+      <label for="rise">{{rise}} <span data-if-units="imperial">{{sfx_in}}</span><span data-if-units="metric">{{sfx_cm}}</span></label>
+      <input id="rise" type="number" inputmode="decimal" min="0" step="any" value="{{#u:100|270}}" data-imperial="100" data-metric="270" aria-describedby="rise-error rise-hint">
+      <span class="hint" id="rise-hint">{{rise_hint}}</span>
+      <span class="error" id="rise-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="desired">{{desired}} <span data-if-units="imperial">{{sfx_in}}</span><span data-if-units="metric">{{sfx_cm}}</span></label>
+      <input id="desired" type="number" inputmode="decimal" min="0" step="any" value="{{#u:7.5|18}}" data-imperial="7.5" data-metric="18" aria-describedby="desired-error desired-hint">
+      <span class="hint" id="desired-hint">{{desired_hint}}</span>
+      <span class="error" id="desired-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="tread">{{tread}} <span data-if-units="imperial">{{sfx_in}}</span><span data-if-units="metric">{{sfx_cm}}</span></label>
+      <input id="tread" type="number" inputmode="decimal" min="0" step="any" value="{{#u:10.5|27}}" data-imperial="10.5" data-metric="27" aria-describedby="tread-error tread-hint">
+      <span class="hint" id="tread-hint">{{tread_hint}}</span>
+      <span class="error" id="tread-error" aria-live="polite"></span>
+    </div>
+    <div class="field">
+      <label for="space">{{space}} <span data-if-units="imperial">{{sfx_in}}</span><span data-if-units="metric">{{sfx_cm}}</span></label>
+      <input id="space" type="number" inputmode="decimal" min="0" step="any" value="" aria-describedby="space-error space-hint">
+      <span class="hint" id="space-hint">{{space_hint}}</span>
+      <span class="error" id="space-error" aria-live="polite"></span>
+    </div>
+  </div>
+</div>
+
+<div class="result" aria-live="polite" id="result">
+  <div class="big" id="r-main">&nbsp;</div>
+  <ul class="path" id="r-path"></ul>
+</div>
+
+<div class="donate" id="donate" hidden>
+  <p>{{donate_text}}</p>
+  <div class="btns">
+    <a class="btn" data-donate="paypal" href="#" rel="noopener">{{donate_paypal}}</a>
+    <a class="btn alt" data-donate="kofi" href="#" rel="noopener">{{donate_kofi}}</a>
+  </div>
+</div>
+
+<h2>{{how_it_works}}</h2>
+<p>{{how_text}}</p>
+<div class="formula">{{formula}}</div>
+<p>{{how_note}}</p>
+
+<h2>{{worked_example}}</h2>
+<p>{{example@u}}</p>
+
+<h2>{{table_title}}</h2>
+<table>
+  <thead><tr><th scope="col">{{col_rise}} <span data-if-units="imperial">{{sfx_in}}</span><span data-if-units="metric">{{sfx_cm}}</span></th><th scope="col">{{col_risers}}</th><th scope="col">{{col_riser}} <span data-if-units="imperial">{{sfx_in}}</span><span data-if-units="metric">{{sfx_cm}}</span></th><th scope="col">{{col_treads}}</th></tr></thead>
+  <tbody id="rise-table"></tbody>
+</table>
+
+<h2>{{faq_title}}</h2>
+{{@faq}}
+
+<h2>{{more_title}}</h2>
+<p>{{more_text}}</p>
+<ul>
+  <li><a href="{{@url_roof}}">{{name_roof}}</a></li>
+  <li><a href="{{@url_concrete}}">{{name_concrete}}</a></li>
+  <li><a href="{{@url_paint}}">{{name_paint}}</a></li>
+  <li><a href="{{@url_tile}}">{{name_tile}}</a></li>
+</ul>
+
+<p class="disclaimer">{{disclaimer}}</p>
+</main>
+
+<footer class="site">
+  <p class="made">{{made_by}}</p>
+  <p><a href="{{@url_home}}">BuildCalc</a> &middot; {{tagline}}</p>
+</footer>
+</div>
+
+{{@T}}
+<script src="/assets/calc.js"></script>
+<script>
+"use strict";
+/* Unit constants: [imperial, metric] */
+const MAX_RISER = { imperial: 7.75, metric: 19.7 };
+const MIN_TREAD = { imperial: 10, metric: 25.4 };
+const COMFORT_LO = { imperial: 24, metric: 61 };
+const COMFORT_HI = { imperial: 25, metric: 63.5 };
+/* Reference table ranges: imperial 24-120 in step 12, metric 60-300 cm step 30 */
+const TABLE = { imperial: [24, 120, 12], metric: [60, 300, 30] };
+
+function stairCalc(rise, maxRiser) {
+  const risers = Math.ceil(rise / maxRiser);
+  return { risers: risers, riser: rise / risers, treads: risers - 1 };
+}
+
+const badge = (cls, text) => "<span class=\"badge " + cls + "\">" + text + "</span>";
+
+function compute() {
+  const u = currentUnits();
+  const rise = readNum(document.getElementById("rise"));
+  const desired = readNum(document.getElementById("desired"));
+  const tread = readNum(document.getElementById("tread"));
+  const space = readNum(document.getElementById("space"), { allowZero: true, required: false });
+
+  const main = document.getElementById("r-main");
+  const path = document.getElementById("r-path");
+  if (!isFinite(rise) || !isFinite(tread)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+
+  const s = stairCalc(rise, MAX_RISER[u]);
+  const totalRun = s.treads * tread;
+  const comfort = 2 * s.riser + tread;
+  if (![s.risers, s.riser, totalRun, comfort].every(isFinite)) { main.innerHTML = "&nbsp;"; path.innerHTML = ""; return; }
+  const comfortOk = comfort >= COMFORT_LO[u] && comfort <= COMFORT_HI[u];
+  const ircOk = s.riser <= MAX_RISER[u] + 1e-9 && tread >= MIN_TREAD[u] - 1e-9;
+
+  const v = {
+    u: t("unit_" + u),
+    risers: fmt(s.risers, 0), riser: fmt(s.riser, 2), treads: fmt(s.treads, 0),
+    run: fmt(totalRun, 2), tread: fmt(tread, 2), comfort: fmt(comfort, 2),
+    lo: fmt(COMFORT_LO[u], 1), hi: fmt(COMFORT_HI[u], 1),
+    max: fmt(MAX_RISER[u], 2), min: fmt(MIN_TREAD[u], 1)
+  };
+  main.innerHTML = t("main", v);
+  let html = "<li>" + t("run_line", v) + "</li>";
+  if (isFinite(desired)) {
+    html += "<li>" + t("target_line", Object.assign({}, v, { desired: fmt(desired, 2) })) + "</li>";
+  }
+  v.badge = badge(comfortOk ? "ok" : "warn", t(comfortOk ? "comfort_in" : "comfort_out", v));
+  html += "<li>" + t("comfort_line", v) + "</li>";
+  html += "<li>" + badge(ircOk ? "ok" : "err", t(ircOk ? "irc_ok" : "irc_bad", v)) + (u === "metric" ? " " + t("irc_note") : "") + "</li>";
+  if (isFinite(space) && totalRun > space) {
+    html += "<li>" + badge("err", t("no_fit", Object.assign({}, v, { space: fmt(space, 2) }))) + "</li>";
+  }
+  path.innerHTML = html;
+  showDonate();
+}
+
+/* Reference table at the max riser rule for the current unit system */
+function fillTable() {
+  const u = currentUnits();
+  const [from, to, step] = TABLE[u];
+  let rows = "";
+  for (let r = from; r <= to; r += step) {
+    const s = stairCalc(r, MAX_RISER[u]);
+    rows += "<tr><td>" + fmt(r, 0) + "</td><td>" + fmt(s.risers, 0) + "</td><td>" + fmt(s.riser, 2) + "</td><td>" + fmt(s.treads, 0) + "</td></tr>";
+  }
+  document.getElementById("rise-table").innerHTML = rows;
+}
+
+fillTable();
+initUnits(() => { fillTable(); compute(); });
+bindInputs(compute);
+compute();
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "home": "Accueil",
+  "language": "Langue",
+  "units_label": "Unités",
+  "tagline": "gratuit · sans pub · sans pistage · fonctionne hors ligne",
+  "made_by": "Créé par un développeur indépendant, lassé des sites de calcul remplis de pubs. Vous avez trouvé une erreur ? <a href=\"https://github.com/boulbaal/buildcalc/issues\">Signalez-la sur GitHub</a>.",
+  "donate_text": "Gratuit, sans pub, créé par une seule personne. Si cet outil vous a évité un aller-retour au magasin, vous pouvez m'offrir un café.",
+  "donate_paypal": "Faire un don via PayPal",
+  "donate_kofi": "Soutenir sur Ko-fi",
+  "how_it_works": "Comment ça marche",
+  "worked_example": "Exemple de calcul",
+  "faq_title": "Questions fréquentes",
+  "more_title": "Autres calculateurs gratuits",
+  "disclaimer": "Les résultats sont des estimations pour préparer votre chantier et ne remplacent pas l'avis d'un professionnel. Vérifiez toujours les règles de construction locales et les instructions du fabricant.",
+  "name_roof": "Calcul pente de toit",
+  "name_concrete": "Calcul béton pour dalle",
+  "name_paint": "Calcul peinture",
+  "name_tile": "Calcul carrelage",
+  "name_stair": "Calcul escalier",
+  "js": {
+    "err_empty": "Saisissez une valeur.",
+    "err_nan": "Saisissez un nombre valide.",
+    "err_negative": "Doit être positif.",
+    "err_zero": "Doit être supérieur à zéro."
+  }
+}

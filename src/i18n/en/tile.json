@@ -1,0 +1,85 @@
+{
+  "meta_title": "Tile Calculator - How Many Tiles Do I Need?",
+  "meta_desc": "Free tile calculator. Enter your floor or wall size, tile size and grout gap to get the tile and box count with waste included. Instant, no ads.",
+  "og_desc": "Get the tile and box count for your floor or wall, waste included. Free, no ads.",
+  "h1": "Tile Calculator",
+  "lede": "Work out how many tiles and boxes you need for a floor or wall, with grout gap and waste included. Free, instant, no ads.",
+  "mode_label": "Area",
+  "mode_dims": "Length x width",
+  "mode_area": "I know the area",
+  "length": "Length",
+  "width": "Width",
+  "area": "Area",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "sfx_area_imperial": "(sq ft)",
+  "sfx_area_metric": "(m²)",
+  "tile_size_imperial": "Tile size (inches)",
+  "tile_size_metric": "Tile size (cm)",
+  "opt_subway": "3 x 6 subway",
+  "opt_custom": "Custom",
+  "tile_w": "Tile width",
+  "tile_h": "Tile height",
+  "sfx_tile_imperial": "(in)",
+  "sfx_tile_metric": "(cm)",
+  "gap": "Grout gap",
+  "sfx_gap_imperial": "(in)",
+  "sfx_gap_metric": "(mm)",
+  "gap_hint_imperial": "0 for no gap. 1/8 in = 0.125.",
+  "gap_hint_metric": "0 for no gap. 3 mm is common for floor tile.",
+  "pattern": "Layout pattern",
+  "pattern_straight": "Straight (10% waste)",
+  "pattern_diag": "Diagonal / herringbone (15% waste)",
+  "perbox": "Tiles per box (optional)",
+  "perbox_hint": "Printed on the box. Leave empty to skip.",
+  "how_text": "The calculator divides your area by the footprint of one tile plus its grout gap, adds a waste allowance for cuts and breakage, and rounds up to whole tiles:",
+  "formula": "effective tile area = (tile width + gap) &times; (tile height + gap)<br>tiles = ceil( area / effective tile area &times; (1 + waste) )<br>boxes = ceil( tiles / tiles per box )",
+  "how_text2": "Waste is 10% for a straight grid layout and 15% for diagonal or herringbone, where more offcuts end up unusable. A wider grout gap means each tile covers a slightly larger footprint, so the tile count goes down a little.",
+  "example_imperial": "Say you are tiling a 10 ft by 12 ft floor, which is <strong>120 sq ft</strong> (17,280 sq in), with 12 x 12 inch tiles laid straight and a 1/8 inch (0.125 in) grout gap. Each tile plus its gap covers 12.125 × 12.125 = 147.02 sq in, so bare coverage is 17,280 / 147.02 = 117.54 tiles. Add 10% waste: 117.54 × 1.1 = 129.29, which rounds up to <strong>130 tiles</strong>. If the tiles come 8 to a box, that is ceil(130 / 8) = <strong>17 boxes</strong>. The same floor laid diagonally at 15% waste needs 136 tiles.",
+  "example_metric": "Say you are tiling a 4 m by 3 m floor, which is <strong>12 m²</strong> (120,000 cm²), with 30 x 30 cm tiles laid straight and a 3 mm (0.3 cm) grout gap. Each tile plus its gap covers 30.3 × 30.3 = 918.09 cm², so bare coverage is 120,000 / 918.09 = 130.71 tiles. Add 10% waste: 130.71 × 1.1 = 143.78, which rounds up to <strong>144 tiles</strong>. If the tiles come 11 to a box, that is ceil(144 / 11) = <strong>14 boxes</strong>. The same floor laid diagonally at 15% waste needs 151 tiles.",
+  "table_title_imperial": "Tiles per 100 sq ft",
+  "table_title_metric": "Tiles per 10 m²",
+  "table_note": "Common tile sizes, straight layout with 10% waste and no grout gap:",
+  "col_size": "Tile size",
+  "col_area": "Tile area",
+  "col_count_imperial": "Tiles per 100 sq ft",
+  "col_count_metric": "Tiles per 10 m²",
+  "more_text": "Planning the rest of the job? Try the other free calculators:",
+  "js": {
+    "main": "{tiles} tiles",
+    "main_boxes": "{tiles} tiles <small>= {boxes} boxes of {perbox}</small>",
+    "area_line_imperial": "Area to tile: <strong>{area} sq ft</strong>",
+    "area_line_metric": "Area to tile: <strong>{area} m²</strong>",
+    "eff_line_imperial": "Effective tile area: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} sq in</strong>",
+    "eff_line_metric": "Effective tile area: ({tw} + {gap}) × ({th} + {gap}) = <strong>{eff} cm²</strong>",
+    "waste_straight": "Waste allowance: <strong>{pct}%</strong> (straight layout)",
+    "waste_diag": "Waste allowance: <strong>{pct}%</strong> (diagonal / herringbone)",
+    "size_imperial": "{w} x {h} in",
+    "size_subway": "3 x 6 in subway",
+    "size_metric": "{w} x {h} cm",
+    "tile_area_imperial": "{n} sq ft",
+    "tile_area_metric": "{n} m²"
+  },
+  "faq": [
+    [
+      "How much extra tile should I buy?",
+      "Buy 10 to 15% more than the bare coverage number. Cuts along walls, breakage and future repairs all eat into the extra. Use 10% for a simple straight layout in a rectangular room, and 15% for diagonal or herringbone layouts, small tiles, or rooms with many corners."
+    ],
+    [
+      "What is tile waste?",
+      "Waste is the tile you buy but do not end up walking on: offcuts at walls and around fixtures, tiles that crack during cutting or transport, and spares kept for later repairs. It is normal, not a mistake. This calculator adds the waste percentage before rounding up to whole tiles."
+    ],
+    [
+      "How many 12x12 tiles do I need for 100 square feet?",
+      "A 12x12 inch (30x30 cm) tile covers 1 square foot, so 100 square feet (9.3 m²) needs 100 tiles of bare coverage. Add 10% waste for a straight layout and you should buy 110 tiles. With a grout gap each tile covers slightly more, so the count can drop a little."
+    ],
+    [
+      "Does a diagonal layout need more tile?",
+      "Yes. Laying tiles at 45 degrees means every row ends in an angled cut at the wall, and many of those offcuts cannot be reused. Plan on about 15% waste for diagonal or herringbone layouts instead of the usual 10% for a straight grid layout."
+    ],
+    [
+      "Do I count grout lines when calculating tile?",
+      "Yes, and they work in your favor. Each tile plus its grout gap, often 1/8 inch (3 mm), covers a slightly larger footprint than the tile alone, so a wider gap slightly reduces the number of tiles needed. The effect is small with large tiles but noticeable with small subway tile."
+    ]
+  ]
+}

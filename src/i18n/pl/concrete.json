@@ -1,0 +1,67 @@
+{
+  "meta_title": "Kalkulator betonu - ile worków na płytę, za darmo",
+  "meta_desc": "Darmowy kalkulator betonu. Oblicz objętość w m³ lub jardach sześciennych i liczbę worków 25 kg albo 40, 60 i 80 lb, z zapasem na straty. Bez reklam.",
+  "og_desc": "Oblicz objętość betonu i dokładną liczbę worków na płytę. Za darmo, bez reklam.",
+  "h1": "Kalkulator betonu na płytę",
+  "lede": "Wpisz wymiary płyty i poznaj objętość betonu oraz dokładną liczbę potrzebnych worków, z zapasem na straty. Za darmo, od razu, bez reklam.",
+  "length": "Długość",
+  "width": "Szerokość",
+  "thickness": "Grubość",
+  "sfx_ft": "(ft)",
+  "sfx_m": "(m)",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "thickness_hint_imperial": "4 in to typowa grubość tarasu i chodnika.",
+  "thickness_hint_metric": "10 cm to typowa grubość tarasu i chodnika.",
+  "bag_label": "Wielkość worka",
+  "bag_hint": "Gotowa sucha mieszanka, wystarczy dodać wodę.",
+  "waste_label": "Zapas na straty (%)",
+  "waste_hint": "10% pokrywa rozlany beton i nierówne podłoże.",
+  "how_text": "Płyta to zwykły prostopadłościan: długość razy szerokość razy grubość daje objętość. Kalkulator przelicza grubość na tę samą jednostkę co boki, dolicza zapas na straty, dzieli przez wydajność jednego worka i zaokrągla w górę do pełnych worków:",
+  "formula": "objętość (cu ft) = długość (ft) &times; szerokość (ft) &times; grubość (in) / 12<br>jardy sześcienne = objętość / 27<br>objętość (m&sup3;) = długość (m) &times; szerokość (m) &times; grubość (cm) / 100<br>worki = ceil(objętość &times; (1 + zapas / 100) / wydajność worka)",
+  "yields_text": "Wydajność worków: worek 80 lb daje około 0,60 cu ft, worek 60 lb 0,45 cu ft, worek 40 lb 0,30 cu ft, a worek 25 kg około 0,0123 m³.",
+  "example_imperial": "Załóżmy, że wylewasz taras 10 × 10 ft o grubości 4 cali. Objętość to 10 × 10 × 4/12 = <strong>33,33 cu ft</strong>, czyli 33,33 / 27 = <strong>1,23 cu yd</strong>. Przy workach 80 lb po 0,60 cu ft wychodzi 33,33 / 0,60 = 55,6, w górę do <strong>56 worków</strong>. Dolicz standardowe 10% zapasu (33,33 × 1,1 = 36,67 cu ft) i kup <strong>62 worki</strong>. Zostające worki to mniejszy kłopot niż drugi wyjazd do marketu, więc zaokrąglaj w górę.",
+  "example_metric": "Załóżmy, że wylewasz taras 3 × 3 m o grubości 10 cm. Objętość to 3 × 3 × 10/100 = <strong>0,9 m³</strong>. Przy workach 25 kg po około 0,0123 m³ wychodzi 0,9 / 0,0123 = 73,2, w górę do <strong>74 worków</strong>. Dolicz standardowe 10% zapasu (0,9 × 1,1 = 0,99 m³) i kup 0,99 / 0,0123 = 80,5, w górę do <strong>81 worków</strong>. Zostające worki to mniejszy kłopot niż drugi wyjazd do marketu, więc zaokrąglaj w górę.",
+  "table_title": "Wielkość i wydajność worków",
+  "col_bag": "Wielkość worka",
+  "col_yield": "Wydajność",
+  "col_per": "Worków na objętość",
+  "more_text": "Planujesz resztę roboty? Wypróbuj pozostałe darmowe kalkulatory:",
+  "js": {
+    "bag_lb": "{n} lb",
+    "bag_kg": "{n} kg",
+    "main_imperial": "{yd} cu yd <small>= worki {bag}: {bags} szt.</small>",
+    "main_metric": "{vol} m³ <small>= worki {bag}: {bags} szt.</small>",
+    "vol_imperial": "objętość = {l} × {w} × {t}/12 = <strong>{vol} cu ft</strong> = {vol} / 27 = <strong>{yd} cu yd</strong>",
+    "vol_metric": "objętość = {l} × {w} × {t}/100 = <strong>{vol} m³</strong>",
+    "waste_imperial": "Z zapasem {waste}%: {vol} × {factor} = {total} cu ft",
+    "waste_metric": "Z zapasem {waste}%: {vol} × {factor} = {total} m³",
+    "bags_line": "worki = ceil({total} / {yield}) = <strong>{bags}</strong> ({bag})",
+    "tbl_cuft": "{v} cu ft",
+    "tbl_m3": "{v} m³",
+    "tbl_per_yd": "{n} na cu yd",
+    "tbl_per_kg": "około {m3} na m³, {yd} na cu yd"
+  },
+  "faq": [
+    [
+      "Ile worków betonu przypada na jard sześcienny?",
+      "Worek 80 lb daje około 0,60 stopy sześciennej, a jard sześcienny to 27 stóp sześciennych, więc potrzeba 45 worków 80 lb na jard sześcienny. Przy workach 60 lb jest to 60, a przy workach 40 lb 90. Przy workach 25 kg potrzeba około 81 na metr sześcienny (1,31 jarda sześciennego)."
+    ],
+    [
+      "Jaka powinna być grubość płyty betonowej?",
+      "10 cm (4 cale) to typowa grubość tarasów, chodników i płyt pod domek narzędziowy. Podjazdy dla samochodów zwykle wymagają 12 do 15 cm (5 do 6 cali), a płyty pod ciężkie pojazdy lub warsztaty często mają 15 cm (6 cali) lub więcej. Przed betonowaniem sprawdź lokalne przepisy."
+    ],
+    [
+      "Czy płyta potrzebuje zbrojenia prętami lub siatką?",
+      "Małe płyty, na przykład chodniki, często wystarczą z samymi szczelinami dylatacyjnymi, ale siatka zbrojeniowa lub pręty pomagają utrzymać rysy zamknięte w tarasach, podjazdach i posadzkach garażu. Zbrojenie układaj w połowie grubości płyty, czyli około 5 cm (2 cale) nad spodem w płycie 10 cm (4 cale), a nie bezpośrednio na gruncie."
+    ],
+    [
+      "Kiedy zamówić beton z gruszki zamiast worków?",
+      "Granica to zwykle około 0,76 metra sześciennego (1 jard sześcienny). To już 45 worków 80 lb albo około 62 worków 25 kg do przeniesienia i wymieszania ręcznie. Powyżej tej ilości beton z betonowozu jest szybszy, bardziej jednorodny i często tańszy, choć za małe dostawy można zapłacić dopłatę."
+    ],
+    [
+      "Ile trwa wiązanie betonu?",
+      "Beton wiąże w kilka godzin, ale twardnieje powoli. Zwykle można po nim chodzić po 24 do 48 godzinach, a wjechać samochodem po około 7 dniach. Większość wytrzymałości projektowej osiąga po 28 dniach. W pierwszym tygodniu utrzymuj go wilgotnym, żeby twardniał mocno, zamiast za szybko wysychać."
+    ]
+  ]
+}

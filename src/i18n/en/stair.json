@@ -1,0 +1,64 @@
+{
+  "meta_title": "Stair Calculator - Risers, Treads and Total Run",
+  "meta_desc": "Free stair calculator. Enter the total rise to get the number of risers, exact riser height, treads and total run, with code and comfort checks. No ads.",
+  "og_desc": "Get risers, riser height, treads and total run from the total rise. Instant, free, no ads.",
+  "h1": "Stair Calculator",
+  "lede": "Enter the total rise and get the number of risers, exact riser height, treads and total run, with code and comfort checks. Free, instant, no ads.",
+  "sfx_in": "(in)",
+  "sfx_cm": "(cm)",
+  "rise": "Total rise",
+  "rise_hint": "Finished floor to finished floor, measured vertically.",
+  "desired": "Target riser height",
+  "desired_hint": "What you would like each step to be. Shown for comparison.",
+  "tread": "Tread depth",
+  "tread_hint": "Horizontal depth of each step, nose to nose.",
+  "space": "Available run",
+  "space_hint": "Optional. Horizontal space you have for the staircase.",
+  "how_text": "The calculator divides the total rise by the maximum riser height of 7.75 in (19.7 cm) and rounds up to get the number of risers. Dividing the total rise by that count gives the exact riser height to lay out on the stringer. For comfort, twice the riser height plus the tread depth should land between 24 and 25 in (61 to 63.5 cm).",
+  "formula": "risers = ceil(total rise / <span data-if-units=\"imperial\">7.75</span><span data-if-units=\"metric\">19.7</span>)<br>riser height = total rise / risers<br>treads = risers - 1<br>total run = treads &times; tread depth<br>comfort = 2 &times; riser height + tread depth",
+  "how_note": "Your target riser height is shown next to the actual one so you can see how close the layout comes. <strong>Code limits here follow the US IRC (max riser 7.75 in or 19.7 cm, min tread 10 in or 25.4 cm). Local codes can differ, so always verify before you cut.</strong>",
+  "example_imperial": "Say the total rise from floor to floor is 100 inches. Then 100 / 7.75 = 12.9, rounded up to <strong>13 risers</strong>. Each riser is 100 / 13 = <strong>7.69 in</strong>, and there are 13 - 1 = <strong>12 treads</strong>. With a 10.5 in tread depth the total run is 12 × 10.5 = <strong>126 in</strong>. The comfort value is 2 × 7.69 + 10.5 = 25.88 in, slightly above the ideal 24 to 25 in range. One extra riser (14 risers of 7.14 in) would bring it to 24.79 in, inside the range.",
+  "example_metric": "Say the total rise from floor to floor is 270 cm. Then 270 / 19.7 = 13.7, rounded up to <strong>14 risers</strong>. Each riser is 270 / 14 = <strong>19.29 cm</strong>, and there are 14 - 1 = <strong>13 treads</strong>. With a 27 cm tread depth the total run is 13 × 27 = <strong>351 cm</strong>. The comfort value is 2 × 19.2857 + 27 = 65.57 cm, above the ideal 61 to 63.5 cm range. One extra riser (15 risers of 18 cm) would bring it to 63 cm, inside the range.",
+  "table_title": "Risers by total rise",
+  "col_rise": "Total rise",
+  "col_risers": "Risers",
+  "col_riser": "Riser height",
+  "col_treads": "Treads",
+  "more_text": "Planning the rest of the job? Try the other free calculators:",
+  "js": {
+    "unit_imperial": "in",
+    "unit_metric": "cm",
+    "main": "{risers} risers of {riser} {u}, {treads} treads",
+    "run_line": "Total run: <strong>{run} {u}</strong> ({treads} treads × {tread} {u})",
+    "target_line": "Your target riser: {desired} {u}, actual: {riser} {u}",
+    "comfort_line": "Comfort (2R+T): {comfort} {u} {badge}",
+    "comfort_in": "In the {lo} to {hi} {u} range",
+    "comfort_out": "Outside the {lo} to {hi} {u} range",
+    "irc_ok": "Meets US IRC limits (riser ≤ {max} {u}, tread ≥ {min} {u})",
+    "irc_bad": "Outside US IRC limits: max riser {max} {u}, min tread {min} {u}",
+    "irc_note": "IRC is a US code; check your local rules.",
+    "no_fit": "Does not fit: needs {run} {u} of run, you have {space} {u}"
+  },
+  "faq": [
+    [
+      "What is the maximum riser height by code?",
+      "The US IRC allows a maximum riser height of 7.75 inches (19.7 cm) for residential stairs. Risers within one flight must not vary by more than 3/8 inch (about 1 cm). Commercial codes and many local codes are stricter, so always verify with your local building department."
+    ],
+    [
+      "What is the ideal riser height for stairs?",
+      "Most people find risers of 7 to 7.5 inches (18 to 19 cm) the most comfortable to climb. Shallower risers around 6 inches (15 cm) suit outdoor steps and older users. Anything above the US IRC maximum of 7.75 inches (19.7 cm) feels steep and is not allowed there."
+    ],
+    [
+      "What is the 2R+T rule for stairs?",
+      "The 2R+T comfort rule says twice the riser height plus the tread depth should land between 24 and 25 inches (61 to 63.5 cm). It approximates a natural walking stride. Stairs inside that range feel comfortable, while stairs outside it feel too steep or too shallow."
+    ],
+    [
+      "How do I calculate the number of steps in a staircase?",
+      "Measure the total rise from finished floor to finished floor, then divide by the maximum riser height of 7.75 inches (19.7 cm) and round up. That gives the riser count. Dividing the total rise by it gives the exact riser height. The number of treads is one less than the number of risers."
+    ],
+    [
+      "What is the minimum tread depth by code?",
+      "The US IRC requires a minimum tread depth of 10 inches (25.4 cm), measured nose to nose. Deeper treads of 10.5 to 11 inches (27 to 28 cm) are more comfortable and common. Treads within a flight must not vary by more than 3/8 inch (about 1 cm). Check local rules before building."
+    ]
+  ]
+}

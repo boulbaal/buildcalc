@@ -1,0 +1,76 @@
+{
+  "meta_title": "油漆用量计算器 - 刷墙需要多少漆？",
+  "meta_desc": "免费油漆用量计算器。输入房间尺寸、门窗数量和涂刷遍数，即可算出需要多少加仑或升的油漆。即时、无广告、可离线使用。",
+  "og_desc": "输入房间尺寸、门窗和遍数，算出需要多少加仑或升的油漆。免费、无广告。",
+  "h1": "油漆用量计算器",
+  "lede": "算出你的房间需要多少加仑或升的油漆，门窗和涂刷遍数都已考虑在内。免费、即时、无广告。",
+  "length": "房间长度",
+  "width": "房间宽度",
+  "height": "墙面高度",
+  "sfx_len_imperial": "(ft)",
+  "sfx_len_metric": "(m)",
+  "doors": "门",
+  "doors_hint": "不刷漆。每扇门扣除一个标准门面积。",
+  "windows": "窗",
+  "coats": "遍数",
+  "coats_hint": "一般刷两遍。",
+  "coverage": "涂布率",
+  "sfx_cov_imperial": "(每加仑 sq ft)",
+  "sfx_cov_metric": "(每升 m²)",
+  "coverage_hint_imperial": "一般为 250-400",
+  "coverage_hint_metric": "一般为 8-12",
+  "ceiling": "包括天花板",
+  "how_text": "计算器先算出房间四周的墙面面积，每扇门和每扇窗扣除一个标准面积，可选择加上天花板，再乘以涂刷遍数，最后除以油漆的涂布率。结果总是向上取整为整桶，因为没法买 1.8 加仑：",
+  "formula": "墙面面积 = 2 &times; (长度 + 宽度) &times; 高度<br>可涂面积 = 墙面面积 &minus; 门数 &times; 门面积 &minus; 窗数 &times; 窗面积 (+ 天花板)<br>桶数 = 可涂面积 &times; 遍数 &divide; 涂布率，向上取整",
+  "metric_note": "公制模式下，一扇门按 1.95 m²、一扇窗按 1.4 m² 计算，涂布率按每升计。英制模式下，一扇门按 21 sq ft、一扇窗按 15 sq ft 计算。",
+  "example_imperial": "假设房间 12 × 10 ft，墙高 8 ft，一扇门一扇窗，打算刷两遍，涂布率为每加仑 350 sq ft。墙面面积为 2 × (12 + 10) × 8 = <strong>352 sq ft</strong>。扣除门（21 sq ft）和窗（15 sq ft），得到 <strong>每遍 316 sq ft</strong>。两遍就是 632 sq ft，632 ÷ 350 = 1.81，向上取整为 <strong>2 加仑</strong>。勾选“包括天花板”后，120 sq ft 的天花板使每遍面积变为 436 sq ft，共 872 sq ft，所以需要 <strong>3 加仑</strong>。",
+  "example_metric": "假设房间 4 × 3 m，墙高 2.5 m，一扇门一扇窗，打算刷两遍，涂布率为每升 10 m²。墙面面积为 2 × (4 + 3) × 2.5 = <strong>35 m²</strong>。扣除门（1.95 m²）和窗（1.4 m²），得到 <strong>每遍 31.65 m²</strong>。两遍就是 63.3 m²，63.3 ÷ 10 = 6.33，向上取整为 <strong>7 升</strong>。勾选“包括天花板”后，12 m² 的天花板使每遍面积变为 43.65 m²，共 87.3 m²，所以需要 <strong>9 升</strong>。",
+  "table_title": "按房间大小估算油漆用量",
+  "table_note_imperial": "墙高 8 ft，一扇门，一扇窗，刷两遍，每加仑 350 sq ft：",
+  "table_note_metric": "墙高 2.5 m，一扇门，一扇窗，刷两遍，每升 10 m²：",
+  "col_room": "房间",
+  "col_walls": "仅墙面",
+  "col_both": "墙面 + 天花板",
+  "more_text": "还要计划其他工序？试试其他免费计算器：",
+  "js": {
+    "main": "{cansText} <small>（刷 {coatsText}）</small>",
+    "cans_imperial_one": "{cans} 加仑",
+    "cans_imperial": "{cans} 加仑",
+    "cans_metric_one": "{cans} 升",
+    "cans_metric": "{cans} 升",
+    "coats_one": "{coats} 遍",
+    "coats_other": "{coats} 遍",
+    "area_imperial": "sq ft",
+    "area_metric": "m²",
+    "wall_line": "墙面面积：2 × ({L} + {W}) × {H} = <strong>{wall} {a}</strong>",
+    "deduct_line": "扣除 {doors} 扇门和 {windows} 扇窗：−{deduct} {a} = <strong>每遍 {per} {a}</strong>",
+    "deduct_ceiling_line": "扣除 {doors} 扇门和 {windows} 扇窗：−{deduct} {a}，加上天花板 {ceil} {a} = <strong>每遍 {per} {a}</strong>",
+    "total_line": "{per} × {coatsText} = {total} {a} ÷ {coverage} = {ratio}，向上取整为 <strong>{cansText}</strong>",
+    "room_imperial": "{l} × {w} ft",
+    "room_metric": "{l} × {w} m",
+    "cell_imperial": "{n} gal",
+    "cell_metric": "{n} L"
+  },
+  "faq": [
+    [
+      "一加仑油漆能刷多大面积？",
+      "大多数内墙漆在平整、已刷底漆的墙面上，每加仑可刷 250 到 400 平方英尺（每升约 6 到 10 m²）。本计算器默认每加仑 350 sq ft 或每升 10 m²。粗糙、多孔或未处理的表面吃漆更多，应按范围的下限计算。"
+    ],
+    [
+      "刷漆前需要先刷底漆吗？",
+      "在裸石膏板、裸木、有污渍或有光泽的表面上，以及用浅色覆盖深色时，都要先刷底漆。如果墙面以前刷过漆、状况良好、颜色相近，用一款质量好的底面合一漆通常就够了。底漆比多刷一遍面漆便宜。"
+    ],
+    [
+      "刷一遍够吗，还是要刷两遍？",
+      "想要均匀耐用的效果，按两遍计划。如果是在处理好的墙面上用相同颜色和光泽度重刷，一遍也可以。大幅换色、红色和黄色，或者在修补过的地方刷漆，往往需要两遍面漆，再加一道调色底漆。"
+    ],
+    [
+      "12x12 的房间需要多少油漆？",
+      "12 × 12 英尺、墙高 8 英尺的房间有 384 sq ft 墙面。扣除一扇门和一扇窗后每遍 348 sq ft，按每加仑 350 sq ft 刷两遍需要 2 加仑。类似的 4 × 4 m、墙高 2.5 m 的房间，按每升 10 m² 需要 8 升。"
+    ],
+    [
+      "天花板漆和墙面漆不一样吗？",
+      "天花板漆配方更稠，飞溅和滴落更少，而且几乎都是哑光的，灯光下不容易显出滚筒印。天花板也可以用哑光墙面漆，但专用的天花板漆在头顶上刷起来更顺手，遮盖瑕疵的效果也更好。"
+    ]
+  ]
+}
