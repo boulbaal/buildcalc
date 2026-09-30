@@ -101,12 +101,14 @@ a { color: var(--accent); }
 }
 .donate[hidden] { display: none; }
 .donate p { margin: 0 0 10px; }
-.donate .btns { display: flex; gap: 10px; flex-wrap: wrap; }
-.donate a.btn {
-  display: inline-block; padding: 9px 18px; border-radius: 8px; text-decoration: none; font-weight: 600;
-  background: var(--accent); color: var(--accent-ink);
+.donate .amounts { display: flex; flex-wrap: wrap; gap: 10px; }
+.donate a.amount {
+  display: inline-block; min-width: 64px; text-align: center; padding: 9px 16px; border-radius: 999px;
+  text-decoration: none; font-weight: 700; background: var(--accent); color: var(--accent-ink);
 }
-.donate a.btn.alt { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+.donate a.amount:hover { filter: brightness(1.06); }
+.donate .joke { font-size: 14.5px; color: var(--muted); margin: 14px 0 8px; }
+.donate a.free { display: inline-block; margin-top: 12px; font-size: 14.5px; }
 
 /* Content */
 table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15.5px; }

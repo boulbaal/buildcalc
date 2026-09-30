@@ -62,7 +62,11 @@ for (const lang of BUILT) {
           for (const re of CALCS[p.id][units]) expect(await main.innerText(), `${units} control value`).toMatch(re);
           // donation block appears after a result, with the PayPal link
           await expect(page.locator('#donate')).toBeVisible();
-          await expect(page.locator('#donate [data-donate=paypal]')).toHaveAttribute('href', /paypal\.me\//);
+          const cur = lang === 'en' ? 'USD' : 'EUR';
+          const amounts = page.locator('#donate a.amount');
+          await expect(amounts).toHaveCount(5);
+          await expect(amounts.nth(2)).toHaveAttribute('href', `https://www.paypal.com/paypalme/ABoullbahaiem/5${cur}`);
+          await expect(page.locator('#donate [data-donate-free]')).toHaveAttribute('href', 'https://www.paypal.com/paypalme/ABoullbahaiem');
           // FAQ structured data is valid JSON with 5 questions
           const ld = await page.locator('script[type="application/ld+json"]').allInnerTexts();
           const faq = ld.map((s) => JSON.parse(s)).find((j) => j['@type'] === 'FAQPage');

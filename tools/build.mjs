@@ -112,7 +112,7 @@ function render(tpl, lang, page) {
   };
   const faqList = Array.isArray(sec.faq) ? sec.faq : [];
   const vars = {
-    lang, locale: meta.locale, dir: meta.rtl ? 'rtl' : 'ltr', units,
+    lang, locale: meta.locale, dir: meta.rtl ? 'rtl' : 'ltr', units, currency: meta.currency || 'EUR',
     root: langRoot(lang),
     canonical: pageUrl(lang, page),
     hreflang: page.noindex ? '' : BUILT_LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${pageUrl(l, page)}">`).join('\n')

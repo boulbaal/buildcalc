@@ -3,11 +3,10 @@
    window.T (page strings + common strings) before this file loads. */
 "use strict";
 
-/* ===== Donation config: all pages and languages use this. Empty = hidden. ===== */
-const DONATE = {
-  paypal: "https://paypal.me/ABoullbahaiem",
-  kofi: ""
-};
+/* ===== Donation config (same PayPal.me as Whenly). Empty = donation block hidden. =====
+   Amount buttons link to paypal.com/paypalme/<name>/<amount><CUR>, so PayPal opens
+   with the amount already filled in. Currency per language: data-currency on <html>. */
+const PAYPAL_ME = "ABoullbahaiem";
 
 const LOCALE = document.documentElement.dataset.locale || "en-US";
 
@@ -93,17 +92,31 @@ function initUnits(onSwitch) {
   });
 }
 
-/* Reveal the donation block after the first successful result. */
+/* Reveal the donation block after the first successful result (Whenly-style amounts). */
 let donateShown = false;
 function showDonate() {
   if (donateShown) return;
   const box = document.getElementById("donate");
-  if (!box) return;
-  if (!DONATE.paypal && !DONATE.kofi) return;
-  const pp = box.querySelector("[data-donate=paypal]");
-  const kf = box.querySelector("[data-donate=kofi]");
-  if (pp) { if (DONATE.paypal) pp.href = DONATE.paypal; else pp.remove(); }
-  if (kf) { if (DONATE.kofi) kf.href = DONATE.kofi; else kf.remove(); }
+  if (!box || !PAYPAL_ME) return;
+  const cur = document.documentElement.dataset.currency || "EUR";
+  const base = "https://www.paypal.com/paypalme/" + PAYPAL_ME;
+  let money;
+  try { money = new Intl.NumberFormat(LOCALE, { style: "currency", currency: cur, maximumFractionDigits: 0, numberingSystem: "latn" }); }
+  catch (e) { money = new Intl.NumberFormat("en-US", { style: "currency", currency: cur, maximumFractionDigits: 0 }); }
+  box.querySelectorAll(".amounts[data-amounts]").forEach((row) => {
+    row.innerHTML = "";
+    row.dataset.amounts.split(",").forEach((n) => {
+      const a = document.createElement("a");
+      a.className = "amount";
+      a.href = base + "/" + n + cur;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = money.format(Number(n));
+      row.appendChild(a);
+    });
+  });
+  const free = box.querySelector("[data-donate-free]");
+  if (free) free.href = base;
   box.hidden = false;
   donateShown = true;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}">
+<html lang="{{@lang}}" dir="{{@dir}}" data-locale="{{@locale}}" data-currency="{{@currency}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,10 +77,10 @@
 
 <div class="donate" id="donate" hidden>
   <p>{{donate_text}}</p>
-  <div class="btns">
-    <a class="btn" data-donate="paypal" href="#" rel="noopener">{{donate_paypal}}</a>
-    <a class="btn alt" data-donate="kofi" href="#" rel="noopener">{{donate_kofi}}</a>
-  </div>
+  <div class="amounts" data-amounts="1,2,5"></div>
+  <p class="joke">{{donate_joke}}</p>
+  <div class="amounts" data-amounts="20,50"></div>
+  <a class="free" data-donate-free href="#" target="_blank" rel="noopener">{{donate_free}}</a>
 </div>
 
 <h2>{{how_it_works}}</h2>
